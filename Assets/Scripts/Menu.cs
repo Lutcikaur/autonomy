@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Text.RegularExpressions;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -52,6 +53,7 @@ public class Menu : MonoBehaviour {
 				username = GUI.TextArea(new Rect(100,125,110,25),username);
 				
 				if(GUI.Button(new Rect(100,150,110,25),"Connect")){
+					username = Regex.Replace(username, @"\t|\n|\r", "");
 					me = new NConn(username);
 					connectionList.Clear();
 					ready = 0;
