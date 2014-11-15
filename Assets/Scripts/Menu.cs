@@ -52,31 +52,27 @@ public class Menu : MonoBehaviour {
 					Network.InitializeServer(10,Port);
 				}
 			} else if(type == "client"){
-				username = GUI.TextArea(new Rect(100,125,110,25),username);
-				
-				if(GUI.Button(new Rect(100,150,110,25),"Connect")){
-					username = Regex.Replace(username, @"\t|\n|\r", "");
-					GUI.Label(new Rect(100,125,100,25),"Username:");
-					username = GUI.TextArea(new Rect(200,125,100,25),username);
-					GUI.Label(new Rect(100,150,100,25),"IP Address:");
-					IP = GUI.TextArea(new Rect(200,150,100,25),IP);
-					GUI.Label(new Rect(100,175,100,25),"Port:");
-					stringPort = GUI.TextArea(new Rect(200,175,100,25),stringPort);
+				GUI.Label(new Rect(100,125,100,25),"Username:");
+				username = GUI.TextArea(new Rect(200,125,100,25),username);
+				username = Regex.Replace(username, @"\t|\n|\r", "");
+				GUI.Label(new Rect(100,150,100,25),"IP Address:");
+				IP = GUI.TextArea(new Rect(200,150,100,25),IP);
+				GUI.Label(new Rect(100,175,100,25),"Port:");
+				stringPort = GUI.TextArea(new Rect(200,175,100,25),stringPort);
 
-					if(GUI.Button(new Rect(150,225,100,25),"Connect")){
-						me = new NConn(username);
-						connectionList.Clear();
-						ready = 0;
-						int pt;
-						if(stringPort.Equals("")){
-							Network.Connect(IP,Port);
-						} else if(int.TryParse(stringPort,out pt)){
-							Network.Connect(IP,pt);
-						}
+				if(GUI.Button(new Rect(150,225,100,25),"Connect")){
+					me = new NConn(username);
+					connectionList.Clear();
+					ready = 0;
+					int pt;
+					if(stringPort.Equals("")){
+						Network.Connect(IP,Port);
+					} else if(int.TryParse(stringPort,out pt)){
+						Network.Connect(IP,pt);
 					}
-					if(GUI.Button(new Rect(150,250,100,25),"Back")){
-						type = "none";
-					}
+				}
+				if(GUI.Button(new Rect(150,250,100,25),"Back")){
+					type = "none";
 				}
 			}
 			break;
