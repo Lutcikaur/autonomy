@@ -1,36 +1,48 @@
 Initialize engine version: 4.5.5f1 (7684ad0c5a44)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: AMD Radeon R9 200 Series (ID=0x6810)
-    Vendor:   ATI
-    VRAM:     2030 MB
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics (ID=0x116)
+    Vendor:   Intel
+    VRAM:     2161 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.078 seconds
+Platform assembly: C:\projects\unity\auto\auto_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\projects\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\projects\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\projects\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.068 seconds
 <RI> Initializing input.
 <RI> Input initialized.
-desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 Initialize engine version: 4.5.5f1 (7684ad0c5a44)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: AMD Radeon R9 200 Series (ID=0x6810)
-    Vendor:   ATI
-    VRAM:     2030 MB
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics (ID=0x116)
+    Vendor:   Intel
+    VRAM:     2161 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.064 seconds
+Platform assembly: C:\projects\unity\auto\auto_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\projects\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\projects\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\projects\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.062 seconds
 <RI> Initializing input.
 <RI> Input initialized.
-desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
-Disconnected from server: Disconnected
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+LoLd MapUnityEngine.NeatwoityMessne.eIntwo
+rk
+MeisageInfo
+ 
+(Filenament C:/Build3Agent/work/d63adfc6385190b60/altonactlaSyenGedalotePlayerGenerated/Unitcpp Line:bu .cpp) 
+
+Line: 49)
+
+Load MapUnityEngine.NetworkMessageInfo
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Load MapUnityEngine.NetworkMessageInfo
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
@@ -38,13 +50,49 @@ Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Disconnected from server: Disconnected
+Failed to connect to 127.0.0.1:25001 because this system is already connected. This can occur when the network connection is disconnected too quickly for the remote system to receive the disconnect notification, for example when using Network.Disconnect(0).
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename:  Line: 2463)
+
+Failed to connect to 127.0.0.1:25001 because this system is already connected. This can occur when the network connection is disconnected too quickly for the remote system to receive the disconnect notification, for example when using Network.Disconnect(0).
+ 
+(Filename:  Line: 2463)
+
+Failed to connect to 127.0.0.1:25001 because this system is already connected. This can occur when the network connection is disconnected too quickly for the remote system to receive the disconnect notification, for example when using Network.Disconnect(0).
+ 
+(Filename:  Line: 2463)
+
+Failed to connect to 127.0.0.1:25001 because this system is already connected. This can occur when the network connection is disconnected too quickly for the remote system to receive the disconnect notification, for example when using Network.Disconnect(0).
+ 
+(Filename:  Line: 2463)
+
+Failed to connect to 127.0.0.1:25001 because this system is already connected. This can occur when the network connection is disconnected too quickly for the remote system to receive the disconnect notification, for example when using Network.Disconnect(0).
+ 
+(Filename:  Line: 2463)
+
+Failed to connect to 127.0.0.1:25001 because this system is already connected. This can occur when the network connection is disconnected too quickly for the remote system to receive the disconnect notification, for example when using Network.Disconnect(0).
+ 
+(Filename:  Line: 2463)
+
+Failed to connect to 127.0.0.1:25001 because this system is already connected. This can occur when the network connection is disconnected too quickly for the remote system to receive the disconnect notification, for example when using Network.Disconnect(0).
+ 
+(Filename:  Line: 2463)
+
+Failed to connect to 127.0.0.1:25001 because this system is already connected. This can occur when the network connection is disconnected too quickly for the remote system to receive the disconnect notification, for example when using Network.Disconnect(0).
+ 
+(Filename:  Line: 2463)
+
+Failed to connect to 127.0.0.1:25001 because this system is already connected. This can occur when the network connection is disconnected too quickly for the remote system to receive the disconnect notification, for example when using Network.Disconnect(0).
+ 
+(Filename:  Line: 2463)
 
 Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The server has disconnected from the client. Most likely the server has shut down.
+ 
+(Filename:  Line: 745)
 
 Disconnected from server: Disconnected
  

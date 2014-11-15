@@ -9,6 +9,7 @@ public class Menu : MonoBehaviour {
 
 	public string IP = "127.0.0.1";
 	public int Port = 25001;
+	public string stringPort = "25001";
 
 	public int ready = 0;
 
@@ -41,6 +42,7 @@ public class Menu : MonoBehaviour {
 		case NetworkPeerType.Disconnected:
 			if(type == "none"){
 				if(GUI.Button(new Rect(100,100,100,25),"Start Client")){
+					username = "";
 					type = "client";
 				}
 				if(GUI.Button(new Rect(100,125,100,25),"Start Server")){
@@ -49,15 +51,27 @@ public class Menu : MonoBehaviour {
 					Network.InitializeServer(10,Port);
 				}
 			} else if(type == "client"){
-				username = GUI.TextArea(new Rect(100,125,110,25),username);
-				
-				if(GUI.Button(new Rect(100,150,110,25),"Connect")){
+				GUI.Label(new Rect(100,125,100,25),"Username:");
+				username = GUI.TextArea(new Rect(200,125,100,25),username);
+				GUI.Label(new Rect(100,150,100,25),"IP Address:");
+				IP = GUI.TextArea(new Rect(200,150,100,25),IP);
+				GUI.Label(new Rect(100,175,100,25),"Port:");
+				stringPort = GUI.TextArea(new Rect(200,175,100,25),stringPort);
+
+				if(GUI.Button(new Rect(150,225,100,25),"Connect")){
 					me = new NConn(username);
 					connectionList.Clear();
 					ready = 0;
-					Network.Connect(IP,Port);
+					int pt;
+					if(stringPort.Equals("")){
+						Network.Connect(IP,Port);
+					} else if(int.TryParse(stringPort,out pt)){
+						Network.Connect(IP,pt);
+					}
 				}
-				//TODO: add backbutton
+				if(GUI.Button(new Rect(150,250,100,25),"Back")){
+					type = "none";
+				}
 			}
 			break;
 		case NetworkPeerType.Client:
@@ -208,7 +222,7 @@ public class Menu : MonoBehaviour {
 		if(Network.isServer){
 			if(rdy){
 				ready++;
-				if(ready > 2 && ready > connectionList.Count){
+				if(ready >= 2 && ready == connectionList.Count){
 					networkView.RPC("LoadMap",RPCMode.All);
 				}
 			} else {
@@ -218,11 +232,11 @@ public class Menu : MonoBehaviour {
 	}
 
 	[RPC]
-	void LoadMap(){
+	void LoadMap(NetworkMessageInfo info){
 		if(Network.isClient){
-
+			Debug.Log("Load Map" + info);
 		} else if (Network.isServer){
-
+			Debug.Log("Load Map" + info);
 		}
 	}
 }
