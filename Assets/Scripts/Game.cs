@@ -76,7 +76,7 @@ public class Game : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 
 	void OnDisconnectedFromServer(NetworkDisconnection info){
