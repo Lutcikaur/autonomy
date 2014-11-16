@@ -10,7 +10,7 @@ Platform assembly: E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (
 Loading E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.094 seconds
+- Completed reload, in  0.092 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
@@ -26,76 +26,69 @@ Platform assembly: E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (
 Loading E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.064 seconds
+- Completed reload, in  0.065 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
 Platform assembly: E:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
+0 945755969397730008
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Load MapUnityEngine.NetworkMessageInfo
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+ 
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Load MapUnityEngine.NetworkMessageInfo
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 0.634124 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 103.
+Total: 0.763980 ms (FindLiveObjects: 0.010650 ms CreateObjectMapping: 0.014337 ms MarkObjects: 0.137229 ms  DeleteObjects: 0.005325 ms)
+
+Here
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 0.354339 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 99.
+Total: 0.822149 ms (FindLiveObjects: 0.015975 ms CreateObjectMapping: 0.049566 ms MarkObjects: 0.173687 ms  DeleteObjects: 0.008602 ms)
+
+Here
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+RPC call failed because the function 'RequestUsers' does not exist in any script attached to'GameObject'
+ 
+(Filename:  Line: 133)
+
 Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Platform assembly: E:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
- 
- 
-(Filename: C:/BuildAgent/work/d63df 6385190b60/
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/Standal
-o
-nePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Load MapUnityEngine.NetworkMessageInfo
- 
-(Filename: C:/BuildAgeLt/oad Mda3dfc6385190b60/artifacts/Standalo
-ne
-PlayerGenerated/UnityEngineDebug.cpp Line9: 60/ar
-t
-ifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-UnloadTime: 0.341640 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 99.
-Total: 0.696799 ms (FindLiveObjects: 0.006963 ms CreateObjectMapping: 0.018433 ms MarkObjects: 0.143783 ms  DeleteObjects: 0.006554 ms)
-
-UnloadTime: 0.358026 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 100.
-Total: 0.702943 ms (FindLiveObjects: 0.005734 ms CreateObjectMapping: 0.010241 ms MarkObjects: 0.143783 ms  DeleteObjects: 0.003277 ms)
-
-Here
+Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Here
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+UnloadTime: 0.469448 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-The server has disconnected from the client. Most likely the server has shut down.
- 
-(Filename:  Line: 745)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 92.
+Total: 0.626341 ms (FindLiveObjects: 0.005325 ms CreateObjectMapping: 0.010241 ms MarkObjects: 0.107325 ms  DeleteObjects: 0.019253 ms)
 
-The server has disconnected from the client. Most likely the server has shut down.
- 
-(Filename:  Line: 745)
+UnloadTime: 0.460026 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Disconnected from server: iscisconnectedo
- 
-(Filename: C:/BuildAgent/work/d63dfc6m85190b60/ Diticoannected
- 
-(Filename: C:/BuildAgent/work/d63dfc6l85190b60/yerGenerated/UnityEngineDebug.cpp Line: 49)
-
-neDebug.cpp Line: 49)
-
-UnloadTime: 0.395713 ms
-Unloading 3 Unloading 3 Unused Serialalized files (Serialized file now loaoaded: 0 / Dirty seriazed fi fes: 0)
-0
-)
-
-Unlona 7 un 7 unussetssed Assets to reduce memory usage. Loaded Objects now: 88.
-Total: 1.129789 ms  usage. LdLadeeObjects:bjects now: 88.
-ateObjec1.11p946 ms0.013927 ms MarkObj0.00490.127398 ms  DeleteObjects:00.018843 ms)
-
-kObjects: 0.156073 ms  DeleteObjects: 0.033590 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 87.
+Total: 0.729570 ms (FindLiveObjects: 0.005325 ms CreateObjectMapping: 0.011060 ms MarkObjects: 0.142145 ms  DeleteObjects: 0.018433 ms)
 

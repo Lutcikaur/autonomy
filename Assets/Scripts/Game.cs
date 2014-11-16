@@ -51,8 +51,7 @@ public class Game : MonoBehaviour {
 		case NetworkPeerType.Client:
 			for(i=0;i<Menu.connectionList.Count;i++){
 				int offset = i*25;
-				GUI.Label(new Rect(100,(150+offset),100,25),Menu.connectionList[i].username);
-				GUI.Label(new Rect(200,(150+offset),100,25),(Menu.connectionList[i].ready?"Ready!":"Not Ready!"));
+				GUI.Label(new Rect(10,(10+offset),100,25),Menu.connectionList[i].username);
 				//button to kick
 			}
 			break;
@@ -109,27 +108,27 @@ public class Game : MonoBehaviour {
 	}
 	
 	[RPC]
-	void SpawnObject(int i, string guid, string name, Vector3 location, NetworkMessageInfo info){
+	void SpawnObject(int _i, string _guid, string _name, Vector3 _location, NetworkMessageInfo info){
 		//if(info.sender.guid == server){
 		//TODO : Fuck unity rpcs
-			if(!(Menu.connectionList[i].guid == guid)){
-				i = Menu.connectionList.FindIndex(x => x.guid == guid);
+			if(!(Menu.connectionList[_i].guid == _guid)){
+				_i = Menu.connectionList.FindIndex(x => x.guid == _guid);
 			}
-			while(i>=playerObjects.Count){
+			while(_i>=playerObjects.Count){
 				playerObjects.Add(new List<GameObject>());
 			}
-			playerObjects[i].Add((GameObject)Instantiate(Resources.Load("Cylinder")));
-			playerObjects[i][playerObjects[i].Count-1].transform.position = location;
+			playerObjects[_i].Add((GameObject)Instantiate(Resources.Load(_name)));
+			playerObjects[_i][playerObjects[_i].Count-1].transform.position = _location;
 		//}
 	}
 	
 	[RPC]
-	void AddConnectionList(string guid, string username, NetworkMessageInfo info) {
+	void AddConnectionList(string _guid, string _username, NetworkMessageInfo info) {
 		if(Network.isServer){
 			return;
 		} else if(Network.isClient){
 			if(info.sender.guid == server){
-				Menu.connectionList.Add(new Menu.NConn(username,guid));
+				Menu.connectionList.Add(new Menu.NConn(_username,_guid));
 			}
 		}
 	}

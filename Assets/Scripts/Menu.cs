@@ -137,28 +137,28 @@ public class Menu : MonoBehaviour {
 		Debug.Log("Disconnected from server: " + info);
 	}
 	
-	void OnPlayerConnected(NetworkPlayer player){
+	void OnPlayerConnected(NetworkPlayer _player){
 		//called on server when NetworkPlayer player connects
 		//add to list
 		NConn p = new NConn();
-		p.guid = player.guid;
+		p.guid = _player.guid;
 		connectionList.Add(p);
 		//broadcast client addition.
 	}
 
-	void OnPlayerDisconnected(NetworkPlayer player){
+	void OnPlayerDisconnected(NetworkPlayer _player){
 		//called on server when NetworkPlayer player disconnects
 		int c = connectionList.Count;
 		string p;
 		for(int i = 0; i<c; i++){
-			if(player.guid == connectionList[i].guid){
+			if(_player.guid == connectionList[i].guid){
 				p = connectionList[i].guid;
 				if(connectionList[i].ready){
 					ready--;
 				}
 				connectionList.RemoveAt(i);
 				//broadcast client removal.
-				Network.RemoveRPCs(player);
+				Network.RemoveRPCs(_player);
 				networkView.RPC("PlayerDisconnected",RPCMode.Others,p);
 				break;
 			}
@@ -166,22 +166,22 @@ public class Menu : MonoBehaviour {
 	}
 
 	[RPC]
-	void Initialize(string input, NetworkMessageInfo info) {
+	void Initialize(string _input, NetworkMessageInfo info) {
 		//client calls to update username on server side.
 		if(Network.isServer){
 			int c = connectionList.Count;
 			for(int i = 0; i<c; i++){
 				if(info.sender.guid == connectionList[i].guid){
-					connectionList[i].username = input;
+					connectionList[i].username = _input;
 					networkView.RPC("Initialize",info.sender,info.sender.guid);
-					networkView.RPC("PlayerConnected",RPCMode.Others,connectionList[i].username,connectionList[i].guid);
+					networkView.RPC("PlayerConnected",RPCMode.Others,connectionList[i].username,connectionList[i].guid,connectionList[i].ready);
 					return;
 				}
 			}
 		} else if(Network.isClient){
 			if(server == null || server == info.sender.guid){
 				server = info.sender.guid;
-				me.guid = input;
+				me.guid = _input;
 				networkView.RPC("RequestUsers",RPCMode.Server);
 			}
 		}
@@ -193,34 +193,34 @@ public class Menu : MonoBehaviour {
 		if(Network.isServer){
 			int c = connectionList.Count;
 			for(int i = 0; i<c; i++){
-				networkView.RPC("PlayerConnected",info.sender,connectionList[i].username,connectionList[i].guid);
+				networkView.RPC("PlayerConnected",info.sender,connectionList[i].username,connectionList[i].guid,connectionList[i].ready);
 			}
 		}
 	}
 
 	[RPC]
-	void PlayerConnected(string username, string guid, NetworkMessageInfo info){
+	void PlayerConnected(string _username, string _guid, bool _rdy, NetworkMessageInfo info){
 		if(Network.isClient){
 			if(info.sender.guid == server){
 				for(int i = 0; i<connectionList.Count; i++){
-					if(connectionList[i].guid == guid){
+					if(connectionList[i].guid == _guid){
 						return;
 					}
 				}
-				NConn p = new NConn(username);
-				p.guid = guid;
+				NConn p = new NConn(_username,_guid);
+				p.ready = _rdy;
 				connectionList.Add(p);
 			}
 		}
 	}
 
 	[RPC]
-	void PlayerDisconnected(string n, NetworkMessageInfo info){
+	void PlayerDisconnected(string _n, NetworkMessageInfo info){
 		if(Network.isClient){
 			if(info.sender.guid == server){
 				int c = connectionList.Count;
 				for(int i = 0; i<c; i++){
-					if(n == connectionList[i].guid){
+					if(_n == connectionList[i].guid){
 						connectionList.RemoveAt(i);
 						return;
 					}
@@ -230,30 +230,30 @@ public class Menu : MonoBehaviour {
 	}
 
 	[RPC]
-	void Ready(bool rdy, string guid, NetworkMessageInfo info) {
+	void Ready(bool _rdy, string _guid, NetworkMessageInfo info) {
 		//do i need to search?
 		if(Network.isClient){
 			if(info.sender.guid == server){
 				int c = connectionList.Count;
 				for(int i = 0; i<c; i++){
-					if(guid == connectionList[i].guid){
-						connectionList[i].ready = rdy;
+					if(_guid == connectionList[i].guid){
+						connectionList[i].ready = _rdy;
 						break;
 					}
 				}
 			}
 		}
 		if(Network.isServer){
-			if(info.sender.guid == guid){
+			if(info.sender.guid == _guid){
 				int c = connectionList.Count;
 				for(int i = 0; i<c; i++){
-					if(guid == connectionList[i].guid){
-						connectionList[i].ready = rdy;
+					if(_guid == connectionList[i].guid){
+						connectionList[i].ready = _rdy;
 						break;
 					}
 				}
-				networkView.RPC("Ready",RPCMode.Others,rdy,guid);
-				if(rdy){
+				networkView.RPC("Ready",RPCMode.Others,_rdy,_guid);
+				if(_rdy){
 					ready++;
 					if(ready >= 2 && ready == connectionList.Count){
 						networkView.RPC("LoadMap",RPCMode.All);
