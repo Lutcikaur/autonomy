@@ -14,7 +14,7 @@ public class Menu : MonoBehaviour {
 
 	public int ready = 0;
 
-	class NConn
+	public class NConn
 	{
 		public string username { get; set; }
 		public string guid { get; set; }
@@ -24,17 +24,20 @@ public class Menu : MonoBehaviour {
 		public NConn(string uname){
 			username = uname;
 		}
+		public NConn(string uname, string g){
+			username = uname;
+			guid = g;
+		}
 		public NConn(){
 		}
-
 	};
 
-	NConn me;
+	public NConn me;
 
-	List<NConn> connectionList = new List<NConn>{};
+	public static List<NConn> connectionList = new List<NConn>{};
 
-	protected string username = "";
-	protected string type = "none";
+	public string username = "";
+	public string type = "none";
 
 	void OnGUI() {
 		int i = 0;
@@ -116,6 +119,10 @@ public class Menu : MonoBehaviour {
 
 	might need to send NetworkPlayer,username isntead of NConn
 	*/
+
+	void awake(){
+		DontDestroyOnLoad(this);
+	}
 	void OnConnectedToServer(){
 		//called on client when client connects
 		networkView.RPC("Initialize",RPCMode.Server,username);
@@ -240,5 +247,6 @@ public class Menu : MonoBehaviour {
 		} else if (Network.isServer){
 			Debug.Log("Load Map" + info);
 		}
+		Application.LoadLevel(1);
 	}
 }
