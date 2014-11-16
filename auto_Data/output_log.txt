@@ -14,7 +14,6 @@ Loading E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Uni
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
-Platform assembly: E:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
 Initialize engine version: 4.5.5f1 (7684ad0c5a44)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -32,25 +31,38 @@ Loading E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Uni
 <RI> Input initialized.
 desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
 Platform assembly: E:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
-Load MapUnityEngine.NetworkMessageInfo
+Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
+ 
+ 
+(Filename: C:/BuildAgent/work/d63df 6385190b60/
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/Standal
+o
+nePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
 Load MapUnityEngine.NetworkMessageInfo
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/BuildAgeLt/oad Mda3dfc6385190b60/artifacts/Standalo
+ne
+PlayerGenerated/UnityEngineDebug.cpp Line9: 60/ar
+t
+ifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 0.293302 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 100.
-Total: 0.766028 ms (FindLiveObjects: 0.012289 ms CreateObjectMapping: 0.018024 ms MarkObjects: 0.184338 ms  DeleteObjects: 0.004915 ms)
-
-UnloadTime: 0.324845 ms
+UnloadTime: 0.341640 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 99.
-Total: 0.667714 ms (FindLiveObjects: 0.005734 ms CreateObjectMapping: 0.010241 ms MarkObjects: 0.134771 ms  DeleteObjects: 0.009012 ms)
+Total: 0.696799 ms (FindLiveObjects: 0.006963 ms CreateObjectMapping: 0.018433 ms MarkObjects: 0.143783 ms  DeleteObjects: 0.006554 ms)
+
+UnloadTime: 0.358026 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 100.
+Total: 0.702943 ms (FindLiveObjects: 0.005734 ms CreateObjectMapping: 0.010241 ms MarkObjects: 0.143783 ms  DeleteObjects: 0.003277 ms)
 
 Here
  
@@ -60,83 +72,30 @@ Here
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-The server has disconnected from the client. MostTlikely thehse server hashut dconnec
- ed
- from tae client. Most li
-k
-ely the server has shut down.
+The server has disconnected from the client. Most likely the server has shut down.
  
 (Filename:  Line: 745)
 
-Disconnected from server: Disconnected
+The server has disconnected from the client. Most likely the server has shut down.
  
-(FilenaDe: C:/Becited frtowmrks/rder: D3sconnec5t90b
-60
-/artinfactsC:/BuildAgent/yeorGe/n63datc6385190b60/artifacts/StandalonePla
-y
-erGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename:  Line: 745)
 
-UnlloadTime: 0.401038 ms.3
-96532 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files:: 0)
-
-Unloading 2 unused Assets to reduce memory usas to Loaded Objects now: 87.
-Total: 0.958559 ms (Fins Livw: 87ec
-Tota0.00491.0ms Cr2 ameObs (FindpLiveO0.015s: 60.005734 ms Creat0.150338apms  Del0.01433cts:  MarkObjects: 
-
-0.220796 ms  DeleteObjects: 0.014747 ms)
-
-LLaoad MapUniEyEngi.NetwotrkMkMssssageInf
+Disconnected from server: iscisconnectedo
  
- (
-(Fileenamme:: C:/BuldAgent/t/work/d63dfc635190b0b0/0aartifacts/StanddalonePlayerrGnererated/UnityEngineDebug.pp Line: 4949
+(Filename: C:/BuildAgent/work/d63dfc6m85190b60/ Diticoannected
+ 
+(Filename: C:/BuildAgent/work/d63dfc6l85190b60/yerGenerated/UnityEngineDebug.cpp Line: 49)
 
+neDebug.cpp Line: 49)
+
+UnloadTime: 0.395713 ms
+Unloading 3 Unloading 3 Unused Serialalized files (Serialized file now loaoaded: 0 / Dirty seriazed fi fes: 0)
+0
 )
 
-UUlloodTimadTime: 821950797 
-ms
-UUnloading 1 Unused Serializedffiles (iles (Serialized fil eoaded: 0 / Di: 0 / erirty seriailes: 0)
+Unlona 7 un 7 unussetssed Assets to reduce memory usage. Loaded Objects now: 88.
+Total: 1.129789 ms  usage. LdLadeeObjects:bjects now: 88.
+ateObjec1.11p946 ms0.013927 ms MarkObj0.00490.127398 ms  DeleteObjects:00.018843 ms)
 
-Us: 0)
-nlodiUnloadnus 1 unused Assets to reduce memory usage. Loaded Objects now
-: 100.
-Total705 ms (Fin1 LisveObnedLive0.005734 mests  CreateObjectMapping: jectMapping: MarkObjectss MarkObjects:: 0.173687 ms  Dele0.191302 mseObje Dele0e008192 ms)
-
-Objects: 0.003686 ms)
-
-Here
- 
-(
-F
-(Filenam C: CBu/BuildAge/wt/rkord6/ddf3d63c63851900/artifaitfactan/dtlonndalonePlayeerated/UnedtyUnityEngineDebug.cpp Line)
-
-49)
-
-The sserver has ddisconnected from  the cllent. Most likely the server has shut down.
-own
-.
- 
-(Filename:  Line: 7
-4
-5)
-
-Disconnected from server: Disconnected
- 
-
-(
-Fiilename: C:/BuildAgent/work/d63dfc6385190b69/artif/artifacatdalSonePlloyerGenyerGened/UnityEngineDebug.cpp Line:Lin9)
-
-49)
-
-UnlonldTime: : .388339 msms
-
-Unloading  1 UnusedSerialized fileles (Serialized fies s now loade: : 0 / Dirty seriaized diles: 0)
- 
-Ufliles: 0)
-u
-Unloadsng 2suts to rd Assetce ms to reduce memory usage. Loaded Obje
-Total: : .1150
-Total: FindLi40eObjec (Fin0.004915 ms Creat005b7ectMms CreateObjappingpin0.00.0122ms9 Mas kOarjObject0.10.1482ms  DeleteObjeObjse 0.0: 35.013927 ms)
-
-8 ms)
+kObjects: 0.156073 ms  DeleteObjects: 0.033590 ms)
 

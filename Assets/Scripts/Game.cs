@@ -6,9 +6,12 @@ public class Game : MonoBehaviour {
 
 	// Use this for initialization
 	public List<List<GameObject>> playerObjects = new List<List<GameObject>>{};
+	public GameObject Cylinder;
+	public int me;
+	public static string server = null;
 	
 	void Start () {
-
+		server = Menu.server;
 		Debug.Log("Here");
 		switch(Network.peerType){
 		default:
@@ -16,19 +19,22 @@ public class Game : MonoBehaviour {
 
 			break;
 		case NetworkPeerType.Client:
-			Menu.connectionList.Clear();
 			break;
 		case NetworkPeerType.Server:
 			//We have to null then build up the connection list to clients first.
-			networkView.RPC("Initialize",RPCMode.OthersBuffered);
+			networkView.RPC("Clear",RPCMode.OthersBuffered);
 			for(int i = 0; i < Menu.connectionList.Count; i++){
 				networkView.RPC("AddConnectionList",RPCMode.OthersBuffered,Menu.connectionList[i].guid,Menu.connectionList[i].username);
 			}
+			networkView.RPC("Initialize",RPCMode.OthersBuffered);
+			//some test stuff.
 			for(int i = 0; i < Menu.connectionList.Count; i++){
 				playerObjects.Add(new List<GameObject>());
 				for(int j = 0; j<5; j++){
-					playerObjects[i].Add(GameObject.CreatePrimitive(PrimitiveType.Cube));
-					playerObjects[i][j].transform.position = new Vector3(i*1, j*1.5F, i*2);
+					string name = "Cylinder";
+					string guid = Menu.connectionList[i].guid;
+					Vector3 location = new Vector3(i*1, 1, j*2);
+					networkView.RPC("SpawnObject",RPCMode.All,i,guid,name,location);
 				}
 			}
 			break;
@@ -81,19 +87,50 @@ public class Game : MonoBehaviour {
 	}
 
 	[RPC]
+	void Clear(NetworkMessageInfo info) {
+		if(Network.isServer){
+			return;
+		} else if(Network.isClient){
+			if(info.sender.guid == server){
+				Menu.connectionList.Clear();
+			}
+		}
+	}
+
+	[RPC]
 	void Initialize(NetworkMessageInfo info) {
 		if(Network.isServer){
 			return;
 		} else if(Network.isClient){
-			Menu.connectionList.Clear();
+			if(info.sender.guid == server){
+				me = Menu.connectionList.FindIndex(x => x.guid == Network.player.guid);
+			}
 		}
 	}
+	
+	[RPC]
+	void SpawnObject(int i, string guid, string name, Vector3 location, NetworkMessageInfo info){
+		//if(info.sender.guid == server){
+		//TODO : Fuck unity rpcs
+			if(!(Menu.connectionList[i].guid == guid)){
+				i = Menu.connectionList.FindIndex(x => x.guid == guid);
+			}
+			while(i>=playerObjects.Count){
+				playerObjects.Add(new List<GameObject>());
+			}
+			playerObjects[i].Add((GameObject)Instantiate(Resources.Load("Cylinder")));
+			playerObjects[i][playerObjects[i].Count-1].transform.position = location;
+		//}
+	}
+	
 	[RPC]
 	void AddConnectionList(string guid, string username, NetworkMessageInfo info) {
 		if(Network.isServer){
 			return;
 		} else if(Network.isClient){
-			Menu.connectionList.Add(new Menu.NConn(username,guid));
+			if(info.sender.guid == server){
+				Menu.connectionList.Add(new Menu.NConn(username,guid));
+			}
 		}
 	}
 }

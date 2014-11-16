@@ -35,7 +35,8 @@ public class Menu : MonoBehaviour {
 	public NConn me;
 
 	public static List<NConn> connectionList = new List<NConn>{};
-
+	public static string server = null;
+	
 	public string username = "";
 	public string type = "none";
 
@@ -53,6 +54,7 @@ public class Menu : MonoBehaviour {
 					connectionList.Clear();
 					ready = 0;
 					Network.InitializeServer(10,Port);
+					server = Network.player.guid;
 				}
 			} else if(type == "client"){
 				GUI.Label(new Rect(100,125,100,25),"Username:");
@@ -67,6 +69,7 @@ public class Menu : MonoBehaviour {
 					me = new NConn(username);
 					connectionList.Clear();
 					ready = 0;
+					server = null;
 					int pt;
 					if(stringPort.Equals("")){
 						Network.Connect(IP,Port);
@@ -88,7 +91,7 @@ public class Menu : MonoBehaviour {
 			}
 			if(GUI.Button(new Rect(100,150+(i*25),100,25),(me.ready?"Ready!":"Not Ready!"))){
 				me.ready = !me.ready;
-				networkView.RPC("Ready",RPCMode.All,me.ready, me.guid);
+				networkView.RPC("Ready",RPCMode.Server,me.ready, me.guid);
 			}
 			if(GUI.Button(new Rect(100,175+(i*25),100,25),"Disconnect")){
 				Network.Disconnect(250);	
@@ -123,6 +126,7 @@ public class Menu : MonoBehaviour {
 	void awake(){
 		DontDestroyOnLoad(this);
 	}
+
 	void OnConnectedToServer(){
 		//called on client when client connects
 		networkView.RPC("Initialize",RPCMode.Server,username);
@@ -155,7 +159,7 @@ public class Menu : MonoBehaviour {
 				connectionList.RemoveAt(i);
 				//broadcast client removal.
 				Network.RemoveRPCs(player);
-				networkView.RPC("PlayerDisconnected",RPCMode.All,p);
+				networkView.RPC("PlayerDisconnected",RPCMode.Others,p);
 				break;
 			}
 		}
@@ -175,8 +179,11 @@ public class Menu : MonoBehaviour {
 				}
 			}
 		} else if(Network.isClient){
-			me.guid = input;
-			networkView.RPC("RequestUsers",RPCMode.Server);
+			if(server == null || server == info.sender.guid){
+				server = info.sender.guid;
+				me.guid = input;
+				networkView.RPC("RequestUsers",RPCMode.Server);
+			}
 		}
 	}
 
@@ -194,25 +201,29 @@ public class Menu : MonoBehaviour {
 	[RPC]
 	void PlayerConnected(string username, string guid, NetworkMessageInfo info){
 		if(Network.isClient){
-			for(int i = 0; i<connectionList.Count; i++){
-				if(connectionList[i].guid == guid){
-					return;
+			if(info.sender.guid == server){
+				for(int i = 0; i<connectionList.Count; i++){
+					if(connectionList[i].guid == guid){
+						return;
+					}
 				}
+				NConn p = new NConn(username);
+				p.guid = guid;
+				connectionList.Add(p);
 			}
-			NConn p = new NConn(username);
-			p.guid = guid;
-			connectionList.Add(p);
 		}
 	}
 
 	[RPC]
 	void PlayerDisconnected(string n, NetworkMessageInfo info){
 		if(Network.isClient){
-			int c = connectionList.Count;
-			for(int i = 0; i<c; i++){
-				if(n == connectionList[i].guid){
-					connectionList.RemoveAt(i);
-					return;
+			if(info.sender.guid == server){
+				int c = connectionList.Count;
+				for(int i = 0; i<c; i++){
+					if(n == connectionList[i].guid){
+						connectionList.RemoveAt(i);
+						return;
+					}
 				}
 			}
 		}
@@ -221,32 +232,50 @@ public class Menu : MonoBehaviour {
 	[RPC]
 	void Ready(bool rdy, string guid, NetworkMessageInfo info) {
 		//do i need to search?
-		int c = connectionList.Count;
-		for(int i = 0; i<c; i++){
-			if(guid == connectionList[i].guid){
-				connectionList[i].ready = rdy;
-				break;
+		if(Network.isClient){
+			if(info.sender.guid == server){
+				int c = connectionList.Count;
+				for(int i = 0; i<c; i++){
+					if(guid == connectionList[i].guid){
+						connectionList[i].ready = rdy;
+						break;
+					}
+				}
 			}
 		}
 		if(Network.isServer){
-			if(rdy){
-				ready++;
-				if(ready >= 2 && ready == connectionList.Count){
-					networkView.RPC("LoadMap",RPCMode.All);
+			if(info.sender.guid == guid){
+				int c = connectionList.Count;
+				for(int i = 0; i<c; i++){
+					if(guid == connectionList[i].guid){
+						connectionList[i].ready = rdy;
+						break;
+					}
 				}
-			} else {
-				ready--;
+				networkView.RPC("Ready",RPCMode.Others,rdy,guid);
+				if(rdy){
+					ready++;
+					if(ready >= 2 && ready == connectionList.Count){
+						networkView.RPC("LoadMap",RPCMode.All);
+					}
+				} else {
+					ready--;
+				}
 			}
 		}
 	}
 
 	[RPC]
 	void LoadMap(NetworkMessageInfo info){
-		if(Network.isClient){
-			Debug.Log("Load Map" + info);
-		} else if (Network.isServer){
-			Debug.Log("Load Map" + info);
-		}
-		Application.LoadLevel(1);
+		Debug.Log(info.sender.guid + " " + server);
+		//if(info.sender.guid == server){
+		//TODO : fuck unity rpcs again.
+			if(Network.isClient){
+				Debug.Log("Load Map" + info);
+			} else if (Network.isServer){
+				Debug.Log("Load Map" + info);
+			}
+			Application.LoadLevel(1);
+		//}
 	}
 }
