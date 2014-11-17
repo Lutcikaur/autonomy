@@ -8,7 +8,6 @@
 using UnityEngine;
 using System.Collections;
 
-
 public class HexWorld : MonoBehaviour 
 {
 	public HexChunk hexChunkPrefab;
@@ -37,10 +36,12 @@ public class HexWorld : MonoBehaviour
 	{
 		Initialize();
 	}
-	
-	
+
+
 	void Start() 
 	{
+		isInitialized = false;
+		Debug.Log ("Run");
 		StartCoroutine( "GenerateHexWorld" );
 	}
 	
