@@ -6,6 +6,7 @@ Direct3D:
     Vendor:   ATI
     VRAM:     1011 MB
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Adam\Documents\autonomy\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
@@ -14,6 +15,32 @@ Loading C:\Users\Adam\Documents\autonomy\auto_Data\Managed\Assembly-CSharp.dll i
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+=======
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.245 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
+Initialize engine version: 4.5.5f1 (7684ad0c5a44)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6810)
+    Vendor:   ATI
+    VRAM:     2030 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.069 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
+>>>>>>> 9624810a20d91135aa42759a89b2ef0360ec1955
 Initialize engine version: 4.5.5f1 (7684ad0c5a44)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -22,6 +49,7 @@ Direct3D:
     Vendor:   ATI
     VRAM:     1011 MB
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
 Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Adam\Documents\autonomy\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
@@ -50,6 +78,20 @@ desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\System.dll (this message is harmless)
 Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\System.dll (this message is harmless)
 0 860187537666654087
+=======
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.073 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
+0 1031324352932388224
+>>>>>>> 9624810a20d91135aa42759a89b2ef0360ec1955
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
@@ -59,6 +101,7 @@ Load MapUnityEngine.NetworkMessageInfo
 
  
  
+<<<<<<< HEAD
 (Filename: C:/
 ild
 Agent/work/d63duild38e5190b60/d63difacts/90tandalonePlayerGeneraoneeP/UnityEngineDebug.cpp Line: 49)
@@ -101,6 +144,50 @@ Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty seri
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 118.
 Total: 2.034049 ms (FindLiveObjects: 0.021573 ms CreateObjectMapping: 0.014895 ms MarkObjects: 0.239874 ms  DeleteObjects: 0.572204 ms)
+=======
+(Fi ename: C:/Build
+A
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/rated/SnitydalonePlebug.cpperated/Unit
+y
+EngineDebug.cpp Line: 49)
+
+Load MapUnityEngine.NetworkMesLoad MapU
+ni
+tyEngine.NetworkMessgent/wor
+k
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/Un
+i
+tyEngineDebug.cpp Line: 49)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.437083 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 121.
+Total: 1.222359 ms (FindLiveObjects: 0.018433 ms CreateObjectMapping: 0.018433 ms MarkObjects: 0.129445 ms  DeleteObjects: 0.474360 ms)
+
+Run
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Here
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 0.389155 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 118.
+Total: 1.103154 ms (FindLiveObjects: 0.012289 ms CreateObjectMapping: 0.019252 ms MarkObjects: 0.152794 ms  DeleteObjects: 0.328119 ms)
+
+UnloadTime: 0.406360 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 117.
+Total: 1.122817 ms (FindLiveObjects: 0.020072 ms CreateObjectMapping: 0.014337 ms MarkObjects: 0.154433 ms  DeleteObjects: 0.361300 ms)
+>>>>>>> 9624810a20d91135aa42759a89b2ef0360ec1955
 
 Run
  
@@ -125,29 +212,59 @@ Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
+<<<<<<< HEAD
 UnloadTime: 1.353978 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 89.
 Total: 3.657180 ms (FindLiveObjects: 0.007191 ms CreateObjectMapping: 0.007704 ms MarkObjects: 0.104270 ms  DeleteObjects: 3.014605 ms)
+=======
+UnloadTime: 2.198526 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 89.
+Total: 6.318253 ms (FindLiveObjects: 0.007783 ms CreateObjectMapping: 0.018024 ms MarkObjects: 0.160168 ms  DeleteObjects: 5.162665 ms)
+>>>>>>> 9624810a20d91135aa42759a89b2ef0360ec1955
 
 Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
+<<<<<<< HEAD
 UnloadTime: 1.381201 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 89.
 Total: 3.421415 ms (FindLiveObjects: 0.007704 ms CreateObjectMapping: 0.007191 ms MarkObjects: 0.105811 ms  DeleteObjects: 2.801441 ms)
+=======
+UnloadTime: 1.868357 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 89.
+Total: 6.311289 ms (FindLiveObjects: 0.007783 ms CreateObjectMapping: 0.023349 ms MarkObjects: 0.159349 ms  DeleteObjects: 5.495291 ms)
+>>>>>>> 9624810a20d91135aa42759a89b2ef0360ec1955
 
 Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
+<<<<<<< HEAD
 UnloadTime: 1.243030 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 88.
 Total: 3.381350 ms (FindLiveObjects: 0.007704 ms CreateObjectMapping: 0.007704 ms MarkObjects: 0.082697 ms  DeleteObjects: 2.793736 ms)
+=======
+UnloadTime: 1.742599 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 88.
+Total: 7.152685 ms (FindLiveObjects: 0.007783 ms CreateObjectMapping: 0.017204 ms MarkObjects: 0.110602 ms  DeleteObjects: 6.448518 ms)
+
+UnloadTime: 0.333035 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 85.
+Total: 0.603806 ms (FindLiveObjects: 0.004915 ms CreateObjectMapping: 0.011060 ms MarkObjects: 0.110192 ms  DeleteObjects: 0.003277 ms)
+>>>>>>> 9624810a20d91135aa42759a89b2ef0360ec1955
 

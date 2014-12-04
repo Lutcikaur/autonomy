@@ -137,68 +137,107 @@ public class HexWorld : MonoBehaviour
 			return -Vector2.one;
 
 
-		// where is this hexagon?
-
-		float _z = hitPoint.z;
-		_z /= Mathf.Sin( 30f * Mathf.Deg2Rad );
-		_z /= 1.5f;
-		_z /= tileRadius;
+		float offsety = hitPoint.z;
+		float offsetx = hitPoint.x-0.138f;
 		
-		int z = Mathf.FloorToInt( _z );
-
-		float _x = hitPoint.x;
-		_x /= Mathf.Cos( 30f * Mathf.Deg2Rad );
-		_x /= tileRadius;
-
-		if ( z % 2 == 1 )
-			_x -= 0.5f;
-
-		int x = Mathf.FloorToInt( _x );
+		float magicbase = Mathf.Sqrt (3f);
+		float magic = magicbase*0.5f;
+		float zone = (offsetx)/magic; //normalized, 0->1 as you cross through the x axis
+		float happy = zone%2;
+		float tempx = 0, tempz = 0;
+		float zonez = offsety%3f;
+		float temp = offsety%1.5f;
+		
+		//y==z, x==x
+		
+		int hexx = -10;
+		int hexy = -10;
+		
+		if(zonez >= 0f && zonez <= 0.5f){
+			if(happy<1){
+				tempx = 0.5f*(2-happy)-0.5f;
+			} else {
+				tempx = 0.5f*happy-0.5f;
+			}
+			if(tempx < zonez){
+				//inside
+				hexx = Mathf.FloorToInt(offsetx/magicbase);
+				hexy = Mathf.FloorToInt(offsety/1.5f);
+			} else {
+				//outside
+				hexx = Mathf.FloorToInt((offsetx-magic)/magicbase);
+				hexy = Mathf.FloorToInt(offsety/1.5f)-1;
+			}
+		} else if (zonez > 0.5f && zonez <= 1.5f){
+			hexx = Mathf.FloorToInt(offsetx/magicbase);
+			hexy = Mathf.FloorToInt(offsety/1.5f);
+		} else if (zonez > 1.5f && zonez <= 2f){
+			happy=(zone+1)%2;
+			if(happy<1){
+				tempx = 0.5f*(2-happy)-0.5f;
+				
+			} else {
+				tempx = 0.5f*happy-0.5f;
+			}
+			if(tempx < zonez-1.5f){
+				//inside
+				hexx = Mathf.FloorToInt((offsetx-magic)/magicbase);
+				hexy = Mathf.FloorToInt(offsety/1.5f);
+			} else {
+				//outside
+				hexx = Mathf.FloorToInt(offsetx/magicbase);
+				hexy = Mathf.FloorToInt(offsety/1.5f)-1;
+			}
+		} else if (zonez > 2f && zonez <= 3f){
+			hexx = Mathf.FloorToInt((offsetx-magic)/magicbase);
+			hexy = Mathf.FloorToInt(offsety/1.5f);
+		}
 
 
 		// what chunk is it in?
 
-		int cX = Mathf.FloorToInt( x / chunkSize );
-		int cZ = Mathf.FloorToInt( z / chunkSize );
+		int cX = Mathf.FloorToInt( hexx / chunkSize );
+		int cY = Mathf.FloorToInt( hexy / chunkSize );
 
 
 		// where is it relative to the chunk?
 
-		int rX = x - ( chunkSize * cX );
-		int rZ = z - ( chunkSize * cZ );
+		int rX = hexx - ( chunkSize * cX );
+		int rY = hexy - ( chunkSize * cY );
 
 
 		// debug for testing
-		if ( Application.isEditor )
-			Debug.Log( "world pos " + x + " " + z + " : chunk " + cX + " " + cZ + " : chunk pos " + rX + " " + rZ );
+		if ( Application.isEditor ) {
+			Debug.Log( "world pos " + hexx + " " + hexy + " : chunk " + cX + " " + cY + " : chunk pos " + rX + " " + rY );
+		}
 
 
 		// check if in range 
 
-		if ( x < 0 || x >= worldSize.x || z < 0 || z >= worldSize.y )
+		if(hexx <0 || hexy <0 || hexx >= worldSize.x || hexy >= worldSize.y)
 			return -Vector2.one;
+
 
 
 		// if the value for i is -1, set the hexagon back to the last texture index value assigned
 		if ( i == -1 )
 		{
-			i = hexWorldData[ x, z ];
+			i = hexWorldData[ hexx, hexy ];
 		}
 
 
 		// update hexWorldData with new value if not value for highlighted
 		if ( i != 1 )
 		{
-			hexWorldData[ x, z ] = i;
+			hexWorldData[ hexx, hexy ] = i;
 		}
 
 
 		// tell the chunk to update UVs for selected tile
-
-		HexChunk currChunk = hexChunks[ cX, cZ ];
-		currChunk.SetHexUVs( rX, rZ, i );
-
+		HexChunk currChunk = hexChunks[ cX, cY ];
+		currChunk.SetHexUVs( rX, rY, i );
+		
 		// return the data coordinates of this hexagon
-		return new Vector2( x, z );
+		return new Vector2( hexx, hexy );
 	}
 }
