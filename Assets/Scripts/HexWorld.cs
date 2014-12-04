@@ -22,8 +22,7 @@ public class HexWorld : MonoBehaviour
 	public float offsetY = 0.01f; // Y offset for tile, combat z-fighting with terrain (or use overlay shader)
 	
 	
-	private int[,] hexWorldData;
-
+	private HexData[,] hexWorldData;
 	private HexChunk[,] hexChunks;
 
 	private bool isInitialized = false;
@@ -31,7 +30,10 @@ public class HexWorld : MonoBehaviour
 
 	//	-------------------------------------------------------  Persistent Functions
 	
-	
+	public struct HexData{
+		public int hexColor;
+	};
+
 	void Awake() 
 	{
 		Initialize();
@@ -70,15 +72,7 @@ public class HexWorld : MonoBehaviour
 		worldSize.y = Mathf.RoundToInt( worldSize.y );
 
 		// create a data array to store the texture index value of each hexagon
-		hexWorldData = new int[ (int)worldSize.x, (int)worldSize.y ];
-
-		for ( int y = 0; y < (int)worldSize.y; y ++ )
-		{
-			for ( int x = 0; x < (int)worldSize.x; x ++ )
-			{
-				hexWorldData[ x, y ] = 0; // default value
-			}
-		}
+		hexWorldData = new HexData[(int)worldSize.x,(int)worldSize.y];
 	}
 	
 
@@ -144,9 +138,8 @@ public class HexWorld : MonoBehaviour
 		float magic = magicbase*0.5f;
 		float zone = (offsetx)/magic; //normalized, 0->1 as you cross through the x axis
 		float happy = zone%2;
-		float tempx = 0, tempz = 0;
+		float tempx = 0;
 		float zonez = offsety%3f;
-		float temp = offsety%1.5f;
 		
 		//y==z, x==x
 		
@@ -222,14 +215,15 @@ public class HexWorld : MonoBehaviour
 		// if the value for i is -1, set the hexagon back to the last texture index value assigned
 		if ( i == -1 )
 		{
-			i = hexWorldData[ hexx, hexy ];
+			i = hexWorldData[hexx,hexy].hexColor;
+
 		}
 
 
 		// update hexWorldData with new value if not value for highlighted
 		if ( i != 1 )
 		{
-			hexWorldData[ hexx, hexy ] = i;
+			hexWorldData[hexx,hexy].hexColor = i;
 		}
 
 
