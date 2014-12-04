@@ -10,11 +10,10 @@ Platform assembly: E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (
 Loading E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.069 seconds
+- Completed reload, in  0.245 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
-Platform assembly: E:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
 Initialize engine version: 4.5.5f1 (7684ad0c5a44)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -27,12 +26,30 @@ Platform assembly: E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (
 Loading E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.063 seconds
+- Completed reload, in  0.069 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
+Initialize engine version: 4.5.5f1 (7684ad0c5a44)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6810)
+    Vendor:   ATI
+    VRAM:     2030 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.073 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
 Platform assembly: E:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
-0 549439175884089405
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
+Platform assembly: E:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
+0 1031324352932388224
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
@@ -42,123 +59,101 @@ Load MapUnityEngine.NetworkMessageInfo
 
  
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Fi ename: C:/Build
+A
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/rated/SnitydalonePlebug.cpperated/Unit
+y
+EngineDebug.cpp Line: 49)
 
-Load MapUnityEngine.NetworkMessageInfo
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+Load MapUnityEngine.NetworkMesLoad MapU
+ni
+tyEngine.NetworkMessgent/wor
+k
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/Un
+i
+tyEngineDebug.cpp Line: 49)
 
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-UnloadTime: 0.316241 ms
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.437083 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 115.
-Total: 1.088821 ms (FindLiveObjects: 0.015566 ms CreateObjectMapping: 0.011879 ms MarkObjects: 0.122072 ms  DeleteObjects: 0.395711 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 121.
+Total: 1.222359 ms (FindLiveObjects: 0.018433 ms CreateObjectMapping: 0.018433 ms MarkObjects: 0.129445 ms  DeleteObjects: 0.474360 ms)
+
+Run
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Here
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 0.348193 ms
+UnloadTime: 0.389155 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 112.
-Total: 2.198535 ms (FindLiveObjects: 0.017614 ms CreateObjectMapping: 0.020481 ms MarkObjects: 0.154843 ms  DeleteObjects: 0.326892 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 118.
+Total: 1.103154 ms (FindLiveObjects: 0.012289 ms CreateObjectMapping: 0.019252 ms MarkObjects: 0.152794 ms  DeleteObjects: 0.328119 ms)
+
+UnloadTime: 0.406360 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 117.
+Total: 1.122817 ms (FindLiveObjects: 0.020072 ms CreateObjectMapping: 0.014337 ms MarkObjects: 0.154433 ms  DeleteObjects: 0.361300 ms)
+
+Run
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Here
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
+Run
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Here
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-The server has disconnected from the client. Most likely the server has shut down.
- 
-(Filename:  Line: 745)
+UnloadTime: 2.198526 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 89.
+Total: 6.318253 ms (FindLiveObjects: 0.007783 ms CreateObjectMapping: 0.018024 ms MarkObjects: 0.160168 ms  DeleteObjects: 5.162665 ms)
 
 Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 2.389017 ms
-UnloadTime: 2.615957 ms
+UnloadTime: 1.868357 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 421 unused Assets to reduce memory usage. Loaded Objects now: 93.
-Total: 57.219669 ms (FindLiveObjects: 0.024578 ms CreateObjectMapping: 0.071277 ms MarkObjects: 0.113470 ms  DeleteObjects: 56.250053 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 89.
+Total: 6.311289 ms (FindLiveObjects: 0.007783 ms CreateObjectMapping: 0.023349 ms MarkObjects: 0.159349 ms  DeleteObjects: 5.495291 ms)
 
+Disconnected from server: Disconnected
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 1.742599 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 421 unused Assets to reduce memory usage. Loaded Objects now: 90.
-Total: 59.260494 ms (FindLiveObjects: 0.024578 ms CreateObjectMapping: 0.074964 ms MarkObjects: 0.167132 ms  DeleteObjects: 58.399021 ms)
+Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 88.
+Total: 7.152685 ms (FindLiveObjects: 0.007783 ms CreateObjectMapping: 0.017204 ms MarkObjects: 0.110602 ms  DeleteObjects: 6.448518 ms)
 
-UnloadTime: 0.327711 ms
+UnloadTime: 0.333035 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 86.
-Total: 0.723423 ms (FindLiveObjects: 0.005325 ms CreateObjectMapping: 0.018843 ms MarkObjects: 0.147470 ms  DeleteObjects: 0.007783 ms)
-
-0 549439175884089405
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Load MapUnityEngine.NetworkMessageInfo
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
- 
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Load MapUnityEngine.NetworkMessageInfo
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-UnloadTime: 0.512049 ms
-UnloadTime: 0.355976 ms
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 119.
-Total: 1.536557 ms (FindLiveObjects: 0.022530 ms CreateObjectMapping: 0.030722 ms MarkObjects: 0.185157 ms  DeleteObjects: 0.764387 ms)
-
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 113.
-Total: 1.168701 ms (FindLiveObjects: 0.017204 ms CreateObjectMapping: 0.016795 ms MarkObjects: 0.183108 ms  DeleteObjects: 0.410458 ms)
-
-Here
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Here
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-Disconnected from server: Disconnected
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Disconnected from server: Disconnected
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-UnloadTime: 2.462342 ms
-UnloadTime: 2.163715 ms
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 421 unused Assets to reduce memory usage. Loaded Objects now: 95.
-Total: 72.572136 ms (FindLiveObjects: 0.026626 ms CreateObjectMapping: 0.092988 ms MarkObjects: 0.181060 ms  DeleteObjects: 71.458733 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 421 unused Assets to reduce memory usage. Loaded Objects now: 90.
-Total: 76.459618 ms (FindLiveObjects: 0.024578 ms CreateObjectMapping: 0.072096 ms MarkObjects: 0.170000 ms  DeleteObjects: 75.541206 ms)
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 85.
+Total: 0.603806 ms (FindLiveObjects: 0.004915 ms CreateObjectMapping: 0.011060 ms MarkObjects: 0.110192 ms  DeleteObjects: 0.003277 ms)
 
