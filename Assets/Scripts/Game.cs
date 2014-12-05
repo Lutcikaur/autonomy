@@ -76,7 +76,7 @@ public class Game : MonoBehaviour {
 			for (int i=0; i<=(6*workingRadi); i++) {
 				tempCheckRange = Mathf.Abs(tempX - x) + Mathf.Abs(tempY - y);
 				if(tempCheckRange==workingRadi){
-					if(HexWorld.hexWorldData[tempX,tempY].unit==NULL){
+					if(hexWorld.hexWorldData[tempX,tempY].unit==null){
 						neighborList[neighborIndex]=new Vector2(tempX,tempY);
 						neighborIndex++;
 					}
@@ -159,7 +159,7 @@ public class Game : MonoBehaviour {
 				GUI.Label(new Rect(10,(10+offset),100,25),Menu.connectionList[i].username);
 				//button to kick
 				//playerObjects[_i][playerObjects[_i].Count-1].transform.position = _location;
-				for(j=0;j<depotList[i].Count;j++){
+				for(int j=0;j<depotList[i].Count;j++){
 					GUI.Label(new Rect(100+(100*j),(10+offset),100,25),depotList[i][j]);
 				}
 			}
