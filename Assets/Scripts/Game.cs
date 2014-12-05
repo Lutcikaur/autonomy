@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class Game : MonoBehaviour {
 
 	// Use this for initialization
+	public HexWorld hexWorld;
 	public List<List<GameObject>> playerObjects = new List<List<GameObject>>{};
 	public GameObject Cylinder;
 	public int me;
@@ -33,7 +34,7 @@ public class Game : MonoBehaviour {
 				for(int j = 0; j<5; j++){
 					string name = "Cylinder";
 					string guid = Menu.connectionList[i].guid;
-					Vector3 location = new Vector3(i*1, 1, j*2);
+					Vector3 location = new Vector3(i,1,j);
 					networkView.RPC("SpawnObject",RPCMode.All,i,guid,name,location);
 				}
 			}
@@ -118,7 +119,11 @@ public class Game : MonoBehaviour {
 				playerObjects.Add(new List<GameObject>());
 			}
 			playerObjects[_i].Add((GameObject)Instantiate(Resources.Load(_name)));
-			playerObjects[_i][playerObjects[_i].Count-1].transform.position = _location;
+			hexWorld.hexWorldData[(int)_location.x,(int)_location.z].unit = _name;
+			Vector2 center = hexWorld.hexWorldData[(int)_location.x,(int)_location.z].center;
+			Vector3 finalloc = new Vector3(center.x,1,center.y);
+			Debug.Log (center.x + " " + center.y + " " + finalloc.x + " " + finalloc.z);
+		playerObjects[_i][playerObjects[_i].Count-1].transform.position = finalloc;
 		//}
 	}
 	

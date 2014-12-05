@@ -22,7 +22,7 @@ public class HexWorld : MonoBehaviour
 	public float offsetY = 0.01f; // Y offset for tile, combat z-fighting with terrain (or use overlay shader)
 	
 	
-	private HexData[,] hexWorldData;
+	public HexData[,] hexWorldData;
 	private HexChunk[,] hexChunks;
 
 	private bool isInitialized = false;
@@ -30,8 +30,10 @@ public class HexWorld : MonoBehaviour
 
 	//	-------------------------------------------------------  Persistent Functions
 	
-	public struct HexData{
-		public int hexColor;
+	public class HexData{
+		public int hexColor = 0;
+		public string unit = null;
+		public Vector2 center = Vector2.zero;
 	};
 
 	void Awake() 
@@ -73,6 +75,21 @@ public class HexWorld : MonoBehaviour
 
 		// create a data array to store the texture index value of each hexagon
 		hexWorldData = new HexData[(int)worldSize.x,(int)worldSize.y];
+		float xoffset = 0.138f;
+		float xdiameter = Mathf.Sqrt(3f);
+		float xoffsetodd = (xdiameter/2f)+xoffset;
+		float yoffset = 1f;
+		float ydiameter = 1.5f;
+		for(int i = 0; i < (int)worldSize.x; i++){
+			for(int j = 0; j < (int)worldSize.y; j++){
+				hexWorldData[i,j] = new HexData();
+				if(j%2 == 1)
+					hexWorldData[i,j].center.x = (xdiameter*i)+xdiameter+xoffset;
+				else 
+					hexWorldData[i,j].center.x = (xdiameter*i)+xoffsetodd;
+				hexWorldData[i,j].center.y = (ydiameter*j)+yoffset;
+			}
+		}
 	}
 	
 
@@ -141,7 +158,7 @@ public class HexWorld : MonoBehaviour
 		float tempx = 0;
 		float zonez = offsety%3f;
 		
-		//y==z, x==x
+		// x==x && y==z
 		
 		int hexx = -10;
 		int hexy = -10;
