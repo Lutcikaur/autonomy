@@ -13,6 +13,7 @@ public class TerrainRaycaster : MonoBehaviour
 	public HexWorld hexWorld;
 	public Transform cameraTx;
 
+
 	public float indicatorTimerMax = 0.1f;
 
 	private float indicatorTimer = 0f;
@@ -104,13 +105,16 @@ public class TerrainRaycaster : MonoBehaviour
 				point = hexWorld.findHex(thisRayPos);
 				//
 				if(b==2){
-					selected = point;
-				} else if(b==3){
-					hexWorld.hexWorldData[(int)point.x,(int)point.y].unitObject = hexWorld.hexWorldData[(int)selected.x,(int)selected.y].unitObject;
-					hexWorld.hexWorldData[(int)point.x,(int)point.y].unit = hexWorld.hexWorldData[(int)selected.x,(int)selected.y].unit;
-					Debug.Log (hexWorld.hexWorldData[(int)selected.x,(int)selected.y].unit);
-					Debug.Log (hexWorld.hexWorldData[(int)point.x,(int)point.y].unit);
-					hexWorld.hexWorldData[(int)point.x,(int)point.y].unitObject.transform.position = new Vector3 (hexWorld.hexWorldData[(int)point.x,(int)point.y].center.x, 1 , hexWorld.hexWorldData[(int)point.x,(int)point.y].center.y);
+					if(hexWorld.hexWorldData[(int)point.x,(int)point.y].unitObject != null){
+						selected = point;
+					} else {
+						selected = -Vector2.one;
+					}
+				} else if(b==3 && selected != -Vector2.one){
+					if(hexWorld.hexWorldData[(int)point.x,(int)point.y].unitObject == null){
+						hexWorld.game.moveUnit(selected,point);
+						selected=point;
+					}
 				} else {
 					hexWorld.SetHexUVs( point, b );
 				}

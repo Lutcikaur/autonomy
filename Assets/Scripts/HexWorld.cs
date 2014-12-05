@@ -13,6 +13,7 @@ public class HexWorld : MonoBehaviour
 	public HexChunk hexChunkPrefab;
 	public Terrain terrain;
 
+	public Game game;
 	public Vector2 worldSize = new Vector2( 100, 100 );
 	public int chunkSize = 50;
 	

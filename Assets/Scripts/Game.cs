@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -196,6 +196,21 @@ public class Game : MonoBehaviour {
 		Debug.Log("Disconnected from server: " + info);
 	}
 
+	public void moveUnit(Vector2 _selected, Vector2 _point){
+		Vector3 selected = new Vector3(_selected.x,1,_selected.y);
+		Vector3 point = new Vector3(_point.x,1,_point.y);
+		networkView.RPC("NetworkMove",RPCMode.All,me,Network.player.guid,selected,point);
+	}
+
+	[RPC]
+	void NetworkMove(int _i, string _guid, Vector3 _selected, Vector3 _point, NetworkMessageInfo info){
+		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject;
+		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit;
+		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject.transform.position = new Vector3 (hexWorld.hexWorldData[(int)_point.x,(int)_point.z].center.x, 1 , hexWorld.hexWorldData[(int)_point.z,(int)_point.z].center.y);
+		hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject = null;
+		hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit = null;
+	}
+
 	[RPC]
 	void Clear(NetworkMessageInfo info) {
 		if(Network.isServer){
@@ -236,11 +251,6 @@ public class Game : MonoBehaviour {
 		Debug.Log (center.x + " " + center.y + " " + finalloc.x + " " + finalloc.z);
 		playerObjects[_i][playerObjects[_i].Count-1].transform.position = finalloc;
 		//}
-	}
-
-	[RPC]
-	void moveObject (int _i, string _guid, Vector3 _location, NetworkMessageInfo info){
-
 	}
 	
 	[RPC]
