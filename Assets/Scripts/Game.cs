@@ -6,6 +6,7 @@ public class Game : MonoBehaviour {
 
 	// Use this for initialization
 	public HexWorld hexWorld;
+	public TerrainRaycaster terrainCaster;
 	public List<List<GameObject>> playerObjects = new List<List<GameObject>>{};
 	public GameObject Cylinder;
 	public int me;
@@ -32,6 +33,7 @@ public class Game : MonoBehaviour {
 			//some test stuff.
 			for(int i = 0; i < Menu.connectionList.Count; i++){
 				playerObjects.Add(new List<GameObject>());
+				depotList.Add (new List<string>());
 				for(int j = 0; j<5; j++){
 					string name = "Cylinder";
 					string guid = Menu.connectionList[i].guid;
@@ -159,9 +161,9 @@ public class Game : MonoBehaviour {
 				GUI.Label(new Rect(10,(10+offset),100,25),Menu.connectionList[i].username);
 				//button to kick
 				//playerObjects[_i][playerObjects[_i].Count-1].transform.position = _location;
-				for(int j=0;j<depotList[i].Count;j++){
-					GUI.Label(new Rect(100+(100*j),(10+offset),100,25),depotList[i][j]);
-				}
+				//for(int j=0;j<depotList[i].Count;j++){
+				//	GUI.Label(new Rect(100+(100*j),(10+offset),100,25),depotList[i][j]);
+				//}
 			}
 			break;
 		case NetworkPeerType.Server:
@@ -220,19 +222,25 @@ public class Game : MonoBehaviour {
 	void SpawnObject(int _i, string _guid, string _name, Vector3 _location, NetworkMessageInfo info){
 		//if(info.sender.guid == server){
 		//TODO : Fuck unity rpcs
-			if(!(Menu.connectionList[_i].guid == _guid)){
-				_i = Menu.connectionList.FindIndex(x => x.guid == _guid);
-			}
-			while(_i>=playerObjects.Count){
-				playerObjects.Add(new List<GameObject>());
-			}
-			playerObjects[_i].Add((GameObject)Instantiate(Resources.Load(_name)));
-			hexWorld.hexWorldData[(int)_location.x,(int)_location.z].unit = _name;
-			Vector2 center = hexWorld.hexWorldData[(int)_location.x,(int)_location.z].center;
-			Vector3 finalloc = new Vector3(center.x,1,center.y);
-			Debug.Log (center.x + " " + center.y + " " + finalloc.x + " " + finalloc.z);
+		if(!(Menu.connectionList[_i].guid == _guid)){
+			_i = Menu.connectionList.FindIndex(x => x.guid == _guid);
+		}
+		while(_i>=playerObjects.Count){
+			playerObjects.Add(new List<GameObject>());
+		}
+		playerObjects[_i].Add((GameObject)Instantiate(Resources.Load(_name)));
+		hexWorld.hexWorldData[(int)_location.x,(int)_location.z].unit = _name;
+		hexWorld.hexWorldData[(int)_location.x,(int)_location.z].unitObject = playerObjects[_i][playerObjects[_i].Count-1];
+		Vector2 center = hexWorld.hexWorldData[(int)_location.x,(int)_location.z].center;
+		Vector3 finalloc = new Vector3(center.x,1,center.y);
+		Debug.Log (center.x + " " + center.y + " " + finalloc.x + " " + finalloc.z);
 		playerObjects[_i][playerObjects[_i].Count-1].transform.position = finalloc;
 		//}
+	}
+
+	[RPC]
+	void moveObject (int _i, string _guid, Vector3 _location, NetworkMessageInfo info){
+
 	}
 	
 	[RPC]

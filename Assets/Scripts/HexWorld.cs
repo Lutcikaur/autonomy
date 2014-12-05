@@ -33,6 +33,7 @@ public class HexWorld : MonoBehaviour
 	public class HexData{
 		public int hexColor = 0;
 		public string unit = null;
+		public GameObject unitObject = null;
 		public Vector2 center = Vector2.zero;
 	};
 
@@ -140,14 +141,12 @@ public class HexWorld : MonoBehaviour
 	
 	//	-------------------------------------------------------  UV Modifying Functions
 	
-	
-	public Vector2 SetHexUVs( Vector3 hitPoint, int i ) 
-	{
-		// check if initialized
+
+	public Vector2 findHex (Vector3 hitPoint){
 		if ( !isInitialized )
 			return -Vector2.one;
-
-
+		
+		
 		float offsety = hitPoint.z;
 		float offsetx = hitPoint.x-0.138f;
 		
@@ -203,6 +202,34 @@ public class HexWorld : MonoBehaviour
 			hexy = Mathf.FloorToInt(offsety/1.5f);
 		}
 
+		if(hexx <0 || hexy <0 || hexx >= worldSize.x || hexy >= worldSize.y)
+			return -Vector2.one;
+
+		// debug for testing
+		int cX = Mathf.FloorToInt( hexx / chunkSize );
+		int cY = Mathf.FloorToInt( hexy / chunkSize );
+		
+		
+		// where is it relative to the chunk?
+		
+		int rX = hexx - ( chunkSize * cX );
+		int rY = hexy - ( chunkSize * cY );
+		if ( Application.isEditor ) {
+			//Debug.Log( "world pos " + hexx + " " + hexy + " : chunk " + cX + " " + cY + " : chunk pos " + rX + " " + rY );
+		}
+
+		return new Vector2(hexx,hexy);
+	}
+
+	public Vector2 SetHexUVs( Vector2 hex, int i ) 
+	{
+		// check if initialized
+
+		int hexx = Mathf.FloorToInt(hex.x);
+		int hexy = Mathf.FloorToInt(hex.y);
+
+		if(hexx <0 || hexy <0 || hexx >= worldSize.x || hexy >= worldSize.y)
+			return -Vector2.one;
 
 		// what chunk is it in?
 
@@ -214,19 +241,8 @@ public class HexWorld : MonoBehaviour
 
 		int rX = hexx - ( chunkSize * cX );
 		int rY = hexy - ( chunkSize * cY );
-
-
-		// debug for testing
-		if ( Application.isEditor ) {
-			Debug.Log( "world pos " + hexx + " " + hexy + " : chunk " + cX + " " + cY + " : chunk pos " + rX + " " + rY );
-		}
-
-
+		
 		// check if in range 
-
-		if(hexx <0 || hexy <0 || hexx >= worldSize.x || hexy >= worldSize.y)
-			return -Vector2.one;
-
 
 
 		// if the value for i is -1, set the hexagon back to the last texture index value assigned
@@ -249,6 +265,6 @@ public class HexWorld : MonoBehaviour
 		currChunk.SetHexUVs( rX, rY, i );
 		
 		// return the data coordinates of this hexagon
-		return new Vector2( hexx, hexy );
+		return new Vector2( hex.x, hex.y );
 	}
 }
