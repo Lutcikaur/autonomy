@@ -5,9 +5,11 @@ using System.Collections.Generic;
 public class Game : MonoBehaviour {
 
 	// Use this for initialization
+	public HexWorld hexWorld;
 	public List<List<GameObject>> playerObjects = new List<List<GameObject>>{};
 	public GameObject Cylinder;
 	public int me;
+	public List<List<string>> depotList = new List<List<string>>{};
 	public static string server = null;
 	
 	void Start () {
@@ -33,7 +35,7 @@ public class Game : MonoBehaviour {
 				for(int j = 0; j<5; j++){
 					string name = "Cylinder";
 					string guid = Menu.connectionList[i].guid;
-					Vector3 location = new Vector3(i*1, 1, j*2);
+					Vector3 location = new Vector3(i,1,j);
 					networkView.RPC("SpawnObject",RPCMode.All,i,guid,name,location);
 				}
 			}
@@ -41,6 +43,109 @@ public class Game : MonoBehaviour {
 		}
 
 	}
+
+	Vector2[] getNeighbors(int x, int y, int radi){
+			
+		//Initializes first neighbor, changes slightly if y coordinate is even.
+		int tempX = x;
+		int tempY = y + 1;
+		int lastTempX = x;
+		int lastTempY = y + 1;
+		int tempCheckRange = 0;
+		string dir = "East";
+		int direction = 1;
+		int workingRadi = 1;
+		int radiCopy = radi;
+		int totalNeighbors = 0;
+		int neighborIndex = 0;
+		while (radiCopy>0) {
+			totalNeighbors=totalNeighbors+(6*radiCopy);
+			radiCopy--;
+		}
+		Vector2[] neighborList = new Vector2[totalNeighbors];
+
+
+		if ((y % 2) > 0) {
+			tempX = x - 1;
+			lastTempX=x-1;
+		}
+
+
+		while (workingRadi<=radi) {
+			direction=1;
+			for (int i=0; i<=(6*workingRadi); i++) {
+				tempCheckRange = Mathf.Abs(tempX - x) + Mathf.Abs(tempY - y);
+				if(tempCheckRange==workingRadi){
+					if(hexWorld.hexWorldData[tempX,tempY].unit==null){
+						neighborList[neighborIndex]=new Vector2(tempX,tempY);
+						neighborIndex++;
+					}
+					lastTempX=tempX;
+					lastTempY=tempY;
+				} else {
+					tempX=lastTempX;
+					tempY=lastTempY;
+					direction++;
+					i--;
+				}
+				switch (direction) {
+				case 1:
+						dir = "East";
+						tempX++;
+						break;
+				case 2:
+						dir = "SE";
+						if(tempY%2==0){
+							tempY--;
+						} else {
+							tempY--;
+							tempX++;
+						}
+						break;
+				case 3:
+						dir = "SW";
+						if(tempY%2==0){
+							tempX--;
+							tempY--;
+						}else{
+							tempY--;
+						}
+						break;
+				case 4:
+						dir = "West";
+						tempX--;
+						break;
+				case 5:
+						dir = "NW";
+						if(tempY%2==0){
+							tempX--;
+							tempY++;
+						}else{
+							tempY++;
+						}
+						break;
+				case 6:
+						dir = "NE";
+						if(tempY%2==0){
+							tempY++;
+						} else {
+							tempY++;
+							tempX++;
+						}
+						break;
+				default:
+						dir = "ERROR";
+						break;							
+				}
+						
+			}
+			workingRadi++;
+			tempY = tempY + 2;
+		}
+		return (neighborList);
+			
+	}
+
 
 	void OnGUI() {
 		int i = 0;
@@ -53,6 +158,10 @@ public class Game : MonoBehaviour {
 				int offset = i*25;
 				GUI.Label(new Rect(10,(10+offset),100,25),Menu.connectionList[i].username);
 				//button to kick
+				//playerObjects[_i][playerObjects[_i].Count-1].transform.position = _location;
+				for(int j=0;j<depotList[i].Count;j++){
+					GUI.Label(new Rect(100+(100*j),(10+offset),100,25),depotList[i][j]);
+				}
 			}
 			break;
 		case NetworkPeerType.Server:
@@ -118,7 +227,11 @@ public class Game : MonoBehaviour {
 				playerObjects.Add(new List<GameObject>());
 			}
 			playerObjects[_i].Add((GameObject)Instantiate(Resources.Load(_name)));
-			playerObjects[_i][playerObjects[_i].Count-1].transform.position = _location;
+			hexWorld.hexWorldData[(int)_location.x,(int)_location.z].unit = _name;
+			Vector2 center = hexWorld.hexWorldData[(int)_location.x,(int)_location.z].center;
+			Vector3 finalloc = new Vector3(center.x,1,center.y);
+			Debug.Log (center.x + " " + center.y + " " + finalloc.x + " " + finalloc.z);
+		playerObjects[_i][playerObjects[_i].Count-1].transform.position = finalloc;
 		//}
 	}
 	

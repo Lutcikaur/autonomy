@@ -17,6 +17,8 @@ public class TerrainRaycaster : MonoBehaviour
 
 	private float indicatorTimer = 0f;
 
+	public Vector2 selected;
+
 	private Vector3 lastRayPos = Vector3.zero;
 	private Vector3 thisRayPos = Vector3.zero;
 

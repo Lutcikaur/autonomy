@@ -22,8 +22,7 @@ public class HexWorld : MonoBehaviour
 	public float offsetY = 0.01f; // Y offset for tile, combat z-fighting with terrain (or use overlay shader)
 	
 	
-	private int[,] hexWorldData;
-
+	public HexData[,] hexWorldData;
 	private HexChunk[,] hexChunks;
 
 	private bool isInitialized = false;
@@ -31,7 +30,12 @@ public class HexWorld : MonoBehaviour
 
 	//	-------------------------------------------------------  Persistent Functions
 	
-	
+	public class HexData{
+		public int hexColor = 0;
+		public string unit = null;
+		public Vector2 center = Vector2.zero;
+	};
+
 	void Awake() 
 	{
 		Initialize();
@@ -70,13 +74,20 @@ public class HexWorld : MonoBehaviour
 		worldSize.y = Mathf.RoundToInt( worldSize.y );
 
 		// create a data array to store the texture index value of each hexagon
-		hexWorldData = new int[ (int)worldSize.x, (int)worldSize.y ];
-
-		for ( int y = 0; y < (int)worldSize.y; y ++ )
-		{
-			for ( int x = 0; x < (int)worldSize.x; x ++ )
-			{
-				hexWorldData[ x, y ] = 0; // default value
+		hexWorldData = new HexData[(int)worldSize.x,(int)worldSize.y];
+		float xoffset = 0.138f;
+		float xdiameter = Mathf.Sqrt(3f);
+		float xoffsetodd = (xdiameter/2f)+xoffset;
+		float yoffset = 1f;
+		float ydiameter = 1.5f;
+		for(int i = 0; i < (int)worldSize.x; i++){
+			for(int j = 0; j < (int)worldSize.y; j++){
+				hexWorldData[i,j] = new HexData();
+				if(j%2 == 1)
+					hexWorldData[i,j].center.x = (xdiameter*i)+xdiameter+xoffset;
+				else 
+					hexWorldData[i,j].center.x = (xdiameter*i)+xoffsetodd;
+				hexWorldData[i,j].center.y = (ydiameter*j)+yoffset;
 			}
 		}
 	}
@@ -144,11 +155,10 @@ public class HexWorld : MonoBehaviour
 		float magic = magicbase*0.5f;
 		float zone = (offsetx)/magic; //normalized, 0->1 as you cross through the x axis
 		float happy = zone%2;
-		float tempx = 0, tempz = 0;
+		float tempx = 0;
 		float zonez = offsety%3f;
-		float temp = offsety%1.5f;
 		
-		//y==z, x==x
+		// x==x && y==z
 		
 		int hexx = -10;
 		int hexy = -10;
@@ -222,14 +232,15 @@ public class HexWorld : MonoBehaviour
 		// if the value for i is -1, set the hexagon back to the last texture index value assigned
 		if ( i == -1 )
 		{
-			i = hexWorldData[ hexx, hexy ];
+			i = hexWorldData[hexx,hexy].hexColor;
+
 		}
 
 
 		// update hexWorldData with new value if not value for highlighted
 		if ( i != 1 )
 		{
-			hexWorldData[ hexx, hexy ] = i;
+			hexWorldData[hexx,hexy].hexColor = i;
 		}
 
 
