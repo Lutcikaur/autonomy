@@ -17,7 +17,7 @@ public class TerrainRaycaster : MonoBehaviour
 
 	private float indicatorTimer = 0f;
 
-	public Vector2 selected;
+	public Vector2 selected = -Vector2.one;
 
 	private Vector3 lastRayPos = Vector3.zero;
 	private Vector3 thisRayPos = Vector3.zero;
@@ -81,7 +81,7 @@ public class TerrainRaycaster : MonoBehaviour
 	void RaycastTerrain( int b ) 
 	{
 		indicatorTimer = 0f; // reset timer
-		
+		Vector2 point;
 		Ray ray = Camera.main.ScreenPointToRay( Input.mousePosition );
 		RaycastHit hit;
 		
@@ -93,20 +93,40 @@ public class TerrainRaycaster : MonoBehaviour
 				thisRayPos = hit.point;
 				
 				// change lastRayPos back to the last value stored in hexWorldData (send -1)
-				if ( lastRayPos != Vector3.zero )
-					hexDataPos = hexWorld.SetHexUVs( lastRayPos, -1 );
+				if ( lastRayPos != Vector3.zero ){
+					point = hexWorld.findHex(lastRayPos);
+					hexDataPos = hexWorld.SetHexUVs( point, -1 );
+					//selected = -Vector2.one;
+				}
+					
 				
 				// set the texture UV based on what button was clicked
-				hexWorld.SetHexUVs( thisRayPos, b );
-
+				point = hexWorld.findHex(thisRayPos);
+				//
+				if(b==2){
+					selected = point;
+				} else if(b==3){
+					hexWorld.hexWorldData[(int)point.x,(int)point.y].unitObject = hexWorld.hexWorldData[(int)selected.x,(int)selected.y].unitObject;
+					hexWorld.hexWorldData[(int)point.x,(int)point.y].unit = hexWorld.hexWorldData[(int)selected.x,(int)selected.y].unit;
+					Debug.Log (hexWorld.hexWorldData[(int)selected.x,(int)selected.y].unit);
+					Debug.Log (hexWorld.hexWorldData[(int)point.x,(int)point.y].unit);
+					hexWorld.hexWorldData[(int)point.x,(int)point.y].unitObject.transform.position = new Vector3 (hexWorld.hexWorldData[(int)point.x,(int)point.y].center.x, 1 , hexWorld.hexWorldData[(int)point.x,(int)point.y].center.y);
+				} else {
+					hexWorld.SetHexUVs( point, b );
+				}
+					
 				// update lastRayPos
 				lastRayPos = thisRayPos;
 			}
 			else
 			{
 				// change lastRayPos back to the last value stored in hexWorldData (send -1)
-				if ( lastRayPos != Vector3.zero )
-					hexWorld.SetHexUVs( lastRayPos, -1 );
+				if ( lastRayPos != Vector3.zero ){
+					point = hexWorld.findHex(lastRayPos);
+					hexWorld.SetHexUVs( point, -1 );
+					//selected = -Vector2.one;
+				}
+					
 				
 				lastRayPos = Vector3.zero;
 				hexDataPos = -Vector2.one;
@@ -115,8 +135,11 @@ public class TerrainRaycaster : MonoBehaviour
 		else
 		{
 			// change lastRayPos back to the last value stored in hexWorldData (send -1)
-			if ( lastRayPos != Vector3.zero )
-				hexWorld.SetHexUVs( lastRayPos, -1 );
+			if ( lastRayPos != Vector3.zero ){
+				point = hexWorld.findHex(lastRayPos);
+				hexWorld.SetHexUVs( point, -1 );
+				//selected = -Vector2.one;
+			}
 			
 			lastRayPos = Vector3.zero;
 			hexDataPos = -Vector2.one;
