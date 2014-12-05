@@ -42,6 +42,109 @@ public class Game : MonoBehaviour {
 
 	}
 
+	Vector2[] getNeighbors(int x, int y, int radi){
+			
+		//Initializes first neighbor, changes slightly if y coordinate is even.
+		int tempX = x;
+		int tempY = y + 1;
+		int lastTempX = x;
+		int lastTempY = y + 1;
+		int tempCheckRange = 0;
+		string dir = "East";
+		int direction = 1;
+		int workingRadi = 1;
+		int radiCopy = radi;
+		int totalNeighbors = 0;
+		int neighborIndex = 0;
+		while (radiCopy>0) {
+			totalNeighbors=totalNeighbors+(6*radiCopy);
+			radiCopy--;
+		}
+		Vector2[] neighborList = new Vector2[totalNeighbors];
+
+
+		if ((y % 2) > 0) {
+			tempX = x - 1;
+			lastTempX=x-1;
+		}
+
+
+		while (workingRadi<=radi) {
+			direction=1;
+			for (int i=0; i<=(6*workingRadi); i++) {
+				tempCheckRange = Mathf.Abs(tempX - x) + Mathf.Abs(tempY - y);
+				if(tempCheckRange==workingRadi){
+					if(HexWorld.hexWorldData[tempX,tempY].unit==NULL){
+						neighborList[neighborIndex]=new Vector2(tempX,tempY);
+						neighborIndex++;
+					}
+					lastTempX=tempX;
+					lastTempY=tempY;
+				} else {
+					tempX=lastTempX;
+					tempY=lastTempY;
+					direction++;
+					i--;
+				}
+				switch (direction) {
+				case 1:
+						dir = "East";
+						tempX++;
+						break;
+				case 2:
+						dir = "SE";
+						if(tempY%2==0){
+							tempY--;
+						} else {
+							tempY--;
+							tempX++;
+						}
+						break;
+				case 3:
+						dir = "SW";
+						if(tempY%2==0){
+							tempX--;
+							tempY--;
+						}else{
+							tempY--;
+						}
+						break;
+				case 4:
+						dir = "West";
+						tempX--;
+						break;
+				case 5:
+						dir = "NW";
+						if(tempY%2==0){
+							tempX--;
+							tempY++;
+						}else{
+							tempY++;
+						}
+						break;
+				case 6:
+						dir = "NE";
+						if(tempY%2==0){
+							tempY++;
+						} else {
+							tempY++;
+							tempX++;
+						}
+						break;
+				default:
+						dir = "ERROR";
+						break;							
+				}
+						
+			}
+			workingRadi++;
+			tempY = tempY + 2;
+		}
+		return (neighborList);
+			
+	}
+
+
 	void OnGUI() {
 		int i = 0;
 		switch(Network.peerType){
