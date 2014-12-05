@@ -9,6 +9,7 @@ public class Game : MonoBehaviour {
 	public List<List<GameObject>> playerObjects = new List<List<GameObject>>{};
 	public GameObject Cylinder;
 	public int me;
+	public List<List<string>> depotList = new List<List<string>>{};
 	public static string server = null;
 	
 	void Start () {
@@ -54,6 +55,10 @@ public class Game : MonoBehaviour {
 				int offset = i*25;
 				GUI.Label(new Rect(10,(10+offset),100,25),Menu.connectionList[i].username);
 				//button to kick
+				//playerObjects[_i][playerObjects[_i].Count-1].transform.position = _location;
+				for(j=0;j<depotList[i].Count;j++){
+					GUI.Label(new Rect(100+(100*j),(10+offset),100,25),depotList[i][j]);
+				}
 			}
 			break;
 		case NetworkPeerType.Server:
