@@ -53,6 +53,7 @@ public class Game : MonoBehaviour {
 
 	}
 
+	/*
 	Vector2[] getNeighbors(int x, int y, int radi){
 			
 		//Initializes first neighbor, changes slightly if y coordinate is even.
@@ -153,6 +154,73 @@ public class Game : MonoBehaviour {
 		}
 		return (neighborList);
 			
+	}
+*/
+
+	public HexWorld.HexData[] getNeighbor(int x, int y)
+	{
+		HexWorld.HexData[] neighborList = new Vector2[6];
+		int numberOfNeighbors = 0;
+		bool odd = false;
+		
+		if ((y % 2) > 0) {
+			odd = true;
+		}
+		
+		//adds x neighbors
+		if(x-1 >= xLowerBound){
+			neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x-1,y];
+			numberOfNeighbors++;
+		}
+		
+		if(x+1 <= xUpperBound){
+			neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x+1,y];
+			numberOfNeighbors++;
+		}
+		
+		//adds y neighbors
+		if(y-1 >= yLowerBound){
+			neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x,y-1];
+			numberOfNeighbors++;
+		}
+		
+		if(y+1 <= yUpperBound){
+			neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x,y+1];
+			numberOfNeighbors++;
+		}
+		
+		//gets y right neighbors for odd
+		if(odd == true)
+		{
+			if(x+1 <= xUpperBound && y-1 >= yLowerBound){
+				neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x+1,y-1];
+				numberOfNeighbors++;
+			}
+			
+			if(x+1 <= xUpperBound && y+1 <= yUpperBound){
+				neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x+1,y+1];
+				numberOfNeighbors++;
+			}
+		}
+		else
+			//gets y left neighbors for even
+		{
+			if(x-1 >= xUpperBound && y+1 <= yUpperBound){
+				neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x-1,y+1];
+				numberOfNeighbors++;
+			}
+			
+			if(x-1 >= xUpperBound && y-1 >= yLowerBound){
+				neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x-1,y-1];
+				numberOfNeighbors++;
+			}
+		}
+		
+		for(int i=0; i<numberOfNeighbors; i++)
+		{
+			hexWorld.SetHexUVs(new Vector3(neighborList[i].x,0,neighborList[i].y),2);
+		}
+		return neighborList;
 	}
 
 
