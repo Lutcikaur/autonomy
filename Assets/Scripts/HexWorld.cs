@@ -32,6 +32,8 @@ public class HexWorld : MonoBehaviour
 	//	-------------------------------------------------------  Persistent Functions
 	
 	public class HexData{
+		public int x;
+		public int y;
 		public int hexColor = 0;
 		public string unit = null;
 		public GameObject unitObject = null;
@@ -90,6 +92,8 @@ public class HexWorld : MonoBehaviour
 				else 
 					hexWorldData[i,j].center.x = (xdiameter*i)+xoffsetodd;
 				hexWorldData[i,j].center.y = (ydiameter*j)+yoffset;
+				hexWorldData[i,j].x = i;
+				hexWorldData[i,j].y = j;
 			}
 		}
 	}
@@ -216,7 +220,7 @@ public class HexWorld : MonoBehaviour
 		int rX = hexx - ( chunkSize * cX );
 		int rY = hexy - ( chunkSize * cY );
 		if ( Application.isEditor ) {
-			//Debug.Log( "world pos " + hexx + " " + hexy + " : chunk " + cX + " " + cY + " : chunk pos " + rX + " " + rY );
+			Debug.Log( "world pos " + hexx + " " + hexy + " : chunk " + cX + " " + cY + " : chunk pos " + rX + " " + rY );
 		}
 
 		return new Vector2(hexx,hexy);

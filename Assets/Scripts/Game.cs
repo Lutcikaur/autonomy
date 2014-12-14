@@ -13,7 +13,13 @@ public class Game : MonoBehaviour {
 	public List<List<string>> depotList = new List<List<string>>{};
 	public static string server = null;
 	public int turn = 0;
-	
+
+	//map bounds inclusive
+	public int xLowerBound = 80;
+	public int xUpperBound = 99;
+	public int yLowerBound = 0;
+	public int yUpperBound = 25;
+
 	void Start () {
 		server = Menu.server;
 		Debug.Log("Here");
@@ -266,12 +272,22 @@ public class Game : MonoBehaviour {
 	}
 
 	[RPC]
-	void SwitchTurn(int newTurn, NetworkMessageInfo info){
+	void RequestTurnSwitch(NetworkMessageInfo info){
 		if(Network.isServer){
-
-			//networkView.RPC("SwitchTurn",RPCMode.Others,,);
-		} else if (Network.isClient){
-
+			int c = Menu.connectionList.Count;
+			for(int i = 0; i<c; i++){
+				if(info.sender.guid == Menu.connectionList[i].guid){
+					if(turn == i){
+						networkView.RPC("SwitchTurn",RPCMode.All,(turn+1>c?0:(turn+1)));
+					}
+				}
+			}
 		}
+	}
+
+	[RPC]
+	void SwitchTurn(int _newTurn, NetworkMessageInfo info){
+		if(info.sender == server)
+			turn = _newTurn;
 	}
 }
