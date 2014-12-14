@@ -12,6 +12,7 @@ public class Game : MonoBehaviour {
 	public int me;
 	public List<List<string>> depotList = new List<List<string>>{};
 	public static string server = null;
+	public int turn = 0;
 	
 	void Start () {
 		server = Menu.server;
@@ -203,15 +204,6 @@ public class Game : MonoBehaviour {
 	}
 
 	[RPC]
-	void NetworkMove(int _i, string _guid, Vector3 _selected, Vector3 _point, NetworkMessageInfo info){
-		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject;
-		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit;
-		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject.transform.position = new Vector3 (hexWorld.hexWorldData[(int)_point.x,(int)_point.z].center.x, 1 , hexWorld.hexWorldData[(int)_point.z,(int)_point.z].center.y);
-		hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject = null;
-		hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit = null;
-	}
-
-	[RPC]
 	void Clear(NetworkMessageInfo info) {
 		if(Network.isServer){
 			return;
@@ -252,6 +244,15 @@ public class Game : MonoBehaviour {
 		playerObjects[_i][playerObjects[_i].Count-1].transform.position = finalloc;
 		//}
 	}
+
+	[RPC]
+	void NetworkMove(int _i, string _guid, Vector3 _selected, Vector3 _point, NetworkMessageInfo info){
+		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject;
+		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit;
+		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject.transform.position = new Vector3 (hexWorld.hexWorldData[(int)_point.x,(int)_point.z].center.x, 1 , hexWorld.hexWorldData[(int)_point.z,(int)_point.z].center.y);
+		hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject = null;
+		hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit = null;
+	}
 	
 	[RPC]
 	void AddConnectionList(string _guid, string _username, NetworkMessageInfo info) {
@@ -261,6 +262,16 @@ public class Game : MonoBehaviour {
 			if(info.sender.guid == server){
 				Menu.connectionList.Add(new Menu.NConn(_username,_guid));
 			}
+		}
+	}
+
+	[RPC]
+	void SwitchTurn(int newTurn, NetworkMessageInfo info){
+		if(Network.isServer){
+
+			//networkView.RPC("SwitchTurn",RPCMode.Others,,);
+		} else if (Network.isClient){
+
 		}
 	}
 }
