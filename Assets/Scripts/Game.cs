@@ -287,7 +287,7 @@ public class Game : MonoBehaviour {
 
 	[RPC]
 	void SwitchTurn(int _newTurn, NetworkMessageInfo info){
-		if(info.sender == server)
+		if(info.sender.guid == server)
 			turn = _newTurn;
 	}
 }
