@@ -10,7 +10,24 @@ Platform assembly: D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (
 Loading D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.048 seconds
+- Completed reload, in  0.049 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
+Initialize engine version: 4.5.5f1 (7684ad0c5a44)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6810)
+    Vendor:   ATI
+    VRAM:     2022 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.043 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
@@ -26,29 +43,13 @@ Platform assembly: D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (
 Loading D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Completed reload, in  0.045 seconds
-=======
 - Completed reload, in  0.044 seconds
->>>>>>> fixes
-=======
-- Completed reload, in  0.045 seconds
->>>>>>> hope?
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1680x1050 60Hz; virtual: 2730x1680 at 0,-344
 Platform assembly: D:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
 Platform assembly: D:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
-<<<<<<< HEAD
-<<<<<<< HEAD
- 
-=======
-0 252201587932126867
->>>>>>> fixes
-=======
- 
->>>>>>> hope?
+0 639511159439229260
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
@@ -58,41 +59,49 @@ Load MapUnityEngine.NetworkMessageInfo
 
  
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Load MapUnityEngine.NetworkMessageInfo
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifact /Standa
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+ePlayerGen rC:/BuildAgent/work/d63dfc6385190b60/
+a
+rtifacts/StandalonePlayerGenerated/UaityEngUineDEngg.cpp LtworkMessa
+g
+eInfo
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/apUnitacts/Sta.NdalonrkMessargeInra
+ 
+(Filename: C:tBuildAgent/work/d6UnityEngineDebug.cpp Lits/: anda
+
+onePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-<<<<<<< HEAD
-<<<<<<< HEAD
-UnloadTime: 0.426586 ms
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.383519 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 124.
-Total: 3.053377 ms (FindLiveObjects: 0.011467 ms CreateObjectMapping: 0.014270 ms MarkObjects: 1.812863 ms  DeleteObjects: 0.577190 ms)
-=======
-UnloadTime: 0.315989 ms
-UnloadTime: 0.381990 ms
+Total: 4.988559 ms (FindLiveObjects: 0.028031 ms CreateObjectMapping: 0.027266 ms MarkObjects: 3.226917 ms  DeleteObjects: 0.689061 ms)
+
+Run
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Here
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 0.777487 ms
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 11.048170 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 125.
+Total: 2.695340 ms (FindLiveObjects: 0.010448 ms CreateObjectMapping: 0.010448 ms MarkObjects: 1.670922 ms  DeleteObjects: 0.355743 ms)
+
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 128.
-seotal: z2.758283 ms (
-
-Unloading 10 unu0.009428 s to reduce memory usage. Loaded Objects now: 124.
-Total: 5.814719 ms (FindLiveObjects: 0.009428 ms CreateObjectMapping: 0.009428 ms MarkObjects: 1.680606 ms  DeleteObjects: 0.401867 ms)
-
-ms CreateObjectMapping: 0.010957 ms MarkObjects: 1.638304 ms  DeleteObjects: 0.417412 ms)
->>>>>>> fixes
-=======
-UnloadTime: 0.426586 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 124.
-Total: 3.053377 ms (FindLiveObjects: 0.011467 ms CreateObjectMapping: 0.014270 ms MarkObjects: 1.812863 ms  DeleteObjects: 0.577190 ms)
->>>>>>> hope?
+Total: 2.765928 ms (FindLiveObjects: 0.011722 ms CreateObjectMapping: 0.009938 ms MarkObjects: 1.680351 ms  DeleteObjects: 0.348098 ms)
 
 Run
  
@@ -102,23 +111,7 @@ Here
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> hope?
-UnloadTime: 0.294838 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 124.
-Total: 2.457074 ms (FindLiveObjects: 0.008154 ms CreateObjectMapping: 0.009428 ms MarkObjects: 1.599570 ms  DeleteObjects: 0.360075 ms)
-
 Run
-<<<<<<< HEAD
-=======
-Here
->>>>>>> fixes
-=======
->>>>>>> hope?
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
@@ -126,55 +119,6 @@ Here
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-1.004025 1 1.004025 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-1.870051 2.5 1.870051 2.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-1.004025 4 1.004025 4
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-1.870051 5.5 1.870051 5.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-1.004025 7 1.004025 7
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-2.736076 1 2.736076 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-3.602102 2.5 3.602102 2.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-2.736076 4 2.736076 4
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-=======
-3.602102 5.5 3.602102 5.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-2.736076 7 2.736076 7
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
->>>>>>> fixes
-=======
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
->>>>>>> hope?
 1.004025 1 1.004025 1
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
@@ -215,10 +159,38 @@ WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDouble
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> hope?
+1.004025 1 1.004025 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1.870051 2.5 1.870051 2.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1.004025 4 1.004025 4
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1.870051 5.5 1.870051 5.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1.004025 7 1.004025 7
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+2.736076 1 2.736076 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+3.602102 2.5 3.602102 2.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+2.736076 4 2.736076 4
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
 3.602102 5.5 3.602102 5.5
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
@@ -227,57 +199,551 @@ WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDouble
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-<<<<<<< HEAD
-Disconnected from server: Disconnected
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-=======
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-=======
->>>>>>> hope?
+IndexOutOfRangeException: Array index is out of range.
+  at Game.getNeighbor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.RaycastTerrain (Int32 b) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.CheckForMouseClick () [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+1.004025 1 1.004025 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1.870051 2.5 1.870051 2.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1.004025 4 1.004025 4
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1.870051 5.5 1.870051 5.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1.004025 7 1.004025 7
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+2.736076 1 2.736076 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+3.602102 2.5 3.602102 2.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+2.736076 4 2.736076 4
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+3.602102 5.5 3.602102 5.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+2.736076 7 2.736076 7
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+START: 83 8 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+A: 82 8
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 84 8
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 83 7
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 83 9
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Else
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+G: 82 9
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+H: 82 7
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+START: 1 3 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 2 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 1 2
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 1 4
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+If
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+START: 82 9 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+A: 81 9
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 83 9
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 82 8
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 82 10
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+If
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+E: 83 8
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+F: 83 10
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+START: 1 3 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 2 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 1 2
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 1 4
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+If
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+START: 4 6 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 5 6
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 4 5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 4 7
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Else
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+H: 3 5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+START: 0 4 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 1 4
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 0 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 0 5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Else
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+IndexOutOfRangeException: Array index is out of range.
+  at Game.getNeighbor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.RaycastTerrain (Int32 b) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.CheckForMouseClick () [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+START: 0 4 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 1 4
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 0 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 0 5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Else
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+IndexOutOfRangeException: Array index is out of range.
+  at Game.getNeighbor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.RaycastTerrain (Int32 b) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.CheckForMouseClick () [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+START: 1 4 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 2 4
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 1 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 1 5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Else
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+H: 0 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+START: 0 3 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 1 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 0 2
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 0 4
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+If
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+START: 1 2 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 2 2
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 1 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 1 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Else
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+H: 0 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+START: 0 4 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 1 4
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 0 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 0 5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Else
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+IndexOutOfRangeException: Array index is out of range.
+  at Game.getNeighbor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.RaycastTerrain (Int32 b) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.CheckForMouseClick () [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+START: 1 0 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 2 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 1 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Else
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+START: 1 1 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 2 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 1 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 1 2
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+If
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+START: 0 1 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 1 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 0 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 0 2
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+If
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+START: 0 2 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 1 2
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 0 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 0 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Else
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+IndexOutOfRangeException: Array index is out of range.
+  at Game.getNeighbor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.RaycastTerrain (Int32 b) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.CheckForMouseClick () [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+START: 0 2 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 1 2
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 0 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 0 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Else
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+IndexOutOfRangeException: Array index is out of range.
+  at Game.getNeighbor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.RaycastTerrain (Int32 b) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.CheckForMouseClick () [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+START: 0 0 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 1 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 0 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Else
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+START: 0 2 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 1 2
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 0 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 0 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Else
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+IndexOutOfRangeException: Array index is out of range.
+  at Game.getNeighbor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.RaycastTerrain (Int32 b) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.CheckForMouseClick () [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+START: 0 4 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+B: 1 4
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+C: 0 3
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+D: 0 5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Else
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+IndexOutOfRangeException: Array index is out of range.
+  at Game.getNeighbor (Int32 x, Int32 y) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.RaycastTerrain (Int32 b) [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.CheckForMouseClick () [0x00000] in <filename unknown>:0 
+  at TerrainRaycaster.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
 Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
->>>>>>> fixes
-Disconnected from server: Disconnected
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-UnloadTime: 1.224459 ms
-UnloadTime: 1.639323 ms
+UnloadTime: 1.425266 ms
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 89.
-Total: 7.007070 ms (FindLiveObjects: 0.004841 ms CreateObjectMapping: 0.009938 ms MarkObjects: 0.092758 ms  DeleteObjects: 6.283352 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 89.
-Total: 7.463726 ms (FindLiveObjects: 0.005351 ms CreateObjectMapping: 0.011212 ms MarkObjects: 0.117476 ms  DeleteObjects: 6.826905 ms)
-=======
-UnloadTime: 3.115046 ms
-=======
-UnloadTime: 1.224459 ms
-UnloadTime: 1.639323 ms
->>>>>>> hope?
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 89.
-Total: 7.007070 ms (FindLiveObjects: 0.004841 ms CreateObjectMapping: 0.009938 ms MarkObjects: 0.092758 ms  DeleteObjects: 6.283352 ms)
-
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-<<<<<<< HEAD
 Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 89.
-Total: 5.755089 ms (FindLiveObjects: 0.005096 ms CreateObjectMapping: 0.009428 ms MarkObjects: 0.087406 ms  DeleteObjects: 5.161079 ms)
->>>>>>> fixes
-=======
-Unloading 47 unused Assets to reduce memory usage. Loaded Objects now: 89.
-Total: 7.463726 ms (FindLiveObjects: 0.005351 ms CreateObjectMapping: 0.011212 ms MarkObjects: 0.117476 ms  DeleteObjects: 6.826905 ms)
->>>>>>> hope?
+Total: 5.389152 ms (FindLiveObjects: 0.005096 ms CreateObjectMapping: 0.008919 ms MarkObjects: 0.088935 ms  DeleteObjects: 4.797946 ms)
+
+The server has disconnected from the client. Most likely the server has shut down.
+ 
+(Filename:  Line: 745)
+
+Disconnected from server: Disconnected
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Disconnected from server: Disconnected
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 3.382873 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 89.
+Total: 10.659554 ms (FindLiveObjects: 0.014270 ms CreateObjectMapping: 0.041027 ms MarkObjects: 0.252791 ms  DeleteObjects: 9.448345 ms)
+
+UnloadTime: 2.027175 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 52 unused Assets to reduce memory usage. Loaded Objects now: 92.
+Total: 9.622140 ms (FindLiveObjects: 0.015799 ms CreateObjectMapping: 0.016563 ms MarkObjects: 0.126141 ms  DeleteObjects: 8.563575 ms)
 
