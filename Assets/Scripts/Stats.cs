@@ -8,12 +8,11 @@ public class Stats : MonoBehaviour {
 	
 	}
 
-	public int moveRange;
-	public int Health; 
-	public int Damage; 
-	public int attackRange; 
-	public int Special; 
-	public int SpecialRange; 
+	public int moveSpeed;
+	public int attackRange;
+	public int maximumHealth;
+	public int currentHealth;
+	public int damage;
 
 	// Update is called once per frame
 	void Update () {

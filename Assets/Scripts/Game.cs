@@ -55,7 +55,7 @@ public class Game : MonoBehaviour {
 				for(int j = 0; j<5; j++){
 					string name = "Vtol";
 					string guid = Menu.connectionList[i].guid;
-					Vector3 location = new Vector3(i,1,j);
+					Vector3 location = new Vector3(i+86,1,j+9);
 					networkView.RPC("SpawnObject",RPCMode.All,i,guid,name,location);
 				}
 			}
@@ -76,57 +76,80 @@ public class Game : MonoBehaviour {
 		
 		//Debug.Log ("START: " + x + " " + y + " " + hexWorld.hexWorldData[x,y].height);
 		//adds x neighbors
-		if(x-1 >= xLowerBound && x-1 <= xUpperBound && y <= yUpperBound && y >= yLowerBound){
+		if(hexWorld.hexWorldData[x-1,y].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y].x,hexWorld.hexWorldData[x-1,y].y);
+<<<<<<< HEAD
 			//Debug.Log("A: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+=======
+>>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 			numberOfNeighbors++;
 		}
-		
-		if(x+1 <= xUpperBound && x+1 <= xUpperBound && y <= yUpperBound && y >= yLowerBound){
+
+		if(hexWorld.hexWorldData[x+1,y].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y].x,hexWorld.hexWorldData[x+1,y].y);
+<<<<<<< HEAD
 			//Debug.Log("B: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+=======
+>>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 			numberOfNeighbors++;
 		}
 		
 		//adds y neighbors
-		if(y-1 >= yLowerBound && x <= xUpperBound && x <= xUpperBound && y-1 <= yUpperBound){
+		if(hexWorld.hexWorldData[x,y-1].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y-1].x,hexWorld.hexWorldData[x,y-1].y);
-			Debug.Log("C: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
-		
-		if(y+1 <= yUpperBound && x <= xUpperBound && x <= xUpperBound && y+1 >= yLowerBound){
+
+		if(hexWorld.hexWorldData[x,y+1].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y+1].x,hexWorld.hexWorldData[x,y+1].y);
+<<<<<<< HEAD
 			//Debug.Log("D: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+=======
+>>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 			numberOfNeighbors++;
 		}
 		
 		//gets y right neighbors for odd
 		if(odd == true) {
+<<<<<<< HEAD
 			//Debug.Log ("If");
 			if(x+1 <= xUpperBound && y-1 >= yLowerBound && x+1 >= xLowerBound && y-1 <= yUpperBound){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y-1].x,hexWorld.hexWorldData[x+1,y-1].y);
 				//Debug.Log("E: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+=======
+			Debug.Log ("If");
+			if(hexWorld.hexWorldData[x+1,y-1].inBounds){
+				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y-1].x,hexWorld.hexWorldData[x+1,y-1].y);
+>>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 				numberOfNeighbors++;
 			}
 			
-			if(x+1 <= xUpperBound && y+1 <= yUpperBound && x+1 >= xLowerBound && y+1 >= yLowerBound){
+			if(hexWorld.hexWorldData[x+1,y+1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y+1].x,hexWorld.hexWorldData[x+1,y+1].y);
+<<<<<<< HEAD
 				//Debug.Log("F: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+=======
+>>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 				numberOfNeighbors++;
 			}
 		} else {
 			//Debug.Log ("Else");
 			//gets y left neighbors for even
-			if(x-1 <= xUpperBound && y+1 <= yUpperBound && x-1 >= xLowerBound && y+1 >= yLowerBound){
+			if(hexWorld.hexWorldData[x-1,y+1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y+1].x,hexWorld.hexWorldData[x-1,y+1].y);
+<<<<<<< HEAD
 				//Debug.Log("G: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+=======
+>>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 				numberOfNeighbors++;
 			}
-			
-			if(x-1 <= xUpperBound && y-1 >= yLowerBound && x-1 <= xUpperBound && y-1 <= yUpperBound){
+
+			if(hexWorld.hexWorldData[x-1,y-1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y-1].x,hexWorld.hexWorldData[x-1,y-1].y);
+<<<<<<< HEAD
 				//Debug.Log("H: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+=======
+>>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 				numberOfNeighbors++;
 			}
 		}
@@ -150,7 +173,6 @@ public class Game : MonoBehaviour {
 
 		// a[0] to a[n-1] is the array to sort 
 
-		
 		// advance the position through the entire array 
 		//   (could do j < n-1 because single element is also min element) 
 		for (j = 0; j < deckSize; j++) {
@@ -185,6 +207,128 @@ public class Game : MonoBehaviour {
 	}
 
 	*/
+
+	//pathfinds from the starting location to the ending location 
+	//IF IT RETURNS NULL, THERE IS NO PATH
+	public List<Vector2> pathfind(Vector2 start, Vector2 end){
+
+		//openList is for yet checked hexes that may work
+		List<PFList> openList = new List<PFList>{};
+		//closedlist is for already checked hexes
+		List<PFList> closedList = new List<PFList>{};
+
+		//stick the starting hex in the openlist to start
+		openList.Add(new PFList(start,0,0,null));
+
+		bool done = false;
+		bool fail = false;
+
+		//dont stop till we are done
+		while(done == false){
+			//count runs the whole list
+			int count = openList.Count;
+			//temp holds the best FScore to choose the best openList hex,  Low is better
+			int temp = 100000000;
+			//the chosen hex in openlist.  If it stays at -1 there is no path and it kicks out
+			int choose = -1;
+			PFList currentHex = null;
+
+			//finds the best FScore in openList
+			for(int i=0; i<count; i++){
+				if (openList[i].getF() < temp){
+					temp = openList[i].getF();
+					choose = i;
+				}
+			}
+
+			if(choose != -1){
+				currentHex = openList[choose];
+			}
+			else{
+				done = true;
+				fail = true;
+			}
+
+			//hex is checked. move from open to closed
+			openList.RemoveAt(choose);
+
+			if(currentHex != null && currentHex.getHex().x == end.x && currentHex.getHex().y == end.y){
+
+				done = true;
+			}
+
+			closedList.Add(currentHex);
+
+			//get neighbors
+			Vector2[] neighborList = new Vector2[6];
+
+
+			//PLZ WORK O HELP ME GAWD
+			neighborList = getNeighbor((int)currentHex.getHex().x, (int)currentHex.getHex().y);
+
+			for(int i=0; i<6 || done == true; i++){
+				//check if a neighbor is out of bounds or occupied and close them if they are
+				if(hexWorld.hexWorldData[(int)neighborList[i].x,(int)neighborList[i].y].inBounds == false || hexWorld.hexWorldData[(int)neighborList[i].x,(int)neighborList[i].y].unitObject != null){
+
+					closedList.Add(new PFList(neighborList[i]));
+
+				}
+
+				//if a neighbor is not in the closed list or the open list and can be reached height wise
+				if(closedList.FindIndex(PFList => PFList.getHex() == neighborList[i]) == -1){
+					if(hexWorld.hexWorldData[(int)neighborList[i].x,(int)neighborList[i].y].height - hexWorld.hexWorldData[(int)currentHex.getHex().x, (int)currentHex.getHex().y].height >= -0.5 || hexWorld.hexWorldData[(int)neighborList[i].x,(int)neighborList[i].y].height - hexWorld.hexWorldData[(int)currentHex.getHex().x, (int)currentHex.getHex().y].height <= 0.5){
+						if(openList.FindIndex(PFList => PFList.getHex() == neighborList[i]) == -1){
+
+							int temph;
+
+							//you can count its h based on how far it is from the goal
+							if(currentHex.getHex().x > end.x){
+								temph = (int)currentHex.getHex().x - (int)end.x;
+							}
+							else{
+								temph = (int)end.x - (int)currentHex.getHex().x;
+							}
+
+							if(currentHex.getHex().y > end.y){
+								temph = (int)currentHex.getHex().y - (int)end.y;
+							}
+							else{
+								temph = (int)end.y - (int)currentHex.getHex().y;
+							}
+
+							//and add to the openList
+							openList.Add(new PFList(neighborList[i], currentHex.getG() + 10, temph * 10, currentHex));
+						}
+					}//if it is height allowed but already in the openList, check if this currentHex is a better parent FScore wise
+					else {
+						int tempindex = openList.FindIndex(PFList => PFList.getHex() == neighborList[i]);
+						if(currentHex.getG()+10 < openList[tempindex].getG()){
+							openList[tempindex].resetParent(currentHex, currentHex.getG() + 10);
+						}
+					}
+				}
+			}
+		}
+		if(fail == true){
+			return null;
+		}
+
+
+		//int pLength = closedList[closedList.Count - 1].getG() / 10;
+		List<Vector2> path = new List<Vector2>{};
+		PFList current;
+		current = closedList[closedList.Count - 1];
+		path.Add(current.getHex());
+		current = current.getParent();
+
+		while(current.getParent() != null){
+			path.Insert(0, current.getHex());
+			current = current.getParent();
+		}
+
+		return path;
+	}
+
 	void OnGUI() {
 		int i = 0;
 		float x=Screen.width;
@@ -333,8 +477,18 @@ public class Game : MonoBehaviour {
 				//GUI.Box (new Rect(x*.1f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
 				
 			}
+<<<<<<< HEAD
 			if(GUI.Button(new Rect(x-100, y-40, 80, 20), "Pass Turn")) {
 				//PUT PASS TURN CALL HERE
+=======
+
+			//GUI.Box (new Rect(50,50,100,90), "Loader Menu");
+			GUI.Box (new Rect(0, y-(x*.2f), x*.2f, x*.2f), "Depot goes here?");
+			GUI.Box (new Rect(x-(x*.3f), y-(y*.3f), x*.3f, y*.3f), "Unit Details & abilities go here?");
+			GUI.Box (new Rect(x*.2f, y-(y*.3f), x*.5f, y*.3f), "Hand of Cards Go Here?");
+			if(GUI.Button(new Rect(x-100, y-40, 80, 20), (me == turn?"Pass Turn":"Waiting"))) {
+				networkView.RPC ("RequestTurnSwitch",RPCMode.Server);
+>>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 			}
 
 			break;
@@ -370,10 +524,22 @@ public class Game : MonoBehaviour {
 
 	public void moveUnit(Vector2 _selected, Vector2 _point){
 		if(turn == me){
-			Vector3 selected = new Vector3(_selected.x,1,_selected.y);
-			Vector3 point = new Vector3(_point.x,1,_point.y);
-			//theres no server checking here. dont send 'me' later.
-			networkView.RPC("NetworkMove",RPCMode.All,me,Network.player.guid,selected,point);
+			if(playerObjects[me].Contains(hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject)){
+				Vector3 selected = new Vector3(_selected.x,1,_selected.y);
+				Vector3 point = new Vector3(_point.x,1,_point.y);
+				//theres no server checking here. dont send 'me' later.
+				networkView.RPC("NetworkMove",RPCMode.All,me,Network.player.guid,selected,point);
+			}
+		}
+	}
+
+	public void attackUnit(Vector2 _selected, Vector2 _point){
+		if(turn == me){
+			if(!playerObjects[me].Contains(hexWorld.hexWorldData[(int)_point.x,(int)_point.y].unitObject) && playerObjects[me].Contains(hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject)){
+				Stats _selectedUnit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject.GetComponent<Stats>();
+				Stats _targetUnit = hexWorld.hexWorldData[(int)_point.x,(int)_point.y].unitObject.GetComponent<Stats>();
+				// CALL RPCS
+			}
 		}
 	}
 
@@ -446,8 +612,11 @@ public class Game : MonoBehaviour {
 			int c = Menu.connectionList.Count;
 			for(int i = 0; i<c; i++){
 				if(info.sender.guid == Menu.connectionList[i].guid){
-					if(turn == i){
-						networkView.RPC("SwitchTurn",RPCMode.All,(turn+1>c?0:(turn+1)));
+					if(turn == i){;
+						int nturn = turn+1==c?0:turn+1;
+						turn = nturn;
+						Debug.Log (nturn + " " + turn + " " + c);
+						networkView.RPC("SwitchTurn",RPCMode.All,nturn);
 					}
 				}
 			}
@@ -459,4 +628,52 @@ public class Game : MonoBehaviour {
 		if(info.sender.guid == server)
 			turn = _newTurn;
 	}
+
+	public class PFList{
+		int fScore;
+		int gScore;
+		int hScore;
+		Vector2 hex;
+		PFList parent;
+
+		public PFList(Vector2 start, int G, int H, PFList p){
+			hex = start;
+			parent = p;
+			fScore = G + H;
+			gScore = G;
+			hScore = H;
+		}
+
+		public PFList(Vector2 start){
+			hex = start;
+		}
+
+		public int getF(){
+			return fScore;
+		}
+
+		public int getG(){
+			return gScore;
+		}
+
+		public int getH(){
+			return hScore;
+		}
+
+		public PFList getParent(){
+			return parent;
+		}
+
+		public Vector2 getHex(){
+			return hex;
+		}
+
+		public void resetParent(PFList newP, int newG){
+			parent = newP;
+			gScore = newG;
+			fScore = gScore + hScore ;
+		}
+	};
+
+
 }
