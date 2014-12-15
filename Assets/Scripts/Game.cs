@@ -175,20 +175,20 @@ public class Game : MonoBehaviour {
 			numberOfNeighbors++;
 		}
 		
-		if(x+1 <= xUpperBound && x+1 <= xUpperBound && y <= yUpperBound && y >= yLowerBound){
+		if(x+1 <= xUpperBound && x+1 >= xLowerBound && y <= yUpperBound && y >= yLowerBound){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y].x,hexWorld.hexWorldData[x+1,y].y);
 			Debug.Log("B: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
 		//adds y neighbors
-		if(y-1 >= yLowerBound && x <= xUpperBound && x <= xUpperBound && y-1 <= yUpperBound){
+		if(y-1 >= yLowerBound && x >= xLowerBound && x <= xUpperBound && y-1 <= yUpperBound){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y-1].x,hexWorld.hexWorldData[x,y-1].y);
 			Debug.Log("C: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
-		if(y+1 <= yUpperBound && x <= xUpperBound && x <= xUpperBound && y+1 >= yLowerBound){
+		if(y+1 <= yUpperBound && x >= xLowerBound && x <= xUpperBound && y+1 >= yLowerBound){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y+1].x,hexWorld.hexWorldData[x,y+1].y);
 			Debug.Log("D: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
@@ -217,7 +217,7 @@ public class Game : MonoBehaviour {
 				numberOfNeighbors++;
 			}
 			
-			if(x-1 <= xUpperBound && y-1 >= yLowerBound && x-1 <= xUpperBound && y-1 <= yUpperBound){
+			if(x-1 <= xUpperBound && y-1 >= yLowerBound && x-1 >= xLowerBound && y-1 <= yUpperBound){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y-1].x,hexWorld.hexWorldData[x-1,y-1].y);
 				Debug.Log("H: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 				numberOfNeighbors++;
@@ -231,6 +231,128 @@ public class Game : MonoBehaviour {
 		return neighborList;
 	}
 
+
+
+	//pathfinds from the starting location to the ending location 
+	//IF IT RETURNS NULL, THERE IS NO PATH
+	public List<Vector2> pathfind(Vector2 start, Vector2 end){
+
+		//openList is for yet checked hexes that may work
+		List<PFList> openList = new List<PFList>{};
+		//closedlist is for already checked hexes
+		List<PFList> closedList = new List<PFList>{};
+
+		//stick the starting hex in the openlist to start
+		openList.Add(new PFList(start,0,0,null));
+
+		bool done = false;
+		bool fail = false;
+
+		//dont stop till we are done
+		while(done == false){
+			//count runs the whole list
+			int count = openList.Count;
+			//temp holds the best FScore to choose the best openList hex,  Low is better
+			int temp = 100000000;
+			//the chosen hex in openlist.  If it stays at -1 there is no path and it kicks out
+			int choose = -1;
+			PFList currentHex = new PFList();
+
+			//finds the best FScore in openList
+			for(int i=0; i<count; i++){
+				if (openList[i].getF() < temp){
+					temp = openList[i].getF();
+					choose = i;
+				}
+			}
+
+			if(choose != -1){
+				currentHex = openList[choose];
+			}
+			else{
+				done = true;
+				fail = true;
+			}
+
+			//hex is checked. move from open to closed
+			openList.Remove(choose);
+
+			if(currentHex.getHex().x == end.x && currentHex.getHex().y == end.y){
+
+				done = true;
+			}
+
+			closedList.Add(currentHex);
+
+			//get neighbors
+			Vector2[] neighborList = new Vector2[6];
+
+
+			//PLZ WORK O HELP ME GAWD
+			neighborList = getNeighbor(currentHex.x, currentHex.y);
+
+			for(int i=0; i<6 || done == true; i++){
+				//check if a neighbor is out of bounds or occupied and close them if they are
+				if(hexWorld.hexWorldData[neighborList[i].x,neighborList[i].y].inBounds == false || hexWorld.hexWorldData[neighborList[i].x,neighborList[i].y].unitObject != null){
+
+					closedList.Add(new PFList(neighborList[i]));
+
+				}
+
+				//if a neighbor is not in the closed list or the open list and can be reached height wise
+				if(!closedList.FindIndex(PFList => PFList.getHex() == neighborList[i]) == -1){
+					if(hexWorld.hexWorldData[neighborList[i].x,neighborList[i].y].height - hexWorld.hexWorldData[currentHex.x, currentHex.y].height >= -0.5 || hexWorld.hexWorldData[neighborList[i].x,neighborList[i].y].height - hexWorld.hexWorldData[currentHex.x, currentHex.y].height <= 0.5){
+						if(openList.FindIndex(PFList => PFList.getHex() == neighborList[i]) == -1){
+
+							int temph;
+
+							//you can count its h based on how far it is from the goal
+							if(currentHex.getHex().x > end.x){
+								temph = currentHex.getHex().x - end.x;
+							}
+							else{
+								temph = end.x - currentHex.getHex().x;
+							}
+
+							if(currentHex.getHex().y > end.y){
+								temph = currentHex.getHex().y - end.y;
+							}
+							else{
+								temph = end.y - currentHex.getHex().y;
+							}
+
+							//and add to the openList
+							openList.Add(new PFList(neighborList[i], currentHex.getG() + 10, temph * 10, currentHex));
+						}
+					}//if it is height allowed but already in the openList, check if this currentHex is a better parent FScore wise
+					else {
+						int tempindex = openList.FindIndex(PFList => PFList.getHex() == neighborList[i]);
+						if(currentHex.getG()+10 < openList[tempindex].getG){
+							openList[tempindex].resetParent(currentHex, currentHex.getG() + 10)
+						}
+					}
+				}
+			}
+		}
+		if(fail == true){
+			return null;
+		}
+
+
+		//int pLength = closedList[closedList.Count - 1].getG() / 10;
+		List<Vector2> path = new List<Vector2>{};
+		PFList current = new PFList();
+		current = closedList[closedList.Count - 1];
+		path.Add(current.getHex());
+		current = current.getParent();
+
+		while(current.getParent() != null){
+			path.Insert(0, current.getHex());
+			current = current.getParent();
+		}
+
+		return path;
+	}
 
 	void OnGUI() {
 		int i = 0;
@@ -370,4 +492,48 @@ public class Game : MonoBehaviour {
 		if(info.sender.guid == server)
 			turn = _newTurn;
 	}
+
+	public class PFList{
+		int fScore;
+		int gScore;
+		int hScore;
+		Vector2 hex;
+		PFList parent;
+
+		public PFList(Vector2 start, int G, int H, PFList p){
+			hex = start;
+			parent = p;
+			fScore = G + H;
+			gScore = G;
+			hScore = H;
+		}
+
+		public int getF(){
+			return fScore;
+		}
+
+		public int getG(){
+			return gScore;
+		}
+
+		public int getH(){
+			return hScore;
+		}
+
+		public PFList getParent(){
+			return parent;
+		}
+
+		public Vector2 getHex(){
+			return hex;
+		}
+
+		public void resetParent(PFList newP, int newG){
+			parent = newP;
+			gScore = newG;
+			fScore = gScore + hScore ;
+		}
+	};
+
+
 }
