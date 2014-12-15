@@ -53,108 +53,80 @@ public class Game : MonoBehaviour {
 
 	}
 
-	Vector2[] getNeighbors(int x, int y, int radi){
-			
-		//Initializes first neighbor, changes slightly if y coordinate is even.
-		int tempX = x;
-		int tempY = y + 1;
-		int lastTempX = x;
-		int lastTempY = y + 1;
-		int tempCheckRange = 0;
-		string dir = "East";
-		int direction = 1;
-		int workingRadi = 1;
-		int radiCopy = radi;
-		int totalNeighbors = 0;
-		int neighborIndex = 0;
-		while (radiCopy>0) {
-			totalNeighbors=totalNeighbors+(6*radiCopy);
-			radiCopy--;
-		}
-		Vector2[] neighborList = new Vector2[totalNeighbors];
-
-
+	public Vector2[] getNeighbor(int x, int y)
+	{
+		Vector2[] neighborList = new Vector2[6];
+		int numberOfNeighbors = 0;
+		bool odd = false;
+		
 		if ((y % 2) > 0) {
-			tempX = x - 1;
-			lastTempX=x-1;
+			odd = true;
 		}
-
-
-		while (workingRadi<=radi) {
-			direction=1;
-			for (int i=0; i<=(6*workingRadi); i++) {
-				tempCheckRange = Mathf.Abs(tempX - x) + Mathf.Abs(tempY - y);
-				if(tempCheckRange==workingRadi){
-					if(hexWorld.hexWorldData[tempX,tempY].unit==null){
-						neighborList[neighborIndex]=new Vector2(tempX,tempY);
-						neighborIndex++;
-					}
-					lastTempX=tempX;
-					lastTempY=tempY;
-				} else {
-					tempX=lastTempX;
-					tempY=lastTempY;
-					direction++;
-					i--;
-				}
-				switch (direction) {
-				case 1:
-						dir = "East";
-						tempX++;
-						break;
-				case 2:
-						dir = "SE";
-						if(tempY%2==0){
-							tempY--;
-						} else {
-							tempY--;
-							tempX++;
-						}
-						break;
-				case 3:
-						dir = "SW";
-						if(tempY%2==0){
-							tempX--;
-							tempY--;
-						}else{
-							tempY--;
-						}
-						break;
-				case 4:
-						dir = "West";
-						tempX--;
-						break;
-				case 5:
-						dir = "NW";
-						if(tempY%2==0){
-							tempX--;
-							tempY++;
-						}else{
-							tempY++;
-						}
-						break;
-				case 6:
-						dir = "NE";
-						if(tempY%2==0){
-							tempY++;
-						} else {
-							tempY++;
-							tempX++;
-						}
-						break;
-				default:
-						dir = "ERROR";
-						break;							
-				}
-						
+		
+		Debug.Log ("START: " + x + " " + y + " " + hexWorld.hexWorldData[x,y].height);
+		//adds x neighbors
+		if(x-1 >= xLowerBound && x-1 <= xUpperBound && y <= yUpperBound && y >= yLowerBound){
+			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y].x,hexWorld.hexWorldData[x-1,y].y);
+			Debug.Log("A: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+			numberOfNeighbors++;
+		}
+		
+		if(x+1 <= xUpperBound && x+1 <= xUpperBound && y <= yUpperBound && y >= yLowerBound){
+			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y].x,hexWorld.hexWorldData[x+1,y].y);
+			Debug.Log("B: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+			numberOfNeighbors++;
+		}
+		
+		//adds y neighbors
+		if(y-1 >= yLowerBound && x <= xUpperBound && x <= xUpperBound && y-1 <= yUpperBound){
+			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y-1].x,hexWorld.hexWorldData[x,y-1].y);
+			Debug.Log("C: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+			numberOfNeighbors++;
+		}
+		
+		if(y+1 <= yUpperBound && x <= xUpperBound && x <= xUpperBound && y+1 >= yLowerBound){
+			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y+1].x,hexWorld.hexWorldData[x,y+1].y);
+			Debug.Log("D: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+			numberOfNeighbors++;
+		}
+		
+		//gets y right neighbors for odd
+		if(odd == true) {
+			Debug.Log ("If");
+			if(x+1 <= xUpperBound && y-1 >= yLowerBound && x+1 >= xLowerBound && y-1 <= yUpperBound){
+				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y-1].x,hexWorld.hexWorldData[x+1,y-1].y);
+				Debug.Log("E: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+				numberOfNeighbors++;
 			}
-			workingRadi++;
-			tempY = tempY + 2;
-
-		}
-		return (neighborList);
 			
+			if(x+1 <= xUpperBound && y+1 <= yUpperBound && x+1 >= xLowerBound && y+1 >= yLowerBound){
+				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y+1].x,hexWorld.hexWorldData[x+1,y+1].y);
+				Debug.Log("F: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+				numberOfNeighbors++;
+			}
+		} else {
+			Debug.Log ("Else");
+			//gets y left neighbors for even
+			if(x-1 <= xUpperBound && y+1 <= yUpperBound && x-1 >= xLowerBound && y+1 >= yLowerBound){
+				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y+1].x,hexWorld.hexWorldData[x-1,y+1].y);
+				Debug.Log("G: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+				numberOfNeighbors++;
+			}
+			
+			if(x-1 <= xUpperBound && y-1 >= yLowerBound && x-1 <= xUpperBound && y-1 <= yUpperBound){
+				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y-1].x,hexWorld.hexWorldData[x-1,y-1].y);
+				Debug.Log("H: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+				numberOfNeighbors++;
+			}
+		}
+		
+		for(int i=0; i<numberOfNeighbors; i++)
+		{
+			hexWorld.SetHexUVs(neighborList[i],2);
+		}
+		return neighborList;
 	}
+
 	/*
 	deck RandomizeDeck(deck d){
 		int i,j;
