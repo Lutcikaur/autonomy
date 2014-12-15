@@ -8,12 +8,18 @@ public class Game : MonoBehaviour {
 	public HexWorld hexWorld;
 	public TerrainRaycaster terrainCaster;
 	public List<List<GameObject>> playerObjects = new List<List<GameObject>>{};
-	public GameObject Cylinder;
-	public int me;
+	//public GameObject Cylinder;
+	public int me = -1;
 	public List<List<string>> depotList = new List<List<string>>{};
 	public static string server = null;
 	public int turn = 0;
-	
+
+	//map bounds inclusive
+	public int xLowerBound = 80;
+	public int xUpperBound = 99;
+	public int yLowerBound = 0;
+	public int yUpperBound = 25;
+
 	void Start () {
 		server = Menu.server;
 		Debug.Log("Here");
@@ -36,7 +42,7 @@ public class Game : MonoBehaviour {
 				playerObjects.Add(new List<GameObject>());
 				depotList.Add (new List<string>());
 				for(int j = 0; j<5; j++){
-					string name = "Cylinder";
+					string name = "Vtol";
 					string guid = Menu.connectionList[i].guid;
 					Vector3 location = new Vector3(i,1,j);
 					networkView.RPC("SpawnObject",RPCMode.All,i,guid,name,location);
@@ -265,9 +271,12 @@ public class Game : MonoBehaviour {
 	}
 
 	public void moveUnit(Vector2 _selected, Vector2 _point){
-		Vector3 selected = new Vector3(_selected.x,1,_selected.y);
-		Vector3 point = new Vector3(_point.x,1,_point.y);
-		networkView.RPC("NetworkMove",RPCMode.All,me,Network.player.guid,selected,point);
+		if(turn == me){
+			Vector3 selected = new Vector3(_selected.x,1,_selected.y);
+			Vector3 point = new Vector3(_point.x,1,_point.y);
+			//theres no server checking here. dont send 'me' later.
+			networkView.RPC("NetworkMove",RPCMode.All,me,Network.player.guid,selected,point);
+		}
 	}
 
 	[RPC]
@@ -314,6 +323,7 @@ public class Game : MonoBehaviour {
 
 	[RPC]
 	void NetworkMove(int _i, string _guid, Vector3 _selected, Vector3 _point, NetworkMessageInfo info){
+		//are you here to fix it sending 'me' aka _i? Have it hunt for sender.guid over all connected guids.
 		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject;
 		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit;
 		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject.transform.position = new Vector3 (hexWorld.hexWorldData[(int)_point.x,(int)_point.z].center.x, 1 , hexWorld.hexWorldData[(int)_point.z,(int)_point.z].center.y);
@@ -333,12 +343,22 @@ public class Game : MonoBehaviour {
 	}
 
 	[RPC]
-	void SwitchTurn(int newTurn, NetworkMessageInfo info){
+	void RequestTurnSwitch(NetworkMessageInfo info){
 		if(Network.isServer){
-
-			//networkView.RPC("SwitchTurn",RPCMode.Others,,);
-		} else if (Network.isClient){
-
+			int c = Menu.connectionList.Count;
+			for(int i = 0; i<c; i++){
+				if(info.sender.guid == Menu.connectionList[i].guid){
+					if(turn == i){
+						networkView.RPC("SwitchTurn",RPCMode.All,(turn+1>c?0:(turn+1)));
+					}
+				}
+			}
 		}
+	}
+
+	[RPC]
+	void SwitchTurn(int _newTurn, NetworkMessageInfo info){
+		if(info.sender.guid == server)
+			turn = _newTurn;
 	}
 }

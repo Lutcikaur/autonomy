@@ -32,7 +32,10 @@ public class HexWorld : MonoBehaviour
 	//	-------------------------------------------------------  Persistent Functions
 	
 	public class HexData{
+		public int x = -1;
+		public int y = -1;
 		public int hexColor = 0;
+		public float height = 0f;
 		public string unit = null;
 		public GameObject unitObject = null;
 		public Vector2 center = Vector2.zero;
@@ -90,6 +93,10 @@ public class HexWorld : MonoBehaviour
 				else 
 					hexWorldData[i,j].center.x = (xdiameter*i)+xoffsetodd;
 				hexWorldData[i,j].center.y = (ydiameter*j)+yoffset;
+				hexWorldData[i,j].x = i;
+				hexWorldData[i,j].y = j;
+				float num = terrain.SampleHeight(new Vector3(hexWorldData[i,j].center.x,0,hexWorldData[i,j].center.y));
+				hexWorldData[i,j].height = Mathf.Round(num * 2) / 2;
 			}
 		}
 	}
