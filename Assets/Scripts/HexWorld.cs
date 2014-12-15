@@ -220,7 +220,7 @@ public class HexWorld : MonoBehaviour
 		int rX = hexx - ( chunkSize * cX );
 		int rY = hexy - ( chunkSize * cY );
 		if ( Application.isEditor ) {
-			Debug.Log( "world pos " + hexx + " " + hexy + " : chunk " + cX + " " + cY + " : chunk pos " + rX + " " + rY );
+			//Debug.Log( "world pos " + hexx + " " + hexy + " : chunk " + cX + " " + cY + " : chunk pos " + rX + " " + rY );
 		}
 
 		return new Vector2(hexx,hexy);

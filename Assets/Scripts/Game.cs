@@ -157,68 +157,76 @@ public class Game : MonoBehaviour {
 	}
 */
 
-	public HexWorld.HexData[] getNeighbor(int x, int y)
+	public Vector2[] getNeighbor(int x, int y)
 	{
-		HexWorld.HexData[] neighborList = new Vector2[6];
+		Vector2[] neighborList = new Vector2[6];
 		int numberOfNeighbors = 0;
 		bool odd = false;
 		
 		if ((y % 2) > 0) {
 			odd = true;
 		}
-		
+
+		Debug.Log ("START: " + x + " " + y);
 		//adds x neighbors
-		if(x-1 >= xLowerBound){
-			neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x-1,y];
+		if(x-1 >= xLowerBound && y >= yLowerBound && y <= yUpperBound){
+			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y].x,hexWorld.hexWorldData[x-1,y].y);
+			Debug.Log("A: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
-		if(x+1 <= xUpperBound){
-			neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x+1,y];
+		if(x+1 <= xUpperBound && y >= yLowerBound && y <= yUpperBound){
+			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y].x,hexWorld.hexWorldData[x+1,y].y);
+			Debug.Log("B: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
 		//adds y neighbors
-		if(y-1 >= yLowerBound){
-			neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x,y-1];
+		if(y-1 >= yLowerBound && x >= xLowerBound && x <= xUpperBound){
+			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y-1].x,hexWorld.hexWorldData[x,y-1].y);
+			Debug.Log("C: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
-		if(y+1 <= yUpperBound){
-			neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x,y+1];
+		if(y+1 <= yUpperBound && x >= xLowerBound && x <= xUpperBound){
+			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y+1].x,hexWorld.hexWorldData[x,y+1].y);
+			Debug.Log("D: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
 		//gets y right neighbors for odd
-		if(odd == true)
-		{
+		if(odd == true) {
+			Debug.Log ("If");
 			if(x+1 <= xUpperBound && y-1 >= yLowerBound){
-				neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x+1,y-1];
+				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y-1].x,hexWorld.hexWorldData[x+1,y-1].y);
+				Debug.Log("E: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 				numberOfNeighbors++;
 			}
 			
 			if(x+1 <= xUpperBound && y+1 <= yUpperBound){
-				neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x+1,y+1];
+				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y+1].x,hexWorld.hexWorldData[x+1,y+1].y);
+				Debug.Log("F: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 				numberOfNeighbors++;
 			}
-		}
-		else
+		} else {
+			Debug.Log ("Else");
 			//gets y left neighbors for even
-		{
-			if(x-1 >= xUpperBound && y+1 <= yUpperBound){
-				neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x-1,y+1];
+			if(x-1 >= xLowerBound && y+1 <= yUpperBound){
+				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y+1].x,hexWorld.hexWorldData[x-1,y+1].y);
+				Debug.Log("G: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 				numberOfNeighbors++;
 			}
 			
-			if(x-1 >= xUpperBound && y-1 >= yLowerBound){
-				neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x-1,y-1];
+			if(x-1 >= xLowerBound && y-1 >= yLowerBound){
+				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y-1].x,hexWorld.hexWorldData[x-1,y-1].y);
+				Debug.Log("H: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 				numberOfNeighbors++;
 			}
 		}
 		
 		for(int i=0; i<numberOfNeighbors; i++)
 		{
-			hexWorld.SetHexUVs(new Vector3(neighborList[i].x,0,neighborList[i].y),2);
+			hexWorld.SetHexUVs(neighborList[i],2);
 		}
 		return neighborList;
 	}
