@@ -66,6 +66,7 @@ public class TerrainRaycaster : MonoBehaviour
 	
 	void CheckForMouseClick() 
 	{
+		//check for UI COLLISIONS FIRST
 		// option to set the current hexagon to a different texture index
 		if ( Input.GetMouseButtonDown(0) )
 			// change hexagon to green
@@ -115,6 +116,11 @@ public class TerrainRaycaster : MonoBehaviour
 					if(hexWorld.hexWorldData[(int)point.x,(int)point.y].unitObject == null){
 						hexWorld.game.moveUnit(selected,point);
 						selected=point;
+					} else {
+						//targeting another unit! See if its an enemy or an ally. Or something?
+						if(!hexWorld.game.playerObjects[hexWorld.game.me].Contains(hexWorld.hexWorldData[(int)point.x,(int)point.y].unitObject)){
+							hexWorld.game.attackUnit(selected,point);
+						}
 					}
 				} else {
 					hexWorld.SetHexUVs( point, b );

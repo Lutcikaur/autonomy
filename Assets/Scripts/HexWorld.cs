@@ -39,6 +39,7 @@ public class HexWorld : MonoBehaviour
 		public string unit = null;
 		public GameObject unitObject = null;
 		public Vector2 center = Vector2.zero;
+		public bool inBounds = false;
 	};
 
 	void Awake() 
@@ -97,6 +98,9 @@ public class HexWorld : MonoBehaviour
 				hexWorldData[i,j].y = j;
 				float num = terrain.SampleHeight(new Vector3(hexWorldData[i,j].center.x,0,hexWorldData[i,j].center.y));
 				hexWorldData[i,j].height = Mathf.Round(num * 2) / 2;
+				if(i>= game.xLowerBound && i <= game.xUpperBound && j >= game.yLowerBound && j <= game.yUpperBound){
+					hexWorldData[i,j].inBounds = true;
+				}
 			}
 		}
 	}

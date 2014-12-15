@@ -44,7 +44,7 @@ public class Game : MonoBehaviour {
 				for(int j = 0; j<5; j++){
 					string name = "Vtol";
 					string guid = Menu.connectionList[i].guid;
-					Vector3 location = new Vector3(i,1,j);
+					Vector3 location = new Vector3(i+86,1,j+9);
 					networkView.RPC("SpawnObject",RPCMode.All,i,guid,name,location);
 				}
 			}
@@ -65,57 +65,49 @@ public class Game : MonoBehaviour {
 		
 		Debug.Log ("START: " + x + " " + y + " " + hexWorld.hexWorldData[x,y].height);
 		//adds x neighbors
-		if(x-1 >= xLowerBound && x-1 <= xUpperBound && y <= yUpperBound && y >= yLowerBound){
+		if(hexWorld.hexWorldData[x-1,y].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y].x,hexWorld.hexWorldData[x-1,y].y);
-			Debug.Log("A: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
-		if(x+1 <= xUpperBound && x+1 <= xUpperBound && y <= yUpperBound && y >= yLowerBound){
+		if(hexWorld.hexWorldData[x+1,y].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y].x,hexWorld.hexWorldData[x+1,y].y);
-			Debug.Log("B: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
 		//adds y neighbors
-		if(y-1 >= yLowerBound && x <= xUpperBound && x <= xUpperBound && y-1 <= yUpperBound){
+		if(hexWorld.hexWorldData[x,y-1].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y-1].x,hexWorld.hexWorldData[x,y-1].y);
-			Debug.Log("C: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
-		if(y+1 <= yUpperBound && x <= xUpperBound && x <= xUpperBound && y+1 >= yLowerBound){
+		if(hexWorld.hexWorldData[x,y+1].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y+1].x,hexWorld.hexWorldData[x,y+1].y);
-			Debug.Log("D: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
 		//gets y right neighbors for odd
 		if(odd == true) {
 			Debug.Log ("If");
-			if(x+1 <= xUpperBound && y-1 >= yLowerBound && x+1 >= xLowerBound && y-1 <= yUpperBound){
+			if(hexWorld.hexWorldData[x+1,y-1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y-1].x,hexWorld.hexWorldData[x+1,y-1].y);
-				Debug.Log("E: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 				numberOfNeighbors++;
 			}
 			
-			if(x+1 <= xUpperBound && y+1 <= yUpperBound && x+1 >= xLowerBound && y+1 >= yLowerBound){
+			if(hexWorld.hexWorldData[x+1,y+1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y+1].x,hexWorld.hexWorldData[x+1,y+1].y);
-				Debug.Log("F: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 				numberOfNeighbors++;
 			}
 		} else {
 			Debug.Log ("Else");
 			//gets y left neighbors for even
-			if(x-1 <= xUpperBound && y+1 <= yUpperBound && x-1 >= xLowerBound && y+1 >= yLowerBound){
+			if(hexWorld.hexWorldData[x-1,y+1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y+1].x,hexWorld.hexWorldData[x-1,y+1].y);
-				Debug.Log("G: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 				numberOfNeighbors++;
 			}
 			
-			if(x-1 <= xUpperBound && y-1 >= yLowerBound && x-1 <= xUpperBound && y-1 <= yUpperBound){
+			if(hexWorld.hexWorldData[x-1,y-1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y-1].x,hexWorld.hexWorldData[x-1,y-1].y);
-				Debug.Log("H: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 				numberOfNeighbors++;
 			}
 		}
@@ -207,8 +199,8 @@ public class Game : MonoBehaviour {
 			GUI.Box (new Rect(0, y-(x*.2f), x*.2f, x*.2f), "Depot goes here?");
 			GUI.Box (new Rect(x-(x*.3f), y-(y*.3f), x*.3f, y*.3f), "Unit Details & abilities go here?");
 			GUI.Box (new Rect(x*.2f, y-(y*.3f), x*.5f, y*.3f), "Hand of Cards Go Here?");
-			if(GUI.Button(new Rect(x-100, y-40, 80, 20), "Pass Turn")) {
-				//PUT PASS TURN CALL HERE
+			if(GUI.Button(new Rect(x-100, y-40, 80, 20), (me == turn?"Pass Turn":"Waiting"))) {
+				networkView.RPC ("RequestTurnSwitch",RPCMode.Server);
 			}
 
 			break;
@@ -244,10 +236,22 @@ public class Game : MonoBehaviour {
 
 	public void moveUnit(Vector2 _selected, Vector2 _point){
 		if(turn == me){
-			Vector3 selected = new Vector3(_selected.x,1,_selected.y);
-			Vector3 point = new Vector3(_point.x,1,_point.y);
-			//theres no server checking here. dont send 'me' later.
-			networkView.RPC("NetworkMove",RPCMode.All,me,Network.player.guid,selected,point);
+			if(playerObjects[me].Contains(hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject)){
+				Vector3 selected = new Vector3(_selected.x,1,_selected.y);
+				Vector3 point = new Vector3(_point.x,1,_point.y);
+				//theres no server checking here. dont send 'me' later.
+				networkView.RPC("NetworkMove",RPCMode.All,me,Network.player.guid,selected,point);
+			}
+		}
+	}
+
+	public void attackUnit(Vector2 _selected, Vector2 _point){
+		if(turn == me){
+			if(!playerObjects[me].Contains(hexWorld.hexWorldData[(int)_point.x,(int)_point.y].unitObject) && playerObjects[me].Contains(hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject)){
+				Stats _selectedUnit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject.GetComponent<Stats>();
+				Stats _targetUnit = hexWorld.hexWorldData[(int)_point.x,(int)_point.y].unitObject.GetComponent<Stats>();
+				// CALL RPCS
+			}
 		}
 	}
 
@@ -320,8 +324,11 @@ public class Game : MonoBehaviour {
 			int c = Menu.connectionList.Count;
 			for(int i = 0; i<c; i++){
 				if(info.sender.guid == Menu.connectionList[i].guid){
-					if(turn == i){
-						networkView.RPC("SwitchTurn",RPCMode.All,(turn+1>c?0:(turn+1)));
+					if(turn == i){;
+						int nturn = turn+1==c?0:turn+1;
+						turn = nturn;
+						Debug.Log (nturn + " " + turn + " " + c);
+						networkView.RPC("SwitchTurn",RPCMode.All,nturn);
 					}
 				}
 			}
