@@ -169,6 +169,7 @@ public class Game : MonoBehaviour {
 
 		Debug.Log ("START: " + x + " " + y + " " + hexWorld.hexWorldData[x,y].height);
 		//adds x neighbors
+<<<<<<< HEAD
 		if(x-1 >= xLowerBound && y >= yLowerBound && y <= yUpperBound){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y].x,hexWorld.hexWorldData[x-1,y].y);
 			Debug.Log("A: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
@@ -178,10 +179,20 @@ public class Game : MonoBehaviour {
 		if(x+1 <= xUpperBound && y >= yLowerBound && y <= yUpperBound){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y].x,hexWorld.hexWorldData[x+1,y].y);
 			Debug.Log("B: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+=======
+		if(x-1 >= xLowerBound && x-1 <= xUpperBound && y <= yUpperBound && y >= yLowerBound){
+			neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x-1,y];
+			numberOfNeighbors++;
+		}
+		
+		if(x+1 <= xUpperBound && x+1 <= xUpperBound && y <= yUpperBound && y >= yLowerBound){
+			neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x+1,y];
+>>>>>>> Full bound checking
 			numberOfNeighbors++;
 		}
 		
 		//adds y neighbors
+<<<<<<< HEAD
 		if(y-1 >= yLowerBound && x >= xLowerBound && x <= xUpperBound){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y-1].x,hexWorld.hexWorldData[x,y-1].y);
 			Debug.Log("C: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
@@ -191,10 +202,20 @@ public class Game : MonoBehaviour {
 		if(y+1 <= yUpperBound && x >= xLowerBound && x <= xUpperBound){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y+1].x,hexWorld.hexWorldData[x,y+1].y);
 			Debug.Log("D: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+=======
+		if(y-1 >= yLowerBound && x <= xUpperBound && x <= xUpperBound && y-1 <= yUpperBound){
+			neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x,y-1];
+			numberOfNeighbors++;
+		}
+		
+		if(y+1 <= yUpperBound && x <= xUpperBound && x <= xUpperBound && y+1 >= yLowerBound){
+			neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x,y+1];
+>>>>>>> Full bound checking
 			numberOfNeighbors++;
 		}
 		
 		//gets y right neighbors for odd
+<<<<<<< HEAD
 		if(odd == true) {
 			Debug.Log ("If");
 			if(x+1 <= xUpperBound && y-1 >= yLowerBound){
@@ -206,11 +227,23 @@ public class Game : MonoBehaviour {
 			if(x+1 <= xUpperBound && y+1 <= yUpperBound){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y+1].x,hexWorld.hexWorldData[x+1,y+1].y);
 				Debug.Log("F: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+=======
+		if(odd == true)
+		{
+			if(x+1 <= xUpperBound && y-1 >= yLowerBound && x+1 >= xLowerBound && y-1 <= yUpperBound){
+				neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x+1,y-1];
+				numberOfNeighbors++;
+			}
+			
+			if(x+1 <= xUpperBound && y+1 <= yUpperBound && x+1 >= xLowerBound && y+1 >= yLowerBound){
+				neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x+1,y+1];
+>>>>>>> Full bound checking
 				numberOfNeighbors++;
 			}
 		} else {
 			Debug.Log ("Else");
 			//gets y left neighbors for even
+<<<<<<< HEAD
 			if(x-1 >= xLowerBound && y+1 <= yUpperBound){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y+1].x,hexWorld.hexWorldData[x-1,y+1].y);
 				Debug.Log("G: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
@@ -220,6 +253,16 @@ public class Game : MonoBehaviour {
 			if(x-1 >= xLowerBound && y-1 >= yLowerBound){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y-1].x,hexWorld.hexWorldData[x-1,y-1].y);
 				Debug.Log("H: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
+=======
+		{
+			if(x-1 <= xUpperBound && y+1 <= yUpperBound && x-1 >= xLowerBound && y+1 >= yLowerBound){
+				neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x-1,y+1];
+				numberOfNeighbors++;
+			}
+			
+			if(x-1 <= xUpperBound && y-1 >= yLowerBound && x-1 <= xUpperBound && y-1 <= yUpperBound){
+				neighborList[numberOfNeighbors] = hexWorld.hexWorldData[x-1,y-1];
+>>>>>>> Full bound checking
 				numberOfNeighbors++;
 			}
 		}
