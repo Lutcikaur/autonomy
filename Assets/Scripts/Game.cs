@@ -21,10 +21,17 @@ public class Game : MonoBehaviour {
 	public int yUpperBound = 25;
 
 
-	public int arbitraryTempOne=0;
-	public bool arbitraryTempThree=false;
+	public int handToggleTemp=0;
+	public bool handToggleTempBool=false;
+
+	public Texture artex;
+	Texture2D img;
+	Texture2D depotBack;
+
 
 	void Start () {
+		depotBack=Resources.Load("depotWindow") as Texture2D;
+		img = Resources.Load("Deck_2") as Texture2D;
 		server = Menu.server;
 		Debug.Log("Here");
 		switch(Network.peerType){
@@ -182,70 +189,149 @@ public class Game : MonoBehaviour {
 		int i = 0;
 		float x=Screen.width;
 		float y=Screen.height;
+
 		switch(Network.peerType){
 		default:
 		case NetworkPeerType.Disconnected:
-			GUI.Box (new Rect(0, y-(x*.2f), x*.2f, x*.2f), "Depot goes here?");
+			GUI.DrawTexture (new Rect(0, y-(x*.22f), x*.2f, x*.22f), depotBack); //Depot Back Splash
+
+			//This switch is the GUI for objects in the Depot
+			switch (6){ //REPLACE 6 with numInDepot
+			case 0:
+				Debug.Log("nothing in Depot");
+				break;
+			case 1:
+				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
+
+				break;
+			case 2:
+				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
+				break;
+			case 3:
+				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
+				break;
+			case 4:
+				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
+				break;
+			case 5:
+				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f), img);		
+				break;
+			case 6:
+				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
+				if(GUI.Button (new Rect(0, y-(x*.185f), x*.06f, x*.09f),"")){
+					
+				}
+				GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect(x*.14f, y-(x*.09f), x*.06f, x*.09f), img);	
+				break;
+			}
 			GUI.Box (new Rect(x-(x*.3f), y-(y*.25f), x*.15f, y*.25f), "Unit Details & abilities goes here?");
+			//GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), img);
 			if(GUI.Button (new Rect(x*.2f, y-(y*.25f), x*.5f, y*.25f), "Hand of Cards Goes Here?"))
 			{
-				if(arbitraryTempOne ==0){
-					arbitraryTempThree=true;
-					arbitraryTempOne++;
-					//arbitraryTempTwo++;
-					Debug.Log("Is this happeneing 1");
-				} else if (arbitraryTempOne==1){
-					arbitraryTempThree=false;
-					arbitraryTempOne--;
-					//arbitraryTempTwo++;
-					Debug.Log("Is this happeneing 3");
+				if(handToggleTemp ==0){
+					handToggleTempBool=true;
+					handToggleTemp++;
+				} else if (handToggleTemp==1){
+					handToggleTempBool=false;
+					handToggleTemp--;
 				}
-
-
 			}
-			if(arbitraryTempThree){
-				GUI.Box (new Rect(x*.2f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
-				Debug.Log("Is this happeneing 2");
-				//arbitraryTempTwo--;
+			if(handToggleTempBool){
+				//GUI.Box (new Rect(x*.2f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
+				GUI.DrawTexture(new Rect(x*.2f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
 			}
 
 			//GUI.Box (new Rect(x*.1f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
 
 			break;
+
+
+
+
+
+
+
+
+
+
+
+
 		case NetworkPeerType.Client:
 			for(i=0;i<Menu.connectionList.Count;i++){
-				int offset = i*25;
-				GUI.Label(new Rect(10,(10+offset),100,25),Menu.connectionList[i].username);
-				//button to kick
-				//playerObjects[_i][playerObjects[_i].Count-1].transform.position = _location;
-				//for(int j=0;j<depotList[i].Count;j++){
-				//	GUI.Label(new Rect(100+(100*j),(10+offset),100,25),depotList[i][j]);
-				//}
-			}
-
-			//GUI.Box (new Rect(50,50,100,90), "Loader Menu");
-			GUI.Box (new Rect(0, y-(x*.2f), x*.2f, x*.2f), "Depot goes here?");
-			GUI.Box (new Rect(x-(x*.3f), y-(y*.25f), x*.15f, y*.25f), "Unit Details & abilities goes here?");
-			if(GUI.Button (new Rect(x*.2f, y-(y*.25f), x*.5f, y*.25f), "Hand of Cards Goes Here?"))
-			{
-				if(arbitraryTempOne ==0){
-					arbitraryTempThree=true;
-					arbitraryTempOne++;
-
-					Debug.Log("Is this happeneing 1");
-				} else if (arbitraryTempOne==1){
-					arbitraryTempThree=false;
-					arbitraryTempOne--;
-
-					Debug.Log("Is this happeneing 3");
+				GUI.DrawTexture (new Rect(0, y-(x*.22f), x*.2f, x*.22f), depotBack); //Depot Back Splash
+				
+				//This switch is the GUI for objects in the Depot
+				switch (6){ //REPLACE 6 with numInDepot
+				case 0:
+					Debug.Log("nothing in Depot");
+					break;
+				case 1:
+					GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
+					break;
+				case 2:
+					GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
+					break;
+				case 3:
+					GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
+					break;
+				case 4:
+					GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
+					break;
+				case 5:
+					GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f), img);		
+					break;
+				case 6:
+					GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f), img);
+					GUI.DrawTexture (new Rect(x*.14f, y-(x*.09f), x*.06f, x*.09f), img);	
+					break;
+				}
+				GUI.Box (new Rect(x-(x*.3f), y-(y*.25f), x*.15f, y*.25f), "Unit Details & abilities goes here?");
+				//GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), img);
+				if(GUI.Button (new Rect(x*.2f, y-(y*.25f), x*.5f, y*.25f), "Hand of Cards Goes Here?"))
+				{
+					if(handToggleTemp ==0){
+						handToggleTempBool=true;
+						handToggleTemp++;
+					} else if (handToggleTemp==1){
+						handToggleTempBool=false;
+						handToggleTemp--;
+					}
+				}
+				if(handToggleTempBool){
+					//GUI.Box (new Rect(x*.2f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
+					GUI.DrawTexture(new Rect(x*.2f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
 				}
 				
+				//GUI.Box (new Rect(x*.1f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
 				
-			}
-			if(arbitraryTempThree){
-				GUI.Box (new Rect(x*.2f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
-				Debug.Log("Is this happeneing 2");
-
 			}
 			if(GUI.Button(new Rect(x-100, y-40, 80, 20), "Pass Turn")) {
 				//PUT PASS TURN CALL HERE
