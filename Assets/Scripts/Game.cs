@@ -144,17 +144,75 @@ public class Game : MonoBehaviour {
 			}
 			workingRadi++;
 			tempY = tempY + 2;
+
 		}
 		return (neighborList);
 			
 	}
+	/*
+	deck RandomizeDeck(deck d){
+		int i,j;
+		int iMin;
+		var r=new Random();
+		for (i=0; i<deckSize; i++){
+			d[i].randomVal=r.Next(1000);
+		}
+		deck TempDeck=new deck;
+
+		// a[0] to a[n-1] is the array to sort 
+
+		
+		// advance the position through the entire array 
+		//   (could do j < n-1 because single element is also min element) 
+		for (j = 0; j < deckSize; j++) {
+			// find the min element in the unsorted a[j .. n-1] 
+			
+			// assume the min is the first element 
+			iMin = j;
+			// test against elements after j to find the smallest 
+			for ( i = j+1; i <= deckSize; i++) {
+				// if this element is less, then it is the new minimum   
+				if (d[i].randomVal < d[iMin].randomVal) {
+					// found new minimum; remember its index 
+					iMin = i;
+				}
+			}
+			
+			if(iMin != j) {
+				//swaps d[j]& d[iMin];
+				TempDeck[0].index=d[j].index;
+				TempDeck[0].randomVal=d[j].randomVal;
+				d[j].index=d[iMin].index;
+				d[j].randomVal=d[iMin].randomVal;
+				d[iMin].index=TempDeck[0];
+				d[iMin].randomVal=TempDeck[0];
+			}
+			
+		}
 
 
+
+		return(d);
+	}
+
+	*/
 	void OnGUI() {
 		int i = 0;
+		float x=Screen.width;
+		float y=Screen.height;
 		switch(Network.peerType){
 		default:
 		case NetworkPeerType.Disconnected:
+			GUI.Box (new Rect(0, y-(x*.2f), x*.2f, x*.2f), "Depot goes here?");
+			GUI.Box (new Rect(x-(x*.3f), y-(y*.25f), x*.3f, y*.25f), "Unit Details & abilities goes here?");
+			if(GUI.RepeatButton (new Rect(x*.2f, y-(y*.25f), x*.5f, y*.25f), "Hand of Cards Goes Here?"))
+			{
+				GUI.Box (new Rect(x*.1f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
+				Debug.Log("Is this happeneing");
+			}
+			GUI.Box (new Rect(x*.2f, 0, x*.5f, y*.1f), "Score Goes Here?");
+
+
 			break;
 		case NetworkPeerType.Client:
 			for(i=0;i<Menu.connectionList.Count;i++){
@@ -166,6 +224,15 @@ public class Game : MonoBehaviour {
 				//	GUI.Label(new Rect(100+(100*j),(10+offset),100,25),depotList[i][j]);
 				//}
 			}
+
+			//GUI.Box (new Rect(50,50,100,90), "Loader Menu");
+			GUI.Box (new Rect(0, y-(x*.2f), x*.2f, x*.2f), "Depot goes here?");
+			GUI.Box (new Rect(x-(x*.3f), y-(y*.3f), x*.3f, y*.3f), "Unit Details & abilities go here?");
+			GUI.Box (new Rect(x*.2f, y-(y*.3f), x*.5f, y*.3f), "Hand of Cards Go Here?");
+			if(GUI.Button(new Rect(x-100, y-40, 80, 20), "Pass Turn")) {
+				//PUT PASS TURN CALL HERE
+			}
+
 			break;
 		case NetworkPeerType.Server:
 			GUI.Label(new Rect(100,100,100,25),"Server");
