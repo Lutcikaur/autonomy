@@ -44,7 +44,7 @@ public class Game : MonoBehaviour {
 				for(int j = 0; j<5; j++){
 					string name = "Vtol";
 					string guid = Menu.connectionList[i].guid;
-					Vector3 location = new Vector3(i,1,j);
+					Vector3 location = new Vector3(i+86,1,j+9);
 					networkView.RPC("SpawnObject",RPCMode.All,i,guid,name,location);
 				}
 			}
@@ -52,110 +52,6 @@ public class Game : MonoBehaviour {
 		}
 
 	}
-
-	/*
-	Vector2[] getNeighbors(int x, int y, int radi){
-			
-		//Initializes first neighbor, changes slightly if y coordinate is even.
-		int tempX = x;
-		int tempY = y + 1;
-		int lastTempX = x;
-		int lastTempY = y + 1;
-		int tempCheckRange = 0;
-		string dir = "East";
-		int direction = 1;
-		int workingRadi = 1;
-		int radiCopy = radi;
-		int totalNeighbors = 0;
-		int neighborIndex = 0;
-		while (radiCopy>0) {
-			totalNeighbors=totalNeighbors+(6*radiCopy);
-			radiCopy--;
-		}
-		Vector2[] neighborList = new Vector2[totalNeighbors];
-
-
-		if ((y % 2) > 0) {
-			tempX = x - 1;
-			lastTempX=x-1;
-		}
-
-
-		while (workingRadi<=radi) {
-			direction=1;
-			for (int i=0; i<=(6*workingRadi); i++) {
-				tempCheckRange = Mathf.Abs(tempX - x) + Mathf.Abs(tempY - y);
-				if(tempCheckRange==workingRadi){
-					if(hexWorld.hexWorldData[tempX,tempY].unit==null){
-						neighborList[neighborIndex]=new Vector2(tempX,tempY);
-						neighborIndex++;
-					}
-					lastTempX=tempX;
-					lastTempY=tempY;
-				} else {
-					tempX=lastTempX;
-					tempY=lastTempY;
-					direction++;
-					i--;
-				}
-				switch (direction) {
-				case 1:
-						dir = "East";
-						tempX++;
-						break;
-				case 2:
-						dir = "SE";
-						if(tempY%2==0){
-							tempY--;
-						} else {
-							tempY--;
-							tempX++;
-						}
-						break;
-				case 3:
-						dir = "SW";
-						if(tempY%2==0){
-							tempX--;
-							tempY--;
-						}else{
-							tempY--;
-						}
-						break;
-				case 4:
-						dir = "West";
-						tempX--;
-						break;
-				case 5:
-						dir = "NW";
-						if(tempY%2==0){
-							tempX--;
-							tempY++;
-						}else{
-							tempY++;
-						}
-						break;
-				case 6:
-						dir = "NE";
-						if(tempY%2==0){
-							tempY++;
-						} else {
-							tempY++;
-							tempX++;
-						}
-						break;
-				default:
-						dir = "ERROR";
-						break;							
-				}
-						
-			}
-			workingRadi++;
-			tempY = tempY + 2;
-		}
-		return (neighborList);
-			
-	}
-*/
 
 	public Vector2[] getNeighbor(int x, int y)
 	{
@@ -169,57 +65,65 @@ public class Game : MonoBehaviour {
 		
 		Debug.Log ("START: " + x + " " + y + " " + hexWorld.hexWorldData[x,y].height);
 		//adds x neighbors
-		if(x-1 >= xLowerBound && x-1 <= xUpperBound && y <= yUpperBound && y >= yLowerBound){
+		if(hexWorld.hexWorldData[x-1,y].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y].x,hexWorld.hexWorldData[x-1,y].y);
-			Debug.Log("A: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
+<<<<<<< HEAD
 		if(x+1 <= xUpperBound && x+1 >= xLowerBound && y <= yUpperBound && y >= yLowerBound){
+=======
+		if(hexWorld.hexWorldData[x+1,y].inBounds){
+>>>>>>> 41a2e087cc8197bda6f721d8255fdaef8e93f4c2
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y].x,hexWorld.hexWorldData[x+1,y].y);
-			Debug.Log("B: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
 		//adds y neighbors
+<<<<<<< HEAD
 		if(y-1 >= yLowerBound && x >= xLowerBound && x <= xUpperBound && y-1 <= yUpperBound){
+=======
+		if(hexWorld.hexWorldData[x,y-1].inBounds){
+>>>>>>> 41a2e087cc8197bda6f721d8255fdaef8e93f4c2
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y-1].x,hexWorld.hexWorldData[x,y-1].y);
-			Debug.Log("C: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
+<<<<<<< HEAD
 		if(y+1 <= yUpperBound && x >= xLowerBound && x <= xUpperBound && y+1 >= yLowerBound){
+=======
+		if(hexWorld.hexWorldData[x,y+1].inBounds){
+>>>>>>> 41a2e087cc8197bda6f721d8255fdaef8e93f4c2
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y+1].x,hexWorld.hexWorldData[x,y+1].y);
-			Debug.Log("D: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 			numberOfNeighbors++;
 		}
 		
 		//gets y right neighbors for odd
 		if(odd == true) {
 			Debug.Log ("If");
-			if(x+1 <= xUpperBound && y-1 >= yLowerBound && x+1 >= xLowerBound && y-1 <= yUpperBound){
+			if(hexWorld.hexWorldData[x+1,y-1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y-1].x,hexWorld.hexWorldData[x+1,y-1].y);
-				Debug.Log("E: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 				numberOfNeighbors++;
 			}
 			
-			if(x+1 <= xUpperBound && y+1 <= yUpperBound && x+1 >= xLowerBound && y+1 >= yLowerBound){
+			if(hexWorld.hexWorldData[x+1,y+1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y+1].x,hexWorld.hexWorldData[x+1,y+1].y);
-				Debug.Log("F: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 				numberOfNeighbors++;
 			}
 		} else {
 			Debug.Log ("Else");
 			//gets y left neighbors for even
-			if(x-1 <= xUpperBound && y+1 <= yUpperBound && x-1 >= xLowerBound && y+1 >= yLowerBound){
+			if(hexWorld.hexWorldData[x-1,y+1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y+1].x,hexWorld.hexWorldData[x-1,y+1].y);
-				Debug.Log("G: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 				numberOfNeighbors++;
 			}
 			
+<<<<<<< HEAD
 			if(x-1 <= xUpperBound && y-1 >= yLowerBound && x-1 >= xLowerBound && y-1 <= yUpperBound){
+=======
+			if(hexWorld.hexWorldData[x-1,y-1].inBounds){
+>>>>>>> 41a2e087cc8197bda6f721d8255fdaef8e93f4c2
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y-1].x,hexWorld.hexWorldData[x-1,y-1].y);
-				Debug.Log("H: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
 				numberOfNeighbors++;
 			}
 		}
@@ -231,7 +135,19 @@ public class Game : MonoBehaviour {
 		return neighborList;
 	}
 
+	/*
+	deck RandomizeDeck(deck d){
+		int i,j;
+		int iMin;
+		var r=new Random();
+		for (i=0; i<deckSize; i++){
+			d[i].randomVal=r.Next(1000);
+		}
+		deck TempDeck=new deck;
 
+		// a[0] to a[n-1] is the array to sort 
+
+<<<<<<< HEAD
 
 	//pathfinds from the starting location to the ending location 
 	//IF IT RETURNS NULL, THERE IS NO PATH
@@ -354,11 +270,60 @@ public class Game : MonoBehaviour {
 		return path;
 	}
 
+=======
+		
+		// advance the position through the entire array 
+		//   (could do j < n-1 because single element is also min element) 
+		for (j = 0; j < deckSize; j++) {
+			// find the min element in the unsorted a[j .. n-1] 
+			
+			// assume the min is the first element 
+			iMin = j;
+			// test against elements after j to find the smallest 
+			for ( i = j+1; i <= deckSize; i++) {
+				// if this element is less, then it is the new minimum   
+				if (d[i].randomVal < d[iMin].randomVal) {
+					// found new minimum; remember its index 
+					iMin = i;
+				}
+			}
+			
+			if(iMin != j) {
+				//swaps d[j]& d[iMin];
+				TempDeck[0].index=d[j].index;
+				TempDeck[0].randomVal=d[j].randomVal;
+				d[j].index=d[iMin].index;
+				d[j].randomVal=d[iMin].randomVal;
+				d[iMin].index=TempDeck[0];
+				d[iMin].randomVal=TempDeck[0];
+			}
+			
+		}
+
+
+
+		return(d);
+	}
+
+	*/
+>>>>>>> 41a2e087cc8197bda6f721d8255fdaef8e93f4c2
 	void OnGUI() {
 		int i = 0;
+		float x=Screen.width;
+		float y=Screen.height;
 		switch(Network.peerType){
 		default:
 		case NetworkPeerType.Disconnected:
+			GUI.Box (new Rect(0, y-(x*.2f), x*.2f, x*.2f), "Depot goes here?");
+			GUI.Box (new Rect(x-(x*.3f), y-(y*.25f), x*.3f, y*.25f), "Unit Details & abilities goes here?");
+			if(GUI.RepeatButton (new Rect(x*.2f, y-(y*.25f), x*.5f, y*.25f), "Hand of Cards Goes Here?"))
+			{
+				GUI.Box (new Rect(x*.1f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
+				Debug.Log("Is this happeneing");
+			}
+			GUI.Box (new Rect(x*.2f, 0, x*.5f, y*.1f), "Score Goes Here?");
+
+
 			break;
 		case NetworkPeerType.Client:
 			for(i=0;i<Menu.connectionList.Count;i++){
@@ -370,6 +335,15 @@ public class Game : MonoBehaviour {
 				//	GUI.Label(new Rect(100+(100*j),(10+offset),100,25),depotList[i][j]);
 				//}
 			}
+
+			//GUI.Box (new Rect(50,50,100,90), "Loader Menu");
+			GUI.Box (new Rect(0, y-(x*.2f), x*.2f, x*.2f), "Depot goes here?");
+			GUI.Box (new Rect(x-(x*.3f), y-(y*.3f), x*.3f, y*.3f), "Unit Details & abilities go here?");
+			GUI.Box (new Rect(x*.2f, y-(y*.3f), x*.5f, y*.3f), "Hand of Cards Go Here?");
+			if(GUI.Button(new Rect(x-100, y-40, 80, 20), (me == turn?"Pass Turn":"Waiting"))) {
+				networkView.RPC ("RequestTurnSwitch",RPCMode.Server);
+			}
+
 			break;
 		case NetworkPeerType.Server:
 			GUI.Label(new Rect(100,100,100,25),"Server");
@@ -403,10 +377,22 @@ public class Game : MonoBehaviour {
 
 	public void moveUnit(Vector2 _selected, Vector2 _point){
 		if(turn == me){
-			Vector3 selected = new Vector3(_selected.x,1,_selected.y);
-			Vector3 point = new Vector3(_point.x,1,_point.y);
-			//theres no server checking here. dont send 'me' later.
-			networkView.RPC("NetworkMove",RPCMode.All,me,Network.player.guid,selected,point);
+			if(playerObjects[me].Contains(hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject)){
+				Vector3 selected = new Vector3(_selected.x,1,_selected.y);
+				Vector3 point = new Vector3(_point.x,1,_point.y);
+				//theres no server checking here. dont send 'me' later.
+				networkView.RPC("NetworkMove",RPCMode.All,me,Network.player.guid,selected,point);
+			}
+		}
+	}
+
+	public void attackUnit(Vector2 _selected, Vector2 _point){
+		if(turn == me){
+			if(!playerObjects[me].Contains(hexWorld.hexWorldData[(int)_point.x,(int)_point.y].unitObject) && playerObjects[me].Contains(hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject)){
+				Stats _selectedUnit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject.GetComponent<Stats>();
+				Stats _targetUnit = hexWorld.hexWorldData[(int)_point.x,(int)_point.y].unitObject.GetComponent<Stats>();
+				// CALL RPCS
+			}
 		}
 	}
 
@@ -479,8 +465,11 @@ public class Game : MonoBehaviour {
 			int c = Menu.connectionList.Count;
 			for(int i = 0; i<c; i++){
 				if(info.sender.guid == Menu.connectionList[i].guid){
-					if(turn == i){
-						networkView.RPC("SwitchTurn",RPCMode.All,(turn+1>c?0:(turn+1)));
+					if(turn == i){;
+						int nturn = turn+1==c?0:turn+1;
+						turn = nturn;
+						Debug.Log (nturn + " " + turn + " " + c);
+						networkView.RPC("SwitchTurn",RPCMode.All,nturn);
 					}
 				}
 			}
