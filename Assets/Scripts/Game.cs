@@ -69,28 +69,23 @@ public class Game : MonoBehaviour {
 		Vector2[] neighborList = new Vector2[6];
 		int numberOfNeighbors = 0;
 		bool odd = false;
-		
+
+		if(x > xUpperBound || x < xLowerBound || y > yUpperBound || y < yUpperBound){
+			return new Vector2[0];
+		}
+
 		if ((y % 2) > 0) {
 			odd = true;
 		}
-		
-		//Debug.Log ("START: " + x + " " + y + " " + hexWorld.hexWorldData[x,y].height);
+
 		//adds x neighbors
 		if(hexWorld.hexWorldData[x-1,y].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y].x,hexWorld.hexWorldData[x-1,y].y);
-<<<<<<< HEAD
-			//Debug.Log("A: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
-=======
->>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 			numberOfNeighbors++;
 		}
 
 		if(hexWorld.hexWorldData[x+1,y].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y].x,hexWorld.hexWorldData[x+1,y].y);
-<<<<<<< HEAD
-			//Debug.Log("B: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
-=======
->>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 			numberOfNeighbors++;
 		}
 		
@@ -102,34 +97,19 @@ public class Game : MonoBehaviour {
 
 		if(hexWorld.hexWorldData[x,y+1].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y+1].x,hexWorld.hexWorldData[x,y+1].y);
-<<<<<<< HEAD
-			//Debug.Log("D: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
-=======
->>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 			numberOfNeighbors++;
 		}
 		
 		//gets y right neighbors for odd
 		if(odd == true) {
-<<<<<<< HEAD
-			//Debug.Log ("If");
-			if(x+1 <= xUpperBound && y-1 >= yLowerBound && x+1 >= xLowerBound && y-1 <= yUpperBound){
-				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y-1].x,hexWorld.hexWorldData[x+1,y-1].y);
-				//Debug.Log("E: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
-=======
 			Debug.Log ("If");
 			if(hexWorld.hexWorldData[x+1,y-1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y-1].x,hexWorld.hexWorldData[x+1,y-1].y);
->>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 				numberOfNeighbors++;
 			}
 			
 			if(hexWorld.hexWorldData[x+1,y+1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y+1].x,hexWorld.hexWorldData[x+1,y+1].y);
-<<<<<<< HEAD
-				//Debug.Log("F: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
-=======
->>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 				numberOfNeighbors++;
 			}
 		} else {
@@ -137,19 +117,11 @@ public class Game : MonoBehaviour {
 			//gets y left neighbors for even
 			if(hexWorld.hexWorldData[x-1,y+1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y+1].x,hexWorld.hexWorldData[x-1,y+1].y);
-<<<<<<< HEAD
-				//Debug.Log("G: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
-=======
->>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 				numberOfNeighbors++;
 			}
 
 			if(hexWorld.hexWorldData[x-1,y-1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y-1].x,hexWorld.hexWorldData[x-1,y-1].y);
-<<<<<<< HEAD
-				//Debug.Log("H: " + neighborList[numberOfNeighbors].x + " " + neighborList[numberOfNeighbors].y);
-=======
->>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 				numberOfNeighbors++;
 			}
 		}
@@ -333,6 +305,7 @@ public class Game : MonoBehaviour {
 		int i = 0;
 		float x=Screen.width;
 		float y=Screen.height;
+		int numInDepot;
 
 		switch(Network.peerType){
 		default:
@@ -340,7 +313,8 @@ public class Game : MonoBehaviour {
 			GUI.DrawTexture (new Rect(0, y-(x*.22f), x*.2f, x*.22f), depotBack); //Depot Back Splash
 
 			//This switch is the GUI for objects in the Depot
-			switch (6){ //REPLACE 6 with numInDepot
+			numInDepot = 6;
+			switch (numInDepot){ //REPLACE 6 with numInDepot
 			case 0:
 				Debug.Log("nothing in Depot");
 				break;
@@ -402,24 +376,13 @@ public class Game : MonoBehaviour {
 			//GUI.Box (new Rect(x*.1f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
 
 			break;
-
-
-
-
-
-
-
-
-
-
-
-
 		case NetworkPeerType.Client:
 			for(i=0;i<Menu.connectionList.Count;i++){
 				GUI.DrawTexture (new Rect(0, y-(x*.22f), x*.2f, x*.22f), depotBack); //Depot Back Splash
 				
 				//This switch is the GUI for objects in the Depot
-				switch (6){ //REPLACE 6 with numInDepot
+				numInDepot = 6;
+				switch (numInDepot){ //REPLACE 6 with numInDepot
 				case 0:
 					Debug.Log("nothing in Depot");
 					break;
@@ -477,18 +440,16 @@ public class Game : MonoBehaviour {
 				//GUI.Box (new Rect(x*.1f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
 				
 			}
-<<<<<<< HEAD
 			if(GUI.Button(new Rect(x-100, y-40, 80, 20), "Pass Turn")) {
 				//PUT PASS TURN CALL HERE
-=======
 
+			}
 			//GUI.Box (new Rect(50,50,100,90), "Loader Menu");
 			GUI.Box (new Rect(0, y-(x*.2f), x*.2f, x*.2f), "Depot goes here?");
 			GUI.Box (new Rect(x-(x*.3f), y-(y*.3f), x*.3f, y*.3f), "Unit Details & abilities go here?");
 			GUI.Box (new Rect(x*.2f, y-(y*.3f), x*.5f, y*.3f), "Hand of Cards Go Here?");
 			if(GUI.Button(new Rect(x-100, y-40, 80, 20), (me == turn?"Pass Turn":"Waiting"))) {
 				networkView.RPC ("RequestTurnSwitch",RPCMode.Server);
->>>>>>> 1b2c5e6bdbd52ba55fd727cb21e95604f60443c7
 			}
 
 			break;
