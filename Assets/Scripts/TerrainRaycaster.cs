@@ -113,9 +113,12 @@ public class TerrainRaycaster : MonoBehaviour
 					Debug.Log((int)point.x + " " + (int)point.y);
 					//hexWorld.game.getNeighbor((int)point.x,(int)point.y);
 					if(hexWorld.game.factorySelectionFlag){
-						if(hexWorld.hexWorldData[(int)point.x,(int)point.y].building.name == "factory"){
-							Building data = hexWorld.hexWorldData[(int)point.x,(int)point.y].building.GetComponent<Building>();
+						Debug.Log ("sending to fact");
+						Building data = hexWorld.hexWorldData[(int)point.x,(int)point.y].building.GetComponent<Building>();
+						if(data.name == "factory"){
+							Debug.Log ("sending to fact");
 							if(data.owner == hexWorld.game.me && data.capCurrent == data.capMax && data.currentlyBuilding == null){
+								Debug.Log ("sending to fact");
 								data.currentlyBuilding = hexWorld.game.factoryWaitingUnit;
 								//hexWorld.game.handList[hexWorld.game.me][hexWorld.game.factoryWaitingUnitLoc];
 								hexWorld.game.handList[hexWorld.game.me].RemoveAt(hexWorld.game.factoryWaitingUnitLoc);

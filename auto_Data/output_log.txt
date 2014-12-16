@@ -14,6 +14,7 @@ Loading D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Uni
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1680x1050 60Hz; virtual: 3780x1700 at -1050,-364
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
 Initialize engine version: 4.5.5f1 (7684ad0c5a44)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -26,13 +27,12 @@ Platform assembly: D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (
 Loading D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.044 seconds
+- Completed reload, in  0.045 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1680x1050 60Hz; virtual: 3780x1700 at -1050,-364
 Platform assembly: D:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
-Platform assembly: D:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
-0 292734022316630162
+0 36028851157793924
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
@@ -50,11 +50,11 @@ Load MapUnityEngine.NetworkMessageInfo
 
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-UnloadTime: 0.490800 ms
+UnloadTime: 0.315223 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 131.
-Total: 3.342847 ms (FindLiveObjects: 0.010193 ms CreateObjectMapping: 0.010447 ms MarkObjects: 1.703787 ms  DeleteObjects: 1.020845 ms)
+Total: 3.466694 ms (FindLiveObjects: 0.010193 ms CreateObjectMapping: 0.010957 ms MarkObjects: 1.672188 ms  DeleteObjects: 1.074614 ms)
 
 Run
  
@@ -69,11 +69,11 @@ Here
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-UnloadTime: 0.288211 ms
+UnloadTime: 0.285918 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 135.
-Total: 3.360176 ms (FindLiveObjects: 0.011212 ms CreateObjectMapping: 0.010957 ms MarkObjects: 1.696142 ms  DeleteObjects: 1.028490 ms)
+Total: 3.191988 ms (FindLiveObjects: 0.010447 ms CreateObjectMapping: 0.009938 ms MarkObjects: 1.621732 ms  DeleteObjects: 0.989756 ms)
 
 Run
  
@@ -151,19 +151,31 @@ Neutral factory 160.3527 19 160.3527 19
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Neutral generator 140.4341 20.5 140.4341 20.5
+ArguNentOutOfRangl geneption: Argument is out of ra1 20.5
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/BuildA
+gent/wystemd63dllection90b60/eric.Licts/Staystem.CollectrGeneraeneric.LiyEngineDebugngipp Line: 49)
 
-Neutral generator 154.2905 17.5 154.2905 17.5
+]].get_Item (Int3Neindexl ge0x000n0]rato <filename u1n.5 kno.w9n0:0 
+  a
+t 
+(Fame.OnGUI () [0x0000entin orfilenamec6385190b60/ 
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: dalone: -1)
 
-Neutral generator 165.5488 22 165.5488 22
+Generated/UnityEngineDebug.cpp Line: 49)A
+
+rgumentOutOfRangeException: Argument ieutral genernge.
+Parameter n 1m65 ind88x2
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filenamm.CoC:/BuildAgent/work/d63dfc6385190b60/artifacts/Staic.List`1[UnityEngine.GameObject]].get_Item (Int32 index) [0x0000)] 
+i
+n <filename unknown>:0 
+  at Game.OnGUI () [0x00000] in <fileutre unknown>:0 
+ 
+(Filename:  Line: -1)
 
-Neutral factory 153.4245 1 153.4245 1
+al factory 153.4245 1 153.4245 1
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
@@ -214,20 +226,6 @@ Neutral factory 160.3527 19 160.3527 19
 152.5585 20.5 152.5585 20.5
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-ArgumentOutOfRangeException: Argument is out of range.
-Parameter name: index
-  at System.Collections.Generic.List`1[System.Collections.Generic.List`1[UnityEngine.GameObject]].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
-  at Game.OnGUI () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-ArgumentOutOfRangeException: Argument is out of range.
-Parameter name: index
-  at System.Collections.Generic.List`1[System.Collections.Generic.List`1[UnityEngine.GameObject]].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
-  at Game.OnGUI () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
 
 Neutral generator 140.4341 20.5 140.4341 20.5
  
@@ -358,181 +356,35 @@ Neutral factory 160.3527 19 160.3527 19
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-1 0 2 -1
+87 5
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-30
+96 6
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-30
+The server has disconnected from the client. Most likely the server has shut down.
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename:  Line: 745)
 
--1 -1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+Disconnected from server: Disconcted fro
+m
+(Filer: Discon/BectedA
+ g
+(Fnlename/dC6/3uifcAge8t51o9k/b630fc6r8ti9fac0/s/artndalotsPlayarndnelatee/UnityyneireGebnerapp LiUen it)
+E
+ngineDebug.cpp Line: 49)
 
-IndexOutOfRangeException: Array index is out of range.
-  at TerrainRaycaster.RaycastTerrain (Int32 b) [0x00000] in <filename unknown>:0 
-  at TerrainRaycaster.CheckForMouseClick () [0x00000] in <filename unknown>:0 
-  at TerrainRaycaster.Update () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-0 1 2 -1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-30
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-30
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-1 0 2 -1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-29
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-29
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-0 1 2 -1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-29
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-29
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-1 0 2 -1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Game.SwitchTurn (Int32 _newTurn, NetworkMessageInfo info) [0x00000] in <filename unknown>:0 
-UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
-UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-Game:RequestTurnSwitch(NetworkMessageInfo)
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Game.SwitchTurn (Int32 _newTurn, NetworkMessageInfo info) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-1 0 2 -1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Game.SwitchTurn (Int32 _newTurn, NetworkMessageInfo info) [0x00000] in <filename unknown>:0 
-UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
-UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-Game:RequestTurnSwitch(NetworkMessageInfo)
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Game.SwitchTurn (Int32 _newTurn, NetworkMessageInfo info) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-1 0 2 -1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-28
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-28
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-0 1 2 -1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-28
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-28
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-1 0 2 -1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-27
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-27
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-0 1 2 -1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-27
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-27
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-1 0 2 -1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Game.SwitchTurn (Int32 _newTurn, NetworkMessageInfo info) [0x00000] in <filename unknown>:0 
-UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
-UnityEngine.NetworkView:RPC(String, RPCMode, Object[])
-Game:RequestTurnSwitch(NetworkMessageInfo)
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Game.SwitchTurn (Int32 _newTurn, NetworkMessageInfo info) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Disconnected from server: Disconnected
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Disconnected from server: Disconnected
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-UnloadTime: 3.130065 ms
+UnloadTime: 2.672902 ms
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 232 unused Assets to reduce memory usage. Loaded Objects now: 102.
-Total: 7.017737 ms (FindLiveObjects: 0.010957 ms CreateObjectMapping: 0.019112 ms MarkObjects: 0.083583 ms  DeleteObjects: 6.305235 ms)
+Unloading 214 unused Assets to reduce memory usage. Loaded Objects now: 104.
+Total: 6.671680 ms (FindLiveObjects: 0.009173 ms CreateObjectMapping: 0.016563 ms MarkObjects: 0.074664 ms  DeleteObjects: 5.601143 ms)
 
-UnloadTime: 3.139749 ms
+UnloadTime: 4.309924 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 232 unused Assets to reduce memory usage. Loaded Objects now: 106.
-Total: 7.322513 ms (FindLiveObjects: 0.011212 ms CreateObjectMapping: 0.020131 ms MarkObjects: 0.113908 ms  DeleteObjects: 6.500944 ms)
+Unloading 214 unused Assets to reduce memory usage. Loaded Objects now: 106.
+Total: 6.961420 ms (FindLiveObjects: 0.009428 ms CreateObjectMapping: 0.020386 ms MarkObjects: 0.104989 ms  DeleteObjects: 6.308293 ms)
 
