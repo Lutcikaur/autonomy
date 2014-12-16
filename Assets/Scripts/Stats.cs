@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -11,6 +11,7 @@ public class Stats : MonoBehaviour {
 
 	public bool canMove;
 	public bool canAttack;
+	public bool isSpawned;
 
 	public Texture2D image;
 	public string name;
