@@ -7,16 +7,19 @@ public class slideShow : MonoBehaviour
 	public Texture2D[] slides = new Texture2D[0];
 	public float changeTime = 10.0f;
 	private int currentSlide = 0;
-	private float timeSinceLast = 1.0f;
+	public int x = 0; 
 
 	void OnGUI(){
 		GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), slides[currentSlide]);
-		if (GUI.Button (new Rect (25, 350, 50, 25), "NEXT")) {
-			Start (); 
+		if (GUI.Button (new Rect (25, 300, 50, 25), "BACK")) {
+			Back(); 
 		}
-		//if(GUI.Button(new Rect(100,100,100,25),"NEXT")){
-			//Update ();
-		//}
+		if (GUI.Button (new Rect (25, 325, 50, 25), "NEXT")) {
+				Start (); 
+		}
+		if (GUI.Button (new Rect (25, 350, 50, 25), "MENU")) {
+			Application.LoadLevel("Networking"); 
+		}
 	}
 	
 	void Start()
@@ -24,11 +27,15 @@ public class slideShow : MonoBehaviour
 		//guiTexture.texture = slides[currentSlide];
 		//guiTexture.pixelInset = new Rect(-slides[currentSlide].width, -slides[currentSlide].height, slides[currentSlide].width, slides[currentSlide].height);
 		GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), slides[currentSlide]); 
-		if (currentSlide <= 5) {
-						currentSlide++;
-				} else {
-			Application.LoadLevel(1); 
-				}
+		currentSlide++;
+	}
+
+	void Back()
+	{
+		//guiTexture.texture = slides[currentSlide];
+		//guiTexture.pixelInset = new Rect(-slides[currentSlide].width, -slides[currentSlide].height, slides[currentSlide].width, slides[currentSlide].height);
+		GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), slides[currentSlide]); 
+		currentSlide--;
 	}
 	
 	/*void Update()

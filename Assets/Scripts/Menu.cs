@@ -48,16 +48,16 @@ public class Menu : MonoBehaviour {
 
 	void OnGUI() {
 		int i = 0;
-<<<<<<< HEAD
 
-=======
+
+
 		//GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture); 
->>>>>>> 60bc4a0727a93cf2c6f52ec08e1927b66194c8c2
+
 		switch(Network.peerType){
 		default:
 		case NetworkPeerType.Disconnected:
 			// Should make the background images, doesn't at all. 
-			//GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture); 
+			GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture); 
 			if(type == "none"){
 				if(GUI.Button(new Rect(100,100,100,25),"Start Client")){
 					username = "";
@@ -73,7 +73,7 @@ public class Menu : MonoBehaviour {
 					Application.LoadLevel("Tutorial"); 
 				}
 				if(GUI.Button (new Rect(100,175,100,25), "Glossary")){
-
+					Application.LoadLevel ("Glossary");
 				}
 			} else if(type == "client"){
 				GUI.Label(new Rect(100,125,100,25),"Username:");
