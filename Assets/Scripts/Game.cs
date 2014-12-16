@@ -39,11 +39,18 @@ public class Game : MonoBehaviour {
 	
 	public Texture artex;
 	Texture2D img;
+	Texture2D Black;
+	Texture2D Red;
+	Texture2D Blue;
+	Texture2D Magenta;
+	Texture2D Cyan;
 	Texture2D depotBack;
 	int cardsInHand;
 	
 	
 	void Start () {
+		Magenta=Resources.Load ("Magenta_Texture")as Texture2D;
+		Cyan=Resources.Load ("Cyan_Texture")as Texture2D;
 		depotList.Capacity = 3;
 		factoryList.Capacity = 8;
 		generatorList.Capacity = 3;
@@ -54,7 +61,11 @@ public class Game : MonoBehaviour {
 
 
 		//populate factoryList somewhere;
+
 		depotBack=Resources.Load("depotWindow") as Texture2D;
+		Black=Resources.Load ("Black_Texture")as Texture2D;
+		Red=Resources.Load ("Red_Texture")as Texture2D;
+		Blue=Resources.Load ("Blue_Texture")as Texture2D;
 		img = Resources.Load("Deck_02") as Texture2D;
 		for(int i=0; i<numThingsInteractable; i++){
 			EnlargeBool[i]=false;
@@ -416,10 +427,28 @@ public class Game : MonoBehaviour {
 				}
 
 			}
-			for(int q=0; q<numThingsInteractable; q++){
 
+			//This Block handles the Health Bars
+			GUI.DrawTexture (new Rect(x*.1f, 0, x*.375f, y*.075f), Black);
+			GUI.DrawTexture (new Rect(x*.525f, 0, x*.375f, y*.075f), Black);
+			int currentRedHealth=50;
+			int currentBlueHealth=50;
+			for(int m=100; m>(100-currentRedHealth); m--){
+				GUI.DrawTexture (new Rect(((x*.11f)+(m/100f)*(x*.355f)), .01f*y, x*.00355f, y*.055f), Magenta);
+			}
+			for(int n=0; n<currentBlueHealth; n++){
+				GUI.DrawTexture (new Rect(((x*.535f)+(n/100f)*(x*.355f)), .01f*y, x*.00355f, y*.055f), Cyan);
+			}
+			GUI.Box(new Rect(x*.45f, .075f*y, x*.10f, y*.1f),"");
+			GUI.Label (new Rect(x*.46f,.075f*y,x*.05f, y*.05f), currentRedHealth+"/", style[1]);
+			GUI.Label (new Rect(x*.46f,y*.125f,x*.05f, y*.05f), "100", style[1]);
+			GUI.Label (new Rect(x*.515f,.075f*y,x*.05f, y*.05f), currentBlueHealth+"/", style[0]);
+			GUI.Label (new Rect(x*.515f,y*.125f,x*.05f, y*.05f), "100", style[0]);
+
+
+			//This Block displays current enlarged selection
+			for(int q=0; q<numThingsInteractable; q++){
 				if(EnlargeBool[q]){
-					//GUI.Box (new Rect(x*.2f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
 					if(q<6){
 						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
 						if(GUIButton.Button (new Rect((x*.225f), y*.4f, x*.17f, y*.15f), "Spawn Unit")){
