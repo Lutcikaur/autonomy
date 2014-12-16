@@ -367,8 +367,11 @@ public class Game : MonoBehaviour {
 
 			GUI.Box (new Rect(x-(x*.25f), y-(y*.25f), x*.15f, y*.25f), "");
 			if(sunit) {
-				GUI.Label(new Rect(x*.75f, y*.75f, x*.05f, y*.05f),hexWorld.hexWorldData [(int)terrainCaster.selected.x, (int)terrainCaster.selected.y].unit);
-
+				GUI.Label(new Rect(x*.75f, y*.75f, x*.15f, y*.05f),hexWorld.hexWorldData [(int)terrainCaster.selected.x, (int)terrainCaster.selected.y].unit);
+				GUI.Label(new Rect(x*.75f, y*.8f, x*.15f, y*.05f),"Health: "+sunit.currentHealth+"/"+sunit.maximumHealth);
+				GUI.Label(new Rect(x*.75f, y*.85f, x*.15f, y*.05f),"Movement: "+sunit.moveSpeed);
+				GUI.Label(new Rect(x*.75f, y*.9f, x*.15f, y*.05f),"Range: "+sunit.attackRange);
+				GUI.Label(new Rect(x*.75f, y*.95f, x*.15f, y*.05f),"Damage: "+sunit.damage);
 			}
 
 			//GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), img);
@@ -376,8 +379,8 @@ public class Game : MonoBehaviour {
 			cardsInHand=7;
 
 			for(int z=0; z<cardsInHand; z++){
-				GUI.DrawTexture (new Rect(((x*.25f)+((z*2f)/3f)*(x*.10f)), y-(x*.15f), x*.1f, x*.15f), img);
-				if(GUIButton.Button (new Rect(((x*.25f)+((z*2f)/3f)*(x*.10f)), y-(x*.15f), x*.1f, x*.15f), ""))
+				GUI.DrawTexture (new Rect(((x*.225f)+((z*2f)/3f)*(x*.10f)), y-(x*.15f), x*.1f, x*.15f), img);
+				if(GUIButton.Button (new Rect(((x*.225f)+((z*2f)/3f)*(x*.10f)), y-(x*.15f), x*.1f, x*.15f), ""))
 				{
 					if(ToggleTemp ==0){
 						for(int j=0; j<numThingsInteractable; j++){
@@ -399,16 +402,17 @@ public class Game : MonoBehaviour {
 				if(EnlargeBool[q]){
 					//GUI.Box (new Rect(x*.2f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
 					if(q!=7){
-						GUI.DrawTexture(new Rect(x*.2f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
+						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
+
 					} else {
-						GUI.DrawTexture(new Rect(x*.2f, y*.1f, (y*.65f)/1.5f, y*.65f), depotBack);
+						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), depotBack);
 					}
 				}
 			}
 
 			
 			//GUI.Box (new Rect(x*.1f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
-			if(GUIButton.Button(new Rect(x-100, y-40, 80, 20), (me == turn?"Pass Turn":"Waiting"))) {
+			if(GUIButton.Button(new Rect(x*.9f, y*.9f, x*.1f, y*.1f), (me == turn?"Pass Turn":"Waiting"))) {
 
 				networkView.RPC ("RequestTurnSwitch",RPCMode.Server);
 			}
