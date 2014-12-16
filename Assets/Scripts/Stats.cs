@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Stats : MonoBehaviour {
 
@@ -11,11 +12,14 @@ public class Stats : MonoBehaviour {
 	public bool canMove;
 	public bool canAttack;
 
+	public int spawnHeight;
 	public int moveSpeed;
 	public int attackRange;
 	public int maximumHealth;
 	public int currentHealth;
 	public int damage;
+
+	public List<Vector2> moveList;
 
 	//turn stuff
 	public bool hasMoved;

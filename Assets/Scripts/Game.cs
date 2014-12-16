@@ -8,6 +8,7 @@ public class Game : MonoBehaviour {
 	public HexWorld hexWorld;
 	public TerrainRaycaster terrainCaster;
 	public List<List<GameObject>> playerObjects = new List<List<GameObject>>{};
+	public List<GUIStyle> style = new List<GUIStyle>{};
 	//public GameObject Cylinder;
 	public int me = -1;
 	public List<List<string>> depotList = new List<List<string>>{};
@@ -60,9 +61,26 @@ public class Game : MonoBehaviour {
 			//some test stuff.
 			for(int i = 0; i < Menu.connectionList.Count; i++){
 				playerObjects.Add(new List<GameObject>());
-				depotList.Add (new List<string>());
+				style.Add(new GUIStyle());
+				switch(i){
+				default:
+					style[i].normal.textColor = Color.gray;
+					break;
+				case 0:
+					style[i].normal.textColor = Color.cyan;
+					break;
+				case 1:
+					style[i].normal.textColor = Color.magenta;
+					break;
+				}
+				depotList.Add(new List<string>());
 				for(int j = 0; j<5; j++){
-					string name = "Vtol";
+					string name;
+					if(j<3)
+						name = "Vtol";
+					else {
+						name = "hoverArty";
+					}
 					string guid = Menu.connectionList[i].guid;
 					Vector3 location = new Vector3(i+86,1,j+9);
 					networkView.RPC("SpawnObject",RPCMode.All,i,guid,name,location);
@@ -334,9 +352,9 @@ public class Game : MonoBehaviour {
 		//case NetworkPeerType.Disconnected:
 		//	break;
 		//case NetworkPeerType.Client:
-			for(i=0;i<Menu.connectionList.Count;i++){
+			for(i=0;i<playerObjects.Count;i++){
 				int offset = i*25;
-				GUI.Label(new Rect(10,(10+offset),100,25),Menu.connectionList[i].username);
+				GUI.Label(new Rect(10,(10+offset),100,25),Menu.connectionList[i].username,style[i]);
 			}
 			GUI.DrawTexture (new Rect(0, y-(x*.22f), x*.2f, x*.22f), depotBack); //Depot Back Splash
 			
@@ -441,7 +459,7 @@ public class Game : MonoBehaviour {
 		
 	}
 
-	float hexDistance2(Vector2 start, Vector2 dest){
+	float hexDistance(Vector2 start, Vector2 dest){
 		if (start.x == dest.x)
 			return Mathf.Abs(dest.y - start.y);
 		else if (start.y == dest.y)
@@ -460,7 +478,7 @@ public class Game : MonoBehaviour {
 		}
 	}
 
-	float hexDistance(Vector2 p1, Vector2 p2){
+	float hexDistance2(Vector2 p1, Vector2 p2){
 		float x1 = p1.x;
 		float y1 = p1.y;
 		float x2 = p2.x;
@@ -541,30 +559,18 @@ public class Game : MonoBehaviour {
 		if(!(Menu.connectionList[_i].guid == _guid)){
 			_i = Menu.connectionList.FindIndex(x => x.guid == _guid);
 		}
-		while(_i>=playerObjects.Count){
-			playerObjects.Add(new List<GameObject>());
-		}
 		playerObjects[_i].Add((GameObject)Instantiate(Resources.Load(_name)));
 		hexWorld.hexWorldData[(int)_location.x,(int)_location.z].unit = _name;
 		hexWorld.hexWorldData[(int)_location.x,(int)_location.z].unitObject = playerObjects[_i][playerObjects[_i].Count-1];
 		Vector2 center = hexWorld.hexWorldData[(int)_location.x,(int)_location.z].center;
-		Vector3 finalloc = new Vector3(center.x,1,center.y);
+		Stats _unit = playerObjects[_i][playerObjects[_i].Count-1].GetComponent<Stats>();
+		Vector3 finalloc = new Vector3(center.x,_unit.spawnHeight,center.y);
 		Debug.Log (center.x + " " + center.y + " " + finalloc.x + " " + finalloc.z);
 		playerObjects[_i][playerObjects[_i].Count-1].transform.position = finalloc;
 		//playerObjects[_i][playerObjects[_i].Count-1].renderer.materials[0].color = Color.red;
 		MeshRenderer[] a = playerObjects[_i][playerObjects[_i].Count-1].GetComponentsInChildren<MeshRenderer>();
 		foreach(MeshRenderer mesh in a){
-			switch(_i){
-			default:
-				mesh.material.color = Color.gray;
-				break;
-			case 0:
-				mesh.material.color = Color.cyan;
-				break;
-			case 1:
-				mesh.material.color = Color.magenta;
-				break;
-			}
+			mesh.material.color = style[_i].normal.textColor;
 		}
 		//}
 	}
@@ -578,7 +584,7 @@ public class Game : MonoBehaviour {
 		_selectedUnit.hasMoved = true;
 		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject;
 		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit;
-		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject.transform.position = new Vector3 (hexWorld.hexWorldData[(int)_point.x,(int)_point.z].center.x, hexWorld.hexWorldData[(int)_point.x,(int)_point.z].height+1 , hexWorld.hexWorldData[(int)_point.z,(int)_point.z].center.y);
+		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject.transform.position = new Vector3 (hexWorld.hexWorldData[(int)_point.x,(int)_point.z].center.x, hexWorld.hexWorldData[(int)_point.x,(int)_point.z].height+_selectedUnit.spawnHeight , hexWorld.hexWorldData[(int)_point.z,(int)_point.z].center.y);
 		hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject = null;
 		hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit = null;
 	}
@@ -620,6 +626,19 @@ public class Game : MonoBehaviour {
 		} else if(Network.isClient){
 			if(info.sender.guid == server){
 				Menu.connectionList.Add(new Menu.NConn(_username,_guid));
+				playerObjects.Add(new List<GameObject>());
+				style.Add(new GUIStyle());
+				switch(style.Count-1){
+				default:
+					style[style.Count-1].normal.textColor = Color.gray;
+					break;
+				case 0:
+					style[style.Count-1].normal.textColor = Color.cyan;
+					break;
+				case 1:
+					style[style.Count-1].normal.textColor = Color.magenta;
+					break;
+				}
 			}
 		}
 	}
@@ -643,6 +662,13 @@ public class Game : MonoBehaviour {
 	[RPC]
 	void SwitchTurn(int _newTurn, NetworkMessageInfo info){
 		if(Network.isServer || info.sender.guid == server){
+			//
+			foreach (GameObject n in playerObjects[turn]){
+				Stats _n = n.GetComponent<Stats>();
+				if(_n.moveList.Count != 0){
+					//move
+				}
+			}
 			turn = _newTurn;
 			for(int i = 0; i < playerObjects.Count; i++){
 				foreach (GameObject obj in playerObjects[i]){
