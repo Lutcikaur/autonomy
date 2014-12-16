@@ -45,7 +45,7 @@ public class Menu : MonoBehaviour {
 
 	void OnGUI() {
 		int i = 0;
-		GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture); 
+		//GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture); 
 		switch(Network.peerType){
 		default:
 		case NetworkPeerType.Disconnected:
