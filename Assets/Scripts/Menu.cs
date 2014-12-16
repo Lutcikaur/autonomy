@@ -76,6 +76,9 @@ public class Menu : MonoBehaviour {
 				if(GUI.Button (new Rect(100,175,100,25), "Glossary")){
 					Application.LoadLevel ("Glossary");
 				}
+				if(GUI.Button (new Rect(100,200,100,25), "Credits")){
+					Application.LoadLevel ("Credits");
+				}
 				if (sound == false)
 				{
 					if(GUI.Button (new Rect(100,300,100,25),"Mute") ) // MyGUISkin.customStyles[1] is unselected button image

@@ -63,14 +63,26 @@ public class Game : MonoBehaviour {
 	Texture2D depotBack;
 	int cardsInHand;
 
+<<<<<<< HEAD
 	string[] cardNames= new string[30] {"bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol"};
+=======
+	int currentRedHealth=200;
+	int currentBlueHealth=200;
+
+	string[] cardNames= new string[30] {"hoverArty", "bike", "Vtol", "padArty", "tank", "bike", "Vtol", "tank", "hoverArty", "bike", "bike", "padArty", "Vtol", "tank", "Vtol", "hoverArty", "hoverArty", "tank", "bike", "Vtol", "Vtol", "Vtol", "tank", "padArty", "Vtol", "padArty", "tank", "Vtol", "bike", "Vtol"};
+>>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
 
 	bool toFactoryBool=false;
 	bool toSpawnBool=false;
 	
 	public bool sound=true;
 
+	public int numP1Generators=0;
+	public int numP2Generators=0;
+
 	void Start () {
+
+
 		Magenta=Resources.Load ("Magenta_Texture")as Texture2D;
 		Cyan=Resources.Load ("Cyan_Texture")as Texture2D;
 		depotList.Capacity = 3;
@@ -491,8 +503,7 @@ public class Game : MonoBehaviour {
 			//This Block handles the Health Bars
 			GUI.DrawTexture (new Rect(x*.1f, 0, x*.375f, y*.075f), Black);
 			GUI.DrawTexture (new Rect(x*.525f, 0, x*.375f, y*.075f), Black);
-			int currentRedHealth=50;
-			int currentBlueHealth=50;
+
 			for(int m=200; m>(200-currentRedHealth); m--){
 				GUI.DrawTexture (new Rect(((x*.11f)+(m/200f)*(x*.355f)), .01f*y, x*.00355f, y*.055f), Magenta);
 			}
@@ -547,12 +558,17 @@ public class Game : MonoBehaviour {
 
 			if(toFactoryBool){
 
+<<<<<<< HEAD
 				GUI.Box (new Rect((x*.3f), y*.4f, x*.2f, y*.1f), "IM A FUCKING BOX");
 				//Debug.Log ("Im Drawing this box");
+=======
+				GUI.Box (new Rect((x*.3f), y*.4f, x*.2f, y*.3f), "Please select a factory to Start building");
+				Debug.Log ("Im Drawing this box");
+>>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
 			}
 
 			if(toSpawnBool){
-				GUI.Box (new Rect((x*.3f), y*.4f, x*.2f, y*.1f), "IM A DIFFERENT FUCKING BOX");
+				GUI.Box (new Rect((x*.3f), y*.4f, x*.2f, y*.3f), "Please select a hex near your base to spawn");
 			}
 
 			
@@ -865,7 +881,15 @@ public class Game : MonoBehaviour {
 						}
 					}
 				}
+				if(_n.owner==0){
+					numP1Generators++;
+				} else if (_n.owner==1){
+					numP2Generators++;
+				}
 			}
+
+
+
 			foreach (GameObject n in factoryList){
 				Building _n = n.GetComponent<Building>();
 				Vector2 loc = _n.location;
@@ -908,6 +932,27 @@ public class Game : MonoBehaviour {
 
 			//start of turn
 			turn = _newTurn;
+			currentRedHealth=currentRedHealth-((numP1Generators/2)+1);
+			currentBlueHealth=currentBlueHealth-((numP2Generators/2)+1);
+			if(currentRedHealth<=0){
+				if(me==0){
+					Application.LoadLevel("Victory");
+				} else {
+					Application.LoadLevel ("Defeat");
+				}
+
+			} else if(currentBlueHealth<=0){
+				if(me==1){
+					Application.LoadLevel("Victory");
+				} else {
+					Application.LoadLevel ("Defeat");
+				}
+
+			}
+
+
+			numP1Generators=0;
+			numP2Generators=0;
 			for(int i = 0; i < playerObjects.Count; i++){
 				foreach (GameObject obj in playerObjects[i]){
 					Stats unit = obj.GetComponent<Stats>();
