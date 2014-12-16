@@ -19,22 +19,12 @@ public class Game : MonoBehaviour {
 	public int xUpperBound = 99;
 	public int yLowerBound = 0;
 	public int yUpperBound = 25;
-<<<<<<< HEAD
-	
-	
+
 	public int ToggleTemp=0;
 	//public bool handToggleTempBool=false;
 	public static int numThingsInteractable =13;
 	bool[] EnlargeBool = new bool[numThingsInteractable]; //Bool[0-5] = Hand Enlarging, Bool[6] = Depot Enlarging
-	
-=======
 
-
-	public int ToggleTemp=0;
-	//public bool handToggleTempBool=false;
-	public bool[] EnlargeBool = new bool[7]; //Bool[0] = Hand Enlarging, Bool[1-6] = Depot Enlarging
-
->>>>>>> a741bab87ccb765df09d6bdcc953df571ecdafe3
 	public int handToggleTemp=0;
 	public bool handToggleTempBool=false;
 	
@@ -46,19 +36,11 @@ public class Game : MonoBehaviour {
 	
 	void Start () {
 		depotBack=Resources.Load("depotWindow") as Texture2D;
-<<<<<<< HEAD
 		img = Resources.Load("Deck_02") as Texture2D;
 		for(int i=0; i<numThingsInteractable; i++){
 			EnlargeBool[i]=false;
 		}
-=======
-		img = Resources.Load("Deck_2") as Texture2D;
 
-		for(int i=0; i<7; i++){
-			EnlargeBool[i]=false;
-		}
-
->>>>>>> a741bab87ccb765df09d6bdcc953df571ecdafe3
 		server = Menu.server;
 		Debug.Log("Here");
 		switch(Network.peerType){
@@ -337,15 +319,9 @@ public class Game : MonoBehaviour {
 		switch(Network.peerType){
 		default:
 			//later on just uncomment things
-<<<<<<< HEAD
-			//case NetworkPeerType.Disconnected:
-			//	break;
-			//case NetworkPeerType.Client:
-=======
 		//case NetworkPeerType.Disconnected:
 		//	break;
 		//case NetworkPeerType.Client:
->>>>>>> a741bab87ccb765df09d6bdcc953df571ecdafe3
 			for(i=0;i<Menu.connectionList.Count;i++){
 				int offset = i*25;
 				GUI.Label(new Rect(10,(10+offset),100,25),Menu.connectionList[i].username);
@@ -361,7 +337,6 @@ public class Game : MonoBehaviour {
 				break;
 			case 1:
 				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-<<<<<<< HEAD
 				if(GUIButton.Button (new Rect(0, y-(x*.185f), x*.06f, x*.09f),"")){
 					if(ToggleTemp ==0){
 						for(int j=0; j<numThingsInteractable; j++){
@@ -376,9 +351,6 @@ public class Game : MonoBehaviour {
 						ToggleTemp--;
 					}
 				}
-=======
-				
->>>>>>> a741bab87ccb765df09d6bdcc953df571ecdafe3
 				break;
 			case 2:
 				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
@@ -601,7 +573,6 @@ public class Game : MonoBehaviour {
 				break;
 			case 6:
 				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-<<<<<<< HEAD
 				if(GUIButton.Button (new Rect(0, y-(x*.185f), x*.06f, x*.09f),"")){
 					if(ToggleTemp ==0){
 						for(int j=0; j<numThingsInteractable; j++){
@@ -611,24 +582,12 @@ public class Game : MonoBehaviour {
 						ToggleTemp++;
 					} else if (ToggleTemp==1){
 						for(int j=0; j<numThingsInteractable; j++){
-=======
-				if(GUI.Button (new Rect(0, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<7; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[1]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<7; j++){
->>>>>>> a741bab87ccb765df09d6bdcc953df571ecdafe3
 							EnlargeBool[j]=false;
 						}
 						ToggleTemp--;
 					}
 				}
 				GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
-<<<<<<< HEAD
 				if(GUIButton.Button (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f),"")){
 					if(ToggleTemp ==0){
 						for(int j=0; j<numThingsInteractable; j++){
@@ -638,24 +597,12 @@ public class Game : MonoBehaviour {
 						ToggleTemp++;
 					} else if (ToggleTemp==1){
 						for(int j=0; j<numThingsInteractable; j++){
-=======
-				if(GUI.Button (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<7; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[2]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<7; j++){
->>>>>>> a741bab87ccb765df09d6bdcc953df571ecdafe3
 							EnlargeBool[j]=false;
 						}
 						ToggleTemp--;
 					}
 				}
 				GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
-<<<<<<< HEAD
 				if(GUIButton.Button (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f),"")){
 					if(ToggleTemp ==0){
 						for(int j=0; j<numThingsInteractable; j++){
@@ -665,24 +612,12 @@ public class Game : MonoBehaviour {
 						ToggleTemp++;
 					} else if (ToggleTemp==1){
 						for(int j=0; j<numThingsInteractable; j++){
-=======
-				if(GUI.Button (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<7; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[3]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<7; j++){
->>>>>>> a741bab87ccb765df09d6bdcc953df571ecdafe3
 							EnlargeBool[j]=false;
 						}
 						ToggleTemp--;
 					}
 				}
 				GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
-<<<<<<< HEAD
 				if(GUIButton.Button (new Rect(0, y-(x*.09f), x*.06f, x*.09f),"")){
 					if(ToggleTemp ==0){
 						for(int j=0; j<numThingsInteractable; j++){
@@ -692,24 +627,12 @@ public class Game : MonoBehaviour {
 						ToggleTemp++;
 					} else if (ToggleTemp==1){
 						for(int j=0; j<numThingsInteractable; j++){
-=======
-				if(GUI.Button (new Rect(0, y-(x*.09f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<7; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[4]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<7; j++){
->>>>>>> a741bab87ccb765df09d6bdcc953df571ecdafe3
 							EnlargeBool[j]=false;
 						}
 						ToggleTemp--;
 					}
 				}
 				GUI.DrawTexture (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f), img);
-<<<<<<< HEAD
 				if(GUIButton.Button (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f),"")){
 					if(ToggleTemp ==0){
 						for(int j=0; j<numThingsInteractable; j++){
@@ -719,24 +642,12 @@ public class Game : MonoBehaviour {
 						ToggleTemp++;
 					} else if (ToggleTemp==1){
 						for(int j=0; j<numThingsInteractable; j++){
-=======
-				if(GUI.Button (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<7; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[5]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<7; j++){
->>>>>>> a741bab87ccb765df09d6bdcc953df571ecdafe3
 							EnlargeBool[j]=false;
 						}
 						ToggleTemp--;
 					}
 				}
 				GUI.DrawTexture (new Rect(x*.14f, y-(x*.09f), x*.06f, x*.09f), img);	
-<<<<<<< HEAD
 				if(GUIButton.Button (new Rect(x*.14f, y-(x*.09f), x*.06f, x*.09f),"")){
 					if(ToggleTemp ==0){
 						for(int j=0; j<numThingsInteractable; j++){
@@ -746,17 +657,7 @@ public class Game : MonoBehaviour {
 						ToggleTemp++;
 					} else if (ToggleTemp==1){
 						for(int j=0; j<numThingsInteractable; j++){
-=======
-				if(GUI.Button (new Rect(x*.14f, y-(x*.09f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<7; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[6]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<7; j++){
->>>>>>> a741bab87ccb765df09d6bdcc953df571ecdafe3
+
 							EnlargeBool[j]=false;
 						}
 						ToggleTemp--;
@@ -766,7 +667,7 @@ public class Game : MonoBehaviour {
 			}
 			GUI.Box (new Rect(x-(x*.3f), y-(y*.25f), x*.15f, y*.25f), "Unit Details & abilities goes here?");
 			//GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), img);
-<<<<<<< HEAD
+
 			cardsInHand=7;
 			switch(cardsInHand){
 			case 0:
@@ -924,25 +825,7 @@ public class Game : MonoBehaviour {
 			
 			//GUI.Box (new Rect(x*.1f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
 			if(GUIButton.Button(new Rect(x-100, y-40, 80, 20), (me == turn?"Pass Turn":"Waiting"))) {
-=======
-			if(GUI.Button (new Rect(x*.2f, y-(y*.25f), x*.5f, y*.25f), "Hand of Cards Goes Here?"))
-			{
-				if(ToggleTemp ==0){
-					EnlargeBool[0]=true;
-					ToggleTemp++;
-				} else if (ToggleTemp==1){
-					EnlargeBool[0]=false;
-					ToggleTemp--;
-				}
-			}
-			if(EnlargeBool[0]){
-				//GUI.Box (new Rect(x*.2f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
-				GUI.DrawTexture(new Rect(x*.2f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
-			}
-			
-			//GUI.Box (new Rect(x*.1f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
-			if(GUI.Button(new Rect(x-100, y-40, 80, 20), (me == turn?"Pass Turn":"Waiting"))) {
->>>>>>> a741bab87ccb765df09d6bdcc953df571ecdafe3
+
 				networkView.RPC ("RequestTurnSwitch",RPCMode.Server);
 			}
 			break;
@@ -1092,33 +975,6 @@ public class Game : MonoBehaviour {
 			*/
 			hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject = null;
 				//openList.FindIndex(PFList => PFList.getHex() == neighborList[i]);
-		}
-	}
-	
-	[RPC]
-	void NetworkAttack(Vector3 _selected, Vector3 _point, NetworkMessageInfo info){
-		//Not secure. Just like networkmove. Have it check to see if the sender is correct.
-		Stats _selectedUnit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject.GetComponent<Stats>();
-		Stats _targetUnit = hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject.GetComponent<Stats>();
-		//if distance between them is <= _selectedUnit.attackRange
-		_targetUnit.currentHealth -= _selectedUnit.damage;
-		if(_targetUnit.currentHealth <= 0){
-			Destroy(hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject);
-			int targetx = -1 ,targety = -1;
-			for(int i = 0; i < playerObjects.Count; i++){
-				playerObjects[i].Remove(hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject);
-			}
-			/*
-			 	for (int j = 0; j < playerObjects[i].Count; j++){
-					if(playerObjects[i][j] == hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject){
-						targetx = i;
-						targety = j;
-						break;
-					}
-				}
-			*/
-			hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject = null;
-			//openList.FindIndex(PFList => PFList.getHex() == neighborList[i]);
 		}
 	}
 	
