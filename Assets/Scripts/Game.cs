@@ -60,16 +60,13 @@ public class Game : MonoBehaviour {
 	Texture2D depotBack;
 	int cardsInHand;
 
-<<<<<<< HEAD
 	string[] cardNames= new string[30] {"tank", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol"};
-	
-=======
+
 	bool toFactoryBool=false;
 	bool toSpawnBool=false;
 	
 	public bool sound=true;
 
->>>>>>> 0ce80a1928375f4f331a75fd99aad727e3da65e1
 	void Start () {
 		Magenta=Resources.Load ("Magenta_Texture")as Texture2D;
 		Cyan=Resources.Load ("Cyan_Texture")as Texture2D;
@@ -503,37 +500,31 @@ public class Game : MonoBehaviour {
 					if(q<6){
 						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
 						if(GUIButton.Button (new Rect((x*.225f), y*.4f, x*.17f, y*.15f), "Spawn Unit")){
-<<<<<<< HEAD
 							unitSpawnFlag = true;
 							unitWaitingSpawn = depotList[me][q];
 							unitSpawnLocation = -Vector2.one;
 							unitWaitingSpawnIndex = q;
-=======
 							for(int j=0; j<numThingsInteractable; j++){
 								EnlargeBool[j]=false;
 							}
 							ToggleTemp--;
 							toFactoryBool=false;
 							toSpawnBool=true;
->>>>>>> 0ce80a1928375f4f331a75fd99aad727e3da65e1
 
 						}
 					} else if (q>5 && q<13){
 						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
 						if(GUIButton.Button (new Rect((x*.225f), y*.4f, x*.17f, y*.15f), "Send to Factory")){
-<<<<<<< HEAD
 							factorySelectionFlag = true;
 							factoryWaitingUnit = handList[me][q-6];
 							factoryWaitingUnitLoc = q-6;
 							factorySelected = -Vector2.one;
-=======
 							for(int j=0; j<numThingsInteractable; j++){
 								EnlargeBool[j]=false;
 							}
 							ToggleTemp--;
 							toFactoryBool=true;
 							toSpawnBool=false;
->>>>>>> 0ce80a1928375f4f331a75fd99aad727e3da65e1
 							
 						}
 					}
