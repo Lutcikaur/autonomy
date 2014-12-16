@@ -541,6 +541,7 @@ public class Game : MonoBehaviour {
 	[RPC]
 	void Initialize(NetworkMessageInfo info) {
 		if(Network.isServer){
+			me=-1;
 			return;
 		} else if(Network.isClient){
 			if(info.sender.guid == server){
@@ -566,6 +567,21 @@ public class Game : MonoBehaviour {
 		Vector3 finalloc = new Vector3(center.x,1,center.y);
 		Debug.Log (center.x + " " + center.y + " " + finalloc.x + " " + finalloc.z);
 		playerObjects[_i][playerObjects[_i].Count-1].transform.position = finalloc;
+		//playerObjects[_i][playerObjects[_i].Count-1].renderer.materials[0].color = Color.red;
+		MeshRenderer[] a = playerObjects[_i][playerObjects[_i].Count-1].GetComponentsInChildren<MeshRenderer>();
+		foreach(MeshRenderer mesh in a){
+			switch(_i){
+			default:
+				mesh.material.color = Color.gray;
+				break;
+			case 0:
+				mesh.material.color = Color.cyan;
+				break;
+			case 1:
+				mesh.material.color = Color.magenta;
+				break;
+			}
+		}
 		//}
 	}
 
@@ -626,7 +642,7 @@ public class Game : MonoBehaviour {
 					if(turn == i){;
 						int nturn = turn+1==c?0:turn+1;
 						turn = nturn;
-						Debug.Log (nturn + " " + turn + " " + c);
+						Debug.Log (nturn + " " + turn + " " + c + " " + me);
 						networkView.RPC("SwitchTurn",RPCMode.All,nturn);
 					}
 				}
