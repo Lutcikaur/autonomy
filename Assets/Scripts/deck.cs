@@ -35,7 +35,7 @@ public class Card
 			}
 		}
 	}
-	}
+}
 	
 public class Deck {
 		private List<Card> _deck = new List<Card>();

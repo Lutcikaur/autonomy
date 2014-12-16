@@ -9,7 +9,10 @@ public class Menu : MonoBehaviour {
 	static Menu _instance;
 
 	public Texture backgroundTexture;
- 
+
+	//Set up for tutorial slide show
+	/*public Texture[] slides;
+	public int currentSlide; */ 
 
 	public string IP = "127.0.0.1";
 	public int Port = 25001;
@@ -45,10 +48,12 @@ public class Menu : MonoBehaviour {
 
 	void OnGUI() {
 		int i = 0;
-		GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture); 
+
 		switch(Network.peerType){
 		default:
 		case NetworkPeerType.Disconnected:
+			// Should make the background images, doesn't at all. 
+			//GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture); 
 			if(type == "none"){
 				if(GUI.Button(new Rect(100,100,100,25),"Start Client")){
 					username = "";
@@ -61,8 +66,7 @@ public class Menu : MonoBehaviour {
 					server = Network.player.guid;
 				}
 				if(GUI.Button(new Rect(100,150,100,25), "Tutorial")){
-					
-					
+
 				}
 				if(GUI.Button (new Rect(100,175,100,25), "Glossary")){
 
