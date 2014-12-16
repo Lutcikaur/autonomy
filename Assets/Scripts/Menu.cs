@@ -50,10 +50,6 @@ public class Menu : MonoBehaviour {
 		default:
 		case NetworkPeerType.Disconnected:
 			if(type == "none"){
-				if(GUI.Button(new Rect(100,150,100,25), "Tutorial")){
-
-		
-				}
 				if(GUI.Button(new Rect(100,100,100,25),"Start Client")){
 					username = "";
 					type = "client";
@@ -63,6 +59,13 @@ public class Menu : MonoBehaviour {
 					ready = 0;
 					Network.InitializeServer(10,Port);
 					server = Network.player.guid;
+				}
+				if(GUI.Button(new Rect(100,150,100,25), "Tutorial")){
+					
+					
+				}
+				if(GUI.Button (new Rect(100,175,100,25), "Glossary")){
+
 				}
 			} else if(type == "client"){
 				GUI.Label(new Rect(100,125,100,25),"Username:");
