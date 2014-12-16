@@ -437,11 +437,11 @@ public class Game : MonoBehaviour {
 			for(int n=0; n<currentBlueHealth; n++){
 				GUI.DrawTexture (new Rect(((x*.535f)+(n/100f)*(x*.355f)), .01f*y, x*.00355f, y*.055f), Cyan);
 			}
-			GUI.Box(new Rect(x*.45f, .1f*y, x*.10f, y*.1f),"");
-			GUI.Label (new Rect(x*.46f,.1f*y,x*.05f, y*.05f), currentRedHealth+"/", style[1]);
-			GUI.Label (new Rect(x*.46f,y*.15f,x*.05f, y*.05f), "100", style[1]);
-			GUI.Label (new Rect(x*.515f,.1f*y,x*.05f, y*.05f), currentBlueHealth+"/", style[0]);
-			GUI.Label (new Rect(x*.515f,y*.15f,x*.05f, y*.05f), "100", style[0]);
+			GUI.Box(new Rect(x*.45f, .075f*y, x*.10f, y*.1f),"");
+			GUI.Label (new Rect(x*.46f,.075f*y,x*.05f, y*.05f), currentRedHealth+"/", style[1]);
+			GUI.Label (new Rect(x*.46f,y*.125f,x*.05f, y*.05f), "100", style[1]);
+			GUI.Label (new Rect(x*.515f,.075f*y,x*.05f, y*.05f), currentBlueHealth+"/", style[0]);
+			GUI.Label (new Rect(x*.515f,y*.125f,x*.05f, y*.05f), "100", style[0]);
 
 
 			//This Block displays current enlarged selection
