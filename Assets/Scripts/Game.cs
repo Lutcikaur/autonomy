@@ -331,18 +331,16 @@ public class Game : MonoBehaviour {
 			//This switch is the GUI for objects in the Depot
 			numInDepot = 6;
 
-			switch (numInDepot){ //REPLACE 6 with numInDepot
-			case 0:
-				Debug.Log("nothing in Depot");
-				break;
-			case 1:
-				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(0, y-(x*.185f), x*.06f, x*.09f),"")){
+			for(int q=0; q<numInDepot; q++){
+				int rofl=q/3;
+				//GUI.DrawTexture (new Rect(0, y-(x*(.185f)*(rofl/2)), x*.06f, x*.09f), img);
+				GUI.DrawTexture (new Rect((0+(q%3*x*.07f)), y-(x*(.0925f)*(rofl+1)), x*.06f, x*.09f), img);
+				if(GUIButton.Button (new Rect((0+(q%3*x*.07f)), y-(x*(.0925f)*(rofl+1)), x*.06f, x*.09f),"")){
 					if(ToggleTemp ==0){
 						for(int j=0; j<numThingsInteractable; j++){
 							EnlargeBool[j]=false;
 						}
-						EnlargeBool[0]=true;
+						EnlargeBool[q]=true;
 						ToggleTemp++;
 					} else if (ToggleTemp==1){
 						for(int j=0; j<numThingsInteractable; j++){
@@ -351,351 +349,24 @@ public class Game : MonoBehaviour {
 						ToggleTemp--;
 					}
 				}
-				break;
-			case 2:
-				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(0, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[0]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[1]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				break;
-			case 3:
-				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(0, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[0]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[1]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[2]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				break;
-			case 4:
-				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(0, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[0]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[1]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[2]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(0, y-(x*.09f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[3]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				break;
-			case 5:
-				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(0, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[0]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[1]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[2]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(0, y-(x*.09f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[3]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f), img);	
-				if(GUIButton.Button (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[4]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-
-				break;
-			case 6:
-				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(0, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[0]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[1]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[2]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(0, y-(x*.09f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[3]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f), img);
-				if(GUIButton.Button (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[4]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(x*.14f, y-(x*.09f), x*.06f, x*.09f), img);	
-				if(GUIButton.Button (new Rect(x*.14f, y-(x*.09f), x*.06f, x*.09f),"")){
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[5]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				break;
 			}
+
+
+
 			GUI.Box (new Rect(x-(x*.3f), y-(y*.25f), x*.15f, y*.25f), "Unit Details & abilities goes here?");
 			//GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), img);
 
 			cardsInHand=7;
-			switch(cardsInHand){
-			case 0:
-				break;
-			case 1:
-				break;
-			case 2:
-				break;
-			case 3:
-				break;
-			case 4:
-				break;
-			case 5:
-				break;
-			case 6:
-				break;
-			case 7:
-				GUI.depth=3;
-			
-				GUI.DrawTexture (new Rect(x*.25f, y-(y*.35f), y*.233f, y*.35f), img);
-				if(GUIButton.Button (new Rect(x*.25f, y-(y*.35f), y*.233f, y*.35f), ""))
-				{
 
+			for(int z=0; z<cardsInHand; z++){
+				GUI.DrawTexture (new Rect(((x*.25f)+((z*2f)/3f)*(x*.10f)), y-(x*.15f), x*.1f, x*.15f), img);
+				if(GUIButton.Button (new Rect(((x*.25f)+((z*2f)/3f)*(x*.10f)), y-(x*.15f), x*.1f, x*.15f), ""))
+				{
 					if(ToggleTemp ==0){
 						for(int j=0; j<numThingsInteractable; j++){
 							EnlargeBool[j]=false;
 						}
-						EnlargeBool[6]=true;
+						EnlargeBool[z+5]=true;
 						ToggleTemp++;
 					} else if (ToggleTemp==1){
 						for(int j=0; j<numThingsInteractable; j++){
@@ -704,112 +375,8 @@ public class Game : MonoBehaviour {
 						ToggleTemp--;
 					}
 				}
-				GUI.depth=2;
-				GUI.DrawTexture (new Rect(((x*.25f)+(2f/3f)*(y*.233f)), y-(y*.35f), y*.233f, y*.35f), depotBack);
-				if(GUIButton.Button (new Rect(((x*.25f)+(2f/3f)*(y*.233f)), y-(y*.35f), y*.233f, y*.35f), ""))
-				{
 
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[7]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				
-				GUI.depth=1;
-				GUI.DrawTexture (new Rect(((x*.25f)+(4f/3f)*(y*.233f)), y-(y*.35f), y*.233f, y*.35f), img);
-				if(GUIButton.Button (new Rect(((x*.25f)+(4f/3f)*(y*.233f)), y-(y*.35f), y*.233f, y*.35f), ""))
-				{
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[8]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(((x*.25f)+(6f/3f)*(y*.233f)), y-(y*.35f), y*.233f, y*.35f), img);
-				if(GUIButton.Button (new Rect(((x*.25f)+(6f/3f)*(y*.233f)), y-(y*.35f), y*.233f, y*.35f), ""))
-				{
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[9]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(((x*.25f)+(8f/3f)*(y*.233f)), y-(y*.35f), y*.233f, y*.35f), img);
-				if(GUIButton.Button (new Rect(((x*.25f)+(8f/3f)*(y*.233f)), y-(y*.35f), y*.233f, y*.35f), ""))
-				{
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[10]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(((x*.25f)+(10f/3f)*(y*.233f)), y-(y*.35f), y*.233f, y*.35f), img);
-				if(GUIButton.Button (new Rect(((x*.25f)+(10f/3f)*(y*.233f)), y-(y*.35f), y*.233f, y*.35f), ""))
-				{
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[11]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				GUI.DrawTexture (new Rect(((x*.25f)+(12f/3f)*(y*.233f)), y-(y*.35f), y*.233f, y*.35f), img);
-				if(GUIButton.Button (new Rect(((x*.25f)+(12f/3f)*(y*.233f)), y-(y*.35f), y*.233f, y*.35f), ""))
-				{
-					if(ToggleTemp ==0){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						EnlargeBool[12]=true;
-						ToggleTemp++;
-					} else if (ToggleTemp==1){
-						for(int j=0; j<numThingsInteractable; j++){
-							EnlargeBool[j]=false;
-						}
-						ToggleTemp--;
-					}
-				}
-				break;
-			default:
-				break;
 			}
-
-
 			for(int q=0; q<numThingsInteractable; q++){
 
 				if(EnlargeBool[q]){
