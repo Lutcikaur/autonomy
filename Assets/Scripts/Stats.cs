@@ -12,7 +12,12 @@ public class Stats : MonoBehaviour {
 	public bool canMove;
 	public bool canAttack;
 
+	public Texture2D image;
+	public string name;
+	public int techLevel;
+
 	public int spawnHeight;
+
 	public int moveSpeed;
 	public int attackRange;
 	public int maximumHealth;
