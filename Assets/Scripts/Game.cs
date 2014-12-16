@@ -22,7 +22,7 @@ public class Game : MonoBehaviour {
 
 	public int ToggleTemp=0;
 	//public bool handToggleTempBool=false;
-	public static int numThingsInteractable =13;
+	public static int numThingsInteractable =21;
 	bool[] EnlargeBool = new bool[numThingsInteractable]; //Bool[0-5] = Hand Enlarging, Bool[6] = Depot Enlarging
 
 	public int handToggleTemp=0;
@@ -141,53 +141,7 @@ public class Game : MonoBehaviour {
 		}
 		return neighborList;
 	}
-	
-	/*
-	deck RandomizeDeck(deck d){
-		int i,j;
-		int iMin;
-		var r=new Random();
-		for (i=0; i<deckSize; i++){
-			d[i].randomVal=r.Next(1000);
-		}
-		deck TempDeck=new deck;
 
-		// a[0] to a[n-1] is the array to sort 
-
-		// advance the position through the entire array 
-		//   (could do j < n-1 because single element is also min element) 
-		for (j = 0; j < deckSize; j++) {
-			// find the min element in the unsorted a[j .. n-1] 
-			
-			// assume the min is the first element 
-			iMin = j;
-			// test against elements after j to find the smallest 
-			for ( i = j+1; i <= deckSize; i++) {
-				// if this element is less, then it is the new minimum   
-				if (d[i].randomVal < d[iMin].randomVal) {
-					// found new minimum; remember its index 
-					iMin = i;
-				}
-			}
-			
-			if(iMin != j) {
-				//swaps d[j]& d[iMin];
-				TempDeck[0].index=d[j].index;
-				TempDeck[0].randomVal=d[j].randomVal;
-				d[j].index=d[iMin].index;
-				d[j].randomVal=d[iMin].randomVal;
-				d[iMin].index=TempDeck[0];
-				d[iMin].randomVal=TempDeck[0];
-			}
-			
-		}
-
-
-
-		return(d);
-	}
-
-	*/
 	
 	//pathfinds from the starting location to the ending location 
 	//IF IT RETURNS NULL, THERE IS NO PATH
@@ -386,7 +340,7 @@ public class Game : MonoBehaviour {
 						for(int j=0; j<numThingsInteractable; j++){
 							EnlargeBool[j]=false;
 						}
-						EnlargeBool[z+5]=true;
+						EnlargeBool[z+6]=true;
 						ToggleTemp++;
 					} else if (ToggleTemp==1){
 						for(int j=0; j<numThingsInteractable; j++){
@@ -401,11 +355,18 @@ public class Game : MonoBehaviour {
 
 				if(EnlargeBool[q]){
 					//GUI.Box (new Rect(x*.2f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
-					if(q!=7){
+					if(q<6){
 						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
+						if(GUIButton.Button (new Rect((x*.225f), y*.4f, x*.17f, y*.15f), "Spawn Unit")){
 
-					} else {
-						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), depotBack);
+
+						}
+					} else if (q>5 && q<13){
+						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
+						if(GUIButton.Button (new Rect((x*.225f), y*.4f, x*.17f, y*.15f), "Send to Factory")){
+							
+							
+						}
 					}
 				}
 			}

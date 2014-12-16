@@ -11,8 +11,8 @@ using System.Collections.Generic;
 	Tech5=5
 }*/
 
-public class Card
-{
+//public class Card
+//{
 	/*	
 	//private TechEnum _tech;
 		private int _rank;
@@ -41,7 +41,7 @@ public class Card
 		}
 	}
 	*/
-}
+//}
 	/*
 public class Deck {
 		private List<Card> _deck = new List<Card>();
