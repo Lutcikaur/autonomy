@@ -315,7 +315,19 @@ public class Game : MonoBehaviour {
 		float x=Screen.width;
 		float y=Screen.height;
 		int numInDepot;
-		
+		Stats sunit=null;
+
+		if (terrainCaster.selected != -Vector2.one) {
+			if (hexWorld.hexWorldData [(int)terrainCaster.selected.x, (int)terrainCaster.selected.y].unitObject != null) {
+					sunit = hexWorld.hexWorldData [(int)terrainCaster.selected.x, (int)terrainCaster.selected.y].unitObject.GetComponent<Stats> ();
+			} else {
+					sunit = null;
+			}
+		} else {
+			sunit = null;
+		}
+		//
+
 		switch(Network.peerType){
 		default:
 			//later on just uncomment things
@@ -353,7 +365,12 @@ public class Game : MonoBehaviour {
 
 
 
-			GUI.Box (new Rect(x-(x*.3f), y-(y*.25f), x*.15f, y*.25f), "Unit Details & abilities goes here?");
+			GUI.Box (new Rect(x-(x*.25f), y-(y*.25f), x*.15f, y*.25f), "");
+			if(sunit) {
+				GUI.Label(new Rect(x*.75f, y*.75f, x*.05f, y*.05f),hexWorld.hexWorldData [(int)terrainCaster.selected.x, (int)terrainCaster.selected.y].unit);
+
+			}
+
 			//GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), img);
 
 			cardsInHand=7;
