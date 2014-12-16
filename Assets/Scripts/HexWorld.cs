@@ -38,6 +38,7 @@ public class HexWorld : MonoBehaviour
 		public float height = 0f;
 		public string unit = null;
 		public GameObject unitObject = null;
+		public GameObject building = null;
 		public Vector2 center = Vector2.zero;
 		public bool inBounds = false;
 	};

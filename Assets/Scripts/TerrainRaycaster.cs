@@ -106,8 +106,9 @@ public class TerrainRaycaster : MonoBehaviour
 				point = hexWorld.findHex(thisRayPos);
 				//
 				if(b==2){
-					hexWorld.game.getNeighbor((int)point.x,(int)point.y);
-					if(hexWorld.hexWorldData[(int)point.x,(int)point.y].unitObject != null){
+					Debug.Log((int)point.x + " " + (int)point.y);
+					//hexWorld.game.getNeighbor((int)point.x,(int)point.y);
+					if(hexWorld.hexWorldData[(int)point.x,(int)point.y].unitObject != null || hexWorld.hexWorldData[(int)point.x,(int)point.y].building != null){
 						selected = point;
 					} else {
 						selected = -Vector2.one;

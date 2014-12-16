@@ -11,8 +11,8 @@ using System.Collections.Generic;
 	Tech5=5
 }*/
 
-public class Card
-{
+//public class Card
+//{
 	/*	
 	//private TechEnum _tech;
 		private int _rank;
@@ -40,9 +40,14 @@ public class Card
 			}
 		}
 	}
-	*/
+<<<<<<< HEAD
 }
+	
+=======
+	*/
+//}
 	/*
+>>>>>>> f5451dd5a501ac9ad733d43c76ba0d777407f342
 public class Deck {
 		private List<Card> _deck = new List<Card>();
 		private List<Card> _discardPile = new List<Card>();

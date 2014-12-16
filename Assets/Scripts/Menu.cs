@@ -9,7 +9,10 @@ public class Menu : MonoBehaviour {
 	static Menu _instance;
 
 	public Texture backgroundTexture;
- 
+
+	//Set up for tutorial slide show
+	/*public Texture[] slides;
+	public int currentSlide; */ 
 
 	public string IP = "127.0.0.1";
 	public int Port = 25001;
@@ -45,10 +48,16 @@ public class Menu : MonoBehaviour {
 
 	void OnGUI() {
 		int i = 0;
-		GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture); 
+
+
+
+		//GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture); 
+
 		switch(Network.peerType){
 		default:
 		case NetworkPeerType.Disconnected:
+			// Should make the background images, doesn't at all. 
+			GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture); 
 			if(type == "none"){
 				if(GUI.Button(new Rect(100,100,100,25),"Start Client")){
 					username = "";
@@ -61,13 +70,13 @@ public class Menu : MonoBehaviour {
 					server = Network.player.guid;
 				}
 				if(GUI.Button(new Rect(100,150,100,25), "Tutorial")){
-					
-					
+					Application.LoadLevel("Tutorial"); 
 				}
 				if(GUI.Button (new Rect(100,175,100,25), "Glossary")){
-
+					Application.LoadLevel ("Glossary");
 				}
 			} else if(type == "client"){
+				GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture);
 				GUI.Label(new Rect(100,125,100,25),"Username:");
 				username = GUI.TextArea(new Rect(200,125,100,25),username);
 				username = Regex.Replace(username, @"\t|\n|\r", "");
@@ -94,6 +103,7 @@ public class Menu : MonoBehaviour {
 			}
 			break;
 		case NetworkPeerType.Client:
+			GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture);
 			for(i=0;i<connectionList.Count;i++){
 				int offset = i*25;
 				GUI.Label(new Rect(100,(150+offset),100,25),connectionList[i].username);
@@ -109,6 +119,7 @@ public class Menu : MonoBehaviour {
 			}
 			break;
 		case NetworkPeerType.Server:
+			GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture);
 			GUI.Label(new Rect(100,100,100,25),"Server");
 			GUI.Label(new Rect(100,125,100,25),"Connections: " + Network.connections.Length + "/" + connectionList.Count);
 			GUI.Label(new Rect(250,125,100,25),"Ready: " + ready + "/" + connectionList.Count);
