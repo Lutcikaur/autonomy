@@ -9,6 +9,7 @@ public class Menu : MonoBehaviour {
 	static Menu _instance;
 
 	public Texture backgroundTexture;
+	public bool sound = false; 
 
 	//Set up for tutorial slide show
 	/*public Texture[] slides;
@@ -75,6 +76,25 @@ public class Menu : MonoBehaviour {
 				if(GUI.Button (new Rect(100,175,100,25), "Glossary")){
 					Application.LoadLevel ("Glossary");
 				}
+				if (sound == false)
+				{
+					if(GUI.Button (new Rect(100,300,100,25),"Mute") ) // MyGUISkin.customStyles[1] is unselected button image
+					{
+						sound = true;
+						AudioListener.pause = true;
+						Debug.Log ("Tick On");
+					}
+				}
+				else
+				{
+					if(GUI.Button (new Rect(100,300,100,25),"UnMute"))  // MyGUISkin.customStyles[2] is selected button image
+					{
+						sound = false;
+						AudioListener.pause = false; 
+						Debug.Log ("Tick Off");
+					}
+				}
+			
 			} else if(type == "client"){
 				GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture);
 				GUI.Label(new Rect(100,125,100,25),"Username:");
