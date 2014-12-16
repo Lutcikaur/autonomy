@@ -76,6 +76,7 @@ public class Menu : MonoBehaviour {
 					Application.LoadLevel ("Glossary");
 				}
 			} else if(type == "client"){
+				GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture);
 				GUI.Label(new Rect(100,125,100,25),"Username:");
 				username = GUI.TextArea(new Rect(200,125,100,25),username);
 				username = Regex.Replace(username, @"\t|\n|\r", "");
@@ -102,6 +103,7 @@ public class Menu : MonoBehaviour {
 			}
 			break;
 		case NetworkPeerType.Client:
+			GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture);
 			for(i=0;i<connectionList.Count;i++){
 				int offset = i*25;
 				GUI.Label(new Rect(100,(150+offset),100,25),connectionList[i].username);
@@ -117,6 +119,7 @@ public class Menu : MonoBehaviour {
 			}
 			break;
 		case NetworkPeerType.Server:
+			GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture);
 			GUI.Label(new Rect(100,100,100,25),"Server");
 			GUI.Label(new Rect(100,125,100,25),"Connections: " + Network.connections.Length + "/" + connectionList.Count);
 			GUI.Label(new Rect(250,125,100,25),"Ready: " + ready + "/" + connectionList.Count);
