@@ -10,7 +10,7 @@ Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Unity
 Loading C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.081 seconds
+- Completed reload, in  0.073 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
@@ -27,7 +27,7 @@ Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Unity
 Loading C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.081 seconds
+- Completed reload, in  0.079 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
@@ -43,7 +43,7 @@ Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Unity
 Loading C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.117 seconds
+- Completed reload, in  0.120 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
@@ -54,6 +54,485 @@ Tick On
 Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\System.dll (this message is harmless)
 Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\System.dll (this message is harmless)
 Tick On
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Tick On
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+0 846677018455265436
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Load MapUnityEngine.NetworkMessageInfo
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+ 
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/ar ifacts/S
+an a
+nePlleyamr: CneBuatded/enni/wongine3dfc63c5p1Linb6049)
+
+facts/StandalonePlayerGenerated/UnityEngineDebug.cpp LinL:a 49apU
+n
+ityEngine.NetworkMessageInfo
+ 
+(Filename: C:/BuLodAg MapUnik/d63idf.cetworkMessageInfo
+ 
+(6i85190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+lename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.448891 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 135.
+Total: 4.409046 ms (FindLiveObjects: 0.012940 ms CreateObjectMapping: 0.012047 ms MarkObjects: 2.580012 ms  DeleteObjects: 1.045034 ms)
+
+Run
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Here
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandaloUnloadTime: 0.361433 ms
+nePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 135.
+Total: 3.334115 ms (FindLiveObjects: 0.014278 ms CreateObjectMapping: 0.011601 ms MarkObjects: 1.780842 ms  DeleteObjects: 0.925002 ms)
+
+Run
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Here
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 1.509990 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 139.
+Total: 4.274289 ms (FindLiveObjects: 0.014278 ms CreateObjectMapping: 0.012047 ms MarkObjects: 2.370292 ms  DeleteObjects: 0.941066 ms)
+
+Run
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Here
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 140.4341 20.5 140.4341 20.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 154.2905 17.5 154.2905 17.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 165.5488 22 165.5488 22
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 153.4245 1 153.4245 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 156.8886 1 156.8886 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 159.4867 38.5 159.4867 38.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 156.0226 38.5 156.0226 38.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 169.879 14.5 169.879 14.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 148.2283 22 148.2283 22
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 143.8982 29.5 143.8982 29.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 160.3527 19 160.3527 19
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+150.8264 14.5 150.8264 14.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+149.9604 16 149.9604 16
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+150.8264 17.5 150.8264 17.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+149.9604 19 149.9604 19
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+150.8264 20.5 150.8264 20.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 140.4341 20.5 140.4341 20.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 154.2905 17.5 154.2905 17.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 165.5488 22 165.5488 22
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 153.4245 1 153.4245 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 156.8886 1 156.8886 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 159.4867 38.5 159.4867 38.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 156.0226 38.5 156.0226 38.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 169.879 14.5 169.879 14.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 148.2283 22 148.2283 22
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 143.8982 29.5 143.8982 29.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 160.3527 19 160.3527 19
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+152.5585 14.5 152.5585 14.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+151.6924 16 151.6924 16
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+152.5585 17.5 152.5585 17.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+151.6924 19 151.6924 19
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+152.5585 20.5 152.5585 20.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.GUIStyle].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at Game.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.GUIStyle].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at Game.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.GUIStyle].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at Game.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.GUIStyle].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at Game.OnGUI () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Neutral generator 140.4341 20.5 140.4341 20.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 154.2905 17.5 154.2905 17.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 165.5488 22 165.5488 22
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 140.4N4eu20ral fac.or  150.4245 120.5
+ 
+.42il5 1
+ 
+(FileBuamldAgentuiwoldAg63dfent/wo90b60/artifac190b6tandralonePs/SytanGdneloatPd/UnityEngineDlaygr.eceratediUnit:E g4neDb
+g.cpp Line: 49)
+
+Neutral Neutral gene8r8a 1 r5 .8846 19
+ 0
+(5i ena.e: C:5Bu.29dA5e t7w.rk
+ 
+63ifl63name9:b 0/a/tBfactd/Atannal/nwPlake/Gdn6r3tedcU6i385190b60/articpp Linetan9)
+l
+onePlayerGenerated/UnituyranginacDebyu1g.cpp Line: 49.4
+
+7 38.5 159.4867 38.5
+ 
+(Filename: C:/BuildAgent/wNre/u6tdfcl3 5g9eb60raatifrcts/S.5nd88 22ePla5.erGener2
+ 
+(FUnieynagine eCu:/BpuiLlne: ent/w
+o
+rk/d63dfc6385190b60/artifacts/Sttral fnePloryrG156er0226 38it5 1n6.0n26 38.g
+ 
+pFi lenae:e:49C:/
+
+BuildAgent/work/dNeutral factory 153.4245 1 153.4245 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityE6gidfeDebu5.cpp Line: 49)1
+9
+0b60/artifacts/StandalonePlayerGenerNeutral factorneDebug.cpp 1 156.8886 
+1
+
+ 
+(Filename: C:/BuildAgent/work/d63dfc63acto9y 169.art 14ac5 1/Sta79 14on5
+ 
+(Fileenerated/BUildAyEnt/wgik/d6ebuc63c51p0b6L/are:if49)
+/S
+tandalonePlayerGenerated/Uneutral facEngiyeDeb9.4.cp7 38ne5 159.
+
+4867 38.5
+ 
+(Filename: C:/BuildAgent/workNe63dfc63fa1ctor0/a148.2283 Sta1dal.neP283 22
+ l
+ayerenameratedBuiniAgeEngineDed63d.cpp Lineb60/a)
+if
+acts/StandalonePlayerGenerated/UnityNeginealbug.ctory 156.0226 38.ine:6.09)
+ 3
+8.5
+ 
+(Filename: C:/BuildAgent/work/d6Ndfc6385190b60/artifact82 29.5dalonePl2ay9er
+ neFralend/Uni C:/BginldDebug.cpp/woik/e:6 3df)
+38
+5190b60/artifacts/SNeutral factory 16t.anda14.ePlaye.8ener1at5
+d/U
+(FtyEnnameDebCg.cpuildAgent9)
+o
+rk/d63dfc6385190b60/artifacts/StandalonePl factory 16ted3U27 19E gi60.3bug.cpp 
+ 
+(Fil 49)
+
+: C:/BuildAgent/work/d63dfc6385190b60/artifactsNStanralonePlayerG148era8ted/Unity2283 22
+ 
+(Filenamin:e: 49)l
+Agent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 143.8982 29.5 143.8982 29.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+1Neutr64 14.5 150.826435275
+ 
+(Filenam7: C:/
+Bu
+(FidAgent/woC:/BuildAgent5190b60/artfc6385190bndalonePlacterGStandalonePityyerGeneratg.cpp ityEngineD
+e
+bug.cpp Line: 49)
+
+149.9604 16 149.9604 16
+ 
+(Filename: C:/BuildAgent/work/1d6.8264 14.5 150.8234 14.38
+ 
+(Filename: C:/BuildAgent/work/d63dfcS385190b60/artifacts/StandalonetlayealonePlayerGenerated/UnityEnitneEngDnebug.ugpppp Line: 949
+)
+
+
+150.8264 17.5 150.8264 17.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+149.9604 16 149.9604 16
+ 
+(Filename: C:/BuildAgent14or9604 3df149389604 19
+/a
+rFilfacts/: CandauildAPlat/erGeorkrated/Un385190gineDebug.cpp/Standa 49)
+la
+yerGenerated/UnityEngineDebug.cpp Line: 49)
+
+50.8264 17.5 150.8264 17.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/1rti0.f82ts4 20.5 150.Player4 20era
+ 
+(/UilityEe: ineDBubild.cpp Lintew:r /463)f63
+85190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 140.4341 20.5 140.1341 20.4 19 149.96045
+ 
+(F
+ilelnamee:C:/BuildAgennt/work//d6dfc636355190b60/artifacts/StandalonePlayerGeneratedcts/StandalonePlgyerpp Lerated4Un)
+
+yEngineDebug.cpp Line: 49)
+
+150.8264 20.5 150.8264 20.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGeneraNeeutral gegineDebug.cpp Line: 49)
+n
+erator 154.2905 17.5 154.2905 17.5
+ 
+(FilenaNe:eu:/Bail Agent/ratrk/d63d.4341 51.5 140.art41 2cts/StandalonePlayer0ene
+ r
+atile/ameU iCy:n/iBeDebdg.gpp Liwer:/d63df
+c
+6385190b60/artifacts/StandalonePlayerGenerated/UnityEnNieeuetur.al gLenera49r 1
+6
+5.5488 22 165.5488 22
+ 
+(Filenameu ral/geildAator 1wo.k/d632d05 17fc63551.29b5 17.5
+ 
+0Filenife:tC/SBunlaAgenlonePlayerGen6385190b60/yEngifeDebsg.tpp Lane: eP9a
+e
+rGenerated/UnityEngineDebug.cpp Line:e49)
+
+l factory 153.4245 1 153.4Neutra
+l 
+generator 165.5u488 22nt/65.548d83dfc6
+38
+5190bnamartiC:/BuildAgndal/wnePlayerGenera5190b60/artifaneDebug.ndalonePlayer)en
+e
+rated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 156.8886 1 Ne6.8al86 cto
+ry
+(F153.4am45 1 15B.il245 e
+ t/
+(wilrnamd:63:/Bu6ldAgen0bwo0/a/rt3iffac8ts/0b6a/arailaotn/SPaldayenePlaerated/UrnityEngiineDebug.cppg.c Line: 4949
+)
+
+
+Neuerat faltofyactory9.4867838.5  59 4866 38.5
+6
+ Fil
+ n
+m(: i:/Bniadmgen:/ oCk:d6Builc6A3g5e9nb60/artifda3ctc/Sta8d5lonebl6yeraereratacd/UnSttEngdnaDebngePpl aine:G4e)
+
+rated/UnityEngineDebugNeptpa  fanter: 146.
+
+26 38.5 156.0226 38.5
+ 
+(Filename: C:/BuildAgent/work/d63dNce385ral f19t0rb 659.a8r7t38fa c59s4/67 a8n5
+ l
+(Fieenamy: r:/eunedagend/wonkidt3dfcg3851D0e60/grtipactL/itan:a on9P)a
+
+erGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 169.879 14.5 169.Neut9 1 .5c
+ 
+(Fi5le0226 : C:/BuildAgent/work/d63dfc6385190b60/artifact2/S6tandal
+on
+ePilenerGe:erCt://UnitdAngintDwbuk/d63dfcL3i5e90b60/
+a
+rtifacts/StandNleutral fraetery 148.2283 n2i eDebu8.22pp 2ine:
+ 
+9F
+
+lename: C:/BuildAgent/work/d63dfc63Neu9r0l6fa0/artifac.879St4.5alon9.879 14.5
+ r
+(Fied/UnityC:/BuildAgentcwor /d63ife6 4519
+
+60/artifacts/StandalonePlayerGeNeeaued/Unitactory eDe.8982 2p9.5 ne:.898)
+ 
+29.5
+ 
+(Filename: C:/BuildAgent/worNeut/ral f6c3dfcy38519.26083 rt2f ct48.2t2nda o22P
+a er
+(eFeraeen/Umiey:n iCe:e/ug.clp Lgne:n49)
+o
+rk/d63dfc6385190b60/artifacts/Ntutrda lactery a6y.3527 1r9 t6e.352n i9
+ E
+(nilenemee CugB.ildpg nL/woek:d 34f963590b60/artifacts/StandalonePlayerGenerated/UnityEngineDNbug.cra L fea c9t
+o
+ry 143.8982 29.5 51.458.89182 219..5
+ 5
+14F5
+le
+(File am::/C:uBiildAAgnt/w/rk/r6k/dc638519036851r9ifbc6s0S/ardtlinfPlays/Standaled/UnityEnGenerated/UnityEnne: eDebu
+g
+.cpp Line: 49)
+
+1eut1r6924f1a 15or6y24 66
+. 
+(27 i9enam0:.3:5Bui d1gen
+ /o(k/d63nfa638:1 0C6:/aruiialtdAStand/work/da63dfc638ated/UnitartifaceDsb/gScpa Ldne:o4n)
+P
+layerGenerated/UnityEngineDeb5ug5.8cpp7 5 1n2e558491).
+
+
+
+(Filename: C:/BuildAgent/work/d63dfc6315190b60 14.tif1c5s/.55andal4n.Pla
+ r(eniratndaUmiey:n iCe:e/uB.upp ding: nt9/
+w
+ork/d63dfc6385190b60/artifac1.6/24t1a 151.6n2ePl9a
+ er
+Geneename: C:/BuilrAgent/Uwork/d63inc6385190b60/Linefa 4s/St
+a
+ndalonePlayerGenerated/UnityEngineDebug.cp1.6924 1 4915
+
+.6924 16
+ 
+(Filename: C:/BuildAgent/work/d61dfc63585 20b5 152.5585 20.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+6
+0/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+152.5585 17.5 152.5585 17.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+151.6924 19 151.6924 19
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+152.5585 20.5 152.5585 20.5
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
@@ -61,479 +540,21 @@ Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-0 562950231539180404
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Load MapUnityEngine.NetworkMessageInfo
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
- 
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Load MapUni yEngine.N
- 
-(FiletworkMessageInfo
- 
-(wFilenam3d:fc6385190b60/artork/cts/St6385190b60/arerifanerated/UnityePlayeDrGenerated/Unity49)
-
-neDebug.cpp Line: 49)
-
-Load MapUnityEngine.NetworkMessageInfo
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-UnloadTime: 0.383298 ms
-UnloadTime: 0.551967 ms
+UnloadTime: 11.550265 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects nUnloading
-To Unu:ed S4.381827 ms (FindLivealizedtf: l0s now loms Cd: teObjectMappinali0ed1file7: 0)
-Ma
-rkObadctsg 12.57u2s8 mAssetslto eeduce memory usag ms)
+Unloading 200 unused Assets to reduce memory usage. Loaded Objects now: 106.
+Total: 23.080896 ms (FindLiveObjects: 0.059346 ms CreateObjectMapping: 0.076748 ms MarkObjects: 0.678692 ms  DeleteObjects: 18.411707 ms)
 
-aded Objects now: 134.
-Total: 5.226065 ms (FindLiveObjects: 0.014278 ms CreateObjectMapping: 0.009370 ms MarkObjects: 2.555024 ms  DeleteObjects: 1.007106 ms)
-
-UnloadTime: 0.399362 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 134.
-Total: 3.217653 ms (FindLiveObjects: 0.009816 ms CreateObjectMapping: 0.007585 ms MarkObjects: 1.675982 ms  DeleteObjects: 0.927233 ms)
-
-Run
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Run
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Here
- 
-(Filename: C:/BuildAgent/worHere
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60da63dfccts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral generator 140.4341 20.5 140.4341 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral generator 154.2905 17.5 154.2905 17.5
- 
-(Run
- 
-(Filename: C:/BuildAgeFtilenkame: C:dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral generator 165.5488 22 165.5488 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Here
- 
-(FilenamN:eutral factory /1eutrad63dfc6385190b50/321521.5 140.4341 
-20
-.5
- 
-(Fenename: C:/BuildAgent/wo3k/d63dfc6385190b
-6
-0/artifacts/StanePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neut
-r
-al factory 156.8886 1 156.8886 1
- 
-(Filename: 
-C:
-/BuildAgent/work/d63gec63/519rb6d/ardifacts190andalaroinecPslSaandaGonePlayarGendratei/tnitnEggnneDeeugugp. cine:L49n
-
-: 49)
-
-Neutral generator 165.5488 eu2 1a5. 4fa c2
- r
-(Filename: 5C:/8uil A3e8t/5o k/563df86785398.65/
- t
-(actl/enanda:oneP/aBerieneAaten/UnwtyEkgidn3dDfbc638p5 1ineb 49/
-
-rtifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 156.0226 38.5 156.0226 38.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 169.879 14.5 169.879 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 148.2283 22 148.2283 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 143.8982 29.5 143.8982 29.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 160.3527 19 160.3527 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-150.8264 14.5 150.8264 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-149.9604 16 149.9604 16
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-150.8264 17.5 150.8264 17.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-149.9604 19 149.9604 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-150.8264 20.5 150.8264 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral generator 140.4341 20.5 140.4341 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral generator 154.2905 17.5 154.2905 17.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral generator 165.5488 22 165.5488 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 153.4245 1 153.4245 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 156.8886 1 156.8886 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 159.4867 38.5 159.4867 38.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 156.0226 38.5 156.0226 38.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 169.879 14.5 169.879 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 148.2283 22 148.2283 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factNre 143.l982e29.5a143r8912409.53
- 
-(Fi0e.5m 1 C:/4ui4dAg20t.wo
- /d
-63ifl6385190b60/ar/ifaBui/Stgendalonrk/d63drG6enerate6d/arniftcyEngSianeDebneg.capprGLnereted4U9it
-
-ngineDebug.cpp Line: 49)
-
-Neutral factory 160.3N27eutr160 g5e7 e9r
- 
-torlen5me. 2:/B0ild17.5 154.2/d63dfc638
-51
-90b60/ame: ac:/s/uitadAdgent/work/d63dfe6385190b60/yEngineDe/Standa Line: a49)
-
-nerated/UnityEngineDebug.cp1 Line: 49)
-
- 152.5585 14.5
- 
-(Filename:NC:/Bral geennrator 165.5488 225116b60/arti22
- 
-(Filename: C:/BuildAgent/wd/Und63dfc6385190b60/artifae: s/9St
-
-ndalonePlaye51.6924 16 151.6924 erat
-ed
-/Uniename: C:/ebuildAppent/we: 49)
-
-dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-152.N5eutra. factory85 17.5
- 
-(Filename:5C:1
-uil
-dAgent/work/d63dfc6385190wb6k//artifact38St19ndalonertifyerteneSated/UlityEPlayerngineDebug.cip Lingi: 49)bu
-g
-.cpp Line: 49)
-
-151.69al 19ctory 15648886 1 
-15
-6F.88name: 
- 
-(Filenament Cwork/d63dgec63/w51rk0b60/artifac190b60/artifaclayertandaloed/UlayeEngnneDebug.cpp Line:Unity
-E
-ngineDebug.cpp Line: 49)
-
-152.5585 N0.5 ral 5585 2ry 
- 
-(Fi867 38. C:/59BuildAgent/
- 
-(Filename: C:/Buib60/artifworks/Stanfc6385190by0/artifacts/StandyEonePlayerGenerated/Un 49)
-
-gineDebug.cpp Line: 49)
-
-Neutral factory 156.0226 38.5 156.0226 38.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 169.879 14.5 169.879 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 148.2283 22 148.2283 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 143.8982 29.5 143.8982 29.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 160.3527 19 160.3527 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-150.8264 14.5 150.8264 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-149.9604 16 149.9604 16
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-150.8264 17.5 150.8264 17.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-149.9604 19 149.9604 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-150.8264 20.5 150.8264 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral generator 140.4341 20.5 140.4341 20.5
+82 3
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Neutral generator 154.2905 17.5 154.2905 17.5
+The server has disconnected from the client. Most likelisconnected from server: Disconnyc ed
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral generator 165.5488 22 165.5488 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 153.4245 1 153.4245 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 156.8886 1 156.8886 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 159.4867 38.5 159.4867 38.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 156.0226 38.5 156.0226 38.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 169.879 14.5 169.879 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 148.2283 22 148.2283 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 143.8982 29.5 143.8982 29.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 160.3527 19 160.3527 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-152.5585 14.5 152.5585 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-151.6924 16 151.6924 16
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-152.5585 17.5 152.5585 17.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-151.6924 19 151.6924 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-152.5585 20.5 152.5585 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-Neutral factory 153.4245 1 153.4245 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 156.8886 1 156.8886 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 159.4867 38.5 159.4867 38.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 156.0226 38.5 156.0226 38.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 169.879 14.5 169.879 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 148.2283 22 148.2283 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 143.8982 29.5 143.8982 29.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 160.3527 19 160.3527 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-150.8264 14.5 150.8264 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-149.9604 16 149.9604 16
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-150.8264 17.5 150.8264 17.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-149.9604 19 149.9604 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-150.8264 20.5 150.8264 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral generator 140.4341 20.5 140.4341 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral generator 154.2905 17.5 154.2905 17.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral generator 165.5488 22 165.5488 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 153.4245 1 153.4245 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 156.8886 1 156.8886 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 159.4867 38.5 159.4867 38.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 156.0226 38.5 156.0226 38.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 169.879 14.5 169.879 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 148.2283 22 148.2283 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 143.8982 29.5 143.8982 29.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 160.3527 19 160.3527 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-152.5585 14.5 152.5585 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-151.6924 16 151.6924 16
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-152.5585 17.5 152.5585 17.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-151.6924 19 151.6924 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-152.5585 20.5 152.5585 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-90 0
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-83 2
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-The server has disconnected froD ihe onnected fromhseelvyer: Disrver hats s
- 
-(down.n
-am
-eF: Cnaee:  Line: 745ork/d63df
-c
-6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 4r)
 
- has disconnected from the client. Most likely the server has shut down.
+the server has shut down.
  
 (Filename:  Line: 745)
 
@@ -541,87 +562,29 @@ Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Disconnected from server: Disconnected
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-UnloadTime: 7.620899 ms
+UnloadTime: 1.988332 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 199 unused Assets to reduce memory usage. Loaded Objects now: 114.
-Total: 17.118576 ms (FindLiveObjects: 0.060238 ms CreateObjectMapping: 0.077195 ms MarkObjects: 0.371250 ms  DeleteObjects: 13.636319 ms)
+Unloading 200 unused Assets to reduce memory usage. Loaded Objects now: 112.
+Total: 10.411525 ms (FindLiveObjects: 0.012494 ms CreateObjectMapping: 0.015171 ms MarkObjects: 0.099505 ms  DeleteObjects: 9.557024 ms)
 
-UnloadTime: 12.336943 ms
+UnloadTime: 2.990976 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 199 unused Assets to reduce memory usage. Loaded Objects now: 109.
-Total: 19.626749 ms (FindLiveObjects: 0.059346 ms CreateObjectMapping: 0.074071 ms MarkObjects: 0.578294 ms  DeleteObjects: 15.912906 ms)
+Unloading 200 unused Assets to reduce memory usage. Loaded Objects now: 106.
+Total: 4.471516 ms (FindLiveObjects: 0.023203 ms CreateObjectMapping: 0.015171 ms MarkObjects: 0.135203 ms  DeleteObjects: 3.720537 ms)
 
-UnloadTime: 9.408435 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 199 unused Assets to reduce memory usage. Loaded Objects now: 106.
-Total: 17.532665 ms (FindLiveObjects: 0.055776 ms CreateObjectMapping: 0.077641 ms MarkObjects: 0.479680 ms  DelenloadTime: 0.850038 ms
-teObjects: 13.987936 ms)
-
+UnloadTime: 0.241402 ms
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 97.
-Total: 3.088251 ms (FindLiveObjects: 0.023649 ms CreateObjectMapping: 0.032127 ms MarkObjects: 0.335999 ms  DeleteObjects: 0.016509 ms)
-
-Tick On
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Tick On
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Tick Off
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Tick Off
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Tick On
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+Total: 0.574278 ms (FindLiveObjects: 0.005800 ms CreateObjectMapping: 0.007139 ms MarkObjects: 0.093705 ms  DeleteObjects: 0.003569 ms)
 
 Tick On
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Tick Off
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Tick Off
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Tick On
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Tick On
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Tick Off
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Tick On
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Tick Off
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Tick On
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
