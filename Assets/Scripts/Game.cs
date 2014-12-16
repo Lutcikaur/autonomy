@@ -464,6 +464,9 @@ public class Game : MonoBehaviour {
 			if(playerObjects[me].Contains(hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject)){
 				Vector3 selected = new Vector3(_selected.x,1,_selected.y);
 				Vector3 point = new Vector3(_point.x,1,_point.y);
+				Stats _selectedUnit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject.GetComponent<Stats>();
+				if(!_selectedUnit.canMove || _selectedUnit.hasMoved)
+					return;
 				//theres no server checking here. dont send 'me' later.
 				networkView.RPC("NetworkMove",RPCMode.All,selected,point);
 			}
@@ -477,6 +480,8 @@ public class Game : MonoBehaviour {
 				Vector3 selected = new Vector3(_selected.x,1,_selected.y);
 				Vector3 point = new Vector3(_point.x,1,_point.y);
 				Stats _selectedUnit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject.GetComponent<Stats>();
+				if(!_selectedUnit.canAttack || _selectedUnit.hasAttacked)
+					return;
 				Debug.Log(hexDistance(_selected,_point) + " " + _selectedUnit.attackRange);
 				if(hexDistance(_selected,_point) <= _selectedUnit.attackRange){
 					networkView.RPC("NetworkAttack",RPCMode.All,selected,point);
@@ -546,6 +551,10 @@ public class Game : MonoBehaviour {
 	[RPC]
 	void NetworkMove(Vector3 _selected, Vector3 _point, NetworkMessageInfo info){
 		//are you here to fix it sending 'me' aka _i? Have it hunt for sender.guid over all connected guids.
+		Stats _selectedUnit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject.GetComponent<Stats>();
+		if(!_selectedUnit.canMove || _selectedUnit.hasMoved)
+			return;
+		_selectedUnit.hasMoved = true;
 		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject;
 		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit;
 		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject.transform.position = new Vector3 (hexWorld.hexWorldData[(int)_point.x,(int)_point.z].center.x, hexWorld.hexWorldData[(int)_point.x,(int)_point.z].height+1 , hexWorld.hexWorldData[(int)_point.z,(int)_point.z].center.y);
@@ -559,6 +568,9 @@ public class Game : MonoBehaviour {
 		Stats _selectedUnit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject.GetComponent<Stats>();
 		Stats _targetUnit = hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject.GetComponent<Stats>();
 		//if distance between them is <= _selectedUnit.attackRange
+		if(!_selectedUnit.canAttack || _selectedUnit.hasAttacked)
+			return;
+		_selectedUnit.hasAttacked = true;
 		_targetUnit.currentHealth -= _selectedUnit.damage;
 		if(_targetUnit.currentHealth <= 0){
 			Destroy(hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject);
@@ -599,7 +611,6 @@ public class Game : MonoBehaviour {
 				if(info.sender.guid == Menu.connectionList[i].guid){
 					if(turn == i){;
 						int nturn = turn+1==c?0:turn+1;
-						turn = nturn;
 						Debug.Log (nturn + " " + turn + " " + c + " " + me);
 						networkView.RPC("SwitchTurn",RPCMode.All,nturn);
 					}
@@ -610,8 +621,16 @@ public class Game : MonoBehaviour {
 	
 	[RPC]
 	void SwitchTurn(int _newTurn, NetworkMessageInfo info){
-		if(info.sender.guid == server)
+		if(Network.isServer || info.sender.guid == server){
 			turn = _newTurn;
+			for(int i = 0; i < playerObjects.Count; i++){
+				foreach (GameObject obj in playerObjects[i]){
+					Stats unit = obj.GetComponent<Stats>();
+					unit.hasMoved = false;
+					unit.hasAttacked = false;
+				}
+			}
+		}
 	}
 
 
