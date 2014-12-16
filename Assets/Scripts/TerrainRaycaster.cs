@@ -68,15 +68,18 @@ public class TerrainRaycaster : MonoBehaviour
 	{
 		//check for UI COLLISIONS FIRST
 		// option to set the current hexagon to a different texture index
-		if ( Input.GetMouseButtonDown(0) )
-			// change hexagon to green
-			RaycastTerrain( 2 );
-		else if ( Input.GetMouseButtonDown(1) )
-			// change hexagon to red
-			RaycastTerrain( 3 );
-		else if ( Input.GetMouseButtonDown(2) )
-			// change hexagon to default
-			RaycastTerrain( 0 );
+		if(true){
+			if ( Input.GetMouseButtonDown(0) )
+				// change hexagon to green
+				RaycastTerrain( 2 );
+			else if ( Input.GetMouseButtonDown(1) )
+				// change hexagon to red
+				RaycastTerrain( 3 );
+			else if ( Input.GetMouseButtonDown(2) )
+				// change hexagon to default
+				RaycastTerrain( 0 );
+		}
+
 	}
 	
 	

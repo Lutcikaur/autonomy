@@ -51,6 +51,8 @@ public class Game : MonoBehaviour {
 		staticDeckList.Capacity = 30;
 		currentDeckList.Capacity = 30;
 
+
+
 		//populate factoryList somewhere;
 		depotBack=Resources.Load("depotWindow") as Texture2D;
 		img = Resources.Load("Deck_02") as Texture2D;
@@ -718,6 +720,7 @@ public class Game : MonoBehaviour {
 							foreach(MeshRenderer mesh in a){
 								mesh.material.color = style[turn].normal.textColor;
 							}
+							//
 						}
 					}
 				}
@@ -744,6 +747,7 @@ public class Game : MonoBehaviour {
 							foreach(MeshRenderer mesh in a){
 								mesh.material.color = style[turn].normal.textColor;
 							}
+							//
 						}
 					}
 				}
@@ -762,12 +766,6 @@ public class Game : MonoBehaviour {
 			
 		}
 	}
-
-
-
-
-
-
 
 	public class PFList{
 		int fScore;
