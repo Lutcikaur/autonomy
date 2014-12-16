@@ -21,6 +21,10 @@ public class Game : MonoBehaviour {
 	public int yUpperBound = 25;
 
 
+	public int ToggleTemp=0;
+	//public bool handToggleTempBool=false;
+	public bool[] EnlargeBool = new bool[7]; //Bool[0] = Hand Enlarging, Bool[1-6] = Depot Enlarging
+
 	public int handToggleTemp=0;
 	public bool handToggleTempBool=false;
 
@@ -32,6 +36,11 @@ public class Game : MonoBehaviour {
 	void Start () {
 		depotBack=Resources.Load("depotWindow") as Texture2D;
 		img = Resources.Load("Deck_2") as Texture2D;
+
+		for(int i=0; i<7; i++){
+			EnlargeBool[i]=false;
+		}
+
 		server = Menu.server;
 		Debug.Log("Here");
 		switch(Network.peerType){
@@ -309,9 +318,16 @@ public class Game : MonoBehaviour {
 
 		switch(Network.peerType){
 		default:
-		case NetworkPeerType.Disconnected:
+			//later on just uncomment things
+		//case NetworkPeerType.Disconnected:
+		//	break;
+		//case NetworkPeerType.Client:
+			for(i=0;i<Menu.connectionList.Count;i++){
+				int offset = i*25;
+				GUI.Label(new Rect(10,(10+offset),100,25),Menu.connectionList[i].username);
+			}
 			GUI.DrawTexture (new Rect(0, y-(x*.22f), x*.2f, x*.22f), depotBack); //Depot Back Splash
-
+			
 			//This switch is the GUI for objects in the Depot
 			numInDepot = 6;
 			switch (numInDepot){ //REPLACE 6 with numInDepot
@@ -320,7 +336,7 @@ public class Game : MonoBehaviour {
 				break;
 			case 1:
 				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-
+				
 				break;
 			case 2:
 				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
@@ -347,111 +363,117 @@ public class Game : MonoBehaviour {
 			case 6:
 				GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
 				if(GUI.Button (new Rect(0, y-(x*.185f), x*.06f, x*.09f),"")){
-					
+					if(ToggleTemp ==0){
+						for(int j=0; j<7; j++){
+							EnlargeBool[j]=false;
+						}
+						EnlargeBool[1]=true;
+						ToggleTemp++;
+					} else if (ToggleTemp==1){
+						for(int j=0; j<7; j++){
+							EnlargeBool[j]=false;
+						}
+						ToggleTemp--;
+					}
 				}
 				GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
+				if(GUI.Button (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f),"")){
+					if(ToggleTemp ==0){
+						for(int j=0; j<7; j++){
+							EnlargeBool[j]=false;
+						}
+						EnlargeBool[2]=true;
+						ToggleTemp++;
+					} else if (ToggleTemp==1){
+						for(int j=0; j<7; j++){
+							EnlargeBool[j]=false;
+						}
+						ToggleTemp--;
+					}
+				}
 				GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
+				if(GUI.Button (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f),"")){
+					if(ToggleTemp ==0){
+						for(int j=0; j<7; j++){
+							EnlargeBool[j]=false;
+						}
+						EnlargeBool[3]=true;
+						ToggleTemp++;
+					} else if (ToggleTemp==1){
+						for(int j=0; j<7; j++){
+							EnlargeBool[j]=false;
+						}
+						ToggleTemp--;
+					}
+				}
 				GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
+				if(GUI.Button (new Rect(0, y-(x*.09f), x*.06f, x*.09f),"")){
+					if(ToggleTemp ==0){
+						for(int j=0; j<7; j++){
+							EnlargeBool[j]=false;
+						}
+						EnlargeBool[4]=true;
+						ToggleTemp++;
+					} else if (ToggleTemp==1){
+						for(int j=0; j<7; j++){
+							EnlargeBool[j]=false;
+						}
+						ToggleTemp--;
+					}
+				}
 				GUI.DrawTexture (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f), img);
+				if(GUI.Button (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f),"")){
+					if(ToggleTemp ==0){
+						for(int j=0; j<7; j++){
+							EnlargeBool[j]=false;
+						}
+						EnlargeBool[5]=true;
+						ToggleTemp++;
+					} else if (ToggleTemp==1){
+						for(int j=0; j<7; j++){
+							EnlargeBool[j]=false;
+						}
+						ToggleTemp--;
+					}
+				}
 				GUI.DrawTexture (new Rect(x*.14f, y-(x*.09f), x*.06f, x*.09f), img);	
+				if(GUI.Button (new Rect(x*.14f, y-(x*.09f), x*.06f, x*.09f),"")){
+					if(ToggleTemp ==0){
+						for(int j=0; j<7; j++){
+							EnlargeBool[j]=false;
+						}
+						EnlargeBool[6]=true;
+						ToggleTemp++;
+					} else if (ToggleTemp==1){
+						for(int j=0; j<7; j++){
+							EnlargeBool[j]=false;
+						}
+						ToggleTemp--;
+					}
+				}
 				break;
 			}
 			GUI.Box (new Rect(x-(x*.3f), y-(y*.25f), x*.15f, y*.25f), "Unit Details & abilities goes here?");
 			//GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), img);
 			if(GUI.Button (new Rect(x*.2f, y-(y*.25f), x*.5f, y*.25f), "Hand of Cards Goes Here?"))
 			{
-				if(handToggleTemp ==0){
-					handToggleTempBool=true;
-					handToggleTemp++;
-				} else if (handToggleTemp==1){
-					handToggleTempBool=false;
-					handToggleTemp--;
+				if(ToggleTemp ==0){
+					EnlargeBool[0]=true;
+					ToggleTemp++;
+				} else if (ToggleTemp==1){
+					EnlargeBool[0]=false;
+					ToggleTemp--;
 				}
 			}
-			if(handToggleTempBool){
+			if(EnlargeBool[0]){
 				//GUI.Box (new Rect(x*.2f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
 				GUI.DrawTexture(new Rect(x*.2f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
 			}
-
+			
 			//GUI.Box (new Rect(x*.1f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
-
-			break;
-		case NetworkPeerType.Client:
-			for(i=0;i<Menu.connectionList.Count;i++){
-				GUI.DrawTexture (new Rect(0, y-(x*.22f), x*.2f, x*.22f), depotBack); //Depot Back Splash
-				
-				//This switch is the GUI for objects in the Depot
-				numInDepot = 6;
-				switch (numInDepot){ //REPLACE 6 with numInDepot
-				case 0:
-					Debug.Log("nothing in Depot");
-					break;
-				case 1:
-					GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-					break;
-				case 2:
-					GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
-					break;
-				case 3:
-					GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
-					break;
-				case 4:
-					GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
-					break;
-				case 5:
-					GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f), img);		
-					break;
-				case 6:
-					GUI.DrawTexture (new Rect(0, y-(x*.185f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(x*.07f, y-(x*.185f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(x*.14f, y-(x*.185f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(0, y-(x*.09f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(x*.07f, y-(x*.09f), x*.06f, x*.09f), img);
-					GUI.DrawTexture (new Rect(x*.14f, y-(x*.09f), x*.06f, x*.09f), img);	
-					break;
-				}
-				GUI.Box (new Rect(x-(x*.3f), y-(y*.25f), x*.15f, y*.25f), "Unit Details & abilities goes here?");
-				//GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), img);
-				if(GUI.Button (new Rect(x*.2f, y-(y*.25f), x*.5f, y*.25f), "Hand of Cards Goes Here?"))
-				{
-					if(handToggleTemp ==0){
-						handToggleTempBool=true;
-						handToggleTemp++;
-					} else if (handToggleTemp==1){
-						handToggleTempBool=false;
-						handToggleTemp--;
-					}
-				}
-				if(handToggleTempBool){
-					//GUI.Box (new Rect(x*.2f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
-					GUI.DrawTexture(new Rect(x*.2f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
-				}
-				
-				//GUI.Box (new Rect(x*.1f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
-				
-			}
-			if(GUI.Button(new Rect(x-100, y-40, 80, 20), "Pass Turn")) {
-				//PUT PASS TURN CALL HERE
-
-			}
-			//GUI.Box (new Rect(50,50,100,90), "Loader Menu");
-			GUI.Box (new Rect(0, y-(x*.2f), x*.2f, x*.2f), "Depot goes here?");
-			GUI.Box (new Rect(x-(x*.3f), y-(y*.3f), x*.3f, y*.3f), "Unit Details & abilities go here?");
-			GUI.Box (new Rect(x*.2f, y-(y*.3f), x*.5f, y*.3f), "Hand of Cards Go Here?");
 			if(GUI.Button(new Rect(x-100, y-40, 80, 20), (me == turn?"Pass Turn":"Waiting"))) {
 				networkView.RPC ("RequestTurnSwitch",RPCMode.Server);
 			}
-
 			break;
 		case NetworkPeerType.Server:
 			GUI.Label(new Rect(100,100,100,25),"Server");
@@ -489,7 +511,7 @@ public class Game : MonoBehaviour {
 				Vector3 selected = new Vector3(_selected.x,1,_selected.y);
 				Vector3 point = new Vector3(_point.x,1,_point.y);
 				//theres no server checking here. dont send 'me' later.
-				networkView.RPC("NetworkMove",RPCMode.All,me,Network.player.guid,selected,point);
+				networkView.RPC("NetworkMove",RPCMode.All,selected,point);
 			}
 		}
 	}
@@ -497,9 +519,10 @@ public class Game : MonoBehaviour {
 	public void attackUnit(Vector2 _selected, Vector2 _point){
 		if(turn == me){
 			if(!playerObjects[me].Contains(hexWorld.hexWorldData[(int)_point.x,(int)_point.y].unitObject) && playerObjects[me].Contains(hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject)){
-				Stats _selectedUnit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject.GetComponent<Stats>();
-				Stats _targetUnit = hexWorld.hexWorldData[(int)_point.x,(int)_point.y].unitObject.GetComponent<Stats>();
 				// CALL RPCS
+				Vector3 selected = new Vector3(_selected.x,1,_selected.y);
+				Vector3 point = new Vector3(_point.x,1,_point.y);
+				networkView.RPC("NetworkAttack",RPCMode.All,selected,point);
 			}
 		}
 	}
@@ -518,6 +541,7 @@ public class Game : MonoBehaviour {
 	[RPC]
 	void Initialize(NetworkMessageInfo info) {
 		if(Network.isServer){
+			me=-1;
 			return;
 		} else if(Network.isClient){
 			if(info.sender.guid == server){
@@ -543,17 +567,59 @@ public class Game : MonoBehaviour {
 		Vector3 finalloc = new Vector3(center.x,1,center.y);
 		Debug.Log (center.x + " " + center.y + " " + finalloc.x + " " + finalloc.z);
 		playerObjects[_i][playerObjects[_i].Count-1].transform.position = finalloc;
+		//playerObjects[_i][playerObjects[_i].Count-1].renderer.materials[0].color = Color.red;
+		MeshRenderer[] a = playerObjects[_i][playerObjects[_i].Count-1].GetComponentsInChildren<MeshRenderer>();
+		foreach(MeshRenderer mesh in a){
+			switch(_i){
+			default:
+				mesh.material.color = Color.gray;
+				break;
+			case 0:
+				mesh.material.color = Color.cyan;
+				break;
+			case 1:
+				mesh.material.color = Color.magenta;
+				break;
+			}
+		}
 		//}
 	}
 
 	[RPC]
-	void NetworkMove(int _i, string _guid, Vector3 _selected, Vector3 _point, NetworkMessageInfo info){
+	void NetworkMove(Vector3 _selected, Vector3 _point, NetworkMessageInfo info){
 		//are you here to fix it sending 'me' aka _i? Have it hunt for sender.guid over all connected guids.
 		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject;
 		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit;
 		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject.transform.position = new Vector3 (hexWorld.hexWorldData[(int)_point.x,(int)_point.z].center.x, 1 , hexWorld.hexWorldData[(int)_point.z,(int)_point.z].center.y);
 		hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject = null;
 		hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit = null;
+	}
+
+	[RPC]
+	void NetworkAttack(Vector3 _selected, Vector3 _point, NetworkMessageInfo info){
+		//Not secure. Just like networkmove. Have it check to see if the sender is correct.
+		Stats _selectedUnit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject.GetComponent<Stats>();
+		Stats _targetUnit = hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject.GetComponent<Stats>();
+		//if distance between them is <= _selectedUnit.attackRange
+		_targetUnit.currentHealth -= _selectedUnit.damage;
+		if(_targetUnit.currentHealth <= 0){
+			Destroy(hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject);
+			int targetx = -1 ,targety = -1;
+			for(int i = 0; i < playerObjects.Count; i++){
+				playerObjects[i].Remove(hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject);
+			}
+			/*
+			 	for (int j = 0; j < playerObjects[i].Count; j++){
+					if(playerObjects[i][j] == hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject){
+						targetx = i;
+						targety = j;
+						break;
+					}
+				}
+			*/
+			hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject = null;
+				//openList.FindIndex(PFList => PFList.getHex() == neighborList[i]);
+		}
 	}
 	
 	[RPC]
@@ -576,7 +642,7 @@ public class Game : MonoBehaviour {
 					if(turn == i){;
 						int nturn = turn+1==c?0:turn+1;
 						turn = nturn;
-						Debug.Log (nturn + " " + turn + " " + c);
+						Debug.Log (nturn + " " + turn + " " + c + " " + me);
 						networkView.RPC("SwitchTurn",RPCMode.All,nturn);
 					}
 				}
