@@ -7,14 +7,22 @@ public class Game : MonoBehaviour {
 	// Use this for initialization
 	public HexWorld hexWorld;
 	public TerrainRaycaster terrainCaster;
+
 	public List<List<GameObject>> playerObjects = new List<List<GameObject>>{};
 	public List<GUIStyle> style = new List<GUIStyle>{};
-	//public GameObject Cylinder;
-	public int me = -1;
-	public List<List<string>> depotList = new List<List<string>>{};
+	public List<List<GameObject>> depotList = new List<List<GameObject>>{};
+	public List<GameObject> factoryList = new List<GameObject>{};
+	public List<GameObject> generatorList = new List<GameObject>{};
+
+	public List<List<GameObject>> handList = new List<List<GameObject>>{};
+	public List<List<GameObject>> staticDeckList = new List<List<GameObject>>{};
+	public List<List<GameObject>> currentDeckList = new List<List<GameObject>>{};
+
+
 	public static string server = null;
 	public int turn = 0;
-	
+	public int me = -1;
+
 	//map bounds inclusive
 	public int xLowerBound = 80;
 	public int xUpperBound = 99;
@@ -36,6 +44,14 @@ public class Game : MonoBehaviour {
 	
 	
 	void Start () {
+		depotList.Capacity = 3;
+		factoryList.Capacity = 8;
+		generatorList.Capacity = 3;
+		handList.Capacity = 7;
+		staticDeckList.Capacity = 30;
+		currentDeckList.Capacity = 30;
+
+		//populate factoryList somewhere;
 		depotBack=Resources.Load("depotWindow") as Texture2D;
 		img = Resources.Load("Deck_02") as Texture2D;
 		for(int i=0; i<numThingsInteractable; i++){
@@ -73,7 +89,22 @@ public class Game : MonoBehaviour {
 					style[i].normal.textColor = Color.magenta;
 					break;
 				}
-				depotList.Add(new List<string>());
+				depotList.Add(new List<GameObject>());
+
+				//spawn shit
+				networkView.RPC("SpawnNeutral",RPCMode.All,"generator",new Vector3(80,1,13));
+				networkView.RPC("SpawnNeutral",RPCMode.All,"generator",new Vector3(88,1,11));
+				networkView.RPC("SpawnNeutral",RPCMode.All,"generator",new Vector3(95,1,14));
+
+				networkView.RPC("SpawnNeutral",RPCMode.All,"factory",new Vector3(88,1,0));
+				networkView.RPC("SpawnNeutral",RPCMode.All,"factory",new Vector3(90,1,0));
+				networkView.RPC("SpawnNeutral",RPCMode.All,"factory",new Vector3(91,1,25));
+				networkView.RPC("SpawnNeutral",RPCMode.All,"factory",new Vector3(89,1,25));
+				networkView.RPC("SpawnNeutral",RPCMode.All,"factory",new Vector3(97,1,9));
+				networkView.RPC("SpawnNeutral",RPCMode.All,"factory",new Vector3(85,1,14));
+				networkView.RPC("SpawnNeutral",RPCMode.All,"factory",new Vector3(82,1,19));
+				networkView.RPC("SpawnNeutral",RPCMode.All,"factory",new Vector3(92,1,12));
+
 				for(int j = 0; j<5; j++){
 					string name;
 					if(j<3)
@@ -97,7 +128,8 @@ public class Game : MonoBehaviour {
 		int numberOfNeighbors = 0;
 		bool odd = false;
 		
-		if(x > xUpperBound || x < xLowerBound || y > yUpperBound || y < yUpperBound){
+		if(x > xUpperBound || x < xLowerBound || y > yUpperBound || y < yLowerBound){
+			Debug.Log("yep");
 			return new Vector2[0];
 		}
 		
@@ -288,6 +320,7 @@ public class Game : MonoBehaviour {
 		float y=Screen.height;
 		int numInDepot;
 		Stats sunit=null;
+		Building bunit = null;
 
 		if (terrainCaster.selected != -Vector2.one) {
 			if (hexWorld.hexWorldData [(int)terrainCaster.selected.x, (int)terrainCaster.selected.y].unitObject != null) {
@@ -295,8 +328,14 @@ public class Game : MonoBehaviour {
 			} else {
 					sunit = null;
 			}
+			if (hexWorld.hexWorldData [(int)terrainCaster.selected.x, (int)terrainCaster.selected.y].building != null) {
+				bunit = hexWorld.hexWorldData [(int)terrainCaster.selected.x, (int)terrainCaster.selected.y].building.GetComponent<Building> ();
+			} else {
+				bunit = null;
+			}
 		} else {
 			sunit = null;
+			bunit = null;
 		}
 		//
 
@@ -345,6 +384,12 @@ public class Game : MonoBehaviour {
 				GUI.Label(new Rect(x*.75f, y*.9f, x*.15f, y*.05f),"Range: "+sunit.attackRange);
 				GUI.Label(new Rect(x*.75f, y*.95f, x*.15f, y*.05f),"Damage: "+sunit.damage);
 			}
+			GUI.Box (new Rect((x*.9f), (y*.75f), x*.1f, y*.15f), "");
+			if(bunit) {
+				GUI.Label(new Rect(x*.9f, y*.75f, x*.15f, y*.05f),bunit.name);
+				GUI.Label(new Rect(x*.9f, y*.8f, x*.15f, y*.05f),"Cap: "+bunit.capCurrent+"/"+bunit.capMax);
+				GUI.Label(new Rect(x*.9f, y*.85f, x*.15f, y*.05f),"Progress: "+bunit.buildProgress);
+			}
 
 			//GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), img);
 
@@ -392,7 +437,6 @@ public class Game : MonoBehaviour {
 			
 			//GUI.Box (new Rect(x*.1f, y*.25f, x*.65f, y*.5f), "Enlarged Hand");
 			if(GUIButton.Button(new Rect(x*.9f, y*.9f, x*.1f, y*.1f), (me == turn?"Pass Turn":"Waiting"))) {
-
 				networkView.RPC ("RequestTurnSwitch",RPCMode.Server);
 			}
 			break;
@@ -439,17 +483,16 @@ public class Game : MonoBehaviour {
 		}
 	}
 
-	float hexDistance2(Vector2 p1, Vector2 p2){
-		float x1 = p1.x;
-		float y1 = p1.y;
-		float x2 = p2.x;
-		float y2 = p2.y;
-		float du = x2-x1;
-		float dv = (y2 + Mathf.FloorToInt(x2/2f)) - (y1 + Mathf.FloorToInt(x1/2f));
-		if((du >= 0 && dv >= 0) || (du < 0 && dv < 0))
-			return Mathf.Max(Mathf.Abs(du), Mathf.Abs(dv));
-		else 
-			return (Mathf.Abs(du) + Mathf.Abs(dv));
+	void Shuffle<T>(List<T> list) {  
+		System.Random rng = new System.Random();  
+		int n = list.Count;  
+		while (n > 1) {  
+			n--;  
+			int k = rng.Next(n + 1);  
+			T value = list[k];  
+			list[k] = list[n];  
+			list[n] = value;  
+		}  
 	}
 
 
@@ -512,7 +555,26 @@ public class Game : MonoBehaviour {
 			}
 		}
 	}
-	
+
+	[RPC]
+	void SpawnNeutral(string _name, Vector3 _location, NetworkMessageInfo info){
+		if(Network.isServer || info.sender.guid == server){
+			GameObject a = (GameObject)Instantiate(Resources.Load(_name));
+			if(_name == "generator"){
+				generatorList.Add(a);
+			} else if (_name == "factory"){
+				factoryList.Add(a);
+			}
+			hexWorld.hexWorldData[(int)_location.x,(int)_location.z].building = a;
+			Vector2 center = hexWorld.hexWorldData[(int)_location.x,(int)_location.z].center;
+			Building _unit = a.GetComponent<Building>();
+			_unit.location = new Vector2((int)_location.x,(int)_location.z);
+			Vector3 finalloc = new Vector3(center.x,_unit.spawnHeight+hexWorld.hexWorldData[(int)_location.x,(int)_location.z].height,center.y);
+			Debug.Log ("Neutral " +_name+" "+center.x + " " + center.y + " " + finalloc.x + " " + finalloc.z);
+			a.transform.position = finalloc;
+		}
+	}
+
 	[RPC]
 	void SpawnObject(int _i, string _guid, string _name, Vector3 _location, NetworkMessageInfo info){
 		//if(info.sender.guid == server){
@@ -589,6 +651,7 @@ public class Game : MonoBehaviour {
 				Menu.connectionList.Add(new Menu.NConn(_username,_guid));
 				playerObjects.Add(new List<GameObject>());
 				style.Add(new GUIStyle());
+				depotList.Add(new List<GameObject>());
 				switch(style.Count-1){
 				default:
 					style[style.Count-1].normal.textColor = Color.gray;
@@ -600,6 +663,9 @@ public class Game : MonoBehaviour {
 					style[style.Count-1].normal.textColor = Color.magenta;
 					break;
 				}
+				handList.Add(new List<GameObject>());
+				staticDeckList.Add(new List<GameObject>());
+				currentDeckList.Add(new List<GameObject>());
 			}
 		}
 	}
@@ -623,13 +689,67 @@ public class Game : MonoBehaviour {
 	[RPC]
 	void SwitchTurn(int _newTurn, NetworkMessageInfo info){
 		if(Network.isServer || info.sender.guid == server){
-			//
+			//end of turn
 			foreach (GameObject n in playerObjects[turn]){
 				Stats _n = n.GetComponent<Stats>();
 				if(_n.moveList.Count != 0){
 					//move
 				}
 			}
+			foreach (GameObject n in generatorList){
+				Building _n = n.GetComponent<Building>();
+				Vector2 loc = _n.location;
+				GameObject _unit = hexWorld.hexWorldData[(int)loc.x,(int)loc.y].unitObject;
+				if(_unit != null){
+					if(playerObjects[turn].Contains(_unit)){
+						if(turn != _n.owner && !_n.notCapped){
+							if(_n.capCurrent>0){
+								_n.capCurrent--;
+							} else if(_n.capCurrent <= 0){
+								_n.notCapped = true;
+								_n.capCurrent++;
+							}
+						} else if(_n.capCurrent<_n.capMax){
+							_n.capCurrent++;
+						}
+						if(_n.capCurrent == _n.capMax){
+							_n.owner = turn;
+							MeshRenderer[] a = n.GetComponentsInChildren<MeshRenderer>();
+							foreach(MeshRenderer mesh in a){
+								mesh.material.color = style[turn].normal.textColor;
+							}
+						}
+					}
+				}
+			}
+			foreach (GameObject n in factoryList){
+				Building _n = n.GetComponent<Building>();
+				Vector2 loc = _n.location;
+				GameObject _unit = hexWorld.hexWorldData[(int)loc.x,(int)loc.y].unitObject;
+				if(_unit != null){
+					if(playerObjects[turn].Contains(_unit)){
+						if(turn != _n.owner && !_n.notCapped){
+							if(_n.capCurrent>0){
+								_n.capCurrent--;
+							} else if(_n.capCurrent <= 0){
+								_n.notCapped = true;
+								_n.capCurrent++;
+							}
+						} else if(_n.capCurrent<_n.capMax){
+							_n.capCurrent++;
+						}
+						if(_n.capCurrent == _n.capMax){
+							_n.owner = turn;
+							MeshRenderer[] a = n.GetComponentsInChildren<MeshRenderer>();
+							foreach(MeshRenderer mesh in a){
+								mesh.material.color = style[turn].normal.textColor;
+							}
+						}
+					}
+				}
+			}
+
+			//start of turn
 			turn = _newTurn;
 			for(int i = 0; i < playerObjects.Count; i++){
 				foreach (GameObject obj in playerObjects[i]){
@@ -638,6 +758,8 @@ public class Game : MonoBehaviour {
 					unit.hasAttacked = false;
 				}
 			}
+			//handList[turn].Add();
+			
 		}
 	}
 
