@@ -981,7 +981,7 @@ public class Game : MonoBehaviour {
 		//are you here to fix it sending 'me' aka _i? Have it hunt for sender.guid over all connected guids.
 		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject;
 		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit;
-		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject.transform.position = new Vector3 (hexWorld.hexWorldData[(int)_point.x,(int)_point.z].center.x, 1 , hexWorld.hexWorldData[(int)_point.z,(int)_point.z].center.y);
+		hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject.transform.position = new Vector3 (hexWorld.hexWorldData[(int)_point.x,(int)_point.z].center.x, hexWorld.hexWorldData[(int)_point.x,(int)_point.z].height+1 , hexWorld.hexWorldData[(int)_point.z,(int)_point.z].center.y);
 		hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unitObject = null;
 		hexWorld.hexWorldData[(int)_selected.x,(int)_selected.z].unit = null;
 	}
