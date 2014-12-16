@@ -19,7 +19,7 @@ public class Card
 		//public TechEnum Suit { get { return _tech; } }
 	public int Rank = 0; //{ get { return _rank; } }
 		
-		private GameObject _card = Deck_0;
+		private GameObject _card;
 		
 		public Card(/*TechEnum level,*/ int rank, Vector3 position, Quaternion rotation) {
 			// to do: validate rank, position, and rotation
