@@ -7,7 +7,7 @@ public class Deck1 : MonoBehaviour {
 	// Use this for initialization
 
 	public class Deck{
-		private List<Card> _deck = new List<Card>();
+		//private List<Card> _deck = new List<Card>();
 
 
 
