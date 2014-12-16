@@ -1,6 +1,9 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System;
 
 public class Game : MonoBehaviour {
 	
@@ -36,6 +39,16 @@ public class Game : MonoBehaviour {
 
 	public int handToggleTemp=0;
 	public bool handToggleTempBool=false;
+
+	public bool factorySelectionFlag = false;
+	public GameObject factoryWaitingUnit = null;
+	public int factoryWaitingUnitLoc = -1;
+	public Vector2 factorySelected = -Vector2.one;
+
+	public bool unitSpawnFlag = false;
+	public GameObject unitWaitingSpawn = null;
+	public Vector2 unitSpawnLocation = -Vector2.one;
+	public int unitWaitingSpawnIndex = -1;
 	
 	public Texture artex;
 	Texture2D img;
@@ -46,7 +59,8 @@ public class Game : MonoBehaviour {
 	Texture2D Cyan;
 	Texture2D depotBack;
 	int cardsInHand;
-	
+
+	string[] cardNames= new string[30] {"tank", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol"};
 	
 	void Start () {
 		Magenta=Resources.Load ("Magenta_Texture")as Texture2D;
@@ -56,9 +70,9 @@ public class Game : MonoBehaviour {
 		generatorList.Capacity = 3;
 		handList.Capacity = 7;
 		staticDeckList.Capacity = 30;
-		currentDeckList.Capacity = 30;
-
-
+		currentDeckList.Capacity = 30; 
+		
+		Debug.Log (cardNames[29]);
 
 		//populate factoryList somewhere;
 
@@ -86,7 +100,7 @@ public class Game : MonoBehaviour {
 			for(int i = 0; i < Menu.connectionList.Count; i++){
 				networkView.RPC("AddConnectionList",RPCMode.OthersBuffered,Menu.connectionList[i].guid,Menu.connectionList[i].username);
 			}
-			networkView.RPC("Initialize",RPCMode.OthersBuffered);
+
 			//some test stuff.
 			for(int i = 0; i < Menu.connectionList.Count; i++){
 				playerObjects.Add(new List<GameObject>());
@@ -103,7 +117,9 @@ public class Game : MonoBehaviour {
 					break;
 				}
 				depotList.Add(new List<GameObject>());
-
+				handList.Add(new List<GameObject>());
+				staticDeckList.Add(new List<GameObject>());
+				currentDeckList.Add(new List<GameObject>());
 				//spawn shit
 				networkView.RPC("SpawnNeutral",RPCMode.All,"generator",new Vector3(80,1,13));
 				networkView.RPC("SpawnNeutral",RPCMode.All,"generator",new Vector3(88,1,11));
@@ -130,6 +146,7 @@ public class Game : MonoBehaviour {
 					networkView.RPC("SpawnObject",RPCMode.All,i,guid,name,location);
 				}
 			}
+			networkView.RPC("Initialize",RPCMode.OthersBuffered);
 			break;
 		}
 		
@@ -406,7 +423,7 @@ public class Game : MonoBehaviour {
 
 			//GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height), img);
 
-			cardsInHand=7;
+			cardsInHand=handList[me].Count;
 
 			for(int z=0; z<cardsInHand; z++){
 				GUI.DrawTexture (new Rect(((x*.225f)+((z*2f)/3f)*(x*.10f)), y-(x*.15f), x*.1f, x*.15f), img);
@@ -452,13 +469,19 @@ public class Game : MonoBehaviour {
 					if(q<6){
 						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
 						if(GUIButton.Button (new Rect((x*.225f), y*.4f, x*.17f, y*.15f), "Spawn Unit")){
-
+							unitSpawnFlag = true;
+							unitWaitingSpawn = depotList[me][q];
+							unitSpawnLocation = -Vector2.one;
+							unitWaitingSpawnIndex = q;
 
 						}
 					} else if (q>5 && q<13){
 						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
 						if(GUIButton.Button (new Rect((x*.225f), y*.4f, x*.17f, y*.15f), "Send to Factory")){
-							
+							factorySelectionFlag = true;
+							factoryWaitingUnit = handList[me][q-6];
+							factoryWaitingUnitLoc = q-6;
+							factorySelected = -Vector2.one;
 							
 						}
 					}
@@ -546,6 +569,16 @@ public class Game : MonoBehaviour {
 			}
 		}
 	}
+
+	public void spawnFromDepot(Vector2 point){
+		Vector3 location = new Vector3(point.x,1,point.y);
+		Stats _stat = unitWaitingSpawn.GetComponent<Stats>();
+		unitSpawnFlag = false;
+		unitWaitingSpawn = null;
+		depotList[me].RemoveAt(unitWaitingSpawnIndex);
+		unitWaitingSpawnIndex = -1;
+		networkView.RPC("SpawnObject",RPCMode.All,me,Network.player.guid,_stat.name,location);
+	}
 	
 	public void attackUnit(Vector2 _selected, Vector2 _point){
 		if(turn == me){
@@ -583,6 +616,11 @@ public class Game : MonoBehaviour {
 		} else if(Network.isClient){
 			if(info.sender.guid == server){
 				me = Menu.connectionList.FindIndex(x => x.guid == Network.player.guid);
+				for(int i = 0; i < cardNames.Length; i++){
+					networkView.RPC("LoadDecks",RPCMode.All,me,cardNames[i]);
+				}
+
+				//LoadDecks(int _i, string[] _cardNames, NetworkMessageInfo info){
 			}
 		}
 	}
@@ -672,6 +710,12 @@ public class Game : MonoBehaviour {
 				//openList.FindIndex(PFList => PFList.getHex() == neighborList[i]);
 		}
 	}
+
+	[RPC]
+	void LoadDecks(int e, string _cardNames, NetworkMessageInfo info){
+		staticDeckList[e].Add((GameObject)Instantiate(Resources.Load(_cardNames)));
+		currentDeckList[e].Add((GameObject)Instantiate(Resources.Load(_cardNames)));
+	}
 	
 	[RPC]
 	void AddConnectionList(string _guid, string _username, NetworkMessageInfo info) {
@@ -750,6 +794,7 @@ public class Game : MonoBehaviour {
 								mesh.material.color = style[turn].normal.textColor;
 							}
 							//
+
 						}
 					}
 				}
@@ -777,6 +822,18 @@ public class Game : MonoBehaviour {
 								mesh.material.color = style[turn].normal.textColor;
 							}
 							//
+							if(_n.currentlyBuilding){
+								_n.buildProgress++;
+							}
+							Stats _stat = _n.currentlyBuilding.GetComponent<Stats>();
+							if(_n.buildProgress >= _stat.techLevel+3){
+								if(!(depotList[turn].Count >= depotList.Capacity)){
+									GameObject obj = _n.currentlyBuilding;
+									_n.currentlyBuilding = null;
+									_n.buildProgress=0;
+									depotList[turn].Add(obj);
+								}
+							} 
 						}
 					}
 				}
@@ -791,8 +848,11 @@ public class Game : MonoBehaviour {
 					unit.hasAttacked = false;
 				}
 			}
-			//handList[turn].Add();
-			
+			if(handList[turn].Count<7){
+				handList[turn].Add(currentDeckList[turn][currentDeckList.Count-1]);
+				Debug.Log (currentDeckList[turn].Count);
+				currentDeckList[turn].RemoveAt(currentDeckList[turn].Count-1);
+			}
 		}
 	}
 

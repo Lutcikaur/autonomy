@@ -7,6 +7,7 @@
 
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class TerrainRaycaster : MonoBehaviour 
 {
@@ -111,6 +112,48 @@ public class TerrainRaycaster : MonoBehaviour
 				if(b==2){
 					Debug.Log((int)point.x + " " + (int)point.y);
 					//hexWorld.game.getNeighbor((int)point.x,(int)point.y);
+					if(hexWorld.game.factorySelectionFlag){
+						if(hexWorld.hexWorldData[(int)point.x,(int)point.y].building.name == "factory"){
+							Building data = hexWorld.hexWorldData[(int)point.x,(int)point.y].building.GetComponent<Building>();
+							if(data.owner == hexWorld.game.me && data.capCurrent == data.capMax && data.currentlyBuilding == null){
+								data.currentlyBuilding = hexWorld.game.factoryWaitingUnit;
+								//hexWorld.game.handList[hexWorld.game.me][hexWorld.game.factoryWaitingUnitLoc];
+								hexWorld.game.handList[hexWorld.game.me].RemoveAt(hexWorld.game.factoryWaitingUnitLoc);
+								hexWorld.game.factorySelectionFlag = false;
+								hexWorld.game.factoryWaitingUnit = null;
+								hexWorld.game.factoryWaitingUnitLoc = -1;
+								hexWorld.game.factorySelected = -Vector2.one;
+							}
+							//hexWorld.game.factorySelected = new Vector2(point.x,point.y);
+						}
+						hexWorld.game.factorySelectionFlag = false;
+					}
+					if(hexWorld.game.unitSpawnFlag){
+						if(hexWorld.hexWorldData[(int)point.x,(int)point.y].unitObject == null){
+							switch(hexWorld.game.me){
+							default:
+								break;
+							case 0:
+								Vector2[] yep = hexWorld.game.getNeighbor(88,0);
+								Vector2[] yep2 = hexWorld.game.getNeighbor(90,0);
+								if(Array.IndexOf(yep,point) != -1 || Array.IndexOf(yep2,point) != -1){
+									hexWorld.game.spawnFromDepot(point);
+								} else {
+									hexWorld.game.unitSpawnFlag = false;
+								}
+								break;
+							case 1:
+								Vector2[] yyy = hexWorld.game.getNeighbor(89,25);
+								Vector2[] yyy2 = hexWorld.game.getNeighbor(91,25);
+								if(Array.IndexOf(yyy,point) != -1 || Array.IndexOf(yyy2,point) != -1){
+									hexWorld.game.spawnFromDepot(point);
+								} else {
+									hexWorld.game.unitSpawnFlag = false;
+								}
+								break;
+							}
+						}
+					}
 					if(hexWorld.hexWorldData[(int)point.x,(int)point.y].unitObject != null || hexWorld.hexWorldData[(int)point.x,(int)point.y].building != null){
 						selected = point;
 					} else {
