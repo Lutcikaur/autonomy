@@ -60,8 +60,16 @@ public class Game : MonoBehaviour {
 	Texture2D depotBack;
 	int cardsInHand;
 
+<<<<<<< HEAD
 	string[] cardNames= new string[30] {"tank", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol", "Vtol"};
 	
+=======
+	bool toFactoryBool=false;
+	bool toSpawnBool=false;
+	
+	public bool sound=true;
+
+>>>>>>> 0ce80a1928375f4f331a75fd99aad727e3da65e1
 	void Start () {
 		Magenta=Resources.Load ("Magenta_Texture")as Texture2D;
 		Cyan=Resources.Load ("Cyan_Texture")as Texture2D;
@@ -382,7 +390,7 @@ public class Game : MonoBehaviour {
 			GUI.DrawTexture (new Rect(0, y-(x*.22f), x*.2f, x*.22f), depotBack); //Depot Back Splash
 			
 			//This switch is the GUI for objects in the Depot
-			numInDepot = 6;
+			numInDepot = 2;
 
 			for(int q=0; q<numInDepot; q++){
 				int rofl=q/3;
@@ -394,16 +402,38 @@ public class Game : MonoBehaviour {
 							EnlargeBool[j]=false;
 						}
 						EnlargeBool[q]=true;
+						toFactoryBool=false;
+						toSpawnBool=false;
 						ToggleTemp++;
 					} else if (ToggleTemp==1){
 						for(int j=0; j<numThingsInteractable; j++){
 							EnlargeBool[j]=false;
 						}
+						toFactoryBool=false;
+						toSpawnBool=false;
 						ToggleTemp--;
 					}
 				}
 			}
 
+			if (sound == false)
+			{
+				if(GUI.Button (new Rect(x*.9f, 0 ,x*.1f, y*.05f),"Mute") ) // MyGUISkin.customStyles[1] is unselected button image
+				{
+					sound = true;
+					AudioListener.pause = true;
+					Debug.Log ("Tick On");
+				}
+			}
+			else
+			{
+				if(GUI.Button (new Rect(x*.9f, 0 ,x*.1f, y*.05f),"UnMute"))  // MyGUISkin.customStyles[2] is selected button image
+				{
+					sound = false;
+					AudioListener.pause = false; 
+					Debug.Log ("Tick Off");
+				}
+			}
 
 
 			GUI.Box (new Rect(x-(x*.25f), y-(y*.25f), x*.15f, y*.25f), "");
@@ -434,11 +464,15 @@ public class Game : MonoBehaviour {
 							EnlargeBool[j]=false;
 						}
 						EnlargeBool[z+6]=true;
+						toFactoryBool=false;
+						toSpawnBool=false;
 						ToggleTemp++;
 					} else if (ToggleTemp==1){
 						for(int j=0; j<numThingsInteractable; j++){
 							EnlargeBool[j]=false;
 						}
+						toFactoryBool=false;
+						toSpawnBool=false;
 						ToggleTemp--;
 					}
 				}
@@ -450,17 +484,17 @@ public class Game : MonoBehaviour {
 			GUI.DrawTexture (new Rect(x*.525f, 0, x*.375f, y*.075f), Black);
 			int currentRedHealth=50;
 			int currentBlueHealth=50;
-			for(int m=100; m>(100-currentRedHealth); m--){
-				GUI.DrawTexture (new Rect(((x*.11f)+(m/100f)*(x*.355f)), .01f*y, x*.00355f, y*.055f), Magenta);
+			for(int m=200; m>(200-currentRedHealth); m--){
+				GUI.DrawTexture (new Rect(((x*.11f)+(m/200f)*(x*.355f)), .01f*y, x*.00355f, y*.055f), Magenta);
 			}
 			for(int n=0; n<currentBlueHealth; n++){
-				GUI.DrawTexture (new Rect(((x*.535f)+(n/100f)*(x*.355f)), .01f*y, x*.00355f, y*.055f), Cyan);
+				GUI.DrawTexture (new Rect(((x*.535f)+(n/200f)*(x*.355f)), .01f*y, x*.00355f, y*.055f), Cyan);
 			}
 			GUI.Box(new Rect(x*.45f, .075f*y, x*.10f, y*.1f),"");
 			GUI.Label (new Rect(x*.46f,.075f*y,x*.05f, y*.05f), currentRedHealth+"/", style[1]);
-			GUI.Label (new Rect(x*.46f,y*.125f,x*.05f, y*.05f), "100", style[1]);
+			GUI.Label (new Rect(x*.46f,y*.125f,x*.05f, y*.05f), "200", style[1]);
 			GUI.Label (new Rect(x*.515f,.075f*y,x*.05f, y*.05f), currentBlueHealth+"/", style[0]);
-			GUI.Label (new Rect(x*.515f,y*.125f,x*.05f, y*.05f), "100", style[0]);
+			GUI.Label (new Rect(x*.515f,y*.125f,x*.05f, y*.05f), "200", style[0]);
 
 
 			//This Block displays current enlarged selection
@@ -469,23 +503,51 @@ public class Game : MonoBehaviour {
 					if(q<6){
 						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
 						if(GUIButton.Button (new Rect((x*.225f), y*.4f, x*.17f, y*.15f), "Spawn Unit")){
+<<<<<<< HEAD
 							unitSpawnFlag = true;
 							unitWaitingSpawn = depotList[me][q];
 							unitSpawnLocation = -Vector2.one;
 							unitWaitingSpawnIndex = q;
+=======
+							for(int j=0; j<numThingsInteractable; j++){
+								EnlargeBool[j]=false;
+							}
+							ToggleTemp--;
+							toFactoryBool=false;
+							toSpawnBool=true;
+>>>>>>> 0ce80a1928375f4f331a75fd99aad727e3da65e1
 
 						}
 					} else if (q>5 && q<13){
 						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
 						if(GUIButton.Button (new Rect((x*.225f), y*.4f, x*.17f, y*.15f), "Send to Factory")){
+<<<<<<< HEAD
 							factorySelectionFlag = true;
 							factoryWaitingUnit = handList[me][q-6];
 							factoryWaitingUnitLoc = q-6;
 							factorySelected = -Vector2.one;
+=======
+							for(int j=0; j<numThingsInteractable; j++){
+								EnlargeBool[j]=false;
+							}
+							ToggleTemp--;
+							toFactoryBool=true;
+							toSpawnBool=false;
+>>>>>>> 0ce80a1928375f4f331a75fd99aad727e3da65e1
 							
 						}
 					}
 				}
+			}
+
+			if(toFactoryBool){
+
+				GUI.Box (new Rect((x*.3f), y*.4f, x*.2f, y*.1f), "IM A FUCKING BOX");
+				Debug.Log ("Im Drawing this box");
+			}
+
+			if(toSpawnBool){
+				GUI.Box (new Rect((x*.3f), y*.4f, x*.2f, y*.1f), "IM A DIFFERENT FUCKING BOX");
 			}
 
 			
