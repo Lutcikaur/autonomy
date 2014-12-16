@@ -853,7 +853,6 @@ public class Game : MonoBehaviour {
 		
 	}
 
-<<<<<<< HEAD
 	float hexDistance2(Vector2 start, Vector2 dest){
 		if (start.x == dest.x)
 			return Mathf.Abs(dest.y - start.y);
@@ -885,8 +884,6 @@ public class Game : MonoBehaviour {
 		else 
 			return (Mathf.Abs(du) + Mathf.Abs(dv));
 	}
-=======
->>>>>>> 07914a179a32015a49fcfb9909462d6dc003315d
 
 
 	void OnDisconnectedFromServer(NetworkDisconnection info){
