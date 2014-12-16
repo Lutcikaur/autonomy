@@ -499,6 +499,39 @@ public class Game : MonoBehaviour {
 		
 	}
 
+	float hexDistance2(Vector2 start, Vector2 dest){
+		if (start.x == dest.x)
+			return Mathf.Abs(dest.y - start.y);
+		else if (start.y == dest.y)
+			return Mathf.Abs(dest.x - start.x);
+		else {
+			float dx = Mathf.Abs(dest.x - start.x);
+			float dy = Mathf.Abs(dest.y - start.y);
+			if (start.y < dest.y) {
+				Debug.Log(dx + " a " + dy + " " + Mathf.Ceil(dx / 2.0f));
+				return dx + dy - Mathf.Ceil(dx / 2.0f);
+			}
+			else {
+				Debug.Log(dx + " " + dy + " " + Mathf.Floor(dx / 2.0f));
+				return dx + dy - Mathf.Floor(dx / 2.0f);
+			}
+		}
+	}
+
+	float hexDistance(Vector2 p1, Vector2 p2){
+		float x1 = p1.x;
+		float y1 = p1.y;
+		float x2 = p2.x;
+		float y2 = p2.y;
+		float du = x2-x1;
+		float dv = (y2 + Mathf.FloorToInt(x2/2f)) - (y1 + Mathf.FloorToInt(x1/2f));
+		if((du >= 0 && dv >= 0) || (du < 0 && dv < 0))
+			return Mathf.Max(Mathf.Abs(du), Mathf.Abs(dv));
+		else 
+			return (Mathf.Abs(du) + Mathf.Abs(dv));
+	}
+
+
 	void OnDisconnectedFromServer(NetworkDisconnection info){
 		//called on client when client disconnects, and on server when connection has disconnected.
 		Application.LoadLevel(0);
@@ -522,7 +555,11 @@ public class Game : MonoBehaviour {
 				// CALL RPCS
 				Vector3 selected = new Vector3(_selected.x,1,_selected.y);
 				Vector3 point = new Vector3(_point.x,1,_point.y);
-				networkView.RPC("NetworkAttack",RPCMode.All,selected,point);
+				Stats _selectedUnit = hexWorld.hexWorldData[(int)_selected.x,(int)_selected.y].unitObject.GetComponent<Stats>();
+				Debug.Log(hexDistance(_selected,_point) + " " + _selectedUnit.attackRange);
+				if(hexDistance(_selected,_point) <= _selectedUnit.attackRange){
+					networkView.RPC("NetworkAttack",RPCMode.All,selected,point);
+				}
 			}
 		}
 	}

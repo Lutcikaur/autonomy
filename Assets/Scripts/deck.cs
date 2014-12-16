@@ -13,18 +13,19 @@ using System.Collections.Generic;
 
 public class Card
 {
-		//private TechEnum _tech;
+	/*	
+	//private TechEnum _tech;
 		private int _rank;
 		
 		//public TechEnum Suit { get { return _tech; } }
 	public int Rank = 0; //{ get { return _rank; } }
 		
-		private GameObject _card = Deck_0;
+		//private GameObject _card = Deck_0;
 		
-		public Card(/*TechEnum level,*/ int rank, Vector3 position, Quaternion rotation) {
+		public Card(int rank, Vector3 position, Quaternion rotation) {
 			// to do: validate rank, position, and rotation
 		for(rank = 0; rank <=2; rank++){
-			string assetName = string.Format("Deck_{0}", /*level,*/ rank);  // Example:  "Card_1_10" would be the Jack of Hearts.
+			string assetName = string.Format("Deck_{0}", rank);  // Example:  "Card_1_10" would be the Jack of Hearts.
 			GameObject asset = GameObject.Instantiate(_card) as GameObject;
 			if (asset == null) {
 				Debug.LogError("Asset '" + assetName + "' could not be found.");
@@ -35,14 +36,15 @@ public class Card
 			}
 		}
 	}
-	}
-	
+	*/
+}
+	/*
 public class Deck {
 		private List<Card> _deck = new List<Card>();
 		private List<Card> _discardPile = new List<Card>();
 		
 		public void Shuffle() {
-			/* To Do */
+			//todo
 		}
 		
 		public Card TakeCard() {
@@ -57,12 +59,12 @@ public class Deck {
 			return card;
 		}
 		
-		/* ...etc... */
+		//etc
 }
 
 
 
-
+*/
 
 
 /*
