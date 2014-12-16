@@ -66,7 +66,7 @@ public class Menu : MonoBehaviour {
 					server = Network.player.guid;
 				}
 				if(GUI.Button(new Rect(100,150,100,25), "Tutorial")){
-
+					Application.LoadLevel("Tutorial"); 
 				}
 				if(GUI.Button (new Rect(100,175,100,25), "Glossary")){
 
