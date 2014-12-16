@@ -8,6 +8,8 @@ public class Menu : MonoBehaviour {
 
 	static Menu _instance;
 
+	public Texture backgroundTexture; 
+
 	public string IP = "127.0.0.1";
 	public int Port = 25001;
 	public string stringPort = "25001";
@@ -42,6 +44,7 @@ public class Menu : MonoBehaviour {
 
 	void OnGUI() {
 		int i = 0;
+		GUI.DrawTexture(new Rect(0,0, Screen.width, Screen.height), backgroundTexture); 
 		switch(Network.peerType){
 		default:
 		case NetworkPeerType.Disconnected:
