@@ -10,11 +10,15 @@ Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Unity
 Loading C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.073 seconds
+- Completed reload, in  0.061 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\System.dll (this message is harmless)
+Tick On
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
 Initialize engine version: 4.5.5f1 (7684ad0c5a44)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -27,10 +31,11 @@ Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Unity
 Loading C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.079 seconds
+- Completed reload, in  0.086 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\System.dll (this message is harmless)
 Initialize engine version: 4.5.5f1 (7684ad0c5a44)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -38,30 +43,49 @@ Direct3D:
     Renderer: Intel(R) HD Graphics Family (ID=0x116)
     Vendor:   Intel
     VRAM:     64 MB
+FMOD failed to initialize ... A call to a standard soundcard driver failed, which could possibly mean a bug in the driver or resources were missing or exhausted. 
+ 
+(Filename:  Line: 239)
+
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.120 seconds
+- Completed reload, in  0.331 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+Tick Off
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
 Tick On
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
 
 Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\System.dll (this message is harmless)
-Platform assembly: C:\Users\Owner\Documents\autonomy\autonomy_Data\Managed\System.dll (this message is harmless)
 Tick On
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Tick On
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-0 846677018455265436
+0 562950243935140388
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
@@ -71,62 +95,341 @@ Load MapUnityEngine.NetworkMessageInfo
 
  
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/ar ifacts/S
-an a
-nePlleyamr: CneBuatded/enni/wongine3dfc63c5p1Linb6049)
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/Standalone layerGe
+ ra
+tFilename: ECgineDebug.cpp Line: 49)
 
-facts/StandalonePlayerGenerated/UnityEngineDebug.cpp LinL:a 49apU
-n
-ityEngine.NetworkMessageInfo
+63dfc6385190b60/artifacts/StandaloneLlayerGenerated/UnityEnine.NetworkMessageInfo
  
-(Filename: C:/BuLodAg MapUnik/d63idf.cetworkMessageInfo
+(
+Fiaed me: UnityEngine.NetworkMessageInfo
  
-(6i85190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StanC:/BnePlayerG/worknerated/6385190b60neDrtifa.ts/p Line:one9layerGenerated/)
 
-lename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+tyEngineDebug.cpp Line: 49)
 
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-UnloadTime: 0.448891 ms
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+UnloadTime: 0.558660 ms
+UnloadTime: 0.332429 ms
+An invalid object handle was used. 
+ 
+(FUlenoae:  g 4e:Unu1)
+d Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 200.
+Total: 5.699945 ms (FindLiveObjects: 0.017402 ms CreateObjectMap
+ing:n inval2494bjec MharkObjects: ed.144
+02
+8 ms name:  Linje: 311)1
+
+.A03in66lidms)
+
+ct handle was used. 
+ 
+(Filename:  Line: 311)
+
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 135.
-Total: 4.409046 ms (FindLiveObjects: 0.012940 ms CreateObjectMapping: 0.012047 ms MarkObjects: 2.580012 ms  DeleteObjects: 1.045034 ms)
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 205.
+Total: 2.999900 ms (FindLiveObjects: 0.018741 ms CreateObjectMapping: 0.010262 ms MarkObjects: 1.703201 ms  DeleteObjects: 0.736254 ms)
 
 Run
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
+Vtol
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
 Here
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandaloUnloadTime: 0.361433 ms
-nePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 135.
-Total: 3.334115 ms (FindLiveObjects: 0.014278 ms CreateObjectMapping: 0.011601 ms MarkObjects: 1.780842 ms  DeleteObjects: 0.925002 ms)
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Run
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Here
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-UnloadTime: 1.509990 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 139.
-Total: 4.274289 ms (FindLiveObjects: 0.014278 ms CreateObjectMapping: 0.012047 ms MarkObjects: 2.370292 ms  DeleteObjects: 0.941066 ms)
-
-Run
+Vtol
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Here
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 0.398469 ms
+Neutral generator 140.4341 20.5 140.4341 20.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 154.2905 17.5 154.2905 17.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 165.5488 22 165.5488 22
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 153.4245 1 153.4245 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 156.8886 1 156.8886 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 159.4867 38.5 159.4867 38.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 156.0226 38.5 156.0226 38.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 169.879 14.5 169.879 14.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 148.2283 22 148.2283 22
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 143.8982 29.5 143.8982 29.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 160.3527 19 160.3527 19
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+150.8264 14.5 150.8264 14.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+149.9604 16 149.9604 16
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+150.8264 17.5 150.8264 17.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60nloading 4 Unu/ertifacits/StandalonePSeriaGizerated/Us now loaeedbu0 /cDirty serializ
+e
+d files: 0)
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 201.
+Total: 6.258160 ms (FindLiveObjects: 0.017848 ms CreateObjectMapping: 0.012494 1s Ma960Obj9 1s: .9.04 19
+ 
+(F lenate: C:/Busl 1.00t7wo m/d
+
+3dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+150.8264 20.5 150.8264 20.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+NeuNeulr l genrrator  40.0344 2015 240.43 1 420.54
+3
+(Fi20en5me
+: C
+(/FuildAgant/w rC/d6Bufi63d51g0b60/arrk/fd6t3dfca6da8on1Pl0yer0e/earttd/Uaittsn/iSetanugaclo ninPla 49rG
+
+enerated/UnityEngineDebug.cpp Lineu r4l9g)ne
+r
+ator 154.2905 17.5 154.2905 17.5
+ 
+(FiNenatre: C:/Buratdor nt5w4.2/963dfc638517.5 154rt2facts1St.5
+ al
+(nFPiayenGemera ed:Uniuildgigentb/w.orp Ld6nedfc49)
+5
+190b60/artifacts/StNndtallogeePlatoe 16e.5e88 22 1Uni548Eng2
+ e
+DFebuna.e: p L/iuied: ent)w
+r
+/d63dfc6385190b60/artifacts/StandalonNPeauetGrael tge/neiryatoine16bug54p88 ine: 49)
+
+22 165.5488 22
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGeneratNeutnaltfaEtogy 1e3.4b4u 1 c5p.4 45i1n
+ e
+(Fi4e9am
+ C:/BuildAgent/work/d63dfc6385190b
+0/artifacts/StandalonePlayerGenerated/UnityNngenuDeraul. pp ciner y9)
+
+3.4245 1 153.4245 Neutral fact1
+  
+(1i5enam8: C:/Build8gent/wo
+ 
+(Filename: C:/BuildAtintacwork/d63dfc638PlayerGenertifacts/SyEngineDeblayerGenere: 49)
+
+ityEngineDebug.cpp Line: 49)
+
+Neutral factory 156.8886 1Ne5utral fac
+to
+rFilename: C:/B.5 159.486/work/d
+ 
+(dilename: C:/BuildAgent/work/d63dfc6layerGeneraattidacts/tyEandalonePlaycpp Linaeed/Un)
+E
+gineDebug.cpp Line:N4utra
+l
+ factory 159.4867 38.5 159.4867N3eutr
+al
+ factnry 156.:/Bu6 38.5 156.0226 38.5
+ 
+(Fi90b60/artifacts/dAgent/work/d63dfcen385190b60/artifaineDebtg.npp LineP:ayer)
+
+erated/UnityEngineDebug.cpp LNee:tral f
+a
+ctory 156.0226 38.5 156.0226 Ne.5
+ 
+(Filename: C:.87uildAgent/9.879 14dfc6
+38
+519lebame: C:/BuildAgent/wlrknd6Pdfcy3851e0b60erartefa/tUnSitndalgnePeayerGegercted/Unnty:ngi9)
+
+bug.cpp Line: 49)
+
+Neutraleutrct fact169 .48792 3 2. 1 18.2.83722 
+1
+4.5e am
+eF Cl:/BuildAgent/workgd6nt/fw638k/9d663/afci6acts/9tand0/artPlaactGe/eStaen/dailyonneneDeyug.cep Lrne:ed9/
+
+nityEngineDebug.cpputLinl f c49ry
+143.8982 29.5 143.8982 29.5
+ 
+(Filename: C:/BuildAgent/tora/d6fdfc63r51 1b40/.r228acts2Standa.onePl ye2Ge
+ e
+atFd/UeitaEng:neD:bug.cpdAginn: 4wor
+
+k/d63dfc6385190b60/artlifacfact 16Stan27alo9 160.35rGener
+at
+ed/Uename: C:/eDebug.cpt/woine: 63dfc
+6
+385190b60/artifacts/StandalonNeutrerl enerated/UnityEngineDebu43.c982 29.5
+p
+(Filena e: )
+
+/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 160.3527 19 160.3527 19
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+152.5585 14.5 152.5585 14.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGene1at5d/.nit64 n1i4e.e5ug.5p0 .i8e2644)
+1
+4.5
+ 
+(Filename: C:/BuildAgent/work/d63df16385190b60Run
+ 
+(Fctsename: C: Be
+(PlidengGee: C:/rkBui3dfcAg85n1n/wb6e0ebud63cifcaLc8t1/40ta6
+0/artifacaserGenerlonePlaUnityEerateDeUug.cpp ininDebug49)
+p
+ Line: 49)
+
+152.5585 17.5 152.5585 17.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayer1en4r9ted6U04 y1n6in1Debug6cp4p Li
+ne:
+(9)
+
+ename: C:/BuildAgent/work/d63dfc6385150b6924 rt 151.692Stand
+al
+onilenayerGen/ruildAgent/wori/d63dfc6cp5190i6e: 49)
+
+acts/StandalonePlayerGenerated/UnityEngineD26ug1c.5 150.e: 4 )7.
+5
+
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifa 1s2St5n5 20on
+Pl
+ayerGeamrateC:/nityEnginnD/wouk.cpp Line: 49)
+
+0/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+149.9604 19 149.9604 19
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+150.8264 20.5 150.8264 20.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 140.4341 20.5 140.4341 20.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Vtol
+ 
+(Filenamtral generator 154work/d63.fc63851905 17.5
+ fa
+cFi/enane: C:/BPiayerGent/ratrk/UnityEn638eDeb0b6cpp Ltif:ct9)/S
+t
+andalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral generator 165.5488 22 165.5488 22
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 153.4245 1 153.4245 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 156.8886 1 156.8886 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 159.4867 38.5 159.4867 38.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral facHoer 156.0e26
+ 
+8.5 156.02il 38.5
+ 
+amil: ame:CC:/BuildAgent/work/d/d63ffc63851905619arbif0/cas/StardalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 169.879 14.5 169.879 14.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 148.2283 22 148.2283 22
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 143.8982 29.5 143.8982 29.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifactsts/SandalonePlayerGeGenrated/UniityEngineDebbug.cpp Lineug.cp
+
+Line: 49)
+
+Neutral factory 160.3527 19 160.3527 19
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+152.5585 14.5 152.5585 14.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+151.6924 16 151.6924 16
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+152.5585 17.5 152.5585 17.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+151.6924 19 151.6924 19
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+152.5585 20.5 152.5585 20.5
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
@@ -261,300 +564,851 @@ Neutral factory 160.3527 19 160.3527 19
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-ArgumentOutOfRangeException: Argument is out of range.
-Parameter name: index
-  at System.Collections.Generic.List`1[UnityEngine.GUIStyle].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
-  at Game.OnGUI () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-ArgumentOutOfRangeException: Argument is out of range.
-Parameter name: index
-  at System.Collections.Generic.List`1[UnityEngine.GUIStyle].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
-  at Game.OnGUI () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-ArgumentOutOfRangeException: Argument is out of range.
-Parameter name: index
-  at System.Collections.Generic.List`1[UnityEngine.GUIStyle].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
-  at Game.OnGUI () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-ArgumentOutOfRangeException: Argument is out of range.
-Parameter name: index
-  at System.Collections.Generic.List`1[UnityEngine.GUIStyle].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
-  at Game.OnGUI () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Neutral generator 140.4341 20.5 140.4341 20.5
+86 2
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Neutral generator 154.2905 17.5 154.2905 17.5
+1 0 2 0
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Neutral generator 165.5488 22 165.5488 22
+30
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Neutral generator 140.4N4eu20ral fac.or  150.4245 120.5
- 
-.42il5 1
- 
-(FileBuamldAgentuiwoldAg63dfent/wo90b60/artifac190b6tandralonePs/SytanGdneloatPd/UnityEngineDlaygr.eceratediUnit:E g4neDb
-g.cpp Line: 49)
-
-Neutral Neutral gene8r8a 1 r5 .8846 19
- 0
-(5i ena.e: C:5Bu.29dA5e t7w.rk
- 
-63ifl63name9:b 0/a/tBfactd/Atannal/nwPlake/Gdn6r3tedcU6i385190b60/articpp Linetan9)
-l
-onePlayerGenerated/UnituyranginacDebyu1g.cpp Line: 49.4
-
-7 38.5 159.4867 38.5
- 
-(Filename: C:/BuildAgent/wNre/u6tdfcl3 5g9eb60raatifrcts/S.5nd88 22ePla5.erGener2
- 
-(FUnieynagine eCu:/BpuiLlne: ent/w
-o
-rk/d63dfc6385190b60/artifacts/Sttral fnePloryrG156er0226 38it5 1n6.0n26 38.g
- 
-pFi lenae:e:49C:/
-
-BuildAgent/work/dNeutral factory 153.4245 1 153.4245 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityE6gidfeDebu5.cpp Line: 49)1
-9
-0b60/artifacts/StandalonePlayerGenerNeutral factorneDebug.cpp 1 156.8886 
-1
-
- 
-(Filename: C:/BuildAgent/work/d63dfc63acto9y 169.art 14ac5 1/Sta79 14on5
- 
-(Fileenerated/BUildAyEnt/wgik/d6ebuc63c51p0b6L/are:if49)
-/S
-tandalonePlayerGenerated/Uneutral facEngiyeDeb9.4.cp7 38ne5 159.
-
-4867 38.5
- 
-(Filename: C:/BuildAgent/workNe63dfc63fa1ctor0/a148.2283 Sta1dal.neP283 22
- l
-ayerenameratedBuiniAgeEngineDed63d.cpp Lineb60/a)
-if
-acts/StandalonePlayerGenerated/UnityNeginealbug.ctory 156.0226 38.ine:6.09)
- 3
-8.5
- 
-(Filename: C:/BuildAgent/work/d6Ndfc6385190b60/artifact82 29.5dalonePl2ay9er
- neFralend/Uni C:/BginldDebug.cpp/woik/e:6 3df)
-38
-5190b60/artifacts/SNeutral factory 16t.anda14.ePlaye.8ener1at5
-d/U
-(FtyEnnameDebCg.cpuildAgent9)
-o
-rk/d63dfc6385190b60/artifacts/StandalonePl factory 16ted3U27 19E gi60.3bug.cpp 
- 
-(Fil 49)
-
-: C:/BuildAgent/work/d63dfc6385190b60/artifactsNStanralonePlayerG148era8ted/Unity2283 22
- 
-(Filenamin:e: 49)l
-Agent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 143.8982 29.5 143.8982 29.5
+30
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-1Neutr64 14.5 150.826435275
- 
-(Filenam7: C:/
-Bu
-(FidAgent/woC:/BuildAgent5190b60/artfc6385190bndalonePlacterGStandalonePityyerGeneratg.cpp ityEngineD
-e
-bug.cpp Line: 49)
-
-149.9604 16 149.9604 16
- 
-(Filename: C:/BuildAgent/work/1d6.8264 14.5 150.8234 14.38
- 
-(Filename: C:/BuildAgent/work/d63dfcS385190b60/artifacts/StandalonetlayealonePlayerGenerated/UnityEnitneEngDnebug.ugpppp Line: 949
-)
-
-
-150.8264 17.5 150.8264 17.5
+30
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-149.9604 16 149.9604 16
- 
-(Filename: C:/BuildAgent14or9604 3df149389604 19
-/a
-rFilfacts/: CandauildAPlat/erGeorkrated/Un385190gineDebug.cpp/Standa 49)
-la
-yerGenerated/UnityEngineDebug.cpp Line: 49)
-
-50.8264 17.5 150.8264 17.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/1rti0.f82ts4 20.5 150.Player4 20era
- 
-(/UilityEe: ineDBubild.cpp Lintew:r /463)f63
-85190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral generator 140.4341 20.5 140.1341 20.4 19 149.96045
- 
-(F
-ilelnamee:C:/BuildAgennt/work//d6dfc636355190b60/artifacts/StandalonePlayerGeneratedcts/StandalonePlgyerpp Lerated4Un)
-
-yEngineDebug.cpp Line: 49)
-
-150.8264 20.5 150.8264 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGeneraNeeutral gegineDebug.cpp Line: 49)
-n
-erator 154.2905 17.5 154.2905 17.5
- 
-(FilenaNe:eu:/Bail Agent/ratrk/d63d.4341 51.5 140.art41 2cts/StandalonePlayer0ene
- r
-atile/ameU iCy:n/iBeDebdg.gpp Liwer:/d63df
-c
-6385190b60/artifacts/StandalonePlayerGenerated/UnityEnNieeuetur.al gLenera49r 1
-6
-5.5488 22 165.5488 22
- 
-(Filenameu ral/geildAator 1wo.k/d632d05 17fc63551.29b5 17.5
- 
-0Filenife:tC/SBunlaAgenlonePlayerGen6385190b60/yEngifeDebsg.tpp Lane: eP9a
-e
-rGenerated/UnityEngineDebug.cpp Line:e49)
-
-l factory 153.4245 1 153.4Neutra
-l 
-generator 165.5u488 22nt/65.548d83dfc6
-38
-5190bnamartiC:/BuildAgndal/wnePlayerGenera5190b60/artifaneDebug.ndalonePlayer)en
-e
-rated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 156.8886 1 Ne6.8al86 cto
-ry
-(F153.4am45 1 15B.il245 e
- t/
-(wilrnamd:63:/Bu6ldAgen0bwo0/a/rt3iffac8ts/0b6a/arailaotn/SPaldayenePlaerated/UrnityEngiineDebug.cppg.c Line: 4949
-)
-
-
-Neuerat faltofyactory9.4867838.5  59 4866 38.5
-6
- Fil
- n
-m(: i:/Bniadmgen:/ oCk:d6Builc6A3g5e9nb60/artifda3ctc/Sta8d5lonebl6yeraereratacd/UnSttEngdnaDebngePpl aine:G4e)
-
-rated/UnityEngineDebugNeptpa  fanter: 146.
-
-26 38.5 156.0226 38.5
- 
-(Filename: C:/BuildAgent/work/d63dNce385ral f19t0rb 659.a8r7t38fa c59s4/67 a8n5
- l
-(Fieenamy: r:/eunedagend/wonkidt3dfcg3851D0e60/grtipactL/itan:a on9P)a
-
-erGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 169.879 14.5 169.Neut9 1 .5c
- 
-(Fi5le0226 : C:/BuildAgent/work/d63dfc6385190b60/artifact2/S6tandal
-on
-ePilenerGe:erCt://UnitdAngintDwbuk/d63dfcL3i5e90b60/
-a
-rtifacts/StandNleutral fraetery 148.2283 n2i eDebu8.22pp 2ine:
- 
-9F
-
-lename: C:/BuildAgent/work/d63dfc63Neu9r0l6fa0/artifac.879St4.5alon9.879 14.5
- r
-(Fied/UnityC:/BuildAgentcwor /d63ife6 4519
-
-60/artifacts/StandalonePlayerGeNeeaued/Unitactory eDe.8982 2p9.5 ne:.898)
- 
-29.5
- 
-(Filename: C:/BuildAgent/worNeut/ral f6c3dfcy38519.26083 rt2f ct48.2t2nda o22P
-a er
-(eFeraeen/Umiey:n iCe:e/ug.clp Lgne:n49)
-o
-rk/d63dfc6385190b60/artifacts/Ntutrda lactery a6y.3527 1r9 t6e.352n i9
- E
-(nilenemee CugB.ildpg nL/woek:d 34f963590b60/artifacts/StandalonePlayerGenerated/UnityEngineDNbug.cra L fea c9t
-o
-ry 143.8982 29.5 51.458.89182 219..5
- 5
-14F5
-le
-(File am::/C:uBiildAAgnt/w/rk/r6k/dc638519036851r9ifbc6s0S/ardtlinfPlays/Standaled/UnityEnGenerated/UnityEnne: eDebu
-g
-.cpp Line: 49)
-
-1eut1r6924f1a 15or6y24 66
-. 
-(27 i9enam0:.3:5Bui d1gen
- /o(k/d63nfa638:1 0C6:/aruiialtdAStand/work/da63dfc638ated/UnitartifaceDsb/gScpa Ldne:o4n)
-P
-layerGenerated/UnityEngineDeb5ug5.8cpp7 5 1n2e558491).
-
-
-
-(Filename: C:/BuildAgent/work/d63dfc6315190b60 14.tif1c5s/.55andal4n.Pla
- r(eniratndaUmiey:n iCe:e/uB.upp ding: nt9/
-w
-ork/d63dfc6385190b60/artifac1.6/24t1a 151.6n2ePl9a
- er
-Geneename: C:/BuilrAgent/Uwork/d63inc6385190b60/Linefa 4s/St
-a
-ndalonePlayerGenerated/UnityEngineDebug.cp1.6924 1 4915
-
-.6924 16
- 
-(Filename: C:/BuildAgent/work/d61dfc63585 20b5 152.5585 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-6
-0/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-152.5585 17.5 152.5585 17.5
+87 4
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-151.6924 19 151.6924 19
+Im Drawing this box
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-152.5585 20.5 152.5585 20.5
+Im Drawing this box
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Disconnected from server: Disconnected
+Im Drawing this box
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 11.550265 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 200 unused Assets to reduce memory usage. Loaded Objects now: 106.
-Total: 23.080896 ms (FindLiveObjects: 0.059346 ms CreateObjectMapping: 0.076748 ms MarkObjects: 0.678692 ms  DeleteObjects: 18.411707 ms)
-
-82 3
+Im Drawing this box
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-The server has disconnected from the client. Most likelisconnected from server: Disconnyc ed
+Im Drawing this box
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-the server has shut down.
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+88 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+86 5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Im Drawing this box
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+86 0
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The server has disconnected from the client. Most likely the server has shut down.
  
 (Filename:  Line: 745)
 
@@ -562,29 +1416,74 @@ Disconnected from server: Disconnected
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-UnloadTime: 1.988332 ms
+The server has disconnected from the client. Most likely the server has shut down.
+ 
+(Filename:  Line: 745)
+
+Disconnected from server: Disconnected
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Disconnected from server: Disconnected
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+83 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 23.113918 ms
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 200 unused Assets to reduce memory usage. Loaded Objects now: 112.
-Total: 10.411525 ms (FindLiveObjects: 0.012494 ms CreateObjectMapping: 0.015171 ms MarkObjects: 0.099505 ms  DeleteObjects: 9.557024 ms)
+Unloading 229 unused Assets Uo loadTime: 12.589499 ms
+An d valid object handle
+ was us2d. 
+16644 ms (FindLiveObjects: 0.041944 ms CreateObjectMapping: 0.051314 ms MarkObjects: 0.531441 ms  DeleteObjects: 19.761953 ms)
 
-UnloadTime: 2.990976 ms
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 200 unused Assets to reduce memory usage. Loaded Objects now: 106.
-Total: 4.471516 ms (FindLiveObjects: 0.023203 ms CreateObjectMapping: 0.015171 ms MarkObjects: 0.135203 ms  DeleteObjects: 3.720537 ms)
+Unloading 229 unused Assets to reduce memory usage. Loaded Objects now: 114.
+Total: 20.208614 ms (FindLiveObjects: 0.058454 ms CreateObjectMapping: 0.075856 mU MloaOibj 4 Unus0.334660 ms  DeleteObjectsal: ed files now lo
+a
+ded: 0 / Dirty serialized files: 0)
 
-UnloadTime: 0.241402 ms
+Unloading 229 unused Assets to reduce memory usage. Loaded Objects now: 107.
+Total: 65.780510 ms (FindLiveObjects: 0.059792 ms CreateObjectMapping: 0.077195 ms MarkObjects: 0.472987 ms  DeleteObjects: 29.886118 ms)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+UnloadTime: 0.864317 ms
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
+An invalid object handle was used. 
+ 
+(Filename:  Line: 311)
+
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 97.
-Total: 0.574278 ms (FindLiveObjects: 0.005800 ms CreateObjectMapping: 0.007139 ms MarkObjects: 0.093705 ms  DeleteObjects: 0.003569 ms)
-
-Tick On
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Tick Off
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+Total: 3.705812 ms (FindLiveObjects: 0.024095 ms CreateObjectMapping: 0.040605 ms MarkObjects: 0.335999 ms  DeleteObjects: 0.013832 ms)
 
