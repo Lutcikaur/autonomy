@@ -6,7 +6,7 @@ public class Stats : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
 
 	public bool canMove;
@@ -14,6 +14,7 @@ public class Stats : MonoBehaviour {
 	public bool isSpawned;
 
 	public Texture2D image;
+	public string textureName;
 	public string name;
 	public int techLevel;
 

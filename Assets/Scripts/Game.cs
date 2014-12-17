@@ -51,7 +51,10 @@ public class Game : MonoBehaviour {
 	public int unitWaitingSpawnIndex = -1;
 	
 	public Texture artex;
-	Texture2D img;
+	//Texture2D img;
+	Texture2D imgBike;
+	Texture2D imgVtol;
+
 	Texture2D Black;
 	Texture2D Red;
 	Texture2D Blue;
@@ -60,10 +63,14 @@ public class Game : MonoBehaviour {
 	Texture2D depotBack;
 	int cardsInHand;
 
+<<<<<<< HEAD
+	string[] cardNames= new string[30] {"bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol"};
+=======
 	int currentRedHealth=200;
 	int currentBlueHealth=200;
 
 	string[] cardNames= new string[30] {"hoverArty", "bike", "Vtol", "padArty", "tank", "bike", "Vtol", "tank", "hoverArty", "bike", "bike", "padArty", "Vtol", "tank", "Vtol", "hoverArty", "hoverArty", "tank", "bike", "Vtol", "Vtol", "Vtol", "tank", "padArty", "Vtol", "padArty", "tank", "Vtol", "bike", "Vtol"};
+>>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
 
 	bool toFactoryBool=false;
 	bool toSpawnBool=false;
@@ -93,7 +100,7 @@ public class Game : MonoBehaviour {
 		Black=Resources.Load ("Black_Texture")as Texture2D;
 		Red=Resources.Load ("Red_Texture")as Texture2D;
 		Blue=Resources.Load ("Blue_Texture")as Texture2D;
-		img = Resources.Load("Deck_02") as Texture2D;
+
 		for(int i=0; i<numThingsInteractable; i++){
 			EnlargeBool[i]=false;
 		}
@@ -181,22 +188,25 @@ public class Game : MonoBehaviour {
 		}
 		
 		//adds x neighbors
+		if(x-1>xLowerBound)
 		if(hexWorld.hexWorldData[x-1,y].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y].x,hexWorld.hexWorldData[x-1,y].y);
 			numberOfNeighbors++;
 		}
-		
+
+		if(x+1 < xUpperBound)
 		if(hexWorld.hexWorldData[x+1,y].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y].x,hexWorld.hexWorldData[x+1,y].y);
 			numberOfNeighbors++;
 		}
 		
-		//adds y neighbors
+		if(y-1>yLowerBound)
 		if(hexWorld.hexWorldData[x,y-1].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y-1].x,hexWorld.hexWorldData[x,y-1].y);
 			numberOfNeighbors++;
 		}
-		
+
+		if(y+1<yUpperBound)
 		if(hexWorld.hexWorldData[x,y+1].inBounds){
 			neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x,y+1].x,hexWorld.hexWorldData[x,y+1].y);
 			numberOfNeighbors++;
@@ -205,11 +215,13 @@ public class Game : MonoBehaviour {
 		//gets y right neighbors for odd
 		if(odd == true) {
 			Debug.Log ("If");
+			if(x+1<xUpperBound && y-1 > yLowerBound)
 			if(hexWorld.hexWorldData[x+1,y-1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y-1].x,hexWorld.hexWorldData[x+1,y-1].y);
 				numberOfNeighbors++;
 			}
-			
+
+			if(x+1<xUpperBound && y+1<yLowerBound)
 			if(hexWorld.hexWorldData[x+1,y+1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x+1,y+1].x,hexWorld.hexWorldData[x+1,y+1].y);
 				numberOfNeighbors++;
@@ -217,11 +229,13 @@ public class Game : MonoBehaviour {
 		} else {
 			//Debug.Log ("Else");
 			//gets y left neighbors for even
+			if(x-1>xLowerBound && y+1<yUpperBound)
 			if(hexWorld.hexWorldData[x-1,y+1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y+1].x,hexWorld.hexWorldData[x-1,y+1].y);
 				numberOfNeighbors++;
 			}
-			
+
+			if(x-1>xLowerBound && y-1>yLowerBound)
 			if(hexWorld.hexWorldData[x-1,y-1].inBounds){
 				neighborList[numberOfNeighbors] = new Vector2(hexWorld.hexWorldData[x-1,y-1].x,hexWorld.hexWorldData[x-1,y-1].y);
 				numberOfNeighbors++;
@@ -395,12 +409,13 @@ public class Game : MonoBehaviour {
 			GUI.DrawTexture (new Rect(0, y-(x*.22f), x*.2f, x*.22f), depotBack); //Depot Back Splash
 			
 			//This switch is the GUI for objects in the Depot
-			numInDepot = 2;
+			numInDepot = depotList[me].Count;
 
 			for(int q=0; q<numInDepot; q++){
 				int rofl=q/3;
 				//GUI.DrawTexture (new Rect(0, y-(x*(.185f)*(rofl/2)), x*.06f, x*.09f), img);
-				GUI.DrawTexture (new Rect((0+(q%3*x*.07f)), y-(x*(.0925f)*(rofl+1)), x*.06f, x*.09f), img);
+				Stats _stat = depotList[me][q].GetComponent<Stats>();
+				GUI.DrawTexture (new Rect((0+(q%3*x*.07f)), y-(x*(.0925f)*(rofl+1)), x*.06f, x*.09f), _stat.image);
 				if(GUIButton.Button (new Rect((0+(q%3*x*.07f)), y-(x*(.0925f)*(rofl+1)), x*.06f, x*.09f),"")){
 					if(ToggleTemp ==0){
 						for(int j=0; j<numThingsInteractable; j++){
@@ -461,7 +476,8 @@ public class Game : MonoBehaviour {
 			cardsInHand=handList[me].Count;
 
 			for(int z=0; z<cardsInHand; z++){
-				GUI.DrawTexture (new Rect(((x*.225f)+((z*2f)/3f)*(x*.10f)), y-(x*.15f), x*.1f, x*.15f), img);
+				Stats __stat = handList[me][z].GetComponent<Stats>();
+				GUI.DrawTexture (new Rect(((x*.225f)+((z*2f)/3f)*(x*.10f)), y-(x*.15f), x*.1f, x*.15f), __stat.image);
 				if(GUIButton.Button (new Rect(((x*.225f)+((z*2f)/3f)*(x*.10f)), y-(x*.15f), x*.1f, x*.15f), ""))
 				{
 					if(ToggleTemp ==0){
@@ -505,7 +521,8 @@ public class Game : MonoBehaviour {
 			for(int q=0; q<numThingsInteractable; q++){
 				if(EnlargeBool[q]){
 					if(q<6){
-						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
+						Stats _stat = depotList[me][q].GetComponent<Stats>();
+						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), _stat.image);
 						if(GUIButton.Button (new Rect((x*.225f), y*.4f, x*.17f, y*.15f), "Spawn Unit")){
 							unitSpawnFlag = true;
 							unitWaitingSpawn = depotList[me][q];
@@ -520,7 +537,8 @@ public class Game : MonoBehaviour {
 
 						}
 					} else if (q>5 && q<13){
-						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), img);
+						Stats __stat = handList[me][q-6].GetComponent<Stats>();
+						GUI.DrawTexture(new Rect(x*.4f, y*.1f, (y*.65f)/1.5f, y*.65f), __stat.image);
 						if(GUIButton.Button (new Rect((x*.225f), y*.4f, x*.17f, y*.15f), "Send to Factory")){
 							factorySelectionFlag = true;
 							factoryWaitingUnit = handList[me][q-6];
@@ -540,8 +558,13 @@ public class Game : MonoBehaviour {
 
 			if(toFactoryBool){
 
+<<<<<<< HEAD
+				GUI.Box (new Rect((x*.3f), y*.4f, x*.2f, y*.1f), "IM A FUCKING BOX");
+				//Debug.Log ("Im Drawing this box");
+=======
 				GUI.Box (new Rect((x*.3f), y*.4f, x*.2f, y*.3f), "Please select a factory to Start building");
 				Debug.Log ("Im Drawing this box");
+>>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
 			}
 
 			if(toSpawnBool){
@@ -684,6 +707,12 @@ public class Game : MonoBehaviour {
 			}
 		}
 	}
+	
+	[RPC]
+	void LoadDecks(int e, string _cardNames, NetworkMessageInfo info){
+		currentDeckList[e].Add((GameObject)Instantiate(Resources.Load(_cardNames)));
+		staticDeckList[e].Add((GameObject)Instantiate(Resources.Load(_cardNames)));
+	}
 
 	[RPC]
 	void SpawnNeutral(string _name, Vector3 _location, NetworkMessageInfo info){
@@ -716,7 +745,7 @@ public class Game : MonoBehaviour {
 		hexWorld.hexWorldData[(int)_location.x,(int)_location.z].unitObject = playerObjects[_i][playerObjects[_i].Count-1];
 		Vector2 center = hexWorld.hexWorldData[(int)_location.x,(int)_location.z].center;
 		Stats _unit = playerObjects[_i][playerObjects[_i].Count-1].GetComponent<Stats>();
-		Vector3 finalloc = new Vector3(center.x,_unit.spawnHeight,center.y);
+		Vector3 finalloc = new Vector3(center.x,_unit.spawnHeight+hexWorld.hexWorldData[(int)_location.x,(int)_location.z].height,center.y);
 		Debug.Log (center.x + " " + center.y + " " + finalloc.x + " " + finalloc.z);
 		playerObjects[_i][playerObjects[_i].Count-1].transform.position = finalloc;
 		//playerObjects[_i][playerObjects[_i].Count-1].renderer.materials[0].color = Color.red;
@@ -769,12 +798,6 @@ public class Game : MonoBehaviour {
 			hexWorld.hexWorldData[(int)_point.x,(int)_point.z].unitObject = null;
 				//openList.FindIndex(PFList => PFList.getHex() == neighborList[i]);
 		}
-	}
-
-	[RPC]
-	void LoadDecks(int e, string _cardNames, NetworkMessageInfo info){
-		staticDeckList[e].Add((GameObject)Instantiate(Resources.Load(_cardNames)));
-		currentDeckList[e].Add((GameObject)Instantiate(Resources.Load(_cardNames)));
 	}
 	
 	[RPC]
@@ -892,16 +915,16 @@ public class Game : MonoBehaviour {
 							//
 							if(_n.currentlyBuilding){
 								_n.buildProgress++;
+								Stats _stat = _n.currentlyBuilding.GetComponent<Stats>();
+								if(_n.buildProgress >= _stat.techLevel+3){
+									if(!(depotList[turn].Count >= depotList.Capacity)){
+										GameObject obj = _n.currentlyBuilding;
+										_n.currentlyBuilding = null;
+										_n.buildProgress=0;
+										depotList[turn].Add(obj);
+									}
+								} 
 							}
-							Stats _stat = _n.currentlyBuilding.GetComponent<Stats>();
-							if(_n.buildProgress >= _stat.techLevel+3){
-								if(!(depotList[turn].Count >= depotList.Capacity)){
-									GameObject obj = _n.currentlyBuilding;
-									_n.currentlyBuilding = null;
-									_n.buildProgress=0;
-									depotList[turn].Add(obj);
-								}
-							} 
 						}
 					}
 				}

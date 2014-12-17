@@ -13,8 +13,17 @@ Loading C:\Users\Adam\Documents\autonomy\auto_Data\Managed\Assembly-CSharp.dll i
 - Completed reload, in  0.062 seconds
 <RI> Initializing input.
 <RI> Input initialized.
+<<<<<<< HEAD
 desktop: 1600x900 60Hz; virtual: 3520x1080 at -1920,-180
 Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\System.dll (this message is harmless)
+=======
+<<<<<<< HEAD
+desktop: 1680x1050 60Hz; virtual: 3780x1700 at -1050,-364
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
+=======
+desktop: 1600x900 60Hz; virtual: 2880x1024 at -1280,0
+>>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
+>>>>>>> a372e6fe0a55448cb278adc1999640cbf19d60c1
 Initialize engine version: 4.5.5f1 (7684ad0c5a44)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -23,6 +32,18 @@ Direct3D:
     Vendor:   ATI
     VRAM:     1011 MB
 Begin MonoManager ReloadAssembly
+<<<<<<< HEAD
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.045 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1680x1050 60Hz; virtual: 3780x1700 at -1050,-364
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
+0 36028851157793924
+=======
 Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Adam\Documents\autonomy\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
@@ -32,6 +53,7 @@ Loading C:\Users\Adam\Documents\autonomy\auto_Data\Managed\Assembly-CSharp.dll i
 <RI> Input initialized.
 desktop: 1600x900 60Hz; virtual: 3520x1080 at -1920,-180
 Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\System.dll (this message is harmless)
+>>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
  
  
 (Filename: C:/BuildAg nt/work/d63df
@@ -49,8 +71,20 @@ PlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+<<<<<<< HEAD
 UnloadTime: 0.530088 ms
 UnloadTime: 0.457663 ms
+=======
+<<<<<<< HEAD
+UnloadTime: 0.315223 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 131.
+Total: 3.466694 ms (FindLiveObjects: 0.010193 ms CreateObjectMapping: 0.010957 ms MarkObjects: 1.672188 ms  DeleteObjects: 1.074614 ms)
+=======
+UnloadTime: 0.519425 ms
+UnloadTime: 0.387895 ms
+>>>>>>> a372e6fe0a55448cb278adc1999640cbf19d60c1
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 200.
@@ -59,7 +93,12 @@ Total: 5.392314 ms (FindLiveObjects: 0.022087 ms CreateObjectMapping: 0.012841 m
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 200.
+<<<<<<< HEAD
 Total: 4.168796 ms (FindLiveObjects: 0.012327 ms CreateObjectMapping: 0.008732 ms MarkObjects: 2.031491 ms  DeleteObjects: 1.073531 ms)
+=======
+Total: 4.100879 ms (FindLiveObjects: 0.019609 ms CreateObjectMapping: 0.012435 ms MarkObjects: 2.380461 ms  DeleteObjects: 1.023545 ms)
+>>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
+>>>>>>> a372e6fe0a55448cb278adc1999640cbf19d60c1
 
 Run
  
@@ -73,6 +112,16 @@ Here
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
+<<<<<<< HEAD
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.285918 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 135.
+Total: 3.191988 ms (FindLiveObjects: 0.010447 ms CreateObjectMapping: 0.009938 ms MarkObjects: 1.621732 ms  DeleteObjects: 0.989756 ms)
+
+=======
+>>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
 Run
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
@@ -129,10 +178,97 @@ Neutral factory 156.0226 38.5 156.0226 38.5
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
+<<<<<<< HEAD
 Neutral factory ArgumentOutOfRang8eE 1c.ep
 ti
 (Filename: C:/Buildegent/wornt is ou6385190b60/artifacts/Standalonet of raenerat
 ed/anityEngineDebug.cpp Line: 49)
+=======
+Neutral factory 169.879 14.5 169.879 14.5
+ 
+(Filename: C:/BuildAgentNwork/d63dfc6385190r60/40.i43ct1 20.5 140.4341 20.5
+er
+(FilUnityEngineBuildAgent/work/d63)
+
+c6385190b60/artifacts/StandalNnutral factory 148.2283 22 148.2283 22
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/SeandayerGenerated/erated/UnityEnginecpp L.cpp Li9)
+
+49)
+
+Neutral factory 143.8982 29.5N143.8982 29.5
+ 
+(Filename: 17.5 154.2905 17.5
+ 
+(Filename: C6:/a/BuildAgent/work/d63dfc6385190b60/artityEngineDebug.cpp Line:i49fa
+c
+ts/StandalonePlayerGenerated/UnNeutngineDctoryc1pp L527 1949)
+
+<<<<<<< HEAD
+ArguNentOutOfRangl geneption: Argument is out of ra1 20.5
+ 
+(Filename: C:/BuildA
+gent/wystemd63dllection90b60/eric.Licts/Staystem.CollectrGeneraeneric.LiyEngineDebugngipp Line: 49)
+
+]].get_Item (Int3Neindexl ge0x000n0]rato <filename u1n.5 kno.w9n0:0 
+  a
+t 
+(Fame.OnGUI () [0x0000entin orfilenamec6385190b60/ 
+ 
+(Filename: dalone: -1)
+
+Generated/UnityEngineDebug.cpp Line: 49)A
+
+rgumentOutOfRangeException: Argument ieutral genernge.
+Parameter n 1m65 ind88x2
+ 
+(Filenamm.CoC:/BuildAgent/work/d63dfc6385190b60/artifacts/Staic.List`1[UnityEngine.GameObject]].get_Item (Int32 index) [0x0000)] 
+i
+n <filename unknown>:0 
+  at Game.OnGUI () [0x00000] in <fileutre unknown>:0 
+ 
+(Filename:  Line: -1)
+=======
+3527 19
+ 
+(Filename: C:/BuNldAgent /work/dg3dfc6385190at0or 165.5488 22 165.5488 22
+ 
+(Filename:ityEngineDebug.cwork/ne: 49)
+
+85190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+>>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
+
+al factory 153.4245 1 153.4245 1
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/Standal1n5Pla8264 14.5 150.8264 14.5
+ e
+bug.cpame: p:/BuildA49)t
+ork/d63df
+6385190b60/artifacts/StandalonePNayerGenerated/Unit6.88i86Debu15c6.8Line: 
+ 
+(
+F
+ilename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Neutral factory 159.4867 38.5 159.4867 38.5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b61/49.9604 16 1andalonePlay
+er
+Generated: C:/BuildAgent/worpp Line: 49)
+
+b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cppNeutral fac
+t
+ory 156.0226 38.5 156.0226 38.51
+50
+.8264name5 150.8264 17.5/wo
+rFid63name: C:/BuildArtifacts/StandalonePlayerGenerated/UnityEngineDePlayerGenerated/Uni
+t
+yEngineDebug.cpp Line: 49)
+
+Neutral factory 16949.9604 19 149.9604 19
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+>>>>>>> a372e6fe0a55448cb278adc1999640cbf19d60c1
 
 Neutral factory 148.2283 22 148.2283 22
  
@@ -178,10 +314,13 @@ em (Int32 iC:/Builndex) [wx000rk/d63 <fil8ename unknowfa>:0 tandalonePlayerGene
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Neutral generator 140.4341 20.5 140.4341 20.5
+<<<<<<< HEAD
+=======
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Neutral generator 154.2905 17.5 154.2905 17.5
+>>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
@@ -265,7 +404,45 @@ Neutral factory 160.3527 19 160.3527 19
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
+<<<<<<< HEAD
 149.9604 16 149.9604 16
+=======
+<<<<<<< HEAD
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+87 5
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+96 6
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The server has disconnected from the client. Most likely the server has shut down.
+ 
+(Filename:  Line: 745)
+
+Disconnected from server: Disconcted fro
+m
+(Filer: Discon/BectedA
+ g
+(Fnlename/dC6/3uifcAge8t51o9k/b630fc6r8ti9fac0/s/artndalotsPlayarndnelatee/UnityyneireGebnerapp LiUen it)
+E
+ngineDebug.cpp Line: 49)
+
+UnloadTime: 2.672902 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 214 unused Assets to reduce memory usage. Loaded Objects now: 104.
+Total: 6.671680 ms (FindLiveObjects: 0.009173 ms CreateObjectMapping: 0.016563 ms MarkObjects: 0.074664 ms  DeleteObjects: 5.601143 ms)
+
+UnloadTime: 4.309924 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 214 unused Assets to reduce memory usage. Loaded Objects now: 106.
+Total: 6.961420 ms (FindLiveObjects: 0.009428 ms CreateObjectMapping: 0.020386 ms MarkObjects: 0.104989 ms  DeleteObjects: 6.308293 ms)
+=======
+91 8
+>>>>>>> a372e6fe0a55448cb278adc1999640cbf19d60c1
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
@@ -444,6 +621,12 @@ Disconnected from server: Disconnected
 UnloadTime: 13.322579 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
+<<<<<<< HEAD
 Unloading 267 unused Assets to reduce memory usage. Loaded Objects now: 107.
 Total: 14.403303 ms (FindLiveObjects: 0.043660 ms CreateObjectMapping: 0.052906 ms MarkObjects: 0.313841 ms  DeleteObjects: 11.308039 ms)
+=======
+Unloading 281 unused Assets to reduce memory usage. Loaded Objects now: 107.
+Total: 13.846088 ms (FindLiveObjects: 0.060743 ms CreateObjectMapping: 0.077483 ms MarkObjects: 0.388851 ms  DeleteObjects: 10.819931 ms)
+>>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
+>>>>>>> a372e6fe0a55448cb278adc1999640cbf19d60c1
 
