@@ -63,12 +63,19 @@ public class Game : MonoBehaviour {
 	Texture2D depotBack;
 	int cardsInHand;
 
+<<<<<<< HEAD
 
 	int currentRedHealth=200;
 	int currentBlueHealth=200;
 
 	string[] cardNames= new string[30] {"hoverArty", "hoverArty", "Vtol", "padArty", "tank", "bike", "Vtol", "tank", "hoverArty", "bike", "bike", "padArty", "Vtol", "tank", "Vtol", "hoverArty", "hoverArty", "tank", "bike", "Vtol", "Vtol", "Vtol", "tank", "padArty", "Vtol", "padArty", "tank", "Vtol", "bike", "Vtol"};
 
+=======
+	string[] cardNames= new string[30] {"bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol"};
+	int currentRedHealth=200;
+	int currentBlueHealth=200;
+
+>>>>>>> e2f5db964f2f66b49e6ddb5feb9ba7816bda8145
 
 	bool toFactoryBool=false;
 	bool toSpawnBool=false;
