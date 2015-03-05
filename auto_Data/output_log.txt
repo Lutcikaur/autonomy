@@ -2,92 +2,240 @@ Initialize engine version: 4.5.5f1 (7684ad0c5a44)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: AMD Radeon HD 6870M (ID=0x68a8)
+    Renderer: AMD Radeon R9 200 Series (ID=0x6810)
     Vendor:   ATI
-    VRAM:     1011 MB
+    VRAM:     2027 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Adam\Documents\autonomy\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Adam\Documents\autonomy\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.047 seconds
-<RI> Initializing input.
-<RI> Input initialized.
-<<<<<<< HEAD
-desktop: 1680x1050 60Hz; virtual: 3780x1700 at -1050,-364
-Platform assembly: D:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
-=======
-desktop: 1600x900 60Hz; virtual: 2880x1024 at -1280,0
->>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
-Initialize engine version: 4.5.5f1 (7684ad0c5a44)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: AMD Radeon HD 6870M (ID=0x68a8)
-    Vendor:   ATI
-    VRAM:     1011 MB
-Begin MonoManager ReloadAssembly
-<<<<<<< HEAD
 Platform assembly: D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.045 seconds
+- Completed reload, in  0.139 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1680x1050 60Hz; virtual: 3780x1700 at -1050,-364
 Platform assembly: D:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
-0 36028851157793924
-=======
-Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Adam\Documents\autonomy\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Adam\Documents\autonomy\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.051 seconds
+Initialize engine version: 4.5.5f1 (7684ad0c5a44)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6810)
+    Vendor:   ATI
+    VRAM:     2027 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.041 seconds
 <RI> Initializing input.
 <RI> Input initialized.
-desktop: 1600x900 60Hz; virtual: 2880x1024 at -1280,0
-Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\System.dll (this message is harmless)
-Platform assembly: C:\Users\Adam\Documents\autonomy\auto_Data\Managed\System.dll (this message is harmless)
->>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
+desktop: 1680x1050 60Hz; virtual: 3780x1700 at -1050,-364
+Initialize engine version: 4.5.5f1 (7684ad0c5a44)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6810)
+    Vendor:   ATI
+    VRAM:     2027 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\programming\unity\auto\auto_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\programming\unity\auto\auto_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.048 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1680x1050 60Hz; virtual: 3780x1700 at -1050,-364
+Tick On
  
- 
-(Filename: C:/BuildAgent/work/d63dfc63 5190b60/artifac
-/StandalonePlayerGene at
-(FilentmeyEngiBuilbug.dppg nt/work/d63df
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-c6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDnityEngine.Ne:twork
-M
-essageInfo
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\programming\unity\auto\auto_Data\Managed\System.dll (this message is harmless)
+Tick On
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b6L/artifactsi/Standal.NetworkMessageIndfUo
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Tick On
  
-(Filename: C:/BuiildAg4nt/w
-o
-rk/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+0 603482373458160136
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Load MapUnityEngine.NetworkMessageInfo
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+ 
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerate /UnityEn
+gi
+neDebuame: C:/Buil 49)
+
+t/work/d63dfc6385190b60/artifacts/Staoad MapUnlayerGenere.NetworkMeEngineDebug
+ 
+(Filenne: 49C:/
+B
+uildAgent/work/d63dfc6385190b60/artLfacd MapUnidalongine.Networkrated/UnityE
+ng
+(FilDebuge: C:/Bine: 49)
+
+/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-<<<<<<< HEAD
-UnloadTime: 0.315223 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+A script behaviour has a different serialization layout when loading. (Read 148 bytes but expected 156 bytes)
+Did you #ifdef UNITY_EDITOR a section of your serialized properties in any of your scripts?
+ 
+(Filename:  Line: 1170)
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 131.
-Total: 3.466694 ms (FindLiveObjects: 0.010193 ms CreateObjectMapping: 0.010957 ms MarkObjects: 1.672188 ms  DeleteObjects: 1.074614 ms)
-=======
-UnloadTime: 0.519425 ms
-UnloadTime: 0.387895 ms
+UnloadTime: 0.600633 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 200.
-Total: 4.164492 ms (FindLiveObjects: 0.019131 ms CreateObjectMapping: 0.013870 ms MarkObjects: 2.406289 ms  DeleteObjects: 1.031676 ms)
+Total: 3.466958 ms (FindLiveObjects: 0.013505 ms CreateObjectMapping: 0.010957 ms MarkObjects: 1.827638 ms  DeleteObjects: 1.013457 ms)
 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+Run
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Vtol
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+Here
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+Crash!!!
+SymInit: Symbol-SearchPath: '.;D:\programming\unity\auto;D:\programming\unity\auto;C:\Windows;C:\Windows\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 530, UserName: 'Lutcikaur'
+OS-Version: 6.1.7601 (Service Pack 1) 0x100-0x1
+D:\programming\unity\auto\auto.exe:auto.exe (00260000), size: 12214272 (result: 0), SymType: '-exported-', PDB: 'D:\programming\unity\auto\auto.exe', fileVersion: 4.5.5.37569
+C:\Windows\SysWOW64\ntdll.dll:ntdll.dll (77390000), size: 1572864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SysWOW64\ntdll.dll', fileVersion: 6.1.7601.18247
+C:\Windows\syswow64\kernel32.dll:kernel32.dll (76CF0000), size: 1114112 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\kernel32.dll', fileVersion: 6.1.7601.18409
+C:\Windows\syswow64\KERNELBASE.dll:KERNELBASE.dll (76BE0000), size: 290816 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\KERNELBASE.dll', fileVersion: 6.1.7601.18409
+C:\Windows\system32\HID.DLL:HID.DLL (72380000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\HID.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\msvcrt.dll:msvcrt.dll (769D0000), size: 704512 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\msvcrt.dll', fileVersion: 7.0.7601.17744
+C:\Windows\syswow64\WS2_32.dll:WS2_32.dll (76610000), size: 217088 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\WS2_32.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\RPCRT4.dll:RPCRT4.dll (76EA0000), size: 983040 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\RPCRT4.dll', fileVersion: 6.1.7601.18532
+C:\Windows\syswow64\SspiCli.dll:SspiCli.dll (74D30000), size: 393216 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SspiCli.dll', fileVersion: 6.1.7601.18637
+C:\Windows\syswow64\CRYPTBASE.dll:CRYPTBASE.dll (74D20000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CRYPTBASE.dll', fileVersion: 6.1.7600.16385
+A script behaviour has a different serialization layouWindows\SyadiOW64\secho 148 ll:tes host.dll (te6E0000 bytes)
+Did 0240 #ifresultNITY_, SymType section otedyour PDBriaC:\Windows\SysWOW64\sechost.dll', fileVers
+io
+n: 6.1.7600.16385
+1170)
+
+C:\Windows\syswow64\NSI.dll:NSI.dll (75A40000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\NSI.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\USER32.dll:USER32.dll (76680000), size: 1048576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\USER32.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\GDI32.dll:GDI32.dll (762C0000), size: 589824 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\GDI32.dll', fileVersion: 6.1.7601.18577
+C:\Windows\syswow64\LPK.dll:LPK.dll (768C0000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\LPK.dll', fileVersion: 6.1.7601.18177
+C:\Windows\syswow64\USP10.dll:USP10.dll (768D0000), size: 643072 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\USP10.dll', fileVersion: 1.626.7601.18454
+C:\Windows\syswow64\ADVAPI32.dll:ADVAPI32.dll (764D0000), size: 655360 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\ADVAPI32.dll', fileVersion: 6.1.7601.18247
+C:\Windows\system32\VERSION.dll:VERSION.dll (72BA0000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\VERSION.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\ole32.dll:ole32.dll (76A80000), size: 1425408 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\ole32.dll', fileVersion: 6.1.7601.17514
+A script bCh\Winaovi\syswows a diWAPI.dll seLWAPI.dll (769ayou0t when loading. (Read 148 bytes bTy ex: '-exp156tbyt-es)
+Di: d yo\W #ifdes\s UNITY_4\DITOR aI.dll', fileVeour ser 6.liz1d p7o601.ie514
+n any of your scripts?
+ 
+(Filename:  Line: 1170)
+
+C:\Windows\syswow64\SHELL32.dll:SHELL32.dll (74DF0000), size: 12886016 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SHELL32.dll', fileVersion: 6.1.7601.18517
+C:\Windows\system32\OPENGL32.dll:OPENGL32.dll (711C0000), size: 819200 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\OPENGL32.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\GLU32.dll:GLU32.dll (747B0000), size: 139264 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\GLU32.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DDRAW.dll:DDRAW.dll (6B4B0000), size: 946176 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DDRAW.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DCIMAN32.dll:DCIMAN32.dll (747A0000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DCIMAN32.dll', fileVersion: 6.1.7601.18177
+C:\Windows\syswow64\SETUPAPI.dll:SETUPAPI.dll (760D0000), size: 1691648 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SETUPAPI.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\CFGMGR32.dll:CFGMGR32.dll (76280000), size: 159744 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CFGMGR32.dll', fileVersion: 6.1.7601.17621
+C:\Windows\syswow64\OLEAUT32.dll:OLEAUT32.dll (75E70000), size: 585728 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\OLEAUT32.dll', fileVersion: 6.1.7601.18640
+C:\Windows\syswow64\DEVOBJ.dll:DEVOBJ.dll (76780000), size: 73728 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\DEVOBJ.dll', fileVersion: 6.1.7601.17621
+C:\Windows\system32\dwmapi.dll:dwmapi.dll (71B30000), size: 77824 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dwmapi.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\WINMM.dll:WINMM.dll (72BB0000), size: 204800 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINMM.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\MSACM32.dll:MSACM32.dll (6B3D0000), size: 81920 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSACM32.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\IMM32.dll:IMM32.dll (76370000), size: 393216 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\IMM32.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\MSCTF.dll:MSCTF.dll (76400000), size: 835584 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\MSCTF.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DNSAPI.dll:DNSAPI.dll (73380000), size: 278528 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DNSAPI.dll', fileVersion: 6.1.7601.17570
+C:\Windows\system32\IPHLPAPI.DLL:IPHLPAPI.DLL (733E0000), size: 114688 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\IPHLPAPI.DLL', fileVersion: 6.1.7601.17514
+C:\Windows\system32\WINNSI.DLL:WINNSI.DLL (733D0000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINNSI.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\system32\WINHTTP.dll:WINHTTP.dll (72AB0000), size: 360448 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINHTTP.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\webio.dll:webio.dll (72A60000), size: 323584 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\system32\webio.dll', fileVersion: 6.1.7601.17725
+D:\programming\unity\auto\auto_Data\Mono\mono.dll:mono.dll (10000000), size: 2289664 (result: 0), SymType: '-exported-', PDB: 'D:\programming\unity\auto\auto_Data\Mono\mono.dll'
+C:\Windows\syswow64\PSAPI.DLL:PSAPI.DLL (763F0000), size: 20480 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\PSAPI.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\system32\MSWSOCK.dll:MSWSOCK.dll (73300000), size: 245760 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSWSOCK.dll', fileVersion: 6.1.7601.18254
+C:\Windows\system32\uxtheme.dll:uxtheme.dll (71E60000), size: 524288 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\uxtheme.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\d3d11.dll:d3d11.dll (6C550000), size: 1527808 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\d3d11.dll', fileVersion: 6.2.9200.16570
+C:\Windows\system32\dxgi.dll:dxgi.dll (6C840000), size: 311296 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dxgi.dll', fileVersion: 6.2.9200.16492
+C:\Windows\syswow64\WINTRUST.dll:WINTRUST.dll (76CC0000), size: 188416 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\WINTRUST.dll', fileVersion: 6.1.7601.18205
+C:\Windows\syswow64\CRYPT32.dll:CRYPT32.dll (767A0000), size: 1179648 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CRYPT32.dll', fileVersion: 6.1.7601.18277
+C:\Windows\syswow64\MSASN1.dll:MSASN1.dll (76050000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\MSASN1.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\aticfx32.dll:aticfx32.dll (743F0000), size: 1138688 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\aticfx32.dll', fileVersion: 8.17.10.1333
+C:\Windows\system32\atiuxpag.dll:atiuxpag.dll (6C360000), size: 139264 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\atiuxpag.dll', fileVersion: 8.14.1.6413
+C:\Windows\system32\atidxx32.dll:atidxx32.dll (6BA70000), size: 9367552 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\atidxx32.dll', fileVersion: 8.17.10.581
+C:\Windows\system32\MMDevAPI.DLL:MMDevAPI.DLL (72090000), size: 233472 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MMDevAPI.DLL', fileVersion: 6.1.7601.17514
+C:\Windows\system32\PROPSYS.dll:PROPSYS.dll (71F90000), size: 1003520 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\PROPSYS.dll', fileVersion: 7.0.7601.17514
+C:\Windows\system32\wdmaud.UrvnloadTime:v 0.33F0950 m si
+ze: 196608 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\wdmaud.drv', fileVersion: 6.1.7601.17514
+C:\Windows\system32\ksuser.dll:ksuser.dll (743D0000), size: 16384 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\ksuser.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\AVRT.dll:AVRT.dll (73C80000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\AVRT.dll', fileVersion: 6.1.7600.16385
+UnloadTime: 0.619745 ms
+C:\Windows\system32\AUDIOSES.DLL:AUDIOSES.DLL (720D0000), size: 221184 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\AUDIOSES.DLL', fileVersion: 6.1.7601.18619
+C:\Windows\system32\msacm32.drv:msacm32.drv (73BB0000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\msacm32.drv', fileVersion: 6.1.7600.16385
+C:\Windows\system32\midimap.dll:midimap.dll (711B0000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\midimap.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\dsound.dll:dsound.dll (68BB0000), size: 466944 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dsound.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\POWRPROF.dll:POWRPROF.dll (73C50000), size: 151552 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\POWRPROF.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\CLBCatQ.DLL:CLBCatQ.DLL (76580000), size: 536576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\sysUow64\CLBCat4 Unused SeleVelized fi2le1.12.8530.16ed fi5e
+ now loaded: 0 / Dirty serialized files: 0)
 
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 200.
-Total: 4.100879 ms (FindLiveObjects: 0.019609 ms CreateObjectMapping: 0.012435 ms MarkObjects: 2.380461 ms  DeleteObjects: 1.023545 ms)
->>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
+Total: 3.585709 ms (FindLiveObjects: 0.012486 ms C:\ateObjectMysppim32\x0nput1_3.dll:xinpubjects: l (056B000ms  DeleteObj112 (re1.12: 0), Sy)
 
+ype: '-exported-', PDB: 'C:\Windows\system32\xinput1_3.dll', fileVersion: 9.18.944.0
+C:\Windows\system32\NLAapi.dll:NLAapi.dll (72110000), size: 65536 (result: 0), SymType: '-exported-', PDB: 'C:\Uindows\sys4 UnuseNLAapi.dllzed files (Sion: 6.zed 601.17761
+ loaded: 0 / Dirty serialized files: 0)
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 204.
+Total: 3.760012 ms (FindLiveObjects: 0.012741 ms CreateObjectMapping: 0.009938 ms MarkObjectsC:\Win112ws\systeeletenapinsp.dl1.210186p.dll 
+(
+6AB20000), size: 65536 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\napinsp.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\pnrpnsp.dll:pnrpnsp.dll (6AB00000), size: 73728 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\pnrpnsp.dll', fileVersion: 6.1.7600.16385
+C:\Windows\System32\winrnr.dll:winrnr.dll (6AAF0000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\winrnr.dll', fileVersion: 6.1.7600.16385
+C:\Windows\System32\fwpuclnt.dll:fwpuclnt.dll (71CB0000), size: 229376 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\fwpuclnt.dll', fileVersion: 6.1.7601.18283
+C:\Windows\system32\rasadhlp.dll:rasadhlp.dll (71E30000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\rasadhlp.dll', fileVersion: 6.1.7600.16385
+C:\Windows\System32\wshtcpip.dll:wshtcpip.dll (732F0000), size: 20480 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\wshtcpip.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\dbghelp.dll:dbghelp.dll (5DC30000), size: 962560 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dbghelp.dll', fileVersion: 6.1.7601.17514
+
+========== OUTPUTING STACK TRACE ==================
+
+(0x00446BDD) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0xfb7bd
+(0x00469F2F) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x11eb0f
+(0x0043F8C9) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0xf44a9
+(0x005F4013) (auto): (filename not available): AnimationEvent::Transfer<StreamedBinaryRead<1> > + 0x4f2a3
+(0x006013E9) (auto): (filename not available): AnimationEvent::Transfer<StreamedBinaryRead<1> > + 0x5c679
+(0x00603627) (auto): (filename not available): AnimationEvent::Transfer<StreamedBinaryRead<1> > + 0x5e8b7
+(0x002AC207) (auto): (filename not available): NamedObject::Transfer<RemapPPtrTransfer> + 0x38c77
+(0x002AC43D) (auto): (filename not available): NamedObject::Transfer<RemapPPtrTransfer> + 0x38ead
+(0x002C6169) (auto): (filename not available): Behaviour::Transfer<RemapPPtrTransfer> + 0x1339
+(0x003DBB94) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x90774
+(0x003DC69F) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x9127f
+(0x00452D6B) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x10794b
+(0x00454635) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x109215
+(0x006C00E8) (auto): (filename not available): AnimationEvent::Transfer<StreamedBinaryRead<1> > + 0x11b378
+(0x006F4FB0) (auto): (filename not available): AnimationEvent::Transfer<StreamedBinaryRead<1> > + 0x150240R
+un
+ 
+(FilenD033: C:/BuildAgent/wofilena3dfc6385190blable)tifacts/SreaddalitThPlayerGex12
+ate(0UnityEnF7ineDentdllcpp Linlename 
+
+ot available): RtlInitializeExceptionChain + 0x63
+(0x773C9F45) (ntdll): (filename not available): RtlInitializeExceptionChain + 0x36
+
+========== END OF STACKTRACE ===========
+
+**** Crash! ****
 Run
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
@@ -98,570 +246,338 @@ Vtol
 
 Here
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cp
+p 
+Line:n49)
 
-<<<<<<< HEAD
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-UnloadTime: 0.285918 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 135.
-Total: 3.191988 ms (FindLiveObjects: 0.010447 ms CreateObjectMapping: 0.009938 ms MarkObjects: 1.621732 ms  DeleteObjects: 0.989756 ms)
-
-=======
->>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
-Run
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Vtol
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+e: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Here
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-ArgumentOutOfRangeException: Argument is out of range.
-Parameter name: index
-  at System.Collections.Generic.List`1[System.Collections.GeneriA.rgumentOutOfERgang.GameObject]].get_Item eExt32 index) [0x00000] in <filenaon: Argument is 
-out of range.
-Parameter name: index
-  me uat Sys>tem.
-Co
-llections.GeLine: -1)
-
-1[System.Collections.Generic.List`1[UnityEngine.GameObject]].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
-  at Game.OnGUI () [0x00000] in <filename unknown>:0 
+Crash!!!
+SymInit: Symbol-SearchPath: '.;D:\programming\unity\auto;D:\programming\unity\auto;C:\Windows;C:\Windows\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 530, UserName: 'Lutcikaur'
+OS-Version: 6.1.7601 (Service Pack 1) 0x100-0x1
+D:\programming\unity\auto\auto.exe:auto.exe (00260000), size: 12214272 (result: 0), SymType: '-exported-', PDB: 'D:\programming\unity\auto\auto.exe', fileVersion: 4.5.5.37569
+C:\Windows\SysWOW64\ntdll.dll:ntdll.dll (77390000), size: 1572864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SysWOW64\ntdll.dll', fileVersion: 6.1.7601.18247
+C:\Windows\syswow64\kernel32.dll:kernel32.dll (76CF0000), size: 1114112 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\kernel32.dll', fileVersion: 6.1.7601.18409
+C:\Windows\syswow64\KERNELBASE.dll:KERNELBASE.dll (76BE0000), size: 290816 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\KERNELBASE.dll', fileVersion: 6.1.7601.18409
+C:\Windows\system32\HID.DLL:HID.DLL (72380000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\HID.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\msvcrt.dll:msvcrt.dll (769D0000), size: 704512 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\msvcrt.dll', fileVersion: 7.0.7601.17744
+C:\Windows\syswow64\WS2_32.dll:WS2_32.dll (76610000), size: 217088 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\WS2_32.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\RPCRT4.dll:RPCRT4.dll (76EA0000), size: 983040 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\RPCRT4.dll', fileVersion: 6.1.7601.18532
+C:\Windows\syswow64\SspiCli.dll:SspiCli.dll (74D30000), size: 393216 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SspiCli.dll', fileVersion: 6.1.7601.18637
+C:\Windows\syswow64\CRYPTBASE.dll:CRYPTBASE.dll (74D20000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CRYPTBASE.dll', fileVersion: 6.1.7600.16385
+C:\Windows\SysWOW64\sechost.dll:sechost.dll (76E00000), size: 102400 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SysWOW64\sechost.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\NSI.dll:NSI.dll (75A40000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\NSI.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\USER32.dll:USER32.dll (76680000), size: 1048576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\USER32.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\GDI32.dll:GDI32.dll (762C0000), size: 589824 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\GDI32.dll', fileVersion: 6.1.7601.18577
+C:\Windows\syswow64\LPK.dll:LPK.dll (768C0000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\LPK.dll', fileVersion: 6.1.7601.18177
+C:\Windows\syswow64\USP10.dll:USP10.dll (768D0000), size: 643072 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\USP10.dll', fileVersion: 1.626.7601.18454
+C:\Windows\syswow64\ADVAPI32.dll:ADVAPI32.dll (764D0000), size: 655360 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\ADVAPI32.dll', fileVersion: 6.1.7601.18247
+C:\Windows\system32\VERSION.dll:VERSION.dll (72BA0000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\VERSION.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\ole32.dll:ole32.dll (76A80000), size: 1425408 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\ole32.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\SHLWAPI.dll:SHLWAPI.dll (76970000), size: 356352 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SHLWAPI.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\SHELL32.dll:SHELL32.dll (74DF0000), size: 12886016 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SHELL32.dll', fileVersion: 6.1.7601.18517
+C:\Windows\system32\OPENGL32.dll:OPENGL32.dll (711C0000), size: 819200 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\OPENGL32.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\GLU32.dll:GLU32.dll (747B0000), size: 139264 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\GLU32.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DDRAW.dll:DDRAW.dll (6B4B0000), size: 946176 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DDRAW.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DCIMAN32.dll:DCIMAN32.dll (747A0000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DCIMAN32.dll', fileVersion: 6.1.7601.18177
+C:\Windows\syswow64\SETUPAPI.dll:SETUPAPI.dll (760D0000), size: 1691648 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SETUPAPI.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\CFGMGR32.dll:CFGMGR32.dll (76280000), size: 159744 (result: 0), SymType: '-exported-', PDB: 'C:\Nindows\syenerator FGMGR332.d20.5 1fileVersion:5
  
-(FilergumentOLine: -1)
-
-ception: Argument is out of range.
-Parameter name: index
-  at System.Collections.Generic.List`1[System.Col
-lections.Generic.List`
-1[UnityEngine.GameObject]].get_Itist`1[m (Int32 indexSyste [0x00000] in <fi.Collections.Generic.List`1[UnityEngine.GameObject]].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
-  at Game.OnGUI () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-lename unknown>:0 
-  at Game.OnGUI () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-Neutral generator 140.4341 20.5 140.4341 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Fi601name:21
+:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Neutral generator 154.2905 17.5 154.2905 17.5
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line:s\sysw
+o
+w64\OLEAUT32.dll:OLEAUeu32.dll (7erato00016, s5488  585165.5(result:
+ 0
+)Fileymameyp C:: '-eldAgened-'ork/B:63dfc63indow0b60/artw64\OLEAUT32.dll', fileVGersioned/U.1.7601.18640
+ug.cpp Line: 49)
 
-Neutral generator 165.5488 22 165.5488 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+C:\Windows\syswow64\DEVOBJ.dll:DEVOBJ.dll (76780000), size: 73728 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\DEVOBJ.dll', fileVersion: 6.1.7601.17621
+Neutral factory 153.4C:\Wi dows.4245 em3
+2\
+dwmlename: C:wmapldAgent(71B30000),c6385e: 77824 (tifacts/S0), SymTyePlayerexportated/UnPDByEngin:De'Cug.cindows\s: 49)
 
-Neutral factory 153.4245 1 153.4245 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 156.8886 1 156.8886 1
+2\dwmapi.dll', fileVersion: 6.1.7600.16 fac
+tory 156.8886 1 156.8886 1
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Neutral factory 159.4867 38.5 159.4867 38.5
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/BuildAgent/wor:kWind3dws\63851em3260/artifacl:W/StaM.dll (72BB0000), size: 2048yEnginesuebug.c),  Line:pe: '
 
-Neutral factory 156.0226 38.5 156.0226 38.5
+exported-', PDB: 'C:\Windows\systemNeutINMM.dlctoryfileVersion: 6.1156.01.17518.
+5
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Neutral factory 169.879 14.5 169.879 14.5
+Neutral factory 169.879 14.5 169.879 14.C
  
-(Filename: C:/BuildAgentNwork/d63dfc6385190r60/40.i43ct1 20.5 140.4341 20.5
-er
-(FilUnityEngineBuildAgent/work/d63)
+(Fidows\sys C:/Bu\MSACMent/wll:MSACM32.dll (6B360/arti, sizs/Standa0 (result: G),neSyrTyted/Un-exported-',bug.cpp L:\Wi: 49)
 
-c6385190b60/artifacts/StandalNnutral factory 148.2283 22 148.2283 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/SeandayerGenerated/erated/UnityEnginecpp L.cpp Li9)
-
-49)
-
-Neutral factory 143.8982 29.5N143.8982 29.5
- 
-(Filename: 17.5 154.2905 17.5
- 
-(Filename: C6:/a/BuildAgent/work/d63dfc6385190b60/artityEngineDebug.cpp Line:i49fa
-c
-ts/StandalonePlayerGenerated/UnNeutngineDctoryc1pp L527 1949)
-
-<<<<<<< HEAD
-ArguNentOutOfRangl geneption: Argument is out of ra1 20.5
- 
-(Filename: C:/BuildA
-gent/wystemd63dllection90b60/eric.Licts/Staystem.CollectrGeneraeneric.LiyEngineDebugngipp Line: 49)
-
-]].get_Item (Int3Neindexl ge0x000n0]rato <filename u1n.5 kno.w9n0:0 
-  a
-t 
-(Fame.OnGUI () [0x0000entin orfilenamec6385190b60/ 
- 
-(Filename: dalone: -1)
-
-Generated/UnityEngineDebug.cpp Line: 49)A
-
-rgumentOutOfRangeException: Argument ieutral genernge.
-Parameter n 1m65 ind88x2
- 
-(Filenamm.CoC:/BuildAgent/work/d63dfc6385190b60/artifacts/Staic.List`1[UnityEngine.GameObject]].get_Item (Int32 index) [0x0000)] 
-i
-n <filename unknown>:0 
-  at Game.OnGUI () [0x00000] in <fileutre unknown>:0 
- 
-(Filename:  Line: -1)
-=======
-3527 19
- 
-(Filename: C:/BuNldAgent /work/dg3dfc6385190at0or 165.5488 22 165.5488 22
- 
-(Filename:ityEngineDebug.cwork/ne: 49)
-
-85190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
->>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
-
-al factory 153.4245 1 153.4245 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/Standal1n5Pla8264 14.5 150.8264 14.5
- e
-bug.cpame: p:/BuildA49)t
-ork/d63df
-6385190b60/artifacts/StandalonePNayerGenerated/Unit6.88i86Debu15c6.8Line: 
- 
-(
-F
-ilename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 159.4867 38.5 159.4867 38.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b61/49.9604 16 1andalonePlay
-er
-Generated: C:/BuildAgent/worpp Line: 49)
-
-b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cppNeutral fac
-t
-ory 156.0226 38.5 156.0226 38.51
-50
-.8264name5 150.8264 17.5/wo
-rFid63name: C:/BuildArtifacts/StandalonePlayerGenerated/UnityEngineDePlayerGenerated/Uni
-t
-yEngineDebug.cpp Line: 49)
-
-Neutral factory 16949.9604 19 149.9604 19
+system32\MSACM32.dll', fileVersiNeutra1.7600tory 148
+.2283 22 148.2283 22
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-.879 14.5 169.879 14.5
- 1
-(50le8264 20.5 1n0.8264C:0.5
+Neutral factory 143.8982 C9.5 1ndows\s2 29.5
  
-(Filename: C:/3uildAgent/work/d63dfc6385190b60/artifacts/StandalonePlSteanenerated/UnityEneineDebug.cprated/UnityE
-n
-gineDebug.cpp Line: 49)
+(File.dlle: C:32.dll (76370000)/d63dfe: 85190b6 (result: 0), SymType: '-exporteeratedPDB:ityEngWindowsug.cpwow64\IMM49)
 
-Neutral Neeutral factory 1 20.5 140.4341 20.5
- 
-(
-F
-(Filename: C:/BuildAgent/work/d63df3853851900/artitfacts/StandalonnePllaerGenerateted/UnityEngineDebug.cpp Line: 49
-)
-
-
-Neutral factory 143.8982 29.5 143.8982 29.5
+ll', fileVersion: 6.1.7601.17f514
+ry 160.3527 19 160.3527 19
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Neutral factory 160.3527 19 160.3527 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
+C:\Windows\syswow64\MSCTF.dll:MSCTF.dll (76400000), size: 835584 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\MSCTF.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DNSAPI.dll:DNSAPI.dll (73380000), size: 278528 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DNSAPI.dll', fileVersion: 6.1.7601.17570
+C:\Windows\system32\IPHLPAPI.DLL:IPHLPAPI.DLL (733E0000), size: 114688 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\IPHLPAPI.DLL', fileVersion: 6.1.7601.17514
+C:\Windows\system32\WINNSI.DLL:WINNSI.DLL (733D0000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINNSI.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\system32\WINHTTP.dll:WINHTTP.dll (72AB0000), size: 360448 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINHTTP.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\webio.dll:webio.dll (72A60000), size: 323584 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\system32\webio.dll', fileVersion: 6.1.7601.17725
+D:\programming\unity\auto\auto_Data\Mono\mono.dll:mono.dll (10000000), size: 2289664 (result: 0), SymType: '-exported-', PDB: 'D:\programming\unity\auto\auto_Data\Mono\mono.dll'
+C:\Windows\syswow64\PSAPI.DLL:PSAPI.DLL (763F0000), size: 20480 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\PSAPI.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\system32\MSWSOCK.dll:MSWSOCK.dll (73300000), size: 245760 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSWSOCK.dll', fileVersion: 6.1.7601.18254
+C:\Windows\system32\uxtheme.dll:uxtheme.dll (71E60000), size: 524288 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\uxtheme.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\d3d11.dll:d3d11.dll (6C550000), size: 1527808 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\d3d11.dll', fileVersion: 6.2.9200.16570
 150.8264 14.5 150.8264 14.5
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/BuildCge:\Wworkows\3dfys385132\d60/a.tdfll:dxgti.dll nePla40000), siated/UnityEnresineDebu, SygType: L'-expor 49)
 
+, PDB: 'C:\Windows\system32\dxgi.dll', fileVersion: 6.2.9200.16492
 149.9604 16 149.9604 16
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+ Wi
+ndows\sme: C:/4\WINdAgent/dll:WINT3dfc638ll (76C0/art0), sts/e: 1dalonePlaysult:ne0), SymTyie: 'nginported-', P Line: 49)
 
-150.8264 17.5 150.8264 17.5
+dows\syswow64\WINTRUST.dll', 8264 1ersion: .82647601.18
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Fi
+lename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-149.9604 19 149.9604 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+C:\Windows\syswow64\CRYPT32.dll:CRYPT32.dll (767A0000), size: 1179648 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CRYPT32.dll', fileVersion: 6.1.7601.18277
+C:\Windows\syswow64\MSASN1.dll:MSASN1.dll (76050000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\MSAS.N1.4 ll', fileVers4 ion
+: 
+(Fi1.7601.17514
+uildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-150.8264 20.5 150.8264 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+C:\Window1\system32\ati 150.2.dll:aticf
+x3
+(Filenam74: C0000uildAgze: 11ork/d63(result: 0), SymTypfacts-expordalonePlaDB:Generatendows\systeineDebtgicpp Linell', f
 
+leVersion: 8.17.10.1333
 Neutral generator 140.4341 20.5 140.4341 20.5
-<<<<<<< HEAD
-=======
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/SCandalodows\syerGene2\atiuxpagtyEnl:atiuxpag.cppl (6C36049)
 
-Neutral generator 154.2905 17.5 154.2905 17.5
->>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
+, size: 139264 (result:ral), Sneratpre:5'4.xpo05 17.', PDB.2905 \Windo
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral generator 154.2905 17.5 154.2905 17.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Fsystemme: C:/uxpagdAgent, fileVersdfc6: 8.14.160/arti
+facts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Neutral generator 165.5488 22 165.5488 22
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/Bundows\ent/work/d63idxx3385190b60/arx32factl (6BA70000)ePlayze:Gene67552 (Unitylt: 0),gineDType:.cpp Line:ed-',
 
-Neutral factory 153.4245 1 153.4245 1
+PDB: 'C:\Windows\system32\atidxx32al fact fil 153e.s4o245 .17.10.581
+ 1
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Neutral factory 156.8886 1 156.8886 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+NeuCral fndows\sy156em32\MMDev56PI.D6 1:M
+M
+(FilenaDLL (720900ldAgensize:rk/d6472 (re85190: 0), Syifacts/S'-exported-', PDBenerat\Windows\sysineDebug.DevAPIinLL', fi
 
-Neutral factory 159.4867 38.5 159.4867 38.5
+eVersion: 6.1.7601.175Neu
+tral factory 159.4867 38.5 159.4867 38.5
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 Neutral factory 156.0226 38.5 156.0226 38.5
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/BuiC:\Wint/wos\sys63dm32\PROPS0b6.dll:PROPSYS.dtanda71Fl000o), sizeerGen03520 (result: gin, SymType:p Line:orted
 
-Neutral generator 165.5488 22 165.5488 22
+', PDB: 'C:\Windows\system32\NeuPSYS.dll',ory 169.87ion: .5 169.879 151.5
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Neutral factory 153.4245 1 153.4245 1
+CN\Windows\sctorym32\wdmau3 22 14wdmaud.drv 
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(FiF0000),: C:/Bu 196608 (resuk/d63dfc6385190b60'-expifactd-', PDB: 'C:\WiyerGes\systed/Un\wdmaud.drv',ug.cleVersion: 9)
 
-Neutral factory 156.8886 1 156.8886 1
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 159.4867 38.5 159.4867 38.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 156.0226 38.5 156.0226 38.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 169.879 14.5 169.879 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 148.2283 22 148.2283 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 169.879 14.5 169.879 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Neutral factory 148.2283 22 148.2283 22
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
+.7601.17514
 Neutral factory 143.8982 29.5 143.8982 29.5
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerates\/Unitey32\ksEser.dll:ebsuser.dll (74349)
 
-Neutral factory 160.3527 19 160.3527 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+0), size: 16384 (result: 0), SyNType: '-expoory 16', PDB: '9 160indows\sys
+te
+(Fileksuser C:/Bui fileent/work/d6.1.7600.1638b60
+/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
 152.5585 14.5 152.5585 14.5
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(Filename: C:/BuilC:\Windowrk/d63dem32\AVR9Tb.0/ll:AVRacts/Sta73C8lonePlayeire: 286ated/resultEngineDebug.cpp '-expo 49)d-
+'
+, PDB: 'C:\Windows\system32\AVRT.dll1, fil924 16 on: 66924 00.1
+63
+85
+lename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-Neutral factory 143.8982 29.5 143.8982 29.5
+152.558:\Windows52.55tem32\AU
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(FES.DLLme: C:/Bu.DLLAg(720Dwork0), sifc6322190b60/artifact0), SymType: Playeported-at,d/Unit 'C:\WinDebug.cystemine\AU49)
 
-Neutral factory 160.3527 19 160.3527 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-152.5585 14.5 152.5585 14.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-151.6924 16 151.6924 16
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-152.5585 17.5 152.5585 17.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-151.6924 16 151.6924 16
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-152.5585 17.5 152.5585 17.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
+ES.DLL', fileVersion: 6.1.7601.18619
 151.6924 19 151.6924 19
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-151.6924 19 151.6924 19
+C:\Windows\system32\msacm32.d152.5acm3220.5 152.BB000020.5
  
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(File768 e: C:/BuildAgeSymTypek/d63dfported-', PDBartifa\WindStandaystem3layerGcm32.ated/UniileVersion: 6..cpp600.ne: 49
+)
 
-152.5585 20.5 152.5585 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+C:\Windows\system32\midimap.dll:midimap.dll (711B0000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\midimap.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\dsound.dll:dsound.dll (68BB0000), size: 466944 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dsound.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\POWRPROF.dll:POWRPROF.dll (73C50000), size: 151552 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\POWRPROF.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\CLBCatQ.DLL:CLBCatQ.DLL (76580000), size: 536576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CLBCatQ.DLL', fileVersion: 2001.12.8530.16385
+C:\Windows\system32\xinput1_3.dll:xinput1_3.dll (046B0000), size: 90112 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\xinput1_3.dll', fileVersion: 9.18.944.0
+C:\Windows\system32\NLAapi.dll:NLAapi.dll (72110000), size: 65536 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\NLAapi.dll', fileVersion: 6.1.7601.17761
+C:\Windows\system32\napinsp.dll:napinsp.dll (6AB20000), size: 65536 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\napinsp.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\pnrpnsp.dll:pnrpnsp.dll (6AB00000), size: 73728 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\pnrpnsp.dll', fileVersion: 6.1.7600.16385
+C:\Windows\System32\winrnr.dll:winrnr.dll (6AAF0000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\winrnr.dll', fileVersion: 6.1.7600.16385
+C:\Windows\System32\fwpuclnt.dll:fwpuclnt.dll (71CB0000), size: 229376 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\fwpuclnt.dll', fileVersion: 6.1.7601.18283
+C:\Windows\system32\rasadhlp.dll:rasadhlp.dll (71E30000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\rasadhlp.dll', fileVersion: 6.1.7600.16385
+C:\Windows\System32\wshtcpip.dll:wshtcpip.dll (732F0000), size: 20480 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\wshtcpip.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\dbghelp.dll:dbghelp.dll (5DC30000), size: 962560 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dbghelp.dll', fileVersion: 6.1.7601.17514
 
-152.5585 20.5 152.5585 20.5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+========== OUTPUTING STACK TRACE ==================
 
-86 11
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+(0x00446BDD) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0xfb7bd
+(0x00469F2F) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x11eb0f
+(0x0043F8C9) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0xf44a9
+(0x005F4013) (auto): (filename not available): AnimationEvent::Transfer<StreamedBinaryRead<1> > + 0x4f2a3
+(0x006013E9) (auto): (filename not available): AnimationEvent::Transfer<StreamedBinaryRead<1> > + 0x5c679
+(0x00603627) (auto): (filename not available): AnimationEvent::Transfer<SCrrsh!!!
+BinaryRead<1> > + 0x5e8b7
+(0x002AC207) (auto): (filename not available): NamedObject::Transfer<RemapPPtrTransfer> + 0x38c77
+(0x002AC43D) (auto): (filenameSnot ait: Sablbol: NamedOPath:t::TrD:\prer<RemminPPtrTty\nsftor> :\prx3rammin
+g\unity02C6169) (autoows (filenamews\sy avem32;ble): BehebsymbolsTransfer<RemapPPtrTsofnsfeom/do 0x1339
+symbols;03DBB94) (auto): (filename no: 'Luailabler)
+OS-Vhaviour::6.1.nsfer<SSereamedBiack 1) ite<00-0x1
+ 0x90774
+(0x003DC69F) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x9127f
+(0x00452D6B) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x10794b
+(0x00454635) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x109215
+(0x006C00D:) (auto): (filename auto\avail.exe:auto.exe (onE26000::Transfer<S22142me2 (resuyRead<1> > + 0xe:1b37exp
+orted-',006FB: 'D:\(auto): (fil\unity\aut avauto.exe): AnimeVersnEvent::5.5.3sfer<S
+treamedBinaryRead<1> > + 0x150240
+(0x76D0338A) (kernel32): (filename not available): BaseThreadInitThunk + 0x12
+(0x773C9F72) (ntdll): (filename not available): RtlInitializeExceptionChain + 0x63
+(0x773C9F45) (ntdll): (filename not available): RtlInitializeExceptionChain + 0x36
 
-<<<<<<< HEAD
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-87 5
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+========== END OF STACKTRACE ===========
 
-96 6
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+**** Crash! ****
+C:\Windows\SysWOW64\ntdll.dll:ntdll.dll (77390000), size: 1572864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SysWOW64\ntdll.dll', fileVersion: 6.1.7601.18247
+C:\Windows\syswow64\kernel32.dll:kernel32.dll (76CF0000), size: 1114112 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\kernel32.dll', fileVersion: 6.1.7601.18409
+C:\Windows\syswow64\KERNELBASE.dll:KERNELBASE.dll (76BE0000), size: 290816 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\KERNELBASE.dll', fileVersion: 6.1.7601.18409
+C:\Windows\system32\HID.DLL:HID.DLL (72380000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\HID.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\msvcrt.dll:msvcrt.dll (769D0000), size: 704512 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\msvcrt.dll', fileVersion: 7.0.7601.17744
+C:\Windows\syswow64\WS2_32.dll:WS2_32.dll (76610000), size: 217088 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\WS2_32.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\RPCRT4.dll:RPCRT4.dll (76EA0000), size: 983040 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\RPCRT4.dll', fileVersion: 6.1.7601.18532
+C:\Windows\syswow64\SspiCli.dll:SspiCli.dll (74D30000), size: 393216 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SspiCli.dll', fileVersion: 6.1.7601.18637
+C:\Windows\syswow64\CRYPTBASE.dll:CRYPTBASE.dll (74D20000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CRYPTBASE.dll', fileVersion: 6.1.7600.16385
+C:\Windows\SysWOW64\sechost.dll:sechost.dll (76E00000), size: 102400 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SysWOW64\sechost.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\NSI.dll:NSI.dll (75A40000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\NSI.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\USER32.dll:USER32.dll (76680000), size: 1048576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\USER32.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\GDI32.dll:GDI32.dll (762C0000), size: 589824 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\GDI32.dll', fileVersion: 6.1.7601.18577
+C:\Windows\syswow64\LPK.dll:LPK.dll (768C0000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\LPK.dll', fileVersion: 6.1.7601.18177
+C:\Windows\syswow64\USP10.dll:USP10.dll (768D0000), size: 643072 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\USP10.dll', fileVersion: 1.626.7601.18454
+C:\Windows\syswow64\ADVAPI32.dll:ADVAPI32.dll (764D0000), size: 655360 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\ADVAPI32.dll', fileVersion: 6.1.7601.18247
+C:\Windows\system32\VERSION.dll:VERSION.dll (72BA0000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\VERSION.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\ole32.dll:ole32.dll (76A80000), size: 1425408 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\ole32.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\SHLWAPI.dll:SHLWAPI.dll (76970000), size: 356352 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SHLWAPI.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\SHELL32.dll:SHELL32.dll (74DF0000), size: 12886016 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SHELL32.dll', fileVersion: 6.1.7601.18517
+C:\Windows\system32\OPENGL32.dll:OPENGL32.dll (711C0000), size: 819200 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\OPENGL32.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\GLU32.dll:GLU32.dll (747B0000), size: 139264 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\GLU32.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DDRAW.dll:DDRAW.dll (6B4B0000), size: 946176 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DDRAW.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DCIMAN32.dll:DCIMAN32.dll (747A0000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DCIMAN32.dll', fileVersion: 6.1.7601.18177
+C:\Windows\syswow64\SETUPAPI.dll:SETUPAPI.dll (760D0000), size: 1691648 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SETUPAPI.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\CFGMGR32.dll:CFGMGR32.dll (76280000), size: 159744 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CFGMGR32.dll', fileVersion: 6.1.7601.17621
+C:\Windows\syswow64\OLEAUT32.dll:OLEAUT32.dll (75E70000), size: 585728 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\OLEAUT32.dll', fileVersion: 6.1.7601.18640
+C:\Windows\syswow64\DEVOBJ.dll:DEVOBJ.dll (76780000), size: 73728 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\DEVOBJ.dll', fileVersion: 6.1.7601.17621
+C:\Windows\system32\dwmapi.dll:dwmapi.dll (71B30000), size: 77824 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dwmapi.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\WINMM.dll:WINMM.dll (72BB0000), size: 204800 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINMM.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\MSACM32.dll:MSACM32.dll (6B3D0000), size: 81920 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSACM32.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\IMM32.dll:IMM32.dll (76370000), size: 393216 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\IMM32.dll', fileVersion: 6.1.7601.17514
+C:\Windows\syswow64\MSCTF.dll:MSCTF.dll (76400000), size: 835584 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\MSCTF.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\DNSAPI.dll:DNSAPI.dll (73380000), size: 278528 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DNSAPI.dll', fileVersion: 6.1.7601.17570
+C:\Windows\system32\IPHLPAPI.DLL:IPHLPAPI.DLL (733E0000), size: 114688 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\IPHLPAPI.DLL', fileVersion: 6.1.7601.17514
+C:\Windows\system32\WINNSI.DLL:WINNSI.DLL (733D0000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINNSI.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\system32\WINHTTP.dll:WINHTTP.dll (72AB0000), size: 360448 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINHTTP.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\webio.dll:webio.dll (72A60000), size: 323584 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\system32\webio.dll', fileVersion: 6.1.7601.17725
+D:\programming\unity\auto\auto_Data\Mono\mono.dll:mono.dll (10000000), size: 2289664 (result: 0), SymType: '-exported-', PDB: 'D:\programming\unity\auto\auto_Data\Mono\mono.dll'
+C:\Windows\syswow64\PSAPI.DLL:PSAPI.DLL (763F0000), size: 20480 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\PSAPI.DLL', fileVersion: 6.1.7600.16385
+C:\Windows\system32\MSWSOCK.dll:MSWSOCK.dll (73300000), size: 245760 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSWSOCK.dll', fileVersion: 6.1.7601.18254
+C:\Windows\system32\uxtheme.dll:uxtheme.dll (71E60000), size: 524288 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\uxtheme.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\d3d11.dll:d3d11.dll (6C550000), size: 1527808 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\d3d11.dll', fileVersion: 6.2.9200.16570
+C:\Windows\system32\dxgi.dll:dxgi.dll (6C840000), size: 311296 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dxgi.dll', fileVersion: 6.2.9200.16492
+C:\Windows\syswow64\WINTRUST.dll:WINTRUST.dll (76CC0000), size: 188416 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\WINTRUST.dll', fileVersion: 6.1.7601.18205
+C:\Windows\syswow64\CRYPT32.dll:CRYPT32.dll (767A0000), size: 1179648 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CRYPT32.dll', fileVersion: 6.1.7601.18277
+C:\Windows\syswow64\MSASN1.dll:MSASN1.dll (76050000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\MSASN1.dll', fileVersion: 6.1.7601.17514
+C:\Windows\system32\aticfx32.dll:aticfx32.dll (743F0000), size: 1138688 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\aticfx32.dll', fileVersion: 8.17.10.1333
+C:\Windows\system32\atiuxpag.dll:atiuxpag.dll (6C360000), size: 139264 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\atiuxpag.dll', fileVersion: 8.14.1.6413
+C:\Windows\system32\atidxx32.dll:atidxx32.dll (6BA70000), size: 9367552 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\atidxx32.dll', fileVersion: 8.17.10.581
+C:\Windows\system32\MMDevAPI.DLL:MMDevAPI.DLL (72090000), size: 233472 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MMDevAPI.DLL', fileVersion: 6.1.7601.17514
+C:\Windows\system32\PROPSYS.dll:PROPSYS.dll (71F90000), size: 1003520 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\PROPSYS.dll', fileVersion: 7.0.7601.17514
+C:\Windows\system32\wdmaud.drv:wdmaud.drv (6B3F0000), size: 196608 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\wdmaud.drv', fileVersion: 6.1.7601.17514
+C:\Windows\system32\ksuser.dll:ksuser.dll (743D0000), size: 16384 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\ksuser.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\AVRT.dll:AVRT.dll (73C80000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\AVRT.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\AUDIOSES.DLL:AUDIOSES.DLL (720D0000), size: 221184 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\AUDIOSES.DLL', fileVersion: 6.1.7601.18619
+C:\Windows\system32\msacm32.drv:msacm32.drv (73BB0000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\msacm32.drv', fileVersion: 6.1.7600.16385
+C:\Windows\system32\midimap.dll:midimap.dll (711B0000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\midimap.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\dsound.dll:dsound.dll (68BB0000), size: 466944 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dsound.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\POWRPROF.dll:POWRPROF.dll (73C50000), size: 151552 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\POWRPROF.dll', fileVersion: 6.1.7600.16385
+C:\Windows\syswow64\CLBCatQ.DLL:CLBCatQ.DLL (76580000), size: 536576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CLBCatQ.DLL', fileVersion: 2001.12.8530.16385
+C:\Windows\system32\xinput1_3.dll:xinput1_3.dll (03FD0000), size: 90112 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\xinput1_3.dll', fileVersion: 9.18.944.0
+C:\Windows\system32\NLAapi.dll:NLAapi.dll (72110000), size: 65536 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\NLAapi.dll', fileVersion: 6.1.7601.17761
+C:\Windows\system32\napinsp.dll:napinsp.dll (6AB20000), size: 65536 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\napinsp.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\pnrpnsp.dll:pnrpnsp.dll (6AB00000), size: 73728 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\pnrpnsp.dll', fileVersion: 6.1.7600.16385
+C:\Windows\System32\winrnr.dll:winrnr.dll (6AAF0000), size: 32768 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\winrnr.dll', fileVersion: 6.1.7600.16385
+C:\Windows\System32\fwpuclnt.dll:fwpuclnt.dll (71CB0000), size: 229376 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\fwpuclnt.dll', fileVersion: 6.1.7601.18283
+C:\Windows\system32\rasadhlp.dll:rasadhlp.dll (71E30000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\rasadhlp.dll', fileVersion: 6.1.7600.16385
+C:\Windows\System32\wshtcpip.dll:wshtcpip.dll (732F0000), size: 20480 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\System32\wshtcpip.dll', fileVersion: 6.1.7600.16385
+C:\Windows\system32\dbghelp.dll:dbghelp.dll (5DC30000), size: 962560 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dbghelp.dll', fileVersion: 6.1.7601.17514
 
-The server has disconnected from the client. Most likely the server has shut down.
- 
-(Filename:  Line: 745)
+========== OUTPUTING STACK TRACE ==================
 
-Disconnected from server: Disconcted fro
-m
-(Filer: Discon/BectedA
- g
-(Fnlename/dC6/3uifcAge8t51o9k/b630fc6r8ti9fac0/s/artndalotsPlayarndnelatee/UnityyneireGebnerapp LiUen it)
-E
-ngineDebug.cpp Line: 49)
+(0x00446BDD) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0xfb7bd
+(0x00469F2F) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x11eb0f
+(0x0043F8C9) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0xf44a9
+(0x005F4013) (auto): (filename not available): AnimationEvent::Transfer<StreamedBinaryRead<1> > + 0x4f2a3
+(0x006013E9) (auto): (filename not available): AnimationEvent::Transfer<StreamedBinaryRead<1> > + 0x5c679
+(0x00603627) (auto): (filename not available): AnimationEvent::Transfer<StreamedBinaryRead<1> > + 0x5e8b7
+(0x002AC207) (auto): (filename not available): NamedObject::Transfer<RemapPPtrTransfer> + 0x38c77
+(0x002AC43D) (auto): (filename not available): NamedObject::Transfer<RemapPPtrTransfer> + 0x38ead
+(0x002C6169) (auto): (filename not available): Behaviour::Transfer<RemapPPtrTransfer> + 0x1339
+(0x003DBB94) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x90774
+(0x003DC69F) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x9127f
+(0x00452D6B) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x10794b
+(0x00454635) (auto): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x109215
+(0x006C00E8) (auto): (filename not available): AnimationEvent::Transfer<StreamedBinaryRead<1> > + 0x11b378
+(0x006F4FB0) (auto): (filename not available): AnimationEvent::Transfer<StreamedBinaryRead<1> > + 0x150240
+(0x76D0338A) (kernel32): (filename not available): BaseThreadInitThunk + 0x12
+(0x773C9F72) (ntdll): (filename not available): RtlInitializeExceptionChain + 0x63
+(0x773C9F45) (ntdll): (filename not available): RtlInitializeExceptionChain + 0x36
 
-UnloadTime: 2.672902 ms
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+========== END OF STACKTRACE ===========
 
-Unloading 214 unused Assets to reduce memory usage. Loaded Objects now: 104.
-Total: 6.671680 ms (FindLiveObjects: 0.009173 ms CreateObjectMapping: 0.016563 ms MarkObjects: 0.074664 ms  DeleteObjects: 5.601143 ms)
-
-UnloadTime: 4.309924 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 214 unused Assets to reduce memory usage. Loaded Objects now: 106.
-Total: 6.961420 ms (FindLiveObjects: 0.009428 ms CreateObjectMapping: 0.020386 ms MarkObjects: 0.104989 ms  DeleteObjects: 6.308293 ms)
-=======
-91 8
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-30
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-30
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-87 11
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-87 11
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-30
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDeb30.c
-pp
- Linee: 49)
-
-/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-91 8
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-29
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-29
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-29
- 
-(Filename: C:/BuildAgent/work/269df
- 63
-(8i51n90eb 6:0B/artifacts/Standa3dfc6385e1G9nerated/UnityEngineDebug.cpp Line:ner9at
-e
-d/UnityEngineDebug.cpp Line: 49)
-
-91 8
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-NullReferenceException: Object refNreucelnRe fet eo cn inseptio n:  O bjjecc
-t at fameeSncteh not sett32o an instance of an objeceI
- naf o info) [0x00rn0] in <f_newTurn, Nnewnw>:0 
- 
-ageInfome:  Line: -1)
-
- in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-91 8
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Game.SwitchTurn (Int32 _newTurn, NetworkMessageInfo info) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Game.SwitchTurn (Int32 _newTurn, NetworkMessageInfo info) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-82 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-82 19
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-96 7
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-28
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-28
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at Game.SwitchTurn (Int32 NnullReferNetworkMessageInfo info) [0x00000] in <filename unannwne:0 f
-  
-(anl nomb:jeLite
- -1)
-
-Game.SwitchTurn (Int32 _newTurn, NetworkMessageInfo info) [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-92 12
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-92 12
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-92 12
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-91 11
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-89 9
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-92 12
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-92 12
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-92 12
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-91 4
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-28
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-28
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-96 7
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-27
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-27
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-92 12
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-97 11
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Disconnected from server: Disconnected
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-UnloadTime: 3.434618 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 281 unused Assets to reduce memory usage. Loaded Objects now: 107.
-Total: 5.339178 ms (FindLiveObjects: 0.018175 ms CreateObjectMapping: 0.016740 ms MarkObjects: 0.118138 ms  DeleteObjects: 4.448598 ms)
-
-Disconnected from server: Disconnected
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-UnloadTime: 8.113275 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 281 unused Assets to reduce memory usage. Loaded Objects now: 107.
-Total: 13.846088 ms (FindLiveObjects: 0.060743 ms CreateObjectMapping: 0.077483 ms MarkObjects: 0.388851 ms  DeleteObjects: 10.819931 ms)
->>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
-
+**** Crash! ****

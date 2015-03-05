@@ -63,14 +63,10 @@ public class Game : MonoBehaviour {
 	Texture2D depotBack;
 	int cardsInHand;
 
-<<<<<<< HEAD
 	string[] cardNames= new string[30] {"bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol", "bike", "Vtol","bike", "Vtol"};
-=======
 	int currentRedHealth=200;
 	int currentBlueHealth=200;
 
-	string[] cardNames= new string[30] {"hoverArty", "bike", "Vtol", "padArty", "tank", "bike", "Vtol", "tank", "hoverArty", "bike", "bike", "padArty", "Vtol", "tank", "Vtol", "hoverArty", "hoverArty", "tank", "bike", "Vtol", "Vtol", "Vtol", "tank", "padArty", "Vtol", "padArty", "tank", "Vtol", "bike", "Vtol"};
->>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
 
 	bool toFactoryBool=false;
 	bool toSpawnBool=false;
@@ -557,14 +553,8 @@ public class Game : MonoBehaviour {
 			}
 
 			if(toFactoryBool){
-
-<<<<<<< HEAD
-				GUI.Box (new Rect((x*.3f), y*.4f, x*.2f, y*.1f), "IM A FUCKING BOX");
-				//Debug.Log ("Im Drawing this box");
-=======
 				GUI.Box (new Rect((x*.3f), y*.4f, x*.2f, y*.3f), "Please select a factory to Start building");
 				Debug.Log ("Im Drawing this box");
->>>>>>> a75ad8f4a28af72e7719066c52336f0e72c8250d
 			}
 
 			if(toSpawnBool){
